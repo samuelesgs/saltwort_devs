@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+.bg-container {
+    background: rgb(68,0,13);
+    background: linear-gradient(180deg, rgba(68,0,13,1) 0%, rgba(144,45,64,1) 100%);
+}
+
+.bg-navbar {
+    background-color: #252525;
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+.no-margin {
+    margin: 0px;
+}
+
+.no-space {
+    margin: 0px;
+    padding: 0px;
+}
+
+.vertical-center {
+    display: flex;
+    justify-content: center;
+}

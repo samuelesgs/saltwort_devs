@@ -1,0 +1,19 @@
+.text-navbar {
+    font-size: 24px;
+    color: #757575;
+}
+
+.app-text {
+    font-size: 24px;
+}
+
+.size-img-app {
+    height: 5vh;
+    width: 5vh;
+    opacity: 50%;
+}
+
+.link-active {
+    color: white !important;
+}
+
