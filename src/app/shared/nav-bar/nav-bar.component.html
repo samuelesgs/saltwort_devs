@@ -1,62 +1,78 @@
-<div class="row bg-navbar no-space pt-2 pb-2">
-    <div class="col-2 ms-2">
-        <div class="row">
-            <p class="text-white app-text no-space">
-                <img
-                    src="./assets/images/icon-app.png"
-                    class="size-img-app"
-                    />
-                Salwort Devs
-            </p>
-        </div>
-    </div>
-    <div class="col">
-        <div class="row justify-content-end">
-            <div class="col-1 no-padding vertical-center">
-                <p
-                    class="text-navbar no-space"
-                    routerLink="Home"
-                    routerLinkActive="link-active"
-                    >Inicio |
-                </p>
-            </div>
-            <div class="col-2 no-padding" >
-                <p
-                    class="text-navbar"
-                    routerLink="Developers"
-                    routerLinkActive="link-active"
-                    >Developers |
-                </p>
-            </div>    
-            <div class="col-2 no-padding" style="margin-left: -100px;">
-                <p
-                    class="text-navbar"
-                    routerLink="Aplications"
-                    routerLinkActive="link-active"
-                    >Aplicaciones |
-                </p>
-            </div>
-            <div class="col-2 no-padding">
-                <p
-                    class="text-navbar"
-                    routerLink="About"
-                    routerLinkActive="link-active"
-                    >Acerca de  |
-                </p>
-            </div>
-            <div class="col-2 no-padding">
-                <p
-                    class="text-navbar"
-                    routerLink="Language"
-                    routerLinkActive="link-active"
+<nav class="navbar navbar-expand-lg  bg-navbar">
+    <div class="container-fluid">
+        <p class="text-white app-text no-space">
+            <img
+                src="./assets/images/icon-app.png"
+                class="size-img-app"
+                />
+            Salwort Devs
+        </p>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="d-flex vertical-center">
+        <div class="collapse navbar-collapse mt-1 pe-3" id="navbarNav">
+            <ul class="navbar-nav text-navbar">
+                <li
+                    class="nav-item"
                     >
-                    <img
-                    src="./assets/images/language-spanish.webp" height="35vh" width="35vh" />
-                    Español
-                </p>
-            </div>
-        </div>
+                    <a
+                        class="nav-link text-navbar"
+                        routerLink="Home"
+                        routerLinkActive="link-active"
+                        >Inicio
+                    </a>
+                </li>
+                <li
+                    class="nav-item"
+                    >
+                    <a
+                        class="nav-link text-navbar"
+                        routerLink="Developers"
+                        routerLinkActive="link-active"
+                        >Developers
+                    </a>
+                </li>
+                <li
+                    class="nav-item"
+                    >
+                    <a
+                        class="nav-link text-navbar"
+                        routerLink="Apps"
+                        routerLinkActive="link-active"
+                        >Aplicaciones
+                    </a>
+                </li>
+                <li
+                    class="nav-item"
+                    >
+                    <a
+                        class="nav-link text-navbar"
+                        routerLink="About_of"
+                        routerLinkActive="link-active"
+                        >Acerca de
+                    </a>
+                </li>
+                <li
+                    class="nav-item"
+                    ><a
+                        class="nav-link text-white"
+                        ><p
+                            class="text-navbar"
+                            routerLink="Language"
+                            routerLinkActive="link-active"
+                            >
+                            <img
+                                src="./assets/images/language-spanish.webp"
+                                height="35vh"
+                                width="35vh" 
+                                />
+                            Español
+                        </p>
+                    </a>
+                </li>
+            </ul>
+          </div>
+      </div>
     </div>
-
-</div>
-
+  </nav>

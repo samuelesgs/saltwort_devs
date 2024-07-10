@@ -1,0 +1,16 @@
+.bg-footer {
+    background-color: #252525;
+    color: white;
+}
+
+.footer-text {
+    font-size: 18px;
+}
+
+.icon-contact {
+    height: 6vh;
+}
+
+.section-imgs {
+    margin-top: -1vh;
+}
