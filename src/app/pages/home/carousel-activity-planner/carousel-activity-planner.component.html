@@ -1,0 +1,39 @@
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 0}" aria-current="true"></button>
+      <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 1}" aria-label="Slide 2"></button>
+      <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 2}" aria-label="Slide 3"></button>
+    </div>
+    <div class="offset-1 col-10 pb-4 card-style mt-5" >
+        <div class="row mt-4">
+            <div class="offset-1 col-5 mb-5">
+                <div class="carousel-item size-item" *ngIf="itemActive == 0">
+                    <img src="./assets/images/icon-app.png" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item size-item" *ngIf="itemActive == 1">
+                    <img src="./assets/images/language-spanish-image.webp" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item size-item" *ngIf="itemActive == 2">
+                    <img src="./assets/images/icon-app.png" class="d-block" alt="...">
+                  </div>
+            </div>
+            <div class="col-5 text-center">
+                <p class="text-carousel" *ngIf="itemActive == 0">Titulo 1</p>
+                <p class="subtitle-carousel" *ngIf="itemActive == 0">Pantalla 1</p>
+
+                <p class="text-carousel" *ngIf="itemActive == 1">Titulo 2</p>
+                <p class="subtitle-carousel" *ngIf="itemActive == 1">Pantalla 2</p>
+
+                <p class="text-carousel" *ngIf="itemActive == 2">Titulo 3</p>
+                <p class="subtitle-carousel" *ngIf="itemActive == 2">Pantalla 3</p>
+            </div>
+        </div>
+        
+    </div>
+    <button class="carousel-control-prev" type="button"  (click)="onClickCarouse(true)">
+        <img src="./assets/images/icon-arrow.png" class="d-block" alt="...">
+    </button>
+    <button class="carousel-control-next rotate-arrow" type="button"  (click)="onClickCarouse(false)">
+        <img src="./assets/images/icon-arrow.png" class="d-block" alt="...">
+    </button>
+  </div>

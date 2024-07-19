@@ -9,3 +9,9 @@
     height: 25vh;
     width: 25vh;
 }
+
+.backgrounHome {
+    background-image: url('../../../assets/images/triangulo.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+}
