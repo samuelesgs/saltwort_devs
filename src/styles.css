@@ -1,8 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --TextColor: #FFFFFF;
+    --PrimaryColor: rgb(68, 0, 13);
+    --BackgroundColor: rgba(217, 217, 217, 0.25);
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--BackgroundColor);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--PrimaryColor);
+    border-radius: 5px;
+}
+
+
+* {
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    overflow: hidden !important;
+}
 
 .bg-container {
-    background: rgb(68,0,13);
-    background: linear-gradient(180deg, rgba(68,0,13,1) 0%, rgba(144,45,64,1) 100%);
+    background: rgb(68, 0, 13);
+    background: linear-gradient(180deg, rgba(68, 0, 13, 1) 0%, rgba(144, 45, 64, 1) 100%);
+}
+
+.bg-white-transparent {
+    background-color: rgba(217, 217, 217, 0.25);
 }
 
 .bg-navbar {
@@ -26,7 +59,18 @@
     display: flex;
     justify-content: center;
 }
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
 @font-face {
     font-family: 'Roboto';
     src: url('assets/images/Roboto-Italic.ttf');
-  }
+}
