@@ -1,0 +1,35 @@
+<div class="scroll">
+    <div class="col-12 m-3 text-center mb-5">
+        <h1 class="title">{{ profile.fullName }}</h1>
+        <div class="row col-12 mt-3">
+            <div class="col center">
+                <div class="col-8 bg-white-transparent p-3 pb-0 box-radius">
+                    <img
+                        src="./assets/images/{{profile.imgName}}"
+                        class="img-profile box-radius">
+                    <div class="row mt-3 mb-2">
+                        <p class="col-9 mt-1 text-start text-body">{{profile.email}}</p>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col">
+                                    <img
+                                        src="./assets/images/linkdn-image.png"
+                                        class="w-100 icon-radius">
+                                </div>
+                                <div class="col">
+                                    <img
+                                        src="./assets/images/gmail-image.webp"
+                                        class="icon-radius"
+                                        style="height: auto; width: 100%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h1 class="title">{{ profile.title }}</h1>
+            </div>
+        </div>
+    </div>
+</div>

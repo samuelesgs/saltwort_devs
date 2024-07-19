@@ -29,6 +29,14 @@ h3 {
     overflow: hidden !important;
 }
 
+.title {
+    color: var(--TextColor);
+}
+
+.text-body {
+    color: var(--TextColor) !important;
+}
+
 .bg-container {
     background: rgb(68, 0, 13);
     background: linear-gradient(180deg, rgba(68, 0, 13, 1) 0%, rgba(144, 45, 64, 1) 100%);
