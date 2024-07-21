@@ -1,19 +1,73 @@
-<div class="ps-5 pe-5 center" style="height: 80%;">
-    <div class="row col-12">
+<div class="ps-5 pe-5 center mt-5" style="height: 80%;">
+    <div class="col-11">
+        <div class="row">
+            <div
+                [routerLink]="['/ProfileDeveloper', 'Samuel']"
+                class="col size-box pb-3 pt-3 bg-white-transparent me-3 pointer text-name vertical-center"
+                >
+                <div class="col-12 text-center">
+                    <h3 class="mb-3"> Edgar Samuel Guerrero Sandoval</h3>
+                    <img
+                        class="img-style"
+                        src="./assets/images/devs/profile-samuel.png"
+                        >
+                        <!-- Div para logos -->
+                    <div class="offset-1 col-10 mb-2 mt-2">
+                        <img *ngFor="let tool of toolsSamuel" class="icons-tools" src="./assets/images/tools/{{tool}}.png" alt="">
+                    </div>
+                    <!-- p puest -->
+                    <p class=" offset-1 text-start">Sr developer</p>
+                    <!-- Detail dev -->
+                    <div class="offset-1 col-10 background-card-detail">
+                        <p class="text-white text-start p-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, illo eius! Porro voluptates repellendus tempore exercitationem, animi neque! Ducimus saepe dolore, itaque id modi dolor error beatae illo? Error, sit.</p>
+                    </div>
+            </div>
+        </div>
+        
         <div
-            class="col size-box bg-white-transparent me-3 pointer"
-            [routerLink]="['/ProfileDeveloper', 'Samuel']">
-            Edgar Samuel Guerrero Sandoval
+            [routerLink]="['/ProfileDeveloper', 'Luis']"
+            class="col size-box pb-3 pt-3 bg-white-transparent me-3 pointer text-name vertical-center"
+            >
+                <div class="col-12 text-center">
+                    <h3 class="mb-3">Luis Paulo Calderon Nava</h3>
+                    <img
+                        class="img-style"
+                        src="./assets/images/devs/profile-luis.png"
+                        >
+                        <!-- Div para logos -->
+                    <div class="offset-1 col-10 mb-2 mt-2">
+                        <img *ngFor="let tool of toolsLuis" class="icons-tools" src="./assets/images/tools/{{tool}}.png" alt="">
+                    </div>
+                    <!-- p puest -->
+                    <p class=" offset-1 text-start">Jr developer</p>
+                    <!-- Detail dev -->
+                    <div class="offset-1 col-10 background-card-detail">
+                        <p class="text-white text-start p-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, illo eius! Porro voluptates repellendus tempore exercitationem, animi neque! Ducimus saepe dolore, itaque id modi dolor error beatae illo? Error, sit.</p>
+                    </div>
+            </div>
         </div>
         <div
-            class="col size-box bg-white-transparent me-3"
-            [routerLink]="['/ProfileDeveloper', 'Luis']">
-            Luis Paulo Calderon Nava
+            [routerLink]="['/ProfileDeveloper', 'Aksel']"
+            class="col size-box pb-3 pt-3 bg-white-transparent me-3 pointer text-name vertical-center"
+            >
+                <div class="col-12 text-center">
+                    <h3 class="mb-3">Aksel Akemi Herrera Gonzalez</h3>
+                    <img
+                        class="img-style"
+                        src="./assets/images/devs/peso-pluma.jpg"
+                        >
+                        <!-- Div para logos -->
+                    <div class="offset-1 col-10 mb-2 mt-2">
+                        <img *ngFor="let tool of toolsAksel" class="icons-tools" src="./assets/images/tools/{{tool}}.png" alt="">
+                    </div>
+                    <!-- p puest -->
+                    <p class=" offset-1 text-start">Jr developer</p>
+                    <!-- Detail dev -->
+                    <div class="offset-1 col-10 background-card-detail">
+                        <p class="text-white text-start p-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, illo eius! Porro voluptates repellendus tempore exercitationem, animi neque! Ducimus saepe dolore, itaque id modi dolor error beatae illo? Error, sit.</p>
+                    </div>
+            </div>
         </div>
-        <div
-            class="col size-box bg-white-transparent"
-            [routerLink]="['/ProfileDeveloper', 'Aksel']">
-            Aksel Akemi Herrera Gonzalez
         </div>
     </div>
 </div>

@@ -14,3 +14,31 @@
 .icon-radius {
     border-radius: 5px;
 }
+
+.icons-tools{
+    width: 6vh;
+}
+
+.box-icons-tools{
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan si hay muchas */
+}
+
+.desc-text {
+    color: white;
+    font-size: 18px;
+}
+
+.size-box {
+    border-radius: 16px;
+    height: 20vh;
+}
+
+.project-card {
+    border-radius: 16px;
+    background-color: #252525;
+    height: 10vh;
+    color: white;
+}
