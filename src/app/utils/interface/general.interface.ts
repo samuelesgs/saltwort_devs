@@ -31,7 +31,7 @@ export class Develpments {
             case 'luis':
             return {
                 fullName:  'Luis Paulo Calderon Nava',
-                imgName: 'profile-pavi.png',
+                imgName: 'profile-luis.png',
                 email: 'paulocalderon14@gmail.com',
                 urlLinkedin: '',
                 title: 'Jr. Developer',
@@ -52,16 +52,43 @@ export class Develpments {
                         name : 'CS informatica',
                         projects : [
                             {
-                                name : 'Venta plus',
+                                name : 'Venta plus Movil',
                                 detail : 'Punto de venta',
                                 relevantSkills : [
                                     "Actualizacion de versiones",
                                     "Cambio de la version 24 a la version 33"
                                 ],
                                 tools : [
-                                    "android"
+                                    "android",
+                                    "kotlin"
+                                ]
+                            }, 
+                            {
+                                name : 'Control Vehicular Movil',
+                                detail : 'Proyecto interno',
+                                relevantSkills : [
+                                    "Inyección de dependencias",
+                                    "Retrofit",
+                                    "Arquitectura MVVM"
+                                ],
+                                tools : [
+                                    "android",
+                                    "kotlin"
+                                ]
+                            },
+                            {
+                                name : 'CRM Generico',
+                                detail : 'CRM para clientes ',
+                                relevantSkills : [
+                                    "Consultas base de datos",
+                                    "Creacion PDF y exportacion Excel",
+                                    "Arquitectura MVC"
+                                ],
+                                tools : [
+                                    "c-sharp"
                                 ]
                             }
+
                         ]
                     }
                 ]
@@ -69,7 +96,7 @@ export class Develpments {
             case 'aksel':
                 return {
                     fullName:  'Aksel Akemi Herrera Gonzalez',
-                    imgName: 'profile-pavi.png',
+                    imgName: 'peso-pluma.jpg',
                     email: 'akselherrera18@gmail.com',
                     urlLinkedin: '',
                     title: 'Jr. Developer',
