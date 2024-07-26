@@ -15,10 +15,19 @@ export interface Company {
 }
 
 export interface Project {
+    id: number;
     name : string;
     detail : string;
     relevantSkills : string[]; // Skills cumplidas de un proyecto
     tools : string [];
+    screens: Screen[];
+    icon: Screen;
+}
+
+export interface Screen {
+    name: string;
+    detail: string;
+    url: string;
 }
 
 export class Develpments {
@@ -52,6 +61,7 @@ export class Develpments {
                         name : 'CS informatica',
                         projects : [
                             {
+                                id: 1,
                                 name : 'Venta plus Movil',
                                 detail : 'Punto de venta',
                                 relevantSkills : [
@@ -61,9 +71,22 @@ export class Develpments {
                                 tools : [
                                     "android",
                                     "kotlin"
+                                ],
+                                icon: {
+                                    name: 'name',
+                                    detail: 'detail',
+                                    url: 'url'
+                                },
+                                screens: [
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'url'
+                                    }
                                 ]
                             }, 
                             {
+                                id: 2,
                                 name : 'Control Vehicular Movil',
                                 detail : 'Proyecto interno',
                                 relevantSkills : [
@@ -74,9 +97,22 @@ export class Develpments {
                                 tools : [
                                     "android",
                                     "kotlin"
+                                ],
+                                icon: {
+                                    name: 'name',
+                                    detail: 'detail',
+                                    url: 'url'
+                                },
+                                screens: [
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'url'
+                                    }
                                 ]
                             },
                             {
+                                id: 3,
                                 name : 'CRM Generico',
                                 detail : 'CRM para clientes ',
                                 relevantSkills : [
@@ -86,6 +122,18 @@ export class Develpments {
                                 ],
                                 tools : [
                                     "c-sharp"
+                                ],
+                                icon: {
+                                    name: 'name',
+                                    detail: 'detail',
+                                    url: 'url'
+                                },
+                                screens: [
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'url'
+                                    }
                                 ]
                             }
 
@@ -118,6 +166,7 @@ export class Develpments {
                             name : 'Encodemx',
                             projects : [
                                 {
+                                    id: 1,
                                     name : 'Gastos de compra',
                                     detail : 'Capturador de ingreso en proyecto',
                                     relevantSkills : [
@@ -125,9 +174,21 @@ export class Develpments {
                                     ],
                                     tools : [
                                         "swift"
+                                    ],
+                                    icon: {
+                                        name: 'name',
+                                        detail: 'detail',
+                                        url: 'url'
+                                    },
+                                    screens: [
+                                        {
+                                            name: 'screen-1',
+                                            detail: 'detail',
+                                            url: 'url'
+                                        }
                                     ]
-                                }
-                            ]
+                                },
+                            ],                            
                         }
                     ]
             };
@@ -158,6 +219,7 @@ export class Develpments {
                         name : 'Encodemx',
                         projects : [
                             {
+                                id: 1,
                                 name : 'Gastos de compra',
                                 detail : 'Capturador de ingreso en proyecto',
                                 relevantSkills : [
@@ -166,9 +228,22 @@ export class Develpments {
                                 tools : [
                                     "android",
                                     "angular"
+                                ],
+                                icon: {
+                                    name: 'name',
+                                    detail: 'detail',
+                                    url: 'url'
+                                },
+                                screens: [
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'url'
+                                    }
                                 ]
                             },
                             {
+                                id: 2,
                                 name : 'Gastos de diarios',
                                 detail : 'Capturador de ingreso en proyecto',
                                 relevantSkills : [
@@ -177,6 +252,18 @@ export class Develpments {
                                 tools : [
                                     "android",
                                     "angular"
+                                ],
+                                icon: {
+                                    name: 'name',
+                                    detail: 'detail',
+                                    url: 'url'
+                                },
+                                screens: [
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'url'
+                                    }
                                 ]
                             }
                         ]
