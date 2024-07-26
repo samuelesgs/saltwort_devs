@@ -1,5 +1,6 @@
 export interface SaltwortApplication{
     title : string;
+    img : string;
     properties : Property[];
 }
 
