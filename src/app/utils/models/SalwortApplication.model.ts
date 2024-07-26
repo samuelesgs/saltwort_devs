@@ -26,6 +26,11 @@ export class ModelSaltwortApplication {
                     name : "Planifica tus actividades",
                     detail : "El planificar tus actividades aprovecha tu tiempo al maximo",
                     click : false
+                },
+                {
+                    name : "Aprovecha tu tiempo",
+                    detail : "Aprovechar tu tiempo te servira para poder tener bien medido tus tiempos",
+                    click : false
                 }
             ]
         },
