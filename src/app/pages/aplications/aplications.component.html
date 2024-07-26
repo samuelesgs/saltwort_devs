@@ -1,17 +1,19 @@
-<div class="ps-5 pe-5 center mt-5" style="height: 90%;">
-    <div class="col-11">
-        <div class="row mb-3" *ngFor="let item of application" style="overflow-y: auto; overflow-x: hidden;">
-            <div class="col-4 size-box pb-3 pt-3 bg-white-transparent me-3 vertical-center">
-                <img src="./assets/images/tools/{{item.img}}.png" class="image-style">
-            </div>
-            <div class="col size-box pb-3 pt-3 bg-white-transparent me-3  vertical-center">
-                <div class="row">
-                    <p class="text-title text-center">{{item.title}}</p>
-                    <h3 *ngIf="propertySelected != null" (click)="cleanProperty()">{{propertySelected.name}}</h3>
-                    <p *ngIf="propertySelected != null">{{propertySelected.detail}}</p>
+<div class="ps-5 pe-5 mt-5">
+    <div class="col-12 center">    
+        <div class="col-11">
+            <div class="row mb-3" *ngFor="let item of application" style="overflow-y: auto; overflow-x: hidden;">
+                <div class="col-4 size-box pb-3 pt-3 bg-white-transparent me-3 vertical-center">
+                    <img src="./assets/images/tools/{{item.img}}.png" class="image-style">
+                </div>
+                <div class="col size-box pb-3 pt-3 bg-white-transparent me-3  vertical-center">
                     <div class="row">
-                        <div class="col" *ngFor="let property of item.properties">
-                            <p class="text-description" *ngIf="(propertySelected != null && property.name != propertySelected.name || propertySelected == null)" (click)="setClickProperty(property)">{{property.name}}</p>
+                        <p class="text-title text-center">{{item.title}}</p>
+                        <h3 *ngIf="propertySelected != null" (click)="cleanProperty()">{{propertySelected.name}}</h3>
+                        <p *ngIf="propertySelected != null">{{propertySelected.detail}}</p>
+                        <div class="row">
+                            <div class="col" *ngFor="let property of item.properties">
+                                <p class="text-description" *ngIf="(propertySelected != null && property.name != propertySelected.name || propertySelected == null)" (click)="setClickProperty(property)">{{property.name}}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
