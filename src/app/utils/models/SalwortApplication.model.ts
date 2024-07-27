@@ -15,7 +15,7 @@ export class ModelSaltwortApplication {
     return [
         {
             title : "Activity Planner",
-            img : "android",
+            img : "angular",
             properties : [
                 {
                     name : "Administra tu tiempo",
@@ -32,23 +32,25 @@ export class ModelSaltwortApplication {
                     detail : "Aprovechar tu tiempo te servira para poder tener bien medido tus tiempos",
                     click : false
                 }
-            ]
+            ],
+            propertySelected : null
         },
         {
-            title : "Activity Planner",
+            title : "Cooking Home",
             img : "android",
             properties : [
                 {
-                    name : "Administra tu tiempo",
-                    detail : "Podras adminstrar mejor tu tiempo, no se te olvidar cosas",
+                    name : "Muchos tipos de comida ",
+                    detail : "En esta aplicacion vas a poder descubrir una cantidad inimaginable de recetas que te encantaran",
                     click : false
                 },
                 {
-                    name : "Planifica tus actividades",
-                    detail : "El planificar tus actividades aprovecha tu tiempo al maximo",
+                    name : "Socializa mediante recetas",
+                    detail : "Vas a poder dejar retroalimentacion a las recetas, de esa manera haciendole saber a todos la calidad de la receta",
                     click : false
                 }
-            ]
+            ],
+            propertySelected: null
         },
     ];
   }
