@@ -8,8 +8,8 @@
                 <div class="col size-box pb-3 pt-3 bg-white-transparent me-3  vertical-center">
                     <div class="row">
                         <p class="text-title text-center">{{item.title}}</p>
-                        <h3 *ngIf="propertySelected != null" (click)="cleanProperty()">{{propertySelected.name}}</h3>
-                        <p *ngIf="propertySelected != null">{{propertySelected.detail}}</p>
+                        <h3 class="text-clicked text-center" *ngIf="propertySelected != null" (click)="cleanProperty()">{{propertySelected.name}}</h3>
+                        <p class="text-detail text-center" *ngIf="propertySelected != null">{{propertySelected.detail}}</p>
                         <div class="row">
                             <div class="col" *ngFor="let property of item.properties">
                                 <p class="text-description" *ngIf="(propertySelected != null && property.name != propertySelected.name || propertySelected == null)" (click)="setClickProperty(property)">{{property.name}}</p>
