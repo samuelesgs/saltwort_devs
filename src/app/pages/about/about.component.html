@@ -6,29 +6,44 @@
             class="w-25 border-color">
     </div>
 </div>
-<div class="container center mt-3">
+<!-- <div class="container center mt-3">
     <div
-        id="container-info"
-        class="col-11 bg-dark center">
-
+        class="col-11 bg-dark box-mission text-center p-2"
+        [ngClass]="{
+            'box-mission': currentContainer == 'mission',
+            'box-hidden': currentContainer != 'mission'
+        }">
+        <h2>Mision</h2>
     </div>
-</div>
+</div> -->
 <div
     class="container center mt-3"
     id="container-btn">
     <div class="row col-11">
         <div
-            class="col bg-white-transparent me-2 size-box center pointer"
+            class="bg-white-transparent me-2 size-box center pointer"
+            [ngClass]="{
+                'col' : currentContainer != 'mission',
+                'col-12 mt-5' : currentContainer == 'mission'
+            }"
             (click)="showContainer($event, 'mission')">
             <h2>Misión</h2>
         </div>
         <div
             class="col bg-white-transparent me-2 size-box center pointer"
+            [ngClass]="{
+                'col' : currentContainer != 'vission',
+                'col-12 mt-5' : currentContainer == 'vission'
+            }"
             (click)="showContainer($event, 'vission')">
             <h2>Visión</h2>
         </div>
         <div
             class="col bg-white-transparent size-box center pointer mb-5"
+            [ngClass]="{
+                'col' : currentContainer != 'objetives',
+                'col-12 mt-5' : currentContainer == 'objetives'
+            }"
             (click)="showContainer($event, 'objetives')">
             <h2>Objetivos</h2>
         </div>
