@@ -12,20 +12,19 @@ import { ModelSaltwortApplication } from '../../utils/models/SalwortApplication.
 })
 export class AplicationsComponent {
   public application: SaltwortApplication[];
-  propertySelected: Property | null = null;
 
 
   constructor() {
     this.application = new ModelSaltwortApplication().getApplications();
   }
 
-  setClickProperty(property : Property) {
-    this.propertySelected = property;
-    this.propertySelected.click = !property.click;
+  setClickProperty(item: SaltwortApplication, property : Property) {
+    item.propertySelected = property;
+    item.propertySelected.click = !property.click;
   }
 
-  cleanProperty() {
-    this.propertySelected = null;
+  cleanProperty(item: SaltwortApplication) {
+    item.propertySelected = null;
   }
 
 }
