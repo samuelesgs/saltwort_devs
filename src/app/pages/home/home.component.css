@@ -13,5 +13,15 @@
 .backgrounHome {
     background-image: url('../../../assets/images/triangulo.png');
     background-repeat: no-repeat;
-    height: 100vh;
+}
+
+.container-img {
+    position: absolute;
+    top: 7vh;
+    left: 0px;
+    z-index: -1;
+}
+
+.img-size {
+    height: 40vh;
 }
