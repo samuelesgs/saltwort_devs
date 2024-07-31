@@ -20,7 +20,7 @@
                         class="nav-link text-navbar"
                         routerLink="Home"
                         routerLinkActive="link-active"
-                        >Inicio |
+                        >{{'page.home' | translate}} |
                     </a>
                 </li>
                 <li
@@ -53,24 +53,16 @@
                         >Acerca de |
                     </a>
                 </li>
-                <li
-                    class="nav-item"
-                    ><a
-                        class="nav-link text-white"
-                        ><p
-                            class="text-navbar"
-                            routerLink="Language"
-                            routerLinkActive="link-active"
-                            >
-                            <img
-                                src="./assets/images/language-spanish.webp"
-                                height="35vh"
-                                width="35vh" 
-                                />
-                            Español
-                        </p>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      {{currentLang}}
                     </a>
-                </li>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#" (click)="setLang('es')">Español</a></li>
+                      <li><a class="dropdown-item" href="#" (click)="setLang('en')">Ingles</a></li>
+                    </ul>
+                  </li>
             </ul>
           </div>
       </div>
