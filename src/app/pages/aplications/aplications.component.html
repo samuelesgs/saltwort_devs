@@ -3,21 +3,25 @@
         <div class="col-11">
             <div class="row mb-3" *ngFor="let item of application" style="overflow-y: auto; overflow-x: hidden;">
                 <div class="col-4 size-box pb-3 pt-3 bg-white-transparent me-3 vertical-center">
-                    <img src="./assets/images/tools/{{item.img}}.png" class="image-style">
+                    <img src="./assets/images/tools/{{item.img}}.png" class="img-style mt-5">
                 </div>
-                <div class="col size-box pb-3 pt-3 bg-white-transparent me-3  vertical-center">
+
+                <div class="col size-box pb-3 pt-3 bg-white-transparent me-3  vertical-center" >
                     <div class="row">
-                        <p class="text-title text-center">{{item.title}}</p>
-                        <h3 class="text-clicked text-center" *ngIf="item.propertySelected != null" (click)="cleanProperty(item)">{{item.propertySelected.name}}</h3>
-                        <p class="text-detail text-center" *ngIf="item.propertySelected != null">{{item.propertySelected.detail}}</p>
+                        <a class="nav-link row" routerLink="/{{item.routeToNavigate}}"> 
+                            <p class="text-title text-center mb-5">{{item.title}}</p>
+                        <h3 class="text-clicked  text-center" *ngIf="item.propertySelected != null" (click)="cleanProperty(item)">{{item.propertySelected.name}}</h3>
+                        <p class="text-detail  text-center" *ngIf="item.propertySelected != null">{{item.propertySelected.detail}}</p>
                         <div class="row">
                             <div class="col mt-5" *ngFor="let property of item.properties">
-                                <p [ngClass]="{'rotate-left text-description' : property.name != null, 
+                                <p [ngClass]="{'rotate-left  mt-5 text-description' : property.name != null, 
                                 'no-rotation ms-5': item.propertySelected != null}"
                                    *ngIf="(item.propertySelected != null && property.name != item.propertySelected.name || item.propertySelected == null)" 
                                    (click)="setClickProperty(item, property)">{{property.name}}</p>
                             </div>
                         </div>
+                        </a>
+                        
                     </div>
                 </div>
             </div>

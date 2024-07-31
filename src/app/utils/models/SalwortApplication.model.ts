@@ -33,7 +33,8 @@ export class ModelSaltwortApplication {
                     click : false
                 }
             ],
-            propertySelected : null
+            propertySelected : null,
+            routeToNavigate :  "ActivityPlanner"
         },
         {
             title : "Cooking Home",
@@ -50,7 +51,8 @@ export class ModelSaltwortApplication {
                     click : false
                 }
             ],
-            propertySelected: null
+            propertySelected: null,
+            routeToNavigate: ""
         },
     ];
   }

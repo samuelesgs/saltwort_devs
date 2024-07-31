@@ -3,6 +3,7 @@ export interface SaltwortApplication{
     img : string;
     properties : Property[];
     propertySelected?: Property | null;
+    routeToNavigate : string;
 }
 
 export interface Property {

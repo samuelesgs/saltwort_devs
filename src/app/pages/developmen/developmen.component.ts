@@ -51,7 +51,7 @@ export class DevelopmenComponent {
     "php",
     "figma",
     "mariadb",
-    "c#",
+    "c-sharp",
     "managment"
   ];
 

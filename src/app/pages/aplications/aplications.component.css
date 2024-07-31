@@ -1,11 +1,13 @@
 .img-style {
-    width: 100%;
-    height: 25vh;
+    width: 50%; /* Ajusta este valor para cambiar el tamaño de la imagen */
+    height: 50%; /* Mantén la proporción */
     border-radius: 16px;
+    display: block;
+    margin: 0 auto; 
 }
 .size-box {
     border-radius: 16px;
-    /* height: 60vh; */
+    height: 50vh; /* Mantén el tamaño del contenedor fijo */
 }
 .text-title {
     color: white;

@@ -7,6 +7,8 @@ export interface ProfileData {
     desc: string;
     tools: string[];
     companies : Company[]
+    linkdn : string;
+    gmail : string;
 }
 
 export interface Company {
@@ -41,7 +43,7 @@ export class Develpments {
             return {
                 fullName:  'Luis Paulo Calderon Nava',
                 imgName: 'profile-luis.png',
-                email: 'paulocalderon14@gmail.com',
+                email: 'pavicalderon49@gmail.com',
                 urlLinkedin: '',
                 title: 'Jr. Developer',
                 desc : ' Desarrollador 2 años de experiencia'+ 
@@ -53,9 +55,10 @@ export class Develpments {
                     "php",
                     "figma",
                     "mariadb",
-                    "c#",
+                    "c-sharp",
                     "managment"
                 ],
+              
                 companies : [
                     {
                         name : 'CS informatica',
@@ -139,7 +142,9 @@ export class Develpments {
 
                         ]
                     }
-                ]
+                ],
+                linkdn : "https://www.linkedin.com/in/luis-paulo-calderón-nava-2003bb257/",
+                gmail  :"mailto:pavicalderon49@gmail.com",
             }
             case 'aksel':
                 return {
@@ -161,6 +166,7 @@ export class Develpments {
                         "figma",
                         "mariadb",
                     ],
+                    
                     companies : [
                         {
                             name : 'Encodemx',
@@ -190,7 +196,9 @@ export class Develpments {
                                 },
                             ],                            
                         }
-                    ]
+                    ],
+                    linkdn : "https://www.linkedin.com/in/aksel-akemi-herrera-gonzalez-08054a213/",
+                    gmail  :"mailto:akselherrera18@gmail.com",
             };
             default:
             return {
@@ -268,7 +276,9 @@ export class Develpments {
                             }
                         ]
                     }
-                ]
+                ],
+                linkdn : "https://www.linkedin.com/in/edgar-samuel-guerrero-5a9471214/",
+                gmail  :"mailto:samuelesgs04@gmail.com",
             }
             
         }

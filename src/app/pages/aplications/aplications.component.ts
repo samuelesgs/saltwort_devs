@@ -3,11 +3,12 @@ import { Component, OnInit } from '@angular/core';
 import { Property, SaltwortApplication } from '../../utils/interface/applications.interface';
 import { ModelSaltwortApplication } from '../../utils/models/SalwortApplication.model';
 import { AppService } from '../../app.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-aplications',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './aplications.component.html',
   styleUrl: './aplications.component.css'
 })
