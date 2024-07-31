@@ -1,76 +1,74 @@
-<div class="scroll">
-    <div class="col-12 m-3 text-center mb-5">
-        <h1 class="title">{{ profile.fullName }}</h1>
-       
-        <div class="col-12">
-            <div class="row mt-3">
-                <div class="col center">
-                    <div class="col-8 bg-white-transparent p-3 pb-0 box-radius">
-                        <img
-                            src="./assets/images/devs/{{profile.imgName}}"
-                            class="img-profile box-radius"
-                            >
-                           
-                        <div class="row mt-3 mb-2">
-                            <p class="col-9 mt-1 text-start text-body">{{profile.email}}</p>
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col">
-                                        <img
-                                            src="./assets/images/linkdn-image.png"
-                                            class="w-100 icon-radius">
-                                    </div>
-                                    <div class="col">
-                                        <img
-                                            src="./assets/images/gmail-image.webp"
-                                            class="icon-radius"
-                                            style="height: auto; width: 100%;">
-                                    </div>
+<div class="col-12 m-3 text-center mb-5">
+    <h1 class="title">{{ profile.fullName }}</h1>
+    
+    <div class="col-12">
+        <div class="row mt-3">
+            <div class="col center">
+                <div class="col-8 bg-white-transparent p-3 pb-0 box-radius">
+                    <img
+                        src="./assets/images/devs/{{profile.imgName}}"
+                        class="img-profile box-radius"
+                        >
+                        
+                    <div class="row mt-3 mb-2">
+                        <p class="col-9 mt-1 text-start text-body">{{profile.email}}</p>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col">
+                                    <img
+                                        src="./assets/images/linkdn-image.png"
+                                        class="w-100 icon-radius">
+                                </div>
+                                <div class="col">
+                                    <img
+                                        src="./assets/images/gmail-image.webp"
+                                        class="icon-radius"
+                                        style="height: auto; width: 100%;">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+            </div>
+            <div class="col">
+                <div class="row box-icons-tools">
+                    <h1 class="title mb-3">{{ profile.title }}</h1>
+                    <img *ngFor="let tool of profile.tools" class="icons-tools" src="./assets/images/tools/{{tool}}.png" [alt]="tool">
+                </div>
+                <div class="row mt-3">
+                    <p class="desc-text text-start">
+                        {{profile.desc}}
+                    </p>
+                </div>
+                <h1 class="title mt-3 text-white">
+                    Proyectos relacionados
+                </h1>
+                
+                <div class="col-11 bg-white-transparent size-box p-3 text-white" *ngFor="let company of profile.companies">
+                    <h3 class="text-start">{{company.name}}</h3>
                     <div class="row box-icons-tools">
-                        <h1 class="title mb-3">{{ profile.title }}</h1>
-                        <img *ngFor="let tool of profile.tools" class="icons-tools" src="./assets/images/tools/{{tool}}.png" [alt]="tool">
-                    </div>
-                    <div class="row mt-3">
-                        <p class="desc-text text-start">
-                            {{profile.desc}}
-                        </p>
-                    </div>
-                    <h1 class="title mt-3 text-white">
-                        Proyectos relacionados
-                    </h1>
-                    
-                    <div class="col-11 bg-white-transparent size-box p-3 text-white" *ngFor="let company of profile.companies">
-                        <h3 class="text-start">{{company.name}}</h3>
-                        <div class="row box-icons-tools">
 
-                            <div
-                            *ngFor="let project of company.projects"
-                            class="col-5 project-card m-3 "
-                            >
-                        <div class="row mt-3 mb-3">
-                            <div class="col-6">
-                                <img src="./assets/images/tools/{{tool}}.png" class="icons-tools" *ngFor="let tool of project.tools">
+                        <div
+                        *ngFor="let project of company.projects"
+                        class="col-5 project-card m-3 "
+                        >
+                    <div class="row mt-3 mb-3">
+                        <div class="col-6">
+                            <img src="./assets/images/tools/{{tool}}.png" class="icons-tools" *ngFor="let tool of project.tools">
+                        </div>
+                        <div class="col-5">
+                            <div class="row">
+                                <p class="no-margin" style="background-color: red; border-radius: 16px;">
+                                    Conoce mas
+                                </p>
+                                <p class="no-margin">{{project.name}}</p>
                             </div>
-                            <div class="col-5">
-                                <div class="row">
-                                    <p class="no-margin" style="background-color: red; border-radius: 16px;">
-                                        Conoce mas
-                                    </p>
-                                    <p class="no-margin">{{project.name}}</p>
-                                </div>
-                                
-                            </div>
+                            
                         </div>
                     </div>
-                        </div>
-
                 </div>
+                    </div>
+
             </div>
         </div>
     </div>

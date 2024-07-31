@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AppService } from '../../app.service';
 
 @Component({
   selector: 'app-footer',
@@ -10,5 +11,4 @@ import { Component } from '@angular/core';
 export class FooterComponent {
 
   email = "salwortdevs@gmail.com";
-
 }

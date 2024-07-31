@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Develpments, ProfileData } from '../../../utils/interface/general.interface';
 import { CommonModule } from '@angular/common';
+import { AppService } from '../../../app.service';
 
 @Component({
   selector: 'app-profile-developer',
@@ -13,7 +14,10 @@ import { CommonModule } from '@angular/common';
 export class ProfileDeveloperComponent implements OnInit {
   public profile!: ProfileData;
   public currentName: string = "";
-  constructor(private route: ActivatedRoute) { }
+
+  constructor(private service: AppService, private route: ActivatedRoute) {
+    this.service.setRoute(false);
+  }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {

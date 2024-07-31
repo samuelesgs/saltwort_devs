@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AppService } from '../../../app.service';
 
 @Component({
   selector: 'app-activity-planner-info',
@@ -7,6 +8,13 @@ import { Component } from '@angular/core';
   templateUrl: './activity-planner-info.component.html',
   styleUrl: './activity-planner-info.component.css'
 })
-export class ActivityPlannerInfoComponent {
+export class ActivityPlannerInfoComponent implements OnInit {
 
+  constructor(private service: AppService) {
+    this.service.setRoute(false);
+  }
+
+  ngOnInit(): void {
+  
+  }
 }

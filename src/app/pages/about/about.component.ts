@@ -1,6 +1,7 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { AppService } from '../../app.service';
 
 @Component({
   selector: 'app-about',
@@ -15,6 +16,9 @@ export class AboutComponent {
   public currentContainer = "";
   private previusContainer: HTMLElement | null = null;
 
+  constructor(private service: AppService) {
+    this.service.setRoute(true);
+  }
 
   public showContainer(event: Event, current: string) {
     const container = event.target as HTMLElement;

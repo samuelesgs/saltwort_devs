@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { AppService } from '../../app.service';
 
 @Component({
   selector: 'app-developmen',
@@ -54,10 +55,8 @@ export class DevelopmenComponent {
     "managment"
   ];
 
-
-  constructor() {
-    console.log(this.toolsSamuel);
-    
+  constructor(private service: AppService) {
+    this.service.setRoute(true);
   }
 
 }
