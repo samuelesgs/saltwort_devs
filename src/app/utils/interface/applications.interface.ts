@@ -1,9 +1,10 @@
 export interface SaltwortApplication{
+routeToNavigate: any;
     title : string;
     img : string;
     properties : Property[];
     propertySelected?: Property | null;
-    routeToNavigate : string;
+    isExpanded : boolean;
 }
 
 export interface Property {

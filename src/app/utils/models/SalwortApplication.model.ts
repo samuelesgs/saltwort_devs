@@ -11,7 +11,7 @@ export class ModelSaltwortApplication {
     return [...this.apps];
   }
 
-  private initialApplication() {
+  private initialApplication() : SaltwortApplication [] {
     return [
         {
             title : "Activity Planner",
@@ -34,7 +34,8 @@ export class ModelSaltwortApplication {
                 }
             ],
             propertySelected : null,
-            routeToNavigate :  "ActivityPlanner"
+            routeToNavigate :  "ActivityPlanner",
+            isExpanded : false
         },
         {
             title : "Cooking Home",
@@ -52,7 +53,8 @@ export class ModelSaltwortApplication {
                 }
             ],
             propertySelected: null,
-            routeToNavigate: ""
+            routeToNavigate: "",
+            isExpanded : false
         },
     ];
   }

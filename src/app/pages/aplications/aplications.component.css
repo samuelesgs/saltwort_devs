@@ -38,3 +38,29 @@
     transform: none;
     transform-origin: initial;
 }
+/* Transición para todos los elementos con clase transition-height */
+.transition-height {
+    transition: all 0.5s ease;
+}
+
+/* Estilos específicos para cuando el contenedor está expandido o colapsado */
+.size-box.expanded {
+    height: auto; /* Ajusta según sea necesario */
+}
+
+.size-box.collapsed {
+    height: 100%; /* Ajusta según sea necesario */
+}
+
+/* Imagenes dentro del contenedor */
+.image-style.expanded-img {
+    width: 100%; /* Ajusta según sea necesario */
+    height: auto; /* Ajusta según sea necesario */
+    transition: width 0.5s ease, height 0.5s ease; /* Añade transición */
+}
+
+.image-style.collapsed-img {
+    width: auto; /* Ajusta según sea necesario */
+    height: auto; /* Ajusta según sea necesario */
+    transition: width 0.5s ease, height 0.5s ease; /* Añade transición */
+}
