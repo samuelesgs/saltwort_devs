@@ -88,13 +88,12 @@ routerLink="/{{item.routeToNavigate}}"
                         [class.expsanded-img]="item.isExpanded"
                         [class.collapsed-img]="!item.isExpanded"
                         src="./assets/images/tools/{{item.img}}.png"
-                        class="image-style"
+                        class="image-style pointer"
                         />
                 </div>
                 <div 
                     [ngClass]="{'col-12 mt-4': item.isExpanded, 'col': !item.isExpanded}" 
-                    class="size-box pb-3 pt-3 bg-white-transparent me-3 vertical-center"
-                    style="transition: all 0.5s ease;">
+                    class="size-box pb-3 transition-all pt-3 bg-white-transparent me-3 vertical-center">
                     <div class="row">
                         <p class="text-title text-center">
                             {{item.title}}
@@ -110,9 +109,18 @@ routerLink="/{{item.routeToNavigate}}"
                             *ngIf="item.propertySelected != null">
                             {{item.propertySelected.detail}}
                         </p>
-                        <div class="row">
+                        <div class="row text-center p-0 m-0">
                             <div
-                                class="col mt-5"
+                                *ngFor="let property of item.properties; let i = index"
+                                [ngClass]="{
+                                    'col-6': i < 2,                                    
+                                }">
+                                <p class="text-description pointer">
+                                     {{property.name}}
+                                </p>
+                            </div>                           
+                           <!--  <div
+                                class="row mt-5"
                                 *ngFor="let property of item.properties">
                                 <p
                                     [ngClass]="{
@@ -123,7 +131,7 @@ routerLink="/{{item.routeToNavigate}}"
                                    (click)="setClickProperty(item, property)">
                                    {{property.name}}
                                 </p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

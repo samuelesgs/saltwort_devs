@@ -8,7 +8,10 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-aplications',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [
+    CommonModule,
+    RouterModule
+  ],
   templateUrl: './aplications.component.html',
   styleUrl: './aplications.component.css'
 })
