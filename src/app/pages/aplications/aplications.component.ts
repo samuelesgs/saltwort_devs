@@ -20,11 +20,11 @@ export class AplicationsComponent {
     this.application = new ModelSaltwortApplication().getApplications();
   }
 
-  toggleExpand(item : SaltwortApplication) {
+  toggleExpand(item: SaltwortApplication) {
     item.isExpanded = !item.isExpanded;
   }
 
-  setClickProperty(item: SaltwortApplication, property : Property) {
+  setClickProperty(item: SaltwortApplication, property: Property) {
     item.propertySelected = property;
     item.propertySelected.click = !property.click;
   }

@@ -1,66 +1,69 @@
 .img-style {
-    width: 50%; /* Ajusta este valor para cambiar el tamaño de la imagen */
-    height: 50%; /* Mantén la proporción */
     border-radius: 16px;
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
+
 .size-box {
     border-radius: 16px;
-    height: 50vh; /* Mantén el tamaño del contenedor fijo */
+    height: 50vh;
 }
+
 .text-title {
     color: white;
     font-size: 45px;
 }
+
 .text-description {
     color: white;
     font-size: 25px;
-    
+
 }
+
 .style-overFlow-y {
     overflow-y: auto;
     overflow-x: hidden;
 }
+
 .text-detail {
     color: white;
     font-size: 20px;
 }
+
 .text-clicked {
     color: white;
     font-size: 30px;
 }
+
 .rotate-left {
-    transform: rotate(-50deg);
     transform-origin: left top;
 }
+
 .no-rotation {
     transform: none;
     transform-origin: initial;
 }
-/* Transición para todos los elementos con clase transition-height */
+
 .transition-height {
     transition: all 0.5s ease;
 }
 
-/* Estilos específicos para cuando el contenedor está expandido o colapsado */
 .size-box.expanded {
-    height: auto; /* Ajusta según sea necesario */
+    height: auto;
 }
 
 .size-box.collapsed {
-    height: 100%; /* Ajusta según sea necesario */
+    height: 100%;
 }
 
-/* Imagenes dentro del contenedor */
 .image-style.expanded-img {
-    width: 100%; /* Ajusta según sea necesario */
-    height: auto; /* Ajusta según sea necesario */
-    transition: width 0.5s ease, height 0.5s ease; /* Añade transición */
+    width: 30%;
+    height: auto;
+    transition: width 0.5s ease, height 0.5s ease;
 }
 
 .image-style.collapsed-img {
-    width: auto; /* Ajusta según sea necesario */
-    height: auto; /* Ajusta según sea necesario */
-    transition: width 0.5s ease, height 0.5s ease; /* Añade transición */
+    width: 45%;
+    height: 50%;
+    transition: width 0.5s ease, height 0.5s ease;
 }
