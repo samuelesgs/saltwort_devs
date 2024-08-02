@@ -34,7 +34,7 @@ export class ModelSaltwortApplication {
                 }
             ],
             propertySelected : null,
-            routeToNavigate :  "ActivityPlanner",
+            routeToNavigate :  "/ActivityPlanner",
             isExpanded : false
         },
         {

@@ -1,5 +1,5 @@
 export interface SaltwortApplication{
-routeToNavigate: any;
+    routeToNavigate: any;
     title : string;
     img : string;
     properties : Property[];

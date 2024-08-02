@@ -95,7 +95,9 @@ routerLink="/{{item.routeToNavigate}}"
                     [ngClass]="{'col-12 mt-4': item.isExpanded, 'col': !item.isExpanded}" 
                     class="size-box pb-3 transition-all pt-3 bg-white-transparent me-3 vertical-center">
                     <div class="row">
-                        <p class="text-title text-center">
+                        <p
+                            class="text-title text-center pointer"
+                            [routerLink]="item.routeToNavigate">
                             {{item.title}}
                         </p>
                         <h3
