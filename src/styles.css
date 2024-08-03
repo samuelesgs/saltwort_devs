@@ -95,6 +95,18 @@ h3 {
     height: auto; 
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
+
+.modal-style{
+    background-color: rgba(217, 217, 217, 0.10);
+}
+.modal-text-color {
+    color: white;
+}
+.modal-button {
+    background-color: var(--PrimaryColor);
+    color: white;
+}
+
 @font-face {
     font-family: 'Roboto';
     src: url('assets/images/Roboto-Italic.ttf');

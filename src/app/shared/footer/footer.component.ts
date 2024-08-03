@@ -11,4 +11,6 @@ import { AppService } from '../../app.service';
 export class FooterComponent {
 
   email = "salwortdevs@gmail.com";
+
+  
 }
