@@ -24,6 +24,7 @@ export interface Project {
     tools : string [];
     screens: Screen[];
     icon: Screen;
+    platforms : typeProject[];
 }
 
 export interface Screen {
@@ -32,10 +33,17 @@ export interface Screen {
     url: string;
 }
 
+export enum typeProject {
+    no_contains = 0,
+    web = 1,
+    android = 2,
+    ios = 3,
+    desktop = 4
+};
+
 export class Develpments {
 
-    constructor() {
-    }
+    constructor() { }
 
     informationDev(name : string) : ProfileData{
         switch (name.toLocaleLowerCase()) {
@@ -65,6 +73,7 @@ export class Develpments {
                         projects : [
                             {
                                 id: 1,
+                                platforms : [typeProject.android],
                                 name : 'Venta plus Movil',
                                 detail : 'Punto de venta',
                                 relevantSkills : [
@@ -90,6 +99,7 @@ export class Develpments {
                             }, 
                             {
                                 id: 2,
+                                platforms : [typeProject.android],
                                 name : 'Control Vehicular Movil',
                                 detail : 'Proyecto interno',
                                 relevantSkills : [
@@ -116,6 +126,7 @@ export class Develpments {
                             },
                             {
                                 id: 3,
+                                platforms : [typeProject.desktop],
                                 name : 'CRM Generico',
                                 detail : 'CRM para clientes ',
                                 relevantSkills : [
@@ -173,6 +184,10 @@ export class Develpments {
                             projects : [
                                 {
                                     id: 1,
+                                    platforms : [
+                                        typeProject.ios,
+                                        typeProject.web
+                                    ],
                                     name : 'Gastos de compra',
                                     detail : 'Capturador de ingreso en proyecto',
                                     relevantSkills : [
@@ -229,6 +244,10 @@ export class Develpments {
                             {
                                 id: 1,
                                 name : 'Gastos de compra',
+                                platforms : [
+                                    typeProject.android,
+                                    typeProject.web
+                                ],
                                 detail : 'Capturador de ingreso en proyecto',
                                 relevantSkills : [
                                     "Creacion de proyecto",
@@ -256,6 +275,10 @@ export class Develpments {
                             {
                                 id: 2,
                                 name : 'Gastos de diarios',
+                                platforms : [
+                                    typeProject.android,
+                                    typeProject.web
+                                ],
                                 detail : 'Capturador de ingreso en proyecto',
                                 relevantSkills : [
                                     "Creacion de proyecto",
