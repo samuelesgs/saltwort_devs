@@ -7,7 +7,7 @@ export interface ProfileData {
     desc: string;
     tools: string[];
     companies : Company[]
-    linkdn : string;
+    linkedin : string;
     gmail : string;
 }
 
@@ -143,7 +143,7 @@ export class Develpments {
                         ]
                     }
                 ],
-                linkdn : "https://www.linkedin.com/in/luis-paulo-calderón-nava-2003bb257/",
+                linkedin : "https://www.linkedin.com/in/luis-paulo-calderón-nava-2003bb257/",
                 gmail  :"mailto:pavicalderon49@gmail.com",
             }
             case 'aksel':
@@ -197,7 +197,7 @@ export class Develpments {
                             ],                            
                         }
                     ],
-                    linkdn : "https://www.linkedin.com/in/aksel-akemi-herrera-gonzalez-08054a213/",
+                    linkedin : "https://www.linkedin.com/in/aksel-akemi-herrera-gonzalez-08054a213/",
                     gmail  :"mailto:akselherrera18@gmail.com",
             };
             default:
@@ -235,7 +235,10 @@ export class Develpments {
                                 ],
                                 tools : [
                                     "android",
-                                    "angular"
+                                    "angular",
+                                    "nestjs",
+                                    "nestjs",
+                                    "nestjs",
                                 ],
                                 icon: {
                                     name: 'name',
@@ -277,7 +280,7 @@ export class Develpments {
                         ]
                     }
                 ],
-                linkdn : "https://www.linkedin.com/in/edgar-samuel-guerrero-5a9471214/",
+                linkedin : "https://www.linkedin.com/in/edgar-samuel-guerrero-5a9471214/",
                 gmail  :"mailto:samuelesgs04@gmail.com",
             }
             
