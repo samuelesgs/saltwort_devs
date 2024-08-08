@@ -7,7 +7,7 @@ export interface ProfileData {
     desc: string;
     tools: string[];
     companies : Company[]
-    linkdn : string;
+    linkedin : string;
     gmail : string;
 }
 
@@ -24,6 +24,7 @@ export interface Project {
     tools : string [];
     screens: Screen[];
     icon: Screen;
+    platforms : typeProject[];
 }
 
 export interface Screen {
@@ -32,10 +33,17 @@ export interface Screen {
     url: string;
 }
 
+export enum typeProject {
+    no_contains = 0,
+    web = 1,
+    android = 2,
+    ios = 3,
+    desktop = 4
+};
+
 export class Develpments {
 
-    constructor() {
-    }
+    constructor() { }
 
     informationDev(name : string) : ProfileData{
         switch (name.toLocaleLowerCase()) {
@@ -65,6 +73,7 @@ export class Develpments {
                         projects : [
                             {
                                 id: 1,
+                                platforms : [typeProject.android],
                                 name : 'Venta plus Movil',
                                 detail : 'Punto de venta',
                                 relevantSkills : [
@@ -90,6 +99,7 @@ export class Develpments {
                             }, 
                             {
                                 id: 2,
+                                platforms : [typeProject.android],
                                 name : 'Control Vehicular Movil',
                                 detail : 'Proyecto interno',
                                 relevantSkills : [
@@ -116,6 +126,7 @@ export class Develpments {
                             },
                             {
                                 id: 3,
+                                platforms : [typeProject.desktop],
                                 name : 'CRM Generico',
                                 detail : 'CRM para clientes ',
                                 relevantSkills : [
@@ -143,7 +154,7 @@ export class Develpments {
                         ]
                     }
                 ],
-                linkdn : "https://www.linkedin.com/in/luis-paulo-calderón-nava-2003bb257/",
+                linkedin : "https://www.linkedin.com/in/luis-paulo-calderón-nava-2003bb257/",
                 gmail  :"mailto:pavicalderon49@gmail.com",
             }
             case 'aksel':
@@ -173,6 +184,10 @@ export class Develpments {
                             projects : [
                                 {
                                     id: 1,
+                                    platforms : [
+                                        typeProject.ios,
+                                        typeProject.web
+                                    ],
                                     name : 'Gastos de compra',
                                     detail : 'Capturador de ingreso en proyecto',
                                     relevantSkills : [
@@ -197,7 +212,7 @@ export class Develpments {
                             ],                            
                         }
                     ],
-                    linkdn : "https://www.linkedin.com/in/aksel-akemi-herrera-gonzalez-08054a213/",
+                    linkedin : "https://www.linkedin.com/in/aksel-akemi-herrera-gonzalez-08054a213/",
                     gmail  :"mailto:akselherrera18@gmail.com",
             };
             default:
@@ -229,13 +244,20 @@ export class Develpments {
                             {
                                 id: 1,
                                 name : 'Gastos de compra',
+                                platforms : [
+                                    typeProject.android,
+                                    typeProject.web
+                                ],
                                 detail : 'Capturador de ingreso en proyecto',
                                 relevantSkills : [
                                     "Creacion de proyecto",
                                 ],
                                 tools : [
                                     "android",
-                                    "angular"
+                                    "angular",
+                                    "nestjs",
+                                    "nestjs",
+                                    "nestjs",
                                 ],
                                 icon: {
                                     name: 'name',
@@ -253,6 +275,10 @@ export class Develpments {
                             {
                                 id: 2,
                                 name : 'Gastos de diarios',
+                                platforms : [
+                                    typeProject.android,
+                                    typeProject.web
+                                ],
                                 detail : 'Capturador de ingreso en proyecto',
                                 relevantSkills : [
                                     "Creacion de proyecto",
@@ -277,7 +303,7 @@ export class Develpments {
                         ]
                     }
                 ],
-                linkdn : "https://www.linkedin.com/in/edgar-samuel-guerrero-5a9471214/",
+                linkedin : "https://www.linkedin.com/in/edgar-samuel-guerrero-5a9471214/",
                 gmail  :"mailto:samuelesgs04@gmail.com",
             }
             

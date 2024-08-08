@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { Develpments, ProfileData } from '../../../utils/interface/general.interface';
 import { CommonModule } from '@angular/common';
 import { AppService } from '../../../app.service';
@@ -7,7 +7,10 @@ import { AppService } from '../../../app.service';
 @Component({
   selector: 'app-profile-developer',
   standalone: true,
-  imports: [CommonModule],
+  imports: [
+    CommonModule, 
+    RouterModule
+  ],
   templateUrl: './profile-developer.component.html',
   styleUrl: './profile-developer.component.css'
 })

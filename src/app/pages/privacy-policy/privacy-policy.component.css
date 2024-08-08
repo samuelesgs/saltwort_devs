@@ -1,0 +1,16 @@
+.text-privacy{
+    color: white;
+    text-align: left;
+}
+
+.text-li{
+    color: white;
+    text-align: left;
+}
+
+.title{
+    color: white;
+    text-align: left;
+    border-bottom: 2px solid grey;
+    padding-bottom: 0.25rem; 
+}
