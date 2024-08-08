@@ -14,14 +14,22 @@ import { AppService } from '../../app.service';
 })
 export class AboutComponent {
   public currentContainer = "";
-  private previusContainer: HTMLElement | null = null;
+  public showAnySection = false;
+  
 
   constructor(private service: AppService) {
     this.service.setRoute(true);
   }
 
   public showContainer(event: Event, current: string) {
-    const container = event.target as HTMLElement;
+    if(this.currentContainer != current) {
+      this.currentContainer = current;
+      this.showAnySection = true;
+    } else {
+      this.currentContainer = '';
+      this.showAnySection = false;
+    }
+    /*const container = event.target as HTMLElement;
     const containerBtn = document.getElementById('container-btn')!;
     if(current == 'vission' || current == 'objectives') {
       container.remove();
@@ -31,6 +39,6 @@ export class AboutComponent {
     setTimeout(() => {
         container.classList.add('current-box')
     }, 450);
-    this.currentContainer = current;
+    this.currentContainer = current; */
   }
 }

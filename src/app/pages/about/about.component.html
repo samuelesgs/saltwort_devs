@@ -6,103 +6,61 @@
             class="w-25 border-color">
     </div>
 </div>
-<!-- <div class="container center mt-3">
-    <div
-        class="col-11 bg-dark box-mission text-center p-2"
-        [ngClass]="{
-            'box-mission': currentContainer == 'mission',
-            'box-hidden': currentContainer != 'mission'
-        }">
-        <h2>Mision</h2>
-    </div>
-</div> -->
 <div
     class="container center mt-3"
     id="container-btn">
-    <div class="row col-11">
+    <div
+        class="columns"
+        [ngClass]="{
+            'h-80 aling-bottom': showAnySection
+        }">
         <div
-            class="bg-white-transparent me-2 size-box center pointer"
+            class="item bg-white-transparent size-box pointer"
             [ngClass]="{
-                'col' : currentContainer != 'mission',
-                'col-12 mt-5' : currentContainer == 'mission'
+                'item-2': showAnySection && currentContainer != 'mission',
+                'top text-center pt-5 bg-dark': currentContainer == 'mission',
+                'item-3': !showAnySection,
             }"
             (click)="showContainer($event, 'mission')">
             <h2>Misión</h2>
+            <p
+                class="text-style mt-3"
+                [class.show-text]="(currentContainer == 'mission')"
+                [hidden]="currentContainer != 'mission'">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, amet repudiandae expedita temporibus minus consequuntur ullam corrupti ad numquam! Ea voluptatum reprehenderit distinctio hic, laboriosam veritatis repudiandae magnam quis in.
+            </p>
         </div>
         <div
-            class="col bg-white-transparent me-2 size-box center pointer"
+            class="item bg-white-transparent size-box pointer"
             [ngClass]="{
-                'col' : currentContainer != 'vission',
-                'col-12 mt-5' : currentContainer == 'vission'
+                'item-2': showAnySection && currentContainer != 'vission',
+                'top text-center pt-5 bg-dark': currentContainer == 'vission',
+                'item-3': !showAnySection,
             }"
             (click)="showContainer($event, 'vission')">
             <h2>Visión</h2>
+            <p
+                class="text-style mt-3"
+                [class.show-text]="(currentContainer == 'vission')"
+                [hidden]="currentContainer != 'vission'">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, amet repudiandae expedita temporibus minus consequuntur ullam corrupti ad numquam! Ea voluptatum reprehenderit distinctio hic, laboriosam veritatis repudiandae magnam quis in.
+            </p>
         </div>
         <div
-            class="col bg-white-transparent size-box center pointer mb-5"
+            class="item bg-white-transparent size-box pointer"
             [ngClass]="{
-                'col' : currentContainer != 'objetives',
-                'col-12 mt-5' : currentContainer == 'objetives'
+                'item-2': showAnySection && currentContainer != 'objetives',
+                'top text-center pt-5 bg-dark': currentContainer == 'objetives',
+                'item-3': !showAnySection,
             }"
             (click)="showContainer($event, 'objetives')">
             <h2>Objetivos</h2>
+            <p
+                class="text-style mt-3"
+                [class.show-text]="(currentContainer == 'objetives')"
+                [hidden]="currentContainer != 'objetives'">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, amet repudiandae expedita temporibus minus consequuntur ullam corrupti ad numquam! Ea voluptatum reprehenderit distinctio hic, laboriosam veritatis repudiandae magnam quis in.
+            </p>
         </div>
     </div>
 </div> 
-<!-- <div class="container center mt-3">
-    <div
-        class="col-11 center bg-dark dinamic-box"
-        [ngClass]="{
-            'show-box': currentContainer == 'mission',
-            'hidden-box': currentContainer != 'mission'
-        }">
-        <div class="col-7 text-center text-body m-3">
-            Ser reconocidos como un equipo de jóvenes innovadores que transforma ideas en soluciones tecnológicas efectivas, mejorando la calidad de vida de las personas y potenciando el desarrollo de nuestra comunidad global.
-        </div>
-    </div>
-    <div
-        class="col-11 center bg-dark dinamic-box"
-        [ngClass]="{
-            'show-box': currentContainer == 'vission',
-            'hidden-box': currentContainer != 'vission'
-        }">
-        <div class="col-7 text-center text-body m-3">
-            Como un grupo de jóvenes apasionados por la tecnología, aspiramos a liderar el cambio mediante la creación de herramientas innovadoras que empoderen a las personas y transformen ideas en soluciones prácticas, impulsando un futuro más conectado y eficiente.
-        </div>
-    </div>
-    <div
-        class="col-11 center bg-dark dinamic-box"
-        [ngClass]="{
-            'show-box': currentContainer == 'objetives',
-            'hidden-box': currentContainer != 'objetives'
-        }">
-        <div class="col-10 text-center text-body m-3">
-            Nuestro objetivo es desarrollar soluciones innovadoras que aborden problemas reales y satisfagan las necesidades emergentes de nuestros usuarios, mientras fomentamos el crecimiento personal y profesional de nuestro equipo mediante oportunidades de aprendizaje continuo. Buscamos impulsar la colaboración comunitaria a través de alianzas con otras iniciativas y organizaciones, priorizando siempre la sostenibilidad al diseñar productos eficientes y respetuosos con el medio ambiente. Además, nos comprometemos a generar un impacto social positivo, creando herramientas que mejoren la vida diaria y contribuyan al bienestar general y a la equidad social.
-        </div>
-    </div>
-</div>
-<div class="container center mt-3">
-    <div class="row col-11">
-        <div
-            class="col bg-white-transparent me-2 size-box center pointer"
-            [ngClass]="{
-                'hidden-box': currentContainer === 'mission'
-            }"
-            (click)="showContainer($event, 'mission')">
-            <h2>Misión</h2>
-        </div>
-        <div
-            class="col bg-white-transparent me-2 size-box center pointer"
-            [ngClass]="{'selected': currentContainer == 'vission'}"
-
-            (click)="showContainer($event, 'vission')">
-            <h2>Visión</h2>
-        </div>
-        <div
-            class="col bg-white-transparent size-box center pointer mb-5"
-            [ngClass]="{'selected': currentContainer == 'objetives'}"
-            (click)="showContainer($event, 'objetives')">
-            <h2>Objetivos</h2>
-        </div>
-    </div>
-</div> -->
