@@ -45,3 +45,9 @@
 .icons-tools {
     width: 6vh;
 }
+
+.more-about {
+    background-color: red;
+    margin-top: -1vh;
+    border-radius: 16px;
+}

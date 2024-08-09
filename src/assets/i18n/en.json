@@ -2,5 +2,8 @@
     "app-name" : "Salwort Devs",
     "page" : {
         "home" : "Home"
+    },
+    "policy_privaticy" : {
+        "title" : "Politicas de privacidad falta traducir"
     }
 }

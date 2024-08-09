@@ -66,6 +66,7 @@
                             <div
                                 *ngFor="let project of company.projects"
                                 class="col-5 project-card m-3 "
+                                (click)="redirectToPage(project, company)"
                                 >
                                 <div class="row mt-3 mb-3">
                                     <div class="col-5">
@@ -75,12 +76,16 @@
                                             ngClass="{{project.tools.length > 2 ? 'icons-tools-three' : 'icons-tools'}}"
                                             />
                                     </div>
-                                    <div class="col-5">
+                                    <div class="col-7">
                                         <div class="row">
-                                            <p class="no-margin" style="background-color: red; border-radius: 16px;">
-                                                Conoce mas
-                                            </p>
-                                            <p class="no-margin">{{project.name}}</p>
+                                            <div class="col-12">
+                                                <div class="col-8 offset-4 mb-1">
+                                                    <p class="no-margin more-about">
+                                                        Conoce mas
+                                                    </p>
+                                                </div>
+                                                <p class="no-margin text-end">{{project.name}}</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

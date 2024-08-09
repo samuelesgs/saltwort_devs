@@ -1,15 +1,17 @@
 .text-privacy{
     color: white;
     text-align: left;
+    color: #898888 !important;
 }
 
 .text-li{
     color: white;
     text-align: left;
+    color: #898888 !important;
 }
 
 .title{
-    color: white;
+    color: #898888;
     text-align: left;
     border-bottom: 2px solid grey;
     padding-bottom: 0.25rem; 

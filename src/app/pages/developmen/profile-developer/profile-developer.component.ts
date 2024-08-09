@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterModule } from '@angular/router';
-import { Develpments, ProfileData } from '../../../utils/interface/general.interface';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
+import { Company, Develpments, ProfileData, Project } from '../../../utils/interface/general.interface';
 import { CommonModule } from '@angular/common';
 import { AppService } from '../../../app.service';
 
@@ -18,7 +18,7 @@ export class ProfileDeveloperComponent implements OnInit {
   public profile!: ProfileData;
   public currentName: string = "";
 
-  constructor(private service: AppService, private route: ActivatedRoute) {
+  constructor(private service: AppService, private route: ActivatedRoute, private router: Router) {
     this.service.setRoute(false);
   }
 
@@ -33,7 +33,13 @@ export class ProfileDeveloperComponent implements OnInit {
     });
   }
 
+  redirectToPage(selectProject : Project, company: Company) {
+    this.router.navigate(['/Application', this.currentName, company.name, selectProject.name]);
+    
+  }
+
   private getFullName() {
+    
     this.profile = new Develpments().informationDev(this.currentName);
   }
 }
