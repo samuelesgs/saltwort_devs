@@ -4,12 +4,15 @@ import { Property, SaltwortApplication } from '../../utils/interface/application
 import { ModelSaltwortApplication } from '../../utils/models/SalwortApplication.model';
 import { AppService } from '../../app.service';
 import { RouterModule } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { LocalStorageManager } from '../../utils/localStorageManager';
 
 @Component({
   selector: 'app-aplications',
   standalone: true,
   imports: [
     CommonModule,
+    TranslateModule,
     RouterModule
   ],
   templateUrl: './aplications.component.html',
@@ -17,9 +20,15 @@ import { RouterModule } from '@angular/router';
 })
 export class AplicationsComponent {
   public application: SaltwortApplication[];
+  private LocalStorageManger = new LocalStorageManager();
+  
 
-  constructor(private service: AppService) {
+  constructor(private service: AppService, private translateService : TranslateService) {
     this.service.setRoute(true);
+    translateService.use(this.LocalStorageManger.getItem('lang'));
+    this.service.getChangeLang().subscribe(result => {
+      this.translateService.use(result);
+    });
     this.application = new ModelSaltwortApplication().getApplications();
   }
 

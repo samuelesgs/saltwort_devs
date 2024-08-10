@@ -5,5 +5,11 @@
     },
     "policy_privaticy" : {
         "title" : "Politicas de privacidad"
+    },
+    "activity-planner" : {
+        "properties" : {
+            "name-1" : "Manage your time"
+        }
     }
+    
 }

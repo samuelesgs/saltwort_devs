@@ -16,9 +16,7 @@ export class AplicationComponent {
   project = "";
   public profile!: ProfileData;
 
-  constructor( private route : ActivatedRoute) {
-    
-  }
+  constructor( private route : ActivatedRoute) {}
 
   ngOnInit(): void {
     this.name = this.route.snapshot.paramMap.get('name')!;
@@ -26,7 +24,6 @@ export class AplicationComponent {
     this.project = this.route.snapshot.paramMap.get('project')!;
     this.getFullName();    
   }
-
   
   private getFullName() {
     this.profile = new Develpments().informationDev(this.name);
