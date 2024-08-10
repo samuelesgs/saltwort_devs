@@ -1,77 +1,3 @@
-<!--<div class="ps-5 pe-5 mt-5">
-    <div class="col-12 center">    
-        <div class="col-11">
-            <div class="row mb-3" *ngFor="let item of application" style="overflow-y: auto; overflow-x: hidden;">
-                <div class="col-4 size-box pb-3 pt-3 bg-white-transparent me-3 vertical-center">
-                    <img src="./assets/images/tools/{{item.img}}.png" class="img-style mt-5">
-                </div>
-
-                <div class="col size-box pb-3 pt-3 bg-white-transparent me-3  vertical-center" >
-                    <div class="row">
-                        <a class="nav-link row" routerLink="/{{item.routeToNavigate}}"> 
-                            <p class="text-title text-center mb-5">{{item.title}}</p>
-                        <h3 class="text-clicked  text-center" *ngIf="item.propertySelected != null" (click)="cleanProperty(item)">{{item.propertySelected.name}}</h3>
-                        <p class="text-detail  text-center" *ngIf="item.propertySelected != null">{{item.propertySelected.detail}}</p>
-                        <div class="row">
-                            <div class="col mt-5" *ngFor="let property of item.properties">
-                                <p [ngClass]="{'rotate-left  mt-5 text-description' : property.name != null, 
-                                'no-rotation ms-5': item.propertySelected != null}"
-                                   *ngIf="(item.propertySelected != null && property.name != item.propertySelected.name || item.propertySelected == null)" 
-                                   (click)="setClickProperty(item, property)">{{property.name}}</p>
-                            </div>
-                        </div>
-                        </a>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-routerLink="/{{item.routeToNavigate}}"
--->
-
-
-<!--
-<div class="ps-5 pe-5 mt-5">
-    <div class="row justify-content-center">
-        <div class="col-11">
-            <div class="row mb-3" *ngFor="let item of application" style="overflow-y: auto; overflow-x: hidden;">
-                <div
-                    [ngClass]="{'col-10 expanded': item.isExpanded, 'col-4 collapsed': !item.isExpanded}"
-                    class="size-box pb-3 pt-3 bg-white-transparent me-3 vertical-center image-container"
-                    (click)="toggleExpand(item)"
-                >
-                    <img
-                        [ngClass]="{'expanded-img': item.isExpanded, 'collapsed-img': !item.isExpanded}"
-                        src="./assets/images/tools/{{item.img}}.png"
-                        class="image-style"
-                    />
-                </div>
-                <div 
-                    [ngClass]="{'col-12 expanded': item.isExpanded, 'col collapsed': !item.isExpanded}" 
-                    class="size-box pb-3 pt-3 bg-white-transparent me-3 vertical-center transition-height"
-                >
-                    <div class="row">
-                        <p class="text-title text-center">{{item.title}}</p>
-                        <h3 class="text-clicked text-center" *ngIf="item.propertySelected != null" (click)="cleanProperty(item)">{{item.propertySelected.name}}</h3>
-                        <p class="text-detail text-center" *ngIf="item.propertySelected != null">{{item.propertySelected.detail}}</p>
-                        <div class="row">
-                            <div class="col mt-5" *ngFor="let property of item.properties">
-                                <p [ngClass]="{'rotate-left text-description' : property.name != null, 
-                                'no-rotation ms-5': item.propertySelected != null}"
-                                   *ngIf="(item.propertySelected != null && property.name != item.propertySelected.name || item.propertySelected == null)" 
-                                   (click)="setClickProperty(item, property)">{{property.name}}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
--->
-
 <div class="ps-5 pe-5 mt-5">
     <div class="row justify-content-center">
         <div class="col-11">
@@ -104,7 +30,7 @@ routerLink="/{{item.routeToNavigate}}"
                             class="text-clicked text-center"
                             *ngIf="item.propertySelected != null"
                             (click)="cleanProperty(item)">
-                            {{item.propertySelected.name}}
+                            {{item.propertySelected.name | translate}}
                         </h3>
                         <p 
                             class="text-detail text-center"
@@ -117,23 +43,10 @@ routerLink="/{{item.routeToNavigate}}"
                                 [ngClass]="{
                                     'col-6': i < 2,                                    
                                 }">
-                                <p class="text-description pointer">
-                                     {{property.name}}
+                                <p (click)="setClickProperty(item, property)" class="text-description pointer">
+                                    {{property.name | translate}}
                                 </p>
-                            </div>                           
-                           <!--  <div
-                                class="row mt-5"
-                                *ngFor="let property of item.properties">
-                                <p
-                                    [ngClass]="{
-                                        'rotate-left text-description' : property.name != null, 
-                                        'no-rotation ms-5': item.propertySelected != null
-                                    }"
-                                   *ngIf="(item.propertySelected != null && property.name != item.propertySelected.name || item.propertySelected == null)" 
-                                   (click)="setClickProperty(item, property)">
-                                   {{property.name}}
-                                </p>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>

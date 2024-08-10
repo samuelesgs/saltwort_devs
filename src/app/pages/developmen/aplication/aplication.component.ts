@@ -19,7 +19,7 @@ export class AplicationComponent {
   company = "";
   project = "";
   public profile!: ProfileData;
-  public selectProject!: Project | undefined;
+  public selectProject!: Project | null;
   constructor( private route : ActivatedRoute) {
     
   }
@@ -30,19 +30,20 @@ export class AplicationComponent {
     this.project = this.route.snapshot.paramMap.get('project')!;
     this.getFullName();    
   }
-
   
   private getFullName() {
     this.profile = new Develpments().informationDev(this.name);
     const selectCompany = this.profile.companies.find(row => row.name == this.company);
-    this.selectProject = selectCompany?.projects.find(row => row.name == this.project);
-    const isMovil =this.selectProject?.platforms.includes(2) || this.selectProject?.platforms.includes(3);
+    const selectedProject = selectCompany?.projects.find(row => row.name == this.project);
+    if(selectedProject){
+      this.selectProject = selectedProject;
+    }
     console.log(this.profile);
     console.log(selectCompany);
     console.log(this.selectProject);
   }
 
-  
+
   isMovil(): boolean {
     if(this.selectProject?.platforms.includes(typeProject['android']) || this.selectProject?.platforms.includes(typeProject['ios'])){
       return true

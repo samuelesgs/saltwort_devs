@@ -18,7 +18,7 @@ export class ModelSaltwortApplication {
             img : "angular",
             properties : [
                 {
-                    name : "Administra tu tiempo",
+                    name : "activity-planner.properties.name-1",
                     detail : "Podras adminstrar mejor tu tiempo, no se te olvidar cosas",
                     click : false
                 },
