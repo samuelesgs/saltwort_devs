@@ -20,15 +20,19 @@ import { LocalStorageManager } from '../../utils/localStorageManager';
 })
 export class AplicationsComponent {
   public application: SaltwortApplication[];
+  //Copiar esto en todas las paginas
   private LocalStorageManger = new LocalStorageManager();
   
 
-  constructor(private service: AppService, private translateService : TranslateService) {
+  constructor(
+    private service: AppService, //Copiar en todas las paginas
+    private translateService : TranslateService, //Copiar en todas las paginas
+  ) {
     this.service.setRoute(true);
-    translateService.use(this.LocalStorageManger.getItem('lang'));
-    this.service.getChangeLang().subscribe(result => {
-      this.translateService.use(result);
-    });
+    translateService.use(this.LocalStorageManger.getItem('lang'));//Copiar en todas las paginas
+    this.service.getChangeLang().subscribe(result => {//Copiar en todas las paginas
+      this.translateService.use(result);//Copiar en todas las paginas
+    });//Copiar en todas las paginas
     this.application = new ModelSaltwortApplication().getApplications();
   }
 
