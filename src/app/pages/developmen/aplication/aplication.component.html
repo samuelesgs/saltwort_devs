@@ -1,1 +1,22 @@
-<p>aplication works!</p>
+<div class="scroll">
+    <div class="col-12 ms-2 mb-5">
+        <h1>
+            <button 
+                routerLink="/ProfileDeveloper/{{name}}" 
+                class="btn vertical-center back-arrow ms-2">
+                <img src="./assets/images/flecha-arriba.png"/>
+            </button>
+            <p class="title mt-5 ms-2"> {{ profile.fullName }}</p>
+            <p class="project-name me-5"> {{ project }}</p>
+        </h1>
+    </div>
+
+    <div *ngIf="selectProject!.platforms.length > 1">
+        <div class="botones-contenedor ms-5 me-5">
+            <button *ngIf="isMovil()" class="boton-movil">Movil</button>
+            <button *ngIf="isWeb()" class="boton-web">Web</button>
+            <button *ngIf="isDesktop()" class="boton-desktop">Escritorio</button>
+        </div>
+    </div>
+    
+</div>

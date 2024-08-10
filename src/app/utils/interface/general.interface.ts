@@ -73,7 +73,7 @@ export class Develpments {
                         projects : [
                             {
                                 id: 1,
-                                platforms : [typeProject.android],
+                                platforms : [typeProject.android, typeProject.desktop],
                                 name : 'Venta plus Movil',
                                 detail : 'Punto de venta',
                                 relevantSkills : [

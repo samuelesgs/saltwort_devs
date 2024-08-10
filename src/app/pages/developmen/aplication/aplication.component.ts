@@ -1,11 +1,15 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { Develpments, ProfileData } from '../../../utils/interface/general.interface';
+import { ActivatedRoute, RouterLinkWithHref, RouterModule } from '@angular/router';
+import { Develpments, ProfileData, Project, typeProject } from '../../../utils/interface/general.interface';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-aplication',
   standalone: true,
-  imports: [],
+  imports: [
+    CommonModule,
+    RouterModule
+  ],
   templateUrl: './aplication.component.html',
   styleUrl: './aplication.component.css'
 })
@@ -15,7 +19,7 @@ export class AplicationComponent {
   company = "";
   project = "";
   public profile!: ProfileData;
-
+  public selectProject!: Project | undefined;
   constructor( private route : ActivatedRoute) {
     
   }
@@ -31,10 +35,37 @@ export class AplicationComponent {
   private getFullName() {
     this.profile = new Develpments().informationDev(this.name);
     const selectCompany = this.profile.companies.find(row => row.name == this.company);
-    const selectProject = selectCompany?.projects.find(row => row.name == this.project);
+    this.selectProject = selectCompany?.projects.find(row => row.name == this.project);
+    const isMovil =this.selectProject?.platforms.includes(2) || this.selectProject?.platforms.includes(3);
     console.log(this.profile);
     console.log(selectCompany);
-    console.log(selectProject);
-    
+    console.log(this.selectProject);
   }
+
+  
+  isMovil(): boolean {
+    if(this.selectProject?.platforms.includes(typeProject['android']) || this.selectProject?.platforms.includes(typeProject['ios'])){
+      return true
+    } else {
+      return false
+    }
+  }
+
+  isWeb(): boolean {
+    if(this.selectProject?.platforms.includes(typeProject['web'])){
+      return true
+    } else {
+      return false
+    }
+  }
+
+  isDesktop(): boolean {
+    if(this.selectProject?.platforms.includes(typeProject['desktop'])){
+      return true
+    } else {
+      return false
+    }
+  }
+
+
 }
