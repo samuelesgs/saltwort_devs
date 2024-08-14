@@ -4,7 +4,23 @@
         "home" : "Inicio"
     },
     "policy_privaticy" : {
-        "title" : "Politicas de privacidad"
+        "title" : "Politicas de privacidad",
+        "description" : "En Salwort Devs, nos comprometemos a proteger y respetar su privacidad. Esta política de privacidad explica cómo recopilamos, usamos, divulgamos y protegemos su información personal cuando visita nuestro sitio web y utiliza nuestros servicios.",
+        "title-point-1" : "Información que recopilamos",
+        "description-point-1" : "Podemos recopilar y procesar los siguientes datos personales: Información que usted nos proporciona: Nombre, dirección de correo electrónico, número de teléfono y cualquier otra información que nos envíe a través de formularios en nuestro sitio web. Información que recopilamos automáticamente: Información sobre su visita, incluidos los datos de tráfico, los datos de ubicación, los weblogs y otros datos de comunicación, así como los recursos a los que accede. Cookies y tecnologías similares: Utilizamos cookies para recopilar información sobre su actividad en línea en nuestro sitio web. Puede controlar el uso de cookies a través de la configuración de su navegador.",
+        "title-point-2" : "Uso de su información",
+        "description-point-2" : "Utilizamos la información que recopilamos para los siguientes fines:\n\nProporcionar y gestionar nuestros servicios.\nPersonalizar su experiencia en nuestro sitio web.\n\nComunicarnos con usted, incluyendo el envío de notificaciones y actualizaciones importantes.\n\nMejorar nuestro sitio web y servicios mediante el análisis de cómo los usuarios interactúan con ellos.\nCumplir con nuestras obligaciones legales y resolver disputas.",
+        "title-point-3" : "Divulgación de su información",
+        "description-point-3" : "Podemos compartir su información personal con terceros en las siguientes circunstancias:\n\nCon proveedores de servicios que nos ayudan a operar nuestro negocio, como servicios de alojamiento web y análisis de datos.\n\nSi estamos obligados a divulgar su información para cumplir con una obligación legal o para proteger nuestros derechos, propiedad o seguridad.\n\nEn caso de una fusión, adquisición o venta de activos, sus datos pueden ser transferidos como parte de la transacción.",
+        "title-point-4" : "Security of your information", 
+        "description-point-4" : "Tomamos medidas razonables para proteger su información personal contra el acceso no autorizado, la alteración, la divulgación o la destrucción.\n\nSin embargo, ninguna transmisión de datos a través de Internet o almacenamiento electrónico es completamente segura.\n\nPor lo tanto, no podemos garantizar la seguridad absoluta de su información.",
+        "title-point-5" : "Data retention", 
+        "description-point-5" : "Retenemos su información personal solo durante el tiempo necesario para cumplir con los fines para los que fue recopilada, incluidos los requisitos legales, contables o de informes.",
+        "title-point-6" : "Sus derechos", 
+        "description-point-6" : "Tiene derecho a acceder, corregir, actualizar o eliminar su información personal. También puede tener derecho a restringir o oponerse al procesamiento de su información personal, así como a solicitar la portabilidad de sus datos. Para ejercer estos derechos, comuníquese con nosotros a través de los detalles de contacto proporcionados a continuación.",
+        "title-point-7" : "Cambios a esta política de privacidad", 
+        "description-point-7" : "Podemos actualizar esta política de privacidad de vez en cuando. Publicaremos cualquier cambio en esta página y, si los cambios son significativos, le notificaremos por correo electrónico o mediante un aviso en nuestro sitio web."
+
     },
     "activity-planner" : {
         "properties" : {

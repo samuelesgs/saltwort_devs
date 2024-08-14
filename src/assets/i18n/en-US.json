@@ -4,7 +4,22 @@
         "home" : "Home"
     },
     "policy_privaticy" : {
-        "title" : "Politicas de privacidad"
+        "title" : "Privacy Policy",
+        "description" : "At Salwort Devs, we are committed to protecting and respecting your privacy. This privacy policy explains how we collect, use, disclose and protect your personal information when you visit our website and use our services.",
+        "title-point-1" : "Information we collect",
+        "description-point-1" : "We may collect and process the following personal data: Information you provide to us: Name, email address, phone number and any other information you submit to us through forms on our website. Information we collect automatically: Information about your visit, including traffic data, location data, weblogs and other communication data, and the resources that you access.<br>Cookies and similar technologies: We use cookies to collect information about your online activity on our website. You can control the use of cookies through your browser settings.",
+        "title-point-2" : "Use of your information",
+        "description-point-2" : "We use the information we collect for the following purposes:\n\nTo provide and manage our services.\n\nTo personalize your experience on our website.\n\nTo communicate with you, including sending important notifications and updates.\n\nTo improve our website and services by analyzing how users interact with them.\n\nTo comply with our legal obligations and to resolve disputes.",
+        "title-point-3" : "Disclosure of your information",
+        "description-point-3" : "We may share your personal information with third parties in the following circumstances:\n\nWith service providers who help us operate our business, such as web hosting and data analysis services.\n\nIf we are under a legal obligation to disclose your information or to protect our rights, property, or safety.\n\nIn the event of a merger, acquisition, or asset sale, your data may be transferred as part of that transaction.",
+        "title-point-4" : "Security of your information", 
+        "description-point-4" : "We take reasonable steps to protect your personal information from unauthorized access, alteration, disclosure or destruction.\n\nHowever, no data transmission over the Internet or electronic storage is completely secure.\n\nTherefore, we cannot guarantee the absolute security of your information.",
+        "title-point-5" : "Data retention", 
+        "description-point-5" : "We retain your personal information only for as long as necessary to fulfill the purposes for which it was collected, including any legal, accounting, or reporting requirements.",
+        "title-point-6" : "Your rights", 
+        "description-point-6" : "You have the right to access, correct, update or delete your personal information. You may also have the right to restrict or object to the processing of your personal information, as well as request data portability. To exercise these rights, please contact us using the contact details provided below.",
+        "title-point-7" : "Changes to this privacy policy", 
+        "description-point-7" : "We may update this privacy policy from time to time. We will post any changes on this page and, if the changes are significant, we will notify you by email or by means of a notice on our website."
     },
     "activity-planner" : {
         "properties" : {

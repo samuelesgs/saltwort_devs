@@ -17,6 +17,6 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 export class PrivacyPolicyComponent {
 
   constructor(private translateService : TranslateService) {
-    this.translateService.use('es');
+    this.translateService.use('en');
   }
 }
