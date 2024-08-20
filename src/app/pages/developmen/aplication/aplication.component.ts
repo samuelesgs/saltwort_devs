@@ -20,6 +20,8 @@ export class AplicationComponent {
   project = "";
   public profile!: ProfileData;
   public selectProject!: Project | null;
+  public selectedButton: string | null = null; // Propiedad para rastrear el botón seleccionado
+
   constructor( private route : ActivatedRoute) {
     
   }
@@ -40,7 +42,7 @@ export class AplicationComponent {
     }
     console.log(this.profile);
     console.log(selectCompany);
-    console.log(this.selectProject);
+    console.log(this.selectProject?.relevantSkills);
   }
 
 
@@ -66,6 +68,10 @@ export class AplicationComponent {
     } else {
       return false
     }
+  }
+
+  selectButton(button: string): void {
+    this.selectedButton = button;
   }
 
 

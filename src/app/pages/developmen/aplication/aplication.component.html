@@ -13,10 +13,56 @@
 
     <div *ngIf="selectProject!.platforms.length > 1">
         <div class="botones-contenedor ms-5 me-5">
-            <button *ngIf="isMovil()" class="boton-movil">Movil</button>
-            <button *ngIf="isWeb()" class="boton-web">Web</button>
-            <button *ngIf="isDesktop()" class="boton-desktop">Escritorio</button>
+            <button *ngIf="isMovil()" 
+                    class="boton-movil"
+                    [ngClass]="{'selected': selectedButton === 'movil'}" 
+                    (click)="selectButton('movil')">
+                    Movil
+            </button>
+            <button *ngIf="isWeb()" 
+                    class="boton-web"
+                    [ngClass]="{'selected': selectedButton === 'web'}" 
+                    (click)="selectButton('web')">
+                    Web
+            </button>
+            <button *ngIf="isDesktop()" 
+                    class="boton-desktop"
+                    [ngClass]="{'selected': selectedButton === 'desktop'}" 
+                    (click)="selectButton('desktop')">
+                    Escritorio
+            </button>
         </div>
     </div>
+    <div class="col">
+        <div class="col-11 ms-5 mt-5 bg-white-transparent size-box p-3 text-white">
+            <p>
+                Dentro de este proyecto implemente el puesto como desarrollador android, de las funciones relevantes dentro de esta aplicacion son:
+            </p>
+            <ul class="ms-5">
+                <li *ngFor="let skill of selectProject?.relevantSkills">
+                    {{skill}}
+                </li>
+            </ul>
+            <div class="icons-container">
+                <img 
+                    class="icons-tools"
+                    *ngFor="let tool of selectProject?.tools"
+                    src="./assets/images/tools/{{tool}}.png">
+            </div>
+            
+        </div>    
+    </div>
     
+    <div class="col row ms-1">
+        <div class="col-1 ms-5 mt-5 bg-white-transparent size-box p-3 text-white">
+            
+        
+        </div>    
+        <div class="col-10 mt-5 me-5 bg-white-transparent size-box p-3 text-white">
+          <p>
+            {{selectProject?.detail}}
+          </p>  
+        </div>    
+    </div>
+  
 </div>

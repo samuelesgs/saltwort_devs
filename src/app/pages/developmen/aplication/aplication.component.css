@@ -58,12 +58,33 @@ h1 {
 .botones-contenedor {
     display: flex;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 8px;
     justify-content: space-between;
     background: rgb(68, 0, 13);
 }
-.boton-movil:active,
-.boton-web:active,
-.boton-desktop:active {
-    background: linear-gradient(to bottom, #252525, #252525);
+
+.icons-tools {
+    width: 6vh;
+}
+.col.row {
+    justify-content: space-between;
+    width: calc(100% - 1%);
+}
+.size-box {
+    border-radius: 16px;
+    height: 15vh;
+}
+
+.col {
+    width: calc(100% - -3%);
+}
+
+.selected {
+    background:  linear-gradient(to bottom, #252525, #252525);
+}
+
+.icons-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -110px; /* Ajusta este valor según sea necesario */
 }
