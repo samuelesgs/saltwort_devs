@@ -75,6 +75,12 @@ h1 {
     height: 15vh;
 }
 
+.card-screens-project {
+    border-radius: 16px;
+    height: 65vh;
+    width: calc(100% - 5%);
+}
+
 .col {
     width: calc(100% - -3%);
 }
@@ -87,4 +93,9 @@ h1 {
     display: flex;
     justify-content: flex-end;
     margin-top: -110px; /* Ajusta este valor según sea necesario */
+}
+
+.icon-project{
+    width: 12vh;
+    height: 12vh;
 }

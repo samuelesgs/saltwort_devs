@@ -55,8 +55,9 @@
     
     <div class="col row ms-1">
         <div class="col-1 ms-5 mt-5 bg-white-transparent size-box p-3 text-white">
-            
-        
+            <img
+            class="icon-project"
+            src="./assets/images/projectsIcons/{{selectProject?.icon?.url}}.png">
         </div>    
         <div class="col-10 mt-5 me-5 bg-white-transparent size-box p-3 text-white">
           <p>
@@ -64,5 +65,32 @@
           </p>  
         </div>    
     </div>
+
+    <!-- FALTA CARRUSEL arreglo para traer la desc, la imagen y el name -->
+    <div class="col row ms-1">
+        <div *ngIf="selectedButton === 'movil'" 
+        class="col-11 ms-5 mt-5 bg-white-transparent card-screens-project p-3 text-white">
+       <!-- Contenido para móvil -->
+        </div> 
+        <div *ngIf="selectedButton === 'web' || selectedButton === 'desktop'" 
+        class="col-11 ms-5 mt-5 bg-white-transparent card-screens-project p-3 text-white">
+            <div class="col row ms-1">
+                <div class="col row ms-1">
+                    <div class="bg-white-transparent">
+                    <!-- Texto -->
+                         a
+                    </div>
+                </div>
+                <div class="col row ms-1">
+                    <div class="bg-white-transparent">
+                        <img
+                        class="icon-project"
+                        src="./assets/images/projectsIcons/{{selectProject?.icon?.url}}.png">
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+    
   
 </div>

@@ -42,7 +42,7 @@ export class AplicationComponent {
     }
     console.log(this.profile);
     console.log(selectCompany);
-    console.log(this.selectProject?.relevantSkills);
+    console.log(this.selectProject?.icon.name);
   }
 
 

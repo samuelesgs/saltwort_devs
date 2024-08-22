@@ -87,7 +87,7 @@ export class Develpments {
                                 icon: {
                                     name: 'name',
                                     detail: 'detail',
-                                    url: 'url'
+                                    url: 'VentaPlusMovil'
                                 },
                                 screens: [
                                     {
@@ -112,7 +112,7 @@ export class Develpments {
                                     "kotlin"
                                 ],
                                 icon: {
-                                    name: 'name',
+                                    name: 'VentaPlusMovil',
                                     detail: 'detail',
                                     url: 'url'
                                 },
