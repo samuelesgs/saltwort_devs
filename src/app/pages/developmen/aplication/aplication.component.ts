@@ -73,6 +73,20 @@ export class AplicationComponent {
   selectButton(button: string): void {
     this.selectedButton = button;
   }
+  itemActive = 0;
 
+  itemSize = this.selectProject?.screens;
+
+  onClickCarouse(isAfter : boolean) {
+    const increment = isAfter ? this.itemActive - 1 : this.itemActive + 1;
+    const itemCount = this.itemSize?.length;
+    if (increment < 0) {
+      this.itemActive = itemCount! - 1;
+    } else if (increment >= itemCount!) {
+      this.itemActive = itemCount! - 1
+    } else {
+      this.itemActive = increment
+    }
+  }
 
 }

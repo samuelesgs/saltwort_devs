@@ -92,7 +92,17 @@ export class Develpments {
                                 screens: [
                                     {
                                         name: 'screen-1',
-                                        detail: 'detail',
+                                        detail: 'detalle de la pantalla 1',
+                                        url: 'url'
+                                    },
+                                    {
+                                        name: 'screen-2',
+                                        detail: 'detalle de la pantalla 2',
+                                        url: 'url'
+                                    },
+                                    {
+                                        name: 'screen-3',
+                                        detail: 'detalle de la pantalla 3',
                                         url: 'url'
                                     }
                                 ]
