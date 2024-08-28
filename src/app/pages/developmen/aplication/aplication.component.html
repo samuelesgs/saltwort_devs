@@ -66,7 +66,7 @@
         </div>    
     </div>
 
-    <!-- FALTA CARRUSEL arreglo para traer la desc bien, la imagen y el name
+    <!-- FALTA CARRUSEL arreglo para traer la desc bien la que corresponde uno en uno, la imagen y el name
        que los button funcionen bien que al pulsar la flecha se vaya la siguiente screen, arreglar diseño -->
     
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -94,15 +94,16 @@
                   <div class="offset-1 col-5 mb-5">
                       <div class="col row ms-1">
                           <div class="card-style">
-                               <p class="text-screens " *ngFor="let detail of selectProject?.screens">{{detail.detail}}</p>
+                               <p class="text-screens">{{getDetail()?.detail}}</p>
                           </div>
                       </div>
                   </div>
   
                   <div class="col row me-5">
                           <img
+                          
                           class="size-item ms-5"
-                          src="./assets/images/projectsIcons/{{selectProject?.icon?.url}}.png">
+                          src="./assets/images/{{getDetail()?.url}}.png">
                   </div>
               </div>
           </div>

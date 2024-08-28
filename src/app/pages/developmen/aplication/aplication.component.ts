@@ -74,19 +74,27 @@ export class AplicationComponent {
     this.selectedButton = button;
   }
   itemActive = 0;
-
-  itemSize = this.selectProject?.screens;
+  itemSize = 0;
 
   onClickCarouse(isAfter : boolean) {
+    this.itemSize = this.selectProject!.screens.length;
+    console.log(this.itemActive)
     const increment = isAfter ? this.itemActive - 1 : this.itemActive + 1;
-    const itemCount = this.itemSize?.length;
+    console.log(increment)
+    const itemCount = this.itemSize;
+    console.log("Este es el itemcount ", itemCount)
     if (increment < 0) {
       this.itemActive = itemCount! - 1;
     } else if (increment >= itemCount!) {
-      this.itemActive = itemCount! - 1
+      this.itemActive = 0
     } else {
       this.itemActive = increment
     }
+    console.log(this.itemActive)
+  }
+
+  getDetail(){
+    return this.selectProject?.screens[this.itemActive]
   }
 
 }
