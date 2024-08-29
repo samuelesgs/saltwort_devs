@@ -1,121 +1,147 @@
 <div class="scroll">
     <div class="col-12 ms-2 mb-5">
         <h1>
-            <button 
-                routerLink="/ProfileDeveloper/{{name}}" 
-                class="btn vertical-center back-arrow ms-2">
-                <img src="./assets/images/flecha-arriba.png"/>
+            <button
+                routerLink="/ProfileDeveloper/{{name}}"
+                class="btn vertical-center back-arrow ms-2"
+                ><img
+                    src="./assets/images/flecha-arriba.png"
+                    />
             </button>
             <p class="title mt-5 ms-2"> {{ profile.fullName }}</p>
             <p class="project-name me-5"> {{ project }}</p>
         </h1>
     </div>
 
-    <div *ngIf="selectProject!.platforms.length > 1">
-        <div class="botones-contenedor ms-5 me-5">
-            <button *ngIf="isMovil()" 
-                    class="boton-movil"
-                    [ngClass]="{'selected': selectedButton === 'movil'}" 
-                    (click)="selectButton('movil')">
-                    Movil
+    <!-- ************  Cambiar este codigo al nuevo componente container-application *********************  -->
+    <div
+        class="col-12 center-horizontal"
+        *ngIf="selectProject!.platforms.length > 1"
+        >
+        <div class="col-11 container-buttons p-1">
+            <button *ngIf="isMovil()"
+                class="buttons-switch col ms-2 me-2"
+                [ngClass]="{'selected': selectedButton === 'movil'}"
+                (click)="selectButton('movil')"
+                >Movil
             </button>
-            <button *ngIf="isWeb()" 
-                    class="boton-web"
-                    [ngClass]="{'selected': selectedButton === 'web'}" 
-                    (click)="selectButton('web')">
-                    Web
+            <button *ngIf="isWeb()"
+                class="buttons-switch col ms-2 me-2"
+                [ngClass]="{'selected': selectedButton === 'web'}"
+                (click)="selectButton('web')"
+                >Web
             </button>
-            <button *ngIf="isDesktop()" 
-                    class="boton-desktop"
-                    [ngClass]="{'selected': selectedButton === 'desktop'}" 
-                    (click)="selectButton('desktop')">
-                    Escritorio
+            <button *ngIf="isDesktop()"
+                class="buttons-switch col ms-2 me-2"
+                [ngClass]="{'selected': selectedButton === 'desktop'}"
+                (click)="selectButton('desktop')"
+                >Escritorio
             </button>
         </div>
     </div>
-    <div class="col">
-        <div class="col-11 ms-5 mt-5 bg-white-transparent size-box p-3 text-white">
-            <p>
-                Dentro de este proyecto implemente el puesto como desarrollador android, de las funciones relevantes dentro de esta aplicacion son:
-            </p>
-            <ul class="ms-5">
-                <li *ngFor="let skill of selectProject?.relevantSkills">
-                    {{skill}}
-                </li>
-            </ul>
-            <div class="icons-container">
-                <img 
-                    class="icons-tools"
-                    *ngFor="let tool of selectProject?.tools"
-                    src="./assets/images/tools/{{tool}}.png">
+
+    <div class="col-12 center-horizontal">
+        <div class="col-11 mt-5 bg-white-transparent size-box p-3 text-white">
+            <div class="row">
+                <p class="col">
+                    Dentro de este proyecto implemente el puesto como desarrollador android, de las funciones relevantes dentro de esta aplicacion son:
+                </p>
+                <div class="col-4 icons-container">
+                    <img 
+                        class="icons-tools"
+                        *ngFor="let tool of selectProject?.tools"
+                        src="./assets/images/tools/{{tool}}.png"
+                        />
+                </div>
             </div>
             
+            <ul class="ms-5">
+                <li
+                    *ngFor="let skill of selectProject?.relevantSkills"
+                    >{{skill}}
+                </li>
+            </ul>
         </div>    
     </div>
     
-    <div class="col row ms-1">
-        <div class="col-1 ms-5 mt-5 bg-white-transparent size-box p-3 text-white">
-            <img
-            class="icon-project"
-            src="./assets/images/projectsIcons/{{selectProject?.icon?.url}}.png">
-        </div>    
-        <div class="col-10 mt-5 me-5 bg-white-transparent size-box p-3 text-white">
-          <p>
-            {{selectProject?.detail}}
-          </p>  
-        </div>    
+    <div class="col-12 center-horizontal">
+        <div class="col-11 row">
+            <div class="col-1 me-3 mt-5 bg-white-transparent size-box p-3 text-white">
+                <img
+                    class="icon-project"
+                    src="./assets/images/projectsIcons/{{selectProject?.icon?.url}}.png"
+                    />
+            </div> 
+            <div class="col mt-5 bg-white-transparent size-box p-3 text-white">
+              <p>
+                {{selectProject?.detail}}
+              </p>
+            </div>
+        </div>
     </div>
+
+    <!-- ***************** HASTA ESTE PUNTO LLEGA CONTAINER-APPLICATION ************* -->
 
     <!-- FALTA CARRUSEL arreglo para traer la desc bien la que corresponde uno en uno, la imagen y el name
        que los button funcionen bien que al pulsar la flecha se vaya la siguiente screen, arreglar diseño -->
-    
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div *ngIf="selectedButton === 'movil'" 
-        class="col-11 ms-5 mt-5 bg-white-transparent card-screens-project p-3 text-white">
+        <div
+            *ngIf="selectedButton === 'movil'"
+            class="col-11 ms-5 mt-5 bg-white-transparent card-screens-project p-3 text-white"
+            >
             <!-- Contenido para móvil -->
-        
         </div>
 
-        <div *ngIf="selectedButton === 'web' || selectedButton === 'desktop'" 
-        class="col-11 ms-5 mt-5 bg-white-transparent card-screens-project p-3 text-white">
-    
-          <div class="carousel-indicators">
-            <button type="button"   
-                    *ngFor="let screen of selectProject?.screens; let i = index" 
-                    class="radius-selector" 
-                    data-bs-target="#carouselExampleIndicators" 
-                    [ngClass]="{'active' : itemActive == i}" 
-                    aria-current="true"></button>
+        <div
+            *ngIf="selectedButton === 'web' || selectedButton === 'desktop'" 
+            class="col-11 ms-5 mt-5 bg-white-transparent card-screens-project p-3 text-white"
+            >
+            <div class="carousel-indicators">
+                <button
+                    *ngFor="let screen of selectProject?.screens; let i = index"
+                    class="radius-selector"
+                    data-bs-target="#carouselExampleIndicators"
+                    [ngClass]="{'active' : itemActive == i}"
+                    aria-current="true"
+                    >
+                </button>
           </div>
           
-          <div class=" col-10 ms-5 pb-4 mt-5 pt-5" >
+          <div class="col-10 ms-5 pb-4 mt-5 pt-5" >
               <div class="row mt-4">
-  
                   <div class="offset-1 col-5 mb-5">
                       <div class="col row ms-1">
                           <div class="card-style">
-                               <p class="text-screens">{{getDetail()?.detail}}</p>
+                               <p class="text-screens">{{getScreen().detail}}</p>
                           </div>
                       </div>
                   </div>
   
                   <div class="col row me-5">
                           <img
-                          
-                          class="size-item ms-5"
-                          src="./assets/images/{{getDetail()?.url}}.png">
+                            class="size-item ms-5"
+                            src="./assets/images/{{getScreen().url}}.png"
+                            />
                   </div>
               </div>
           </div>
-
-          <button class="carousel-control-prev" type="button"  (click)="onClickCarouse(true)">
-              <img src="./assets/images/icon-arrow.png" class="d-block" alt="...">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            (click)="onClickCarouse(true)"
+            ><img
+                src="./assets/images/icon-arrow.png"
+                class="d-block"
+                />
           </button>
-          <button class="carousel-control-next rotate-arrow" type="button"  (click)="onClickCarouse(false)">
-              <img src="./assets/images/icon-arrow.png" class="d-block" alt="...">
+          <button
+            class="carousel-control-next rotate-arrow"
+            (click)="onClickCarouse(false)"
+            ><img
+                src="./assets/images/icon-arrow.png"
+                class="d-block"
+                />
           </button>
-
         </div>
-      </div>
-  
+    </div>
 </div>

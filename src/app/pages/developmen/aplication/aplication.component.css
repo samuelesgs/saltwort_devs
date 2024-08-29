@@ -1,9 +1,12 @@
-.title{
+
+/* title-aplication cambiar nombre en html y css */
+.title {
     color: white;
     flex-grow: 1;
     text-align: left;
     margin-top: 100px;
 }
+
 .project-name {
     color: white;
     font-size: 25px;
@@ -12,6 +15,7 @@
     
 }
 
+/* Remover h1 y crear un stilo predifinido para h1 -- ejemplo space-title-application */
 h1 {
     display: flex;
     justify-content: space-between;
@@ -19,57 +23,33 @@ h1 {
     margin-bottom: 0;
 }
 
-.boton-movil {
+.buttons-switch {
     background: linear-gradient(to bottom, #757575, #757575);
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-right: 10px;
-    width: 50%;
-    margin-left: 2%;
 }
 
-.boton-desktop {
-    background: linear-gradient(to bottom, #757575, #757575);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 10px;
-    width: 50%;
-    margin-left: 2%;
-}
-.boton-web {
-    background: linear-gradient(to bottom, #757575, #757575);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    width: 50%;
-    margin-right: 2%;
-}
-
-.botones-contenedor {
+.container-buttons {
     display: flex;
     align-items: center;
     border-radius: 8px;
-    justify-content: space-between;
     background: rgb(68, 0, 13);
 }
 
 .icons-tools {
     width: 6vh;
 }
-.col.row {
+
+/* Cambiar col.row por ejemplo space-beteween-complete */
+/* .col.row {
     justify-content: space-between;
     width: calc(100% - 1%);
-}
+} */
+
+/* Cambiar size-box por size-box-application */
 .size-box {
     border-radius: 16px;
     height: 15vh;
@@ -81,9 +61,14 @@ h1 {
     width: calc(100% - 5%);
 }
 
-.col {
-    width: calc(100% - -3%);
+.center-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* Cambiar col por complete-col-size */
+
 
 .selected {
     background:  linear-gradient(to bottom, #252525, #252525);
@@ -92,10 +77,9 @@ h1 {
 .icons-container {
     display: flex;
     justify-content: flex-end;
-    margin-top: -110px; /* Ajusta este valor según sea necesario */
 }
 
-.icon-project{
+.icon-project {
     width: 12vh;
     height: 12vh;
 }

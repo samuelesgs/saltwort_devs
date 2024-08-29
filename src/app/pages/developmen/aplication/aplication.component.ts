@@ -15,86 +15,73 @@ import { CommonModule } from '@angular/common';
 })
 export class AplicationComponent {
 
+  public profile!: ProfileData;
+  public selectProject!: Project | null;
+  public selectedButton: string | null = null;
+
   name = "";
   company = "";
   project = "";
-  public profile!: ProfileData;
-  public selectProject!: Project | null;
-  public selectedButton: string | null = null; // Propiedad para rastrear el botón seleccionado
 
-  constructor( private route : ActivatedRoute) {
-    
-  }
+  itemActive = 0;
+  itemSize = 0;
+
+  constructor( private route : ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.loadingData();
+  }
+
+  loadingData() {
     this.name = this.route.snapshot.paramMap.get('name')!;
     this.company = this.route.snapshot.paramMap.get('company')!;
     this.project = this.route.snapshot.paramMap.get('project')!;
-    this.getFullName();    
+    this.getFullName();
   }
   
   private getFullName() {
     this.profile = new Develpments().informationDev(this.name);
     const selectCompany = this.profile.companies.find(row => row.name == this.company);
     const selectedProject = selectCompany?.projects.find(row => row.name == this.project);
+    //En caso de no encontrar el proyecto redireccionar a seccion de desarrollador o desarrolladores
     if(selectedProject){
       this.selectProject = selectedProject;
     }
-    console.log(this.profile);
-    console.log(selectCompany);
-    console.log(this.selectProject?.icon.name);
   }
 
-
   isMovil(): boolean {
-    if(this.selectProject?.platforms.includes(typeProject['android']) || this.selectProject?.platforms.includes(typeProject['ios'])){
-      return true
-    } else {
-      return false
-    }
+    return this.selectProject!.platforms.includes(typeProject['android']) || this.selectProject!.platforms.includes(typeProject['ios']);
   }
 
   isWeb(): boolean {
-    if(this.selectProject?.platforms.includes(typeProject['web'])){
-      return true
-    } else {
-      return false
-    }
+    return this.selectProject!.platforms.includes(typeProject['web']);
   }
 
   isDesktop(): boolean {
-    if(this.selectProject?.platforms.includes(typeProject['desktop'])){
-      return true
-    } else {
-      return false
-    }
+    return this.selectProject!.platforms.includes(typeProject['desktop']);
   }
 
   selectButton(button: string): void {
     this.selectedButton = button;
   }
-  itemActive = 0;
-  itemSize = 0;
 
   onClickCarouse(isAfter : boolean) {
     this.itemSize = this.selectProject!.screens.length;
-    console.log(this.itemActive)
     const increment = isAfter ? this.itemActive - 1 : this.itemActive + 1;
-    console.log(increment)
-    const itemCount = this.itemSize;
-    console.log("Este es el itemcount ", itemCount)
-    if (increment < 0) {
-      this.itemActive = itemCount! - 1;
-    } else if (increment >= itemCount!) {
+    this.incrementOrDecrease(increment);
+  }
+
+  incrementOrDecrease(increment : number) {
+    if (this.itemSize < 0) {
+      this.itemActive = this.itemSize - 1;
+    } else if (increment >= this.itemSize) {
       this.itemActive = 0
     } else {
       this.itemActive = increment
     }
-    console.log(this.itemActive)
   }
 
-  getDetail(){
-    return this.selectProject?.screens[this.itemActive]
+  getScreen(){
+    return this.selectProject!.screens[this.itemActive];
   }
-
 }
