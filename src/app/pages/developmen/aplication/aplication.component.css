@@ -1,6 +1,4 @@
-
-/* title-aplication cambiar nombre en html y css */
-.title {
+.name_dev_project {
     color: white;
     flex-grow: 1;
     text-align: left;
@@ -14,12 +12,21 @@
     margin-left: auto;
 }
 
-/* Remover h1 y crear un stilo predifinido para h1 -- ejemplo space-title-application */
-h1 {
+.space-title-application {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0;
+}
+
+.screens-movil{
+    display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto; 
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; 
 }
 
 .buttons-switch {
@@ -42,14 +49,7 @@ h1 {
     width: 6vh;
 }
 
-/* Cambiar col.row por ejemplo space-beteween-complete */
-/* .col.row {
-    justify-content: space-between;
-    width: calc(100% - 1%);
-} */
-
-/* Cambiar size-box por size-box-application */
-.size-box {
+.size-box-application {
     border-radius: 16px;
     height: 15vh;
 }
@@ -66,10 +66,7 @@ h1 {
     align-items: center;
 }
 
-/* Cambiar col por complete-col-size */
-
-
-.selected {
+.selected-item-background {
     background:  linear-gradient(to bottom, #252525, #252525);
 }
 
@@ -92,7 +89,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30vh; /* Ajusta esta altura según sea necesario */
+    height: 30vh; 
 }
 
 .size-item img {

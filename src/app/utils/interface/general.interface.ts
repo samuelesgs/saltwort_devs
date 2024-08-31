@@ -93,17 +93,17 @@ export class Develpments {
                                     {
                                         name: 'screen-1',
                                         detail: 'detalle de la pantalla 1',
-                                        url: 'icon-app'
+                                        url: 'screen1'
                                     },
                                     {
                                         name: 'screen-2',
                                         detail: 'detalle de la pantalla 2',
-                                        url: 'linkdn-image'
+                                        url: 'screen2'
                                     },
                                     {
                                         name: 'screen-3',
                                         detail: 'detalle de la pantalla 3',
-                                        url: 'triangulo'
+                                        url: 'screen3'
                                     }
                                 ]
                             }, 

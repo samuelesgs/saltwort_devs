@@ -44,6 +44,7 @@ export class AplicationComponent {
     const selectCompany = this.profile.companies.find(row => row.name == this.company);
     const selectedProject = selectCompany?.projects.find(row => row.name == this.project);
     //En caso de no encontrar el proyecto redireccionar a seccion de desarrollador o desarrolladores
+    console.log()
     if(selectedProject){
       this.selectProject = selectedProject;
     }
@@ -83,5 +84,9 @@ export class AplicationComponent {
 
   getScreen(){
     return this.selectProject!.screens[this.itemActive];
+  }
+
+  getAllScreens(){
+    return this.selectProject!.screens;
   }
 }

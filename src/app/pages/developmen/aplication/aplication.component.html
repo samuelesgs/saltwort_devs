@@ -1,6 +1,6 @@
 <div class="scroll">
     <div class="col-12 ms-2 mb-5">
-        <h1>
+        <h1 class="space-title-application">
             <button
                 routerLink="/ProfileDeveloper/{{name}}"
                 class="btn vertical-center back-arrow ms-2"
@@ -8,7 +8,7 @@
                     src="./assets/images/flecha-arriba.png"
                     />
             </button>
-            <p class="title mt-5 ms-2"> {{ profile.fullName }}</p>
+            <p class="name_dev_project mt-5 ms-2"> {{ profile.fullName }}</p>
             <p class="project-name me-5"> {{ project }}</p>
         </h1>
     </div>
@@ -21,19 +21,19 @@
         <div class="col-11 container-buttons p-1">
             <button *ngIf="isMovil()"
                 class="buttons-switch col ms-2 me-2"
-                [ngClass]="{'selected': selectedButton === 'movil'}"
+                [ngClass]="{'selected-item-background': selectedButton === 'movil'}"
                 (click)="selectButton('movil')"
                 >Movil
             </button>
             <button *ngIf="isWeb()"
                 class="buttons-switch col ms-2 me-2"
-                [ngClass]="{'selected': selectedButton === 'web'}"
+                [ngClass]="{'selected-item-background': selectedButton === 'web'}"
                 (click)="selectButton('web')"
                 >Web
             </button>
             <button *ngIf="isDesktop()"
                 class="buttons-switch col ms-2 me-2"
-                [ngClass]="{'selected': selectedButton === 'desktop'}"
+                [ngClass]="{'selected-item-background': selectedButton === 'desktop'}"
                 (click)="selectButton('desktop')"
                 >Escritorio
             </button>
@@ -41,7 +41,7 @@
     </div>
 
     <div class="col-12 center-horizontal">
-        <div class="col-11 mt-5 bg-white-transparent size-box p-3 text-white">
+        <div class="col-11 mt-5 bg-white-transparent size-box-application p-3 text-white">
             <div class="row">
                 <p class="col">
                     Dentro de este proyecto implemente el puesto como desarrollador android, de las funciones relevantes dentro de esta aplicacion son:
@@ -66,13 +66,13 @@
     
     <div class="col-12 center-horizontal">
         <div class="col-11 row">
-            <div class="col-1 me-3 mt-5 bg-white-transparent size-box p-3 text-white">
+            <div class="col-1 me-3 mt-5 bg-white-transparent size-box-application p-3 text-white">
                 <img
                     class="icon-project"
                     src="./assets/images/projectsIcons/{{selectProject?.icon?.url}}.png"
                     />
             </div> 
-            <div class="col mt-5 bg-white-transparent size-box p-3 text-white">
+            <div class="col mt-5 bg-white-transparent size-box-application p-3 text-white">
               <p>
                 {{selectProject?.detail}}
               </p>
@@ -89,7 +89,20 @@
             *ngIf="selectedButton === 'movil'"
             class="col-11 ms-5 mt-5 bg-white-transparent card-screens-project p-3 text-white"
             >
+            <div class="row">
+                <div class="col-auto "  *ngFor="let screen of getAllScreens()">
+                    <img 
+                    class="screens-movil"
+                    src="./assets/images/{{screen.url}}.png"
+                    />
+                </div>
+
+            </div>
+            <div class="col-10 flex-wrap: nowrap  overflow-x: auto row">
+               
+            </div>
             <!-- Contenido para móvil -->
+            
         </div>
 
         <div
