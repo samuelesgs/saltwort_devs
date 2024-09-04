@@ -19,14 +19,21 @@
     margin-bottom: 0;
 }
 
+.overflow-x {
+    display: inline-flexbox;
+    max-width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
 .screens-movil{
-    display: flex;
+  display: flex;
   flex-wrap: nowrap;
   overflow-x: auto; 
   display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30vh; 
+  justify-content: center;
+  align-items: center;
+  height: 55vh; 
 }
 
 .buttons-switch {
@@ -131,8 +138,10 @@
 
 .carousel-control-next {
     opacity: 85%;
+    right: -100px;
 }
 
 .carousel-control-prev {
     opacity: 85%;
+    left: -100px;
 }

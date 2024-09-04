@@ -82,27 +82,36 @@
 
     <!-- ***************** HASTA ESTE PUNTO LLEGA CONTAINER-APPLICATION ************* -->
 
-    <!-- FALTA CARRUSEL arreglo para traer la desc bien la que corresponde uno en uno, la imagen y el name
-       que los button funcionen bien que al pulsar la flecha se vaya la siguiente screen, arreglar diseño -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div
+        <div 
             *ngIf="selectedButton === 'movil'"
-            class="col-11 ms-5 mt-5 bg-white-transparent card-screens-project p-3 text-white"
+            class="col-11 ms-5 mt-5 bg-white-transparent card-screens-project p-3 text-white overflow-x"
             >
-            <div class="row">
-                <div class="col-auto "  *ngFor="let screen of getAllScreens()">
+            <div class="row screens-movil" >
+                <div class="col" *ngFor="let screen of selectProject!.screens">
                     <img 
-                    class="screens-movil"
-                    src="./assets/images/{{screen.url}}.png"
+                        
+                        class=" mt-4"
+                        src="./assets/images/{{screen.url}}.png"
                     />
                 </div>
-
             </div>
-            <div class="col-10 flex-wrap: nowrap  overflow-x: auto row">
-               
-            </div>
-            <!-- Contenido para móvil -->
-            
+            <button
+                class="carousel-control-prev"
+                (click)="onClickCarouselMovil(true)"
+                ><img
+                src="./assets/images/icon-arrow.png"
+                class="d-block"
+                />
+            </button>
+            <button
+                class="carousel-control-next rotate-arrow"
+                (click)="onClickCarouselMovil(false)"
+                ><img
+                src="./assets/images/icon-arrow.png"
+                class="d-block"
+                />
+            </button>
         </div>
 
         <div

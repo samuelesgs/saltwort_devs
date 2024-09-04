@@ -104,6 +104,31 @@ export class Develpments {
                                         name: 'screen-3',
                                         detail: 'detalle de la pantalla 3',
                                         url: 'screen3'
+                                    },
+                                    {
+                                        name: 'screen-4',
+                                        detail: 'detalle de la pantalla 4',
+                                        url: 'screen1'
+                                    },
+                                    {
+                                        name: 'screen-5',
+                                        detail: 'detalle de la pantalla 5',
+                                        url: 'screen2'
+                                    },
+                                    {
+                                        name: 'screen-6',
+                                        detail: 'detalle de la pantalla 6',
+                                        url: 'screen3'
+                                    },
+                                    {
+                                        name: 'screen-7',
+                                        detail: 'detalle de la pantalla 7',
+                                        url: 'screen1'
+                                    },
+                                    {
+                                        name: 'screen-8',
+                                        detail: 'detalle de la pantalla 8',
+                                        url: 'screen2'
                                     }
                                 ]
                             }, 
