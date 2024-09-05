@@ -54,8 +54,7 @@ export class Develpments {
                 email: 'pavicalderon49@gmail.com',
                 urlLinkedin: '',
                 title: 'Jr. Developer',
-                desc : ' Desarrollador 2 años de experiencia'+ 
-                    'area con mas experiencia es Android, de la misma forma mi experiencia en aplicaciones de escritorio es abundante.',
+                desc : 'Soy un desarrollador junior con experiencia en diversas tecnologías, destacando mi habilidad en Android Studio con Kotlin para el desarrollo de aplicaciones móviles, donde he creado interfaces de usuario intuitivas e integrado características avanzadas. También tengo experiencia en Visual Studio con C#, desarrollando aplicaciones de escritorio y servicios eficientes. Mi competencia se extiende a la gestión de bases de datos, con conocimientos en PostgreSQL, MySQL y herramientas de administración. Me considero una persona altamente motivada y dispuesta a aprender, con un enfoque constante en mejorar mis habilidades y crecer en el campo del desarrollo.',
                 tools : [
                     "android",
                     "java",
@@ -199,7 +198,7 @@ export class Develpments {
                     email: 'akselherrera18@gmail.com',
                     urlLinkedin: '',
                     title: 'Jr. Developer',
-                    desc: 'Un desarrollador júnior en JavaScript es un profesional que está comenzando su carrera en el desarrollo web. Tiene un conocimiento básico de JavaScript y está familiarizado con las bibliotecas y frameworks más populares como React, Angular o Vue.js.',
+                    desc: 'Soy un programador con amplia experiencia en el desarrollo de aplicaciones móviles para iOS utilizando Swift, creando soluciones eficientes y bien diseñadas para la plataforma Apple. En el desarrollo web, manejo con soltura Angular para construir interfaces de usuario dinámicas y responsivas que se adaptan a diferentes dispositivos. Tengo un sólido conocimiento en la creación de APIs REST con NestJS en entornos Node.js, facilitando una comunicación segura y eficiente entre sistemas. Mi experiencia incluye la integración de servicios externos, la migración de tecnologías para asegurar transiciones suaves y sin interrupciones, y la optimización de sistemas para mejorar el rendimiento y la escalabilidad, adaptándome a las crecientes demandas del mercado.',
                     tools : [
                         "swift",
                         "angular",
@@ -257,7 +256,7 @@ export class Develpments {
                 email: 'samuelesgs04@gmail.com',
                 urlLinkedin: '',
                 title: 'Sr. Developer',
-                desc: 'Un desarrollador sénior en JavaScript es un profesional experimentado que se especializa en el desarrollo de aplicaciones web interactivas y dinámicas. Tiene un profundo conocimiento de las bibliotecas y frameworks modernos, como React, Angular o Vue.js, y una sólida comprensión del desarrollo del lado del servidor con Node.js',
+                desc: 'Desarrollador con más de 5 años de experiencia en desarrollo web y backend, y experto en Android Studio con Java y Kotlin. En el desarrollo móvil, he utilizado Android Studio para crear aplicaciones robustas, optimizando el rendimiento y la experiencia del usuario con Java y Kotlin. Tengo experiencia en el diseño de interfaces con XML, la integración de APIs, y la implementación de arquitecturas como MVVM. En el ámbito web, soy competente en tecnologías frontend como JavaScript, HTML, CSS y Angular, con un enfoque en la creación de interfaces responsivas. En el backend, tengo amplios conocimientos en Node.js, PHP y NestJS, con experiencia en la generación de archivos XLSX y CSV. Además, manejo servicios en la nube de AWS, incluyendo EC2, S3 y ELB, con experiencia en el despliegue de aplicaciones en subdominios de EC2 y la administración de contenedores S3. He utilizado PM2 para despliegues en AWS y he implementado validaciones de compras a través de APIs de Google en proyectos backend. Mi experiencia también incluye el uso de Bootstrap para diseño CSS y el despliegue de aplicaciones en entornos de producción de alta disponibilidad.',
                 tools: [
                     "android",
                     "java",
