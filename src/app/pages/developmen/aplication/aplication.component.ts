@@ -2,13 +2,19 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, RouterLinkWithHref, RouterModule } from '@angular/router';
 import { Develpments, ProfileData, Project, typeProject } from '../../../utils/interface/general.interface';
 import { CommonModule } from '@angular/common';
+import { ContainerApplicationComponent } from './container-application/container-application.component';
+import { ContainerMovilComponent } from './container-movil/container-movil.component';
+import { ContainerWebDesktopComponent } from './container-web-desktop/container-web-desktop.component';
 
 @Component({
   selector: 'app-aplication',
   standalone: true,
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    ContainerApplicationComponent,
+    ContainerMovilComponent,
+    ContainerWebDesktopComponent
   ],
   templateUrl: './aplication.component.html',
   styleUrl: './aplication.component.css'

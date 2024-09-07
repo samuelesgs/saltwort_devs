@@ -2,6 +2,8 @@
     color: white;
     text-align: left;
     color: #898888 !important;
+    display: flex;
+    align-items: center;
 }
 
 .text-li{
@@ -15,4 +17,6 @@
     text-align: left;
     border-bottom: 2px solid grey;
     padding-bottom: 0.25rem; 
+    margin-left: 10px;
+    font-size: 44px;
 }

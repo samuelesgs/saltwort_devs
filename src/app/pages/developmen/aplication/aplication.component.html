@@ -85,12 +85,12 @@
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div 
             *ngIf="selectedButton === 'movil'"
-            class="col-11 ms-5 mt-5 bg-white-transparent card-screens-project p-3 text-white overflow-x"
+            class="col-11 ms-5 mt-5 bg-white-transparent card-screens-project p-3 text-white"
             >
             <div class="row screens-movil" >
+                
                 <div class="col" *ngFor="let screen of selectProject!.screens">
                     <img 
-                        
                         class=" mt-4"
                         src="./assets/images/{{screen.url}}.png"
                     />

@@ -128,6 +128,16 @@ export class Develpments {
                                         name: 'screen-8',
                                         detail: 'detalle de la pantalla 8',
                                         url: 'screen2'
+                                    },
+                                    {
+                                        name: 'screen-9',
+                                        detail: 'detalle de la pantalla 7',
+                                        url: 'screen1'
+                                    },
+                                    {
+                                        name: 'screen-10',
+                                        detail: 'detalle de la pantalla 8',
+                                        url: 'screen2'
                                     }
                                 ]
                             }, 
