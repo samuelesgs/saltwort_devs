@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { Develpments, ProfileData, Project, typeProject } from '../../../../utils/interface/general.interface';
 import { CommonModule } from '@angular/common';
+import { AppService } from '../../../../app.service';
 
 @Component({
   selector: 'app-container-application',
@@ -11,27 +12,40 @@ import { CommonModule } from '@angular/common';
     RouterModule
   ],
   templateUrl: './container-application.component.html',
-  styleUrl: './container-application.component.css'
+  styleUrls:['./container-application.component.css']
 })
 export class ContainerApplicationComponent {
+
   public profile!: ProfileData;
-  public selectProject!: Project | null;
+  public selectProject: Project | null = null;
   public selectedButton: string | null = null;
 
   name = "";
   company = "";
   project = "";
 
-  constructor( private route : ActivatedRoute) { }
+  constructor( private route : ActivatedRoute, private appService: AppService) { }
 
   ngOnInit(): void {
     this.loadingData();
+    this.appService.button$.subscribe(button => {
+      this.selectedButton = button; 
+    });
+
+    this.appService.profile$.subscribe(profile => {
+      this.profile = profile!;
+    });
+
+    this.appService.project$.subscribe(project => {
+      this.selectProject = project;
+    });
   }
 
   loadingData() {
     this.name = this.route.snapshot.paramMap.get('name')!;
     this.company = this.route.snapshot.paramMap.get('company')!;
     this.project = this.route.snapshot.paramMap.get('project')!;
+    
     this.getFullName();
   }
   
@@ -39,7 +53,9 @@ export class ContainerApplicationComponent {
     this.profile = new Develpments().informationDev(this.name);
     const selectCompany = this.profile.companies.find(row => row.name == this.company);
     const selectedProject = selectCompany?.projects.find(row => row.name == this.project);
-    console.log()
+
+    console.log(this.profile, selectCompany, selectedProject)
+
     if(selectedProject){
       this.selectProject = selectedProject;
     }
@@ -59,6 +75,7 @@ export class ContainerApplicationComponent {
 
   selectButton(button: string): void {
     this.selectedButton = button;
+    this.appService.setButton(button);
   }
 
 }
