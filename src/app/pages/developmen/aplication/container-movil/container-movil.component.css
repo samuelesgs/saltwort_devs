@@ -1,0 +1,25 @@
+.carousel-control-next {
+    opacity: 85%;
+    right: -100px;
+}
+
+.carousel-control-prev {
+    opacity: 85%;
+    left: -100px;
+}
+
+.card-screens-project {
+    border-radius: 16px;
+    height: 65vh;
+    width: calc(100% - 5%);
+}
+
+.screens-movil{
+    display: flex;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh; 
+  }
+  

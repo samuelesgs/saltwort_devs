@@ -84,7 +84,6 @@ export class AplicationComponent {
     const selectCompany = this.profile.companies.find(row => row.name == this.company);
     const selectedProject = selectCompany?.projects.find(row => row.name == this.project);
 
-    console.log()
     if (!selectedProject) {
       console.error('Proyecto no encontrado, redireccionando...');
       this.router.navigate(['/desarrolladores']); // Redirige a la ruta deseada
@@ -102,22 +101,6 @@ export class AplicationComponent {
     this.itemSize = this.selectProject!.screens.length;
     const increment = isAfter ? this.itemActive - 1 : this.itemActive + 1;
     this.incrementOrDecrease(increment);
-  }
-
-  onClickCarouselMovil(isAfter: boolean){
-    this.itemSize = this.selectProject!.screens.length;
-    const increment = isAfter ? this.itemActive + 1 : this.itemActive - 1;
-    this.incrementOrDecreaseMovil(increment);
-  }
-
-  incrementOrDecreaseMovil(increment: number) {
-    if (increment < 0) {
-      this.itemActive = this.itemSize - 1;
-    } else if (increment >= this.itemSize) {
-      this.itemActive = 0;
-    } else {
-      this.itemActive = increment;
-    }
   }
 
   incrementOrDecrease(increment : number) {
