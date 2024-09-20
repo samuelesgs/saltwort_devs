@@ -96,28 +96,4 @@ export class AplicationComponent {
     this.service.setProfile(this.profile);
     this.service.setProject(this.selectProject);
   }
-
-  onClickCarouse(isAfter : boolean) {
-    this.itemSize = this.selectProject!.screens.length;
-    const increment = isAfter ? this.itemActive - 1 : this.itemActive + 1;
-    this.incrementOrDecrease(increment);
-  }
-
-  incrementOrDecrease(increment : number) {
-    if (this.itemSize < 0) {
-      this.itemActive = this.itemSize - 1;
-    } else if (increment >= this.itemSize) {
-      this.itemActive = 0
-    } else {
-      this.itemActive = increment
-    }
-  }
-
-  getScreen(){
-    return this.selectProject!.screens[this.itemActive];
-  }
-
-  getAllScreens(){
-    return this.selectProject!.screens;
-  }
 }
