@@ -21,10 +21,36 @@
         "title-point-7" : "Changes to this privacy policy", 
         "description-point-7" : "We may update this privacy policy from time to time. We will post any changes on this page and, if the changes are significant, we will notify you by email or by means of a notice on our website."
     },
+    "home" : {
+        "home-description" : "At Salwort we are a young and innovative company. Committed to research, optimization and systematizing solutions.",
+        "title-1" : "Title 1",
+        "screen-1" : " Screen 1 ",
+        "title-2" : "Title 2",
+        "screen-2" : " Screen 2",
+        "title-3" : " Title 3",
+        "screen-3" : " Screen 3"
+    },
     "activity-planner" : {
         "properties" : {
             "name-1" : "Manage your time"
         }
+    },
+    "footer" :  {
+        "description" : "Welcome to Saltwort Devs. We are committed to protecting and respecting your privacy. The data provided by users or contacts is highly protected by our rigorous privacy policies. To know our privacy policies,",
+        "contact-us" : "Contact us"
+    },
+    "about-of" : {
+      "mision" : " ",
+      "vision"  : " ",
+      "objectives" : " ",
+      "mision-desc" : " ",
+      "vision-desc" : " ",
+      "objetives-desc" : " "
+    },
+    "Devs" : {
+        "Luis-desc" : "",
+        "Samuel-desc" : "",
+        "Aksel-desc" : ""
     }
     
 }

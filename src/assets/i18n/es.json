@@ -12,9 +12,9 @@
         "description-point-2" : "Utilizamos la información que recopilamos para los siguientes fines:\n\nProporcionar y gestionar nuestros servicios.\nPersonalizar su experiencia en nuestro sitio web.\n\nComunicarnos con usted, incluyendo el envío de notificaciones y actualizaciones importantes.\n\nMejorar nuestro sitio web y servicios mediante el análisis de cómo los usuarios interactúan con ellos.\nCumplir con nuestras obligaciones legales y resolver disputas.",
         "title-point-3" : "Divulgación de su información",
         "description-point-3" : "Podemos compartir su información personal con terceros en las siguientes circunstancias:\n\nCon proveedores de servicios que nos ayudan a operar nuestro negocio, como servicios de alojamiento web y análisis de datos.\n\nSi estamos obligados a divulgar su información para cumplir con una obligación legal o para proteger nuestros derechos, propiedad o seguridad.\n\nEn caso de una fusión, adquisición o venta de activos, sus datos pueden ser transferidos como parte de la transacción.",
-        "title-point-4" : "Security of your information", 
+        "title-point-4" : "Seguridad de su información", 
         "description-point-4" : "Tomamos medidas razonables para proteger su información personal contra el acceso no autorizado, la alteración, la divulgación o la destrucción.\n\nSin embargo, ninguna transmisión de datos a través de Internet o almacenamiento electrónico es completamente segura.\n\nPor lo tanto, no podemos garantizar la seguridad absoluta de su información.",
-        "title-point-5" : "Data retention", 
+        "title-point-5" : "Retencion de información", 
         "description-point-5" : "Retenemos su información personal solo durante el tiempo necesario para cumplir con los fines para los que fue recopilada, incluidos los requisitos legales, contables o de informes.",
         "title-point-6" : "Sus derechos", 
         "description-point-6" : "Tiene derecho a acceder, corregir, actualizar o eliminar su información personal. También puede tener derecho a restringir o oponerse al procesamiento de su información personal, así como a solicitar la portabilidad de sus datos. Para ejercer estos derechos, comuníquese con nosotros a través de los detalles de contacto proporcionados a continuación.",
@@ -22,9 +22,35 @@
         "description-point-7" : "Podemos actualizar esta política de privacidad de vez en cuando. Publicaremos cualquier cambio en esta página y, si los cambios son significativos, le notificaremos por correo electrónico o mediante un aviso en nuestro sitio web."
 
     },
+    "home" : {
+        "home-description" : "En Salwort somos una empresa joven e innovadora. Comprometidos con la investigación, optimización y sistematizar soluciones.",
+        "title-1" : "Titulo 1",
+        "screen-1" : " Pantalla 1 ",
+        "title-2" : "Titulo 2",
+        "screen-2" : " Pantalla 2",
+        "title-3" : " Titulo 3",
+        "screen-3" : " Pantalla 3"
+    },
     "activity-planner" : {
         "properties" : {
             "name-1" : "Administra tu tiempo"
         }
+    },
+    "footer" :  {
+        "description" : "Bienvenido a Saltwort Devs. Nos comprometemos a proteger y respetar su privacidad. Los datos proporcionados por los usuarios o contactos son altamente resguardados por nuestras politicas de privacidad rigorosas. Para conocer nuestras politicas de privacidad,",
+        "contact-us" : "Contactanos"
+    },
+    "about-of" : {
+      "mision" : " ",
+      "vision"  : " ",
+      "objectives" : " ",
+      "mision-desc" : " ",
+      "vision-desc" : " ",
+      "objetives-desc" : " "
+    },
+    "Devs" : {
+        "Luis-desc" : "",
+        "Samuel-desc" : "",
+        "Aksel-desc" : ""
     }
 }
