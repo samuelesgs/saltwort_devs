@@ -18,18 +18,18 @@ export class ModelSaltwortApplication {
             img : "angular",
             properties : [
                 {
-                    name : "activity-planner.properties.name-1",
-                    detail : "Podras adminstrar mejor tu tiempo, no se te olvidar cosas",
+                    name : "apps-features.properties.name-1-activityp",
+                    detail : "apps-features.properties.detail-1-activityp",
                     click : false
                 },
                 {
-                    name : "Planifica tus actividades",
-                    detail : "El planificar tus actividades aprovecha tu tiempo al maximo",
+                    name : "apps-features.properties.name-2-activityp",
+                    detail : "apps-features.properties.detail-2-activityp",
                     click : false
                 },
                 {
-                    name : "Aprovecha tu tiempo",
-                    detail : "Aprovechar tu tiempo te servira para poder tener bien medido tus tiempos",
+                    name : "apps-features.properties.name-3-activityp",
+                    detail : "apps-features.properties.detail-3-activityp",
                     click : false
                 }
             ],
@@ -42,13 +42,13 @@ export class ModelSaltwortApplication {
             img : "android",
             properties : [
                 {
-                    name : "Muchos tipos de comida ",
-                    detail : "En esta aplicacion vas a poder descubrir una cantidad inimaginable de recetas que te encantaran",
+                    name : "apps-features.properties.name-1-cooking",
+                    detail : "apps-features.properties.detail-1-cooking",
                     click : false
                 },
                 {
-                    name : "Socializa mediante recetas",
-                    detail : "Vas a poder dejar retroalimentacion a las recetas, de esa manera haciendole saber a todos la calidad de la receta",
+                    name : "apps-features.properties.name-2-cooking",
+                    detail : "apps-features.properties.detail-2-cooking",
                     click : false
                 }
             ],

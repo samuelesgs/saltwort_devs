@@ -31,9 +31,18 @@
         "title-3" : " Titulo 3",
         "screen-3" : " Pantalla 3"
     },
-    "activity-planner" : {
+    "apps-features" : {
         "properties" : {
-            "name-1" : "Administra tu tiempo"
+            "name-1-activityp" : "Administra tu tiempo",
+            "detail-1-activityp" : "Podras administrar mejor tu tiempo, no se te olvidar cosas",
+            "name-2-activityp" : "Planifica tus actividades",
+            "detail-2-activityp" : "El planificar tus actividades aprovecha tu tiempo al maximo",
+            "name-3-activityp" : "Aprovecha tu tiempo",
+            "detail-3-activityp" : "Aprovechar tu tiempo te servira para poder tener bien medido tus tiempos",
+            "name-1-cooking" : "Muchos tipos de comida ",
+            "detail-1-cooking" : "En esta aplicacion vas a poder descubrir una cantidad inimaginable de recetas que te encantaran",
+            "name-2-cooking" : "Socializa mediante recetas",
+            "detail-2-cooking" : "Vas a poder dejar retroalimentacion a las recetas, de esa manera haciendole saber a todos la calidad de la receta" 
         }
     },
     "footer" :  {
@@ -41,16 +50,45 @@
         "contact-us" : "Contactanos"
     },
     "about-of" : {
-      "mision" : " ",
-      "vision"  : " ",
-      "objectives" : " ",
-      "mision-desc" : " ",
-      "vision-desc" : " ",
-      "objetives-desc" : " "
+      "mision" : " Misión",
+      "vision"  : " Visión",
+      "objectives" : " Objectivos",
+      "mision-desc" : " Nuestro compromiso es desarrollar propuestas que impulsen el crecimiento y la eficiencia de nuestros clientes, proporcionando soluciones adaptadas a un entorno en constante evolución, con el objetivo de construir un futuro más sostenible y competitivo.",
+      "vision-desc" : "  Ser reconocidos como líderes en innovación y desarrollo de soluciones tecnológicas que transformen la forma en que las empresas operan y se adaptan a un mundo en constante cambio. Aspiramos a establecer nuevos estándares de eficiencia y sostenibilidad en cada sector en el que participamos, convirtiéndonos en el socio preferido para organizaciones que buscan no solo crecer, sino también evolucionar con agilidad y resiliencia. En Saltwort, visualizamos un futuro donde nuestras soluciones no solo resuelven problemas actuales, sino que también anticipan las necesidades futuras, creando un impacto duradero y positivo en la sociedad y el medio ambiente.",
+      "objetives-desc" : " En Saltwort nos enfocamos en desarrollar tecnologías innovadoras que optimicen la eficiencia operativa de nuestros clientes, permitiéndoles adaptarse con agilidad a los cambios del mercado. Nos comprometemos a la investigación continua, la creación de soluciones sostenibles y la expansión estratégica en mercados globales, mientras priorizamos la satisfacción del cliente mediante la entrega de soluciones personalizadas y de alta calidad."
     },
     "Devs" : {
-        "Luis-desc" : "",
-        "Samuel-desc" : "",
-        "Aksel-desc" : ""
+        "Luis-desc" : "Soy un desarrollador junior con experiencia en varias tecnologías, incluyendo el uso de Android Studio con Kotlin y Visual Studio con C#. Tengo habilidades en la gestión de bases de datos, trabajando con PostgreSQL, MySQL y Management. Me considero una persona con gran disposición para aprender y crecer en el campo del desarrollo",
+        "Samuel-desc" : "Con más de 5 años de experiencia en diversas áreas, cuento con sólidos conocimientos en el desarrollo de aplicaciones Android usando Java, Kotlin y XML. En el ámbito web, manejo tecnologías como JavaScript, HTML, CSS, Angular y TypeScript para crear soluciones interactivas y eficientes. Además, tengo experiencia en el backend con Node.js, PHP y NestJS, y en la gestión de servicios AWS, incluyendo EC2, S3 y otros",
+        "Aksel-desc" : "Con experiencia en el desarrollo nativo para iOS utilizando Swift y en la creación de aplicaciones web con Angular, también cuento con habilidades en la elaboración de APIs REST con NestJS en entornos Node.js. Mi experiencia abarca la integración de servicios externos, la migración de tecnologías y la optimización de sistemas para mejorar el rendimiento y la escalabilidad"
+    },
+    "Devs-big-desc" : {
+        "properties" :  {
+            "Luis-desc" : "Soy un desarrollador junior con experiencia en diversas tecnologías, destacando mi habilidad en Android Studio con Kotlin para el desarrollo de aplicaciones móviles, donde he creado interfaces de usuario intuitivas e integrado características avanzadas. También tengo experiencia en Visual Studio con C#, desarrollando aplicaciones de escritorio y servicios eficientes. Mi competencia se extiende a la gestión de bases de datos, con conocimientos en PostgreSQL, MySQL y herramientas de administración. Me considero una persona altamente motivada y dispuesta a aprender, con un enfoque constante en mejorar mis habilidades y crecer en el campo del desarrollo",
+            "Samuel-desc" : "Desarrollador con más de 5 años de experiencia en desarrollo web y backend, y experto en Android Studio con Java y Kotlin. En el desarrollo móvil, he utilizado Android Studio para crear aplicaciones robustas, optimizando el rendimiento y la experiencia del usuario con Java y Kotlin. Tengo experiencia en el diseño de interfaces con XML, la integración de APIs, y la implementación de arquitecturas como MVVM. En el ámbito web, soy competente en tecnologías frontend como JavaScript, HTML, CSS y Angular, con un enfoque en la creación de interfaces responsivas. En el backend, tengo amplios conocimientos en Node.js, PHP y NestJS, con experiencia en la generación de archivos XLSX y CSV. Además, manejo servicios en la nube de AWS, incluyendo EC2, S3 y ELB, con experiencia en el despliegue de aplicaciones en subdominios de EC2 y la administración de contenedores S3. He utilizado PM2 para despliegues en AWS y he implementado validaciones de compras a través de APIs de Google en proyectos backend. Mi experiencia también incluye el uso de Bootstrap para diseño CSS y el despliegue de aplicaciones en entornos de producción de alta disponibilidad",
+            "Aksel-desc" : "Soy un programador con amplia experiencia en el desarrollo de aplicaciones móviles para iOS utilizando Swift, creando soluciones eficientes y bien diseñadas para la plataforma Apple. En el desarrollo web, manejo con soltura Angular para construir interfaces de usuario dinámicas y responsivas que se adaptan a diferentes dispositivos. Tengo un sólido conocimiento en la creación de APIs REST con NestJS en entornos Node.js, facilitando una comunicación segura y eficiente entre sistemas. Mi experiencia incluye la integración de servicios externos, la migración de tecnologías para asegurar transiciones suaves y sin interrupciones, y la optimización de sistemas para mejorar el rendimiento y la escalabilidad, adaptándome a las crecientes demandas del mercado",
+            "related-projects" : "Proyectos relacionados"
+        }
+    },
+    "specific-project": {
+        "properties" : {
+            "project-detail-ventaplus-luis" : "Punto de venta",
+            "revelant-skills-1-ventaplus-luis" : "Actualizacion de versiones",
+            "revelant-skills-2-ventaplus-luis" : "Cambio de la version 24 a la version 33",
+            "project-detail-crm-luis" :"CRM para clientes ",
+            "revelant-skills-1-crm-luis" : "Consultas base de datos",
+            "revelant-skills-2-crm-luis" : "Creacion PDF y exportacion Excel",
+            "revelant-skills-3-crm-luis" : "Arquitectura MVC",
+            "project-detail-cvm-luis" : "Proyecto interno",
+            "revelant-skills-cvm-1-luis" : "Inyección de dependencias",
+            "revelant-skills-cvm-2-luis" : "Retrofit",
+            "revelant-skills-cvm-3-luis" : "Arquitectura MVVM",
+            "project-detail-encode-aksel" : "Capturador de ingreso en proyecto",
+            "revelant-skills-encode-aksel" : "Cambio de cocoa pods",
+            "project-detail-shopping-expense-samuel" :"Capturador de ingreso en proyecto",
+            "revelant-skills-shopping-expenses-samuel" : "Creacion de proyecto",
+            "project-detail-daily-expenses-samuel"  :"Capturador de ingreso en proyecto",
+            "revelant-skills-daily-expenses-samuel" : "Creacion de proyecto"
+        }
     }
 }

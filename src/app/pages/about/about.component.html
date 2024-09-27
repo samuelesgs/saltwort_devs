@@ -22,12 +22,12 @@
                 'item-3': !showAnySection,
             }"
             (click)="showContainer($event, 'mission')">
-            <h1>Misión</h1>
+            <h1>    {{"about-of.mision" | translate}}</h1>
             <p
                 class="text-style mt-3 ps-5 pe-5"
                 [class.show-text]="(currentContainer == 'mission')"
                 [hidden]="currentContainer != 'mission'">
-                Nuestro compromiso es desarrollar propuestas que impulsen el crecimiento y la eficiencia de nuestros clientes, proporcionando soluciones adaptadas a un entorno en constante evolución, con el objetivo de construir un futuro más sostenible y competitivo.
+                {{"about-of.mision-desc" | translate}}
             </p>
         </div>
         <div
@@ -38,12 +38,12 @@
                 'item-3': !showAnySection,
             }"
             (click)="showContainer($event, 'vission')">
-            <h1>Visión</h1>
+            <h1>{{"about-of.vision" | translate}}</h1>
             <p
                 class="text-style mt-3 pe-5 ps-5"
                 [class.show-text]="(currentContainer == 'vission')"
                 [hidden]="currentContainer != 'vission'">
-                Ser reconocidos como líderes en innovación y desarrollo de soluciones tecnológicas que transformen la forma en que las empresas operan y se adaptan a un mundo en constante cambio. Aspiramos a establecer nuevos estándares de eficiencia y sostenibilidad en cada sector en el que participamos, convirtiéndonos en el socio preferido para organizaciones que buscan no solo crecer, sino también evolucionar con agilidad y resiliencia. En Saltwort, visualizamos un futuro donde nuestras soluciones no solo resuelven problemas actuales, sino que también anticipan las necesidades futuras, creando un impacto duradero y positivo en la sociedad y el medio ambiente.
+                {{"about-of.vision-desc" | translate}}
             </p>
         </div>
         <div
@@ -54,12 +54,12 @@
                 'item-3': !showAnySection,
             }"
             (click)="showContainer($event, 'objetives')">
-            <h1>Objetivos</h1>
+            <h1> {{"about-of.objectives" | translate}}</h1>
             <p
                 class="text-style mt-3 pe-5 ps-5"
                 [class.show-text]="(currentContainer == 'objetives')"
                 [hidden]="currentContainer != 'objetives'">
-                En Saltwort nos enfocamos en desarrollar tecnologías innovadoras que optimicen la eficiencia operativa de nuestros clientes, permitiéndoles adaptarse con agilidad a los cambios del mercado. Nos comprometemos a la investigación continua, la creación de soluciones sostenibles y la expansión estratégica en mercados globales, mientras priorizamos la satisfacción del cliente mediante la entrega de soluciones personalizadas y de alta calidad.
+                {{"about-of.objectives-desc" | translate}}
             </p>
         </div>
     </div>

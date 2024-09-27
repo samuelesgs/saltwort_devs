@@ -54,7 +54,7 @@ export class Develpments {
                 email: 'pavicalderon49@gmail.com',
                 urlLinkedin: '',
                 title: 'Jr. Developer',
-                desc : 'Soy un desarrollador junior con experiencia en diversas tecnologías, destacando mi habilidad en Android Studio con Kotlin para el desarrollo de aplicaciones móviles, donde he creado interfaces de usuario intuitivas e integrado características avanzadas. También tengo experiencia en Visual Studio con C#, desarrollando aplicaciones de escritorio y servicios eficientes. Mi competencia se extiende a la gestión de bases de datos, con conocimientos en PostgreSQL, MySQL y herramientas de administración. Me considero una persona altamente motivada y dispuesta a aprender, con un enfoque constante en mejorar mis habilidades y crecer en el campo del desarrollo.',
+                desc : 'Devs-big-desc.properties.Luis-desc',
                 tools : [
                     "android",
                     "java",
@@ -74,10 +74,10 @@ export class Develpments {
                                 id: 1,
                                 platforms : [typeProject.android, typeProject.desktop],
                                 name : 'Venta plus Movil',
-                                detail : 'Punto de venta',
+                                detail : 'specific-project.properties.project-detail-ventaplus-luis',
                                 relevantSkills : [
-                                    "Actualizacion de versiones",
-                                    "Cambio de la version 24 a la version 33"
+                                    "specific-project.properties.revelant-skills-1-ventaplus-luis",
+                                    "specific-project.properties.revelant-skills-2-ventaplus-luis"
                                 ],
                                 tools : [
                                     "android",
@@ -145,11 +145,11 @@ export class Develpments {
                                 id: 2,
                                 platforms : [typeProject.android],
                                 name : 'Control Vehicular Movil',
-                                detail : 'Proyecto interno',
+                                detail : 'specific-project.properties.project-detail-cvm-luis',
                                 relevantSkills : [
-                                    "Inyección de dependencias",
-                                    "Retrofit",
-                                    "Arquitectura MVVM"
+                                    "specific-project.properties.revelant-skills-1-cvm-luis",
+                                    "specific-project.properties.revelant-skills-2-cvm-luis",
+                                    "specific-project.properties.revelant-skills-3-cvm-luis"
                                 ],
                                 tools : [
                                     "android",
@@ -172,11 +172,11 @@ export class Develpments {
                                 id: 3,
                                 platforms : [typeProject.desktop],
                                 name : 'CRM Generico',
-                                detail : 'CRM para clientes ',
+                                detail : 'specific-project.properties.project-detail-crm-luis ',
                                 relevantSkills : [
-                                    "Consultas base de datos",
-                                    "Creacion PDF y exportacion Excel",
-                                    "Arquitectura MVC"
+                                    "specific-project.properties.revelant-skills-1-crm-luis",
+                                    "specific-project.properties.revelant-skills-2-crm-luis",
+                                    "specific-project.properties.revelant-skills-3-crm-luis"
                                 ],
                                 tools : [
                                     "c-sharp"
@@ -208,7 +208,7 @@ export class Develpments {
                     email: 'akselherrera18@gmail.com',
                     urlLinkedin: '',
                     title: 'Jr. Developer',
-                    desc: 'Soy un programador con amplia experiencia en el desarrollo de aplicaciones móviles para iOS utilizando Swift, creando soluciones eficientes y bien diseñadas para la plataforma Apple. En el desarrollo web, manejo con soltura Angular para construir interfaces de usuario dinámicas y responsivas que se adaptan a diferentes dispositivos. Tengo un sólido conocimiento en la creación de APIs REST con NestJS en entornos Node.js, facilitando una comunicación segura y eficiente entre sistemas. Mi experiencia incluye la integración de servicios externos, la migración de tecnologías para asegurar transiciones suaves y sin interrupciones, y la optimización de sistemas para mejorar el rendimiento y la escalabilidad, adaptándome a las crecientes demandas del mercado.',
+                    desc: 'Devs-big-desc.properties.Aksel-desc.',
                     tools : [
                         "swift",
                         "angular",
@@ -233,9 +233,9 @@ export class Develpments {
                                         typeProject.web
                                     ],
                                     name : 'Gastos de compra',
-                                    detail : 'Capturador de ingreso en proyecto',
+                                    detail : 'specific-project.properties.project-detail-encode-aksel',
                                     relevantSkills : [
-                                        "Cambio de cocoa pods",
+                                        "specific-project.properties.revelant-skills-encode-aksel",
                                     ],
                                     tools : [
                                         "swift"
@@ -266,7 +266,7 @@ export class Develpments {
                 email: 'samuelesgs04@gmail.com',
                 urlLinkedin: '',
                 title: 'Sr. Developer',
-                desc: 'Desarrollador con más de 5 años de experiencia en desarrollo web y backend, y experto en Android Studio con Java y Kotlin. En el desarrollo móvil, he utilizado Android Studio para crear aplicaciones robustas, optimizando el rendimiento y la experiencia del usuario con Java y Kotlin. Tengo experiencia en el diseño de interfaces con XML, la integración de APIs, y la implementación de arquitecturas como MVVM. En el ámbito web, soy competente en tecnologías frontend como JavaScript, HTML, CSS y Angular, con un enfoque en la creación de interfaces responsivas. En el backend, tengo amplios conocimientos en Node.js, PHP y NestJS, con experiencia en la generación de archivos XLSX y CSV. Además, manejo servicios en la nube de AWS, incluyendo EC2, S3 y ELB, con experiencia en el despliegue de aplicaciones en subdominios de EC2 y la administración de contenedores S3. He utilizado PM2 para despliegues en AWS y he implementado validaciones de compras a través de APIs de Google en proyectos backend. Mi experiencia también incluye el uso de Bootstrap para diseño CSS y el despliegue de aplicaciones en entornos de producción de alta disponibilidad.',
+                desc: 'Devs-big-desc.properties.Samuel-desc',
                 tools: [
                     "android",
                     "java",
@@ -292,9 +292,9 @@ export class Develpments {
                                     typeProject.android,
                                     typeProject.web
                                 ],
-                                detail : 'Capturador de ingreso en proyecto',
+                                detail : 'specific-project.properties.project-detail-shopping-expense-samuel',
                                 relevantSkills : [
-                                    "Creacion de proyecto",
+                                    "specific-project.properties.revelant-skills-shopping-expense-aksel",
                                 ],
                                 tools : [
                                     "android",
@@ -323,9 +323,9 @@ export class Develpments {
                                     typeProject.android,
                                     typeProject.web
                                 ],
-                                detail : 'Capturador de ingreso en proyecto',
+                                detail : 'specific-project.properties.project-detail-daily-expenses-samuel',
                                 relevantSkills : [
-                                    "Creacion de proyecto",
+                                    "specific-project.properties.revelant-skills-daily-expenses-aksel",
                                 ],
                                 tools : [
                                     "android",

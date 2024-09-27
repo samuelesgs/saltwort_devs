@@ -2,13 +2,15 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppService } from '../../app.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-developmen',
   standalone: true,
   imports: [
     RouterModule,
-    CommonModule
+    CommonModule,
+    TranslateModule
   ],
   templateUrl: './developmen.component.html',
   styleUrl: './developmen.component.css'

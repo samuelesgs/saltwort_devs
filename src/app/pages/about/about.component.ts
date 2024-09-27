@@ -2,12 +2,14 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { AppService } from '../../app.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-about',
   standalone: true,
   imports: [
-    CommonModule
+    CommonModule,
+    TranslateModule
   ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
@@ -16,7 +18,6 @@ export class AboutComponent {
   public currentContainer = "";
   public showAnySection = false;
   
-
   constructor(private service: AppService) {
     this.service.setRoute(true);
   }

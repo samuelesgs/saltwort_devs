@@ -3,13 +3,15 @@ import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { Company, Develpments, ProfileData, Project } from '../../../utils/interface/general.interface';
 import { CommonModule } from '@angular/common';
 import { AppService } from '../../../app.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-profile-developer',
   standalone: true,
   imports: [
     CommonModule, 
-    RouterModule
+    RouterModule,
+    TranslateModule
   ],
   templateUrl: './profile-developer.component.html',
   styleUrl: './profile-developer.component.css'
