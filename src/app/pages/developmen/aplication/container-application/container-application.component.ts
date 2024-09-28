@@ -38,6 +38,7 @@ export class ContainerApplicationComponent {
 
     this.appService.project$.subscribe(project => {
       this.selectProject = project;
+      this.selectDefaultButton();
     });
   }
 
@@ -76,6 +77,17 @@ export class ContainerApplicationComponent {
   selectButton(button: string): void {
     this.selectedButton = button;
     this.appService.setButton(button);
+  }
+  selectDefaultButton(): void {
+    if (this.selectProject) {
+      if (this.isMovil()) {
+        this.selectButton('movil');
+      } else if (this.isWeb()) {
+        this.selectButton('web');
+      } else if (this.isDesktop()) {
+        this.selectButton('desktop');
+      }
+    }
   }
 
 }
