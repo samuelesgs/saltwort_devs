@@ -20,6 +20,8 @@ export class ContainerMovilComponent {
   public profile!: ProfileData;
   public selectProject!: Project | null;
   public selectedButton: string | null = null;
+  currentIndex: number = 0;
+  visibleImagesCount: number = 6;  // Cantidad de imágenes visibles
   name = "";
   company = "";
   project = "";
@@ -91,11 +93,11 @@ export class ContainerMovilComponent {
       this.service.setProject(this.selectProject);
     }
 
-  onClickCarouselMovil(isAfter: boolean){
+/*  onClickCarouselMovil(isAfter: boolean){
     this.itemSize = this.selectProject!.screens.length;
     const increment = isAfter ? this.itemActive + 1 : this.itemActive - 1;
     this.incrementOrDecreaseMovil(increment);
-  }
+  }*/
 
   incrementOrDecreaseMovil(increment: number) {
     if (increment < 0) {
@@ -105,5 +107,31 @@ export class ContainerMovilComponent {
     } else {
       this.itemActive = increment;
     }
+  }
+
+  // Función para cambiar el índice del carrusel
+  onClickCarouselMovil(isPrev: boolean) {
+    const carousel = document.querySelector('.carousel-images')!;
+    const scrollAmount = carousel.clientWidth / 1; // Ajusta el scroll en función del número de imágenes visibles
+  
+    if (isPrev) {
+      carousel.scrollLeft -= scrollAmount; // Desplazar a la izquierda
+    } else {
+      carousel.scrollLeft += scrollAmount; // Desplazar a la derecha
+    }
+    /* 
+    const totalImages = this.selectProject!.screens.length;
+
+    // Avanzar o retroceder en el carrusel
+    if (isPrev) {
+      this.currentIndex = (this.currentIndex === 0) ? totalImages - this.visibleImagesCount : this.currentIndex - 1;
+    } else {
+      this.currentIndex = (this.currentIndex >= totalImages - this.visibleImagesCount) ? 0 : this.currentIndex + 1;
+    } */
+  }
+
+  // Obtener las imágenes visibles en el carrusel
+  getVisibleScreens() {
+    return this.selectProject!.screens.slice(this.currentIndex, this.currentIndex + this.visibleImagesCount);
   }
 }

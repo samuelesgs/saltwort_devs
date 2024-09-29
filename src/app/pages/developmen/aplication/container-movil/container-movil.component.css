@@ -1,11 +1,13 @@
 .carousel-control-next {
     opacity: 85%;
-    right: -100px;
+    right: -5vw !important;
+    margin-top: -30vh;
 }
 
 .carousel-control-prev {
     opacity: 85%;
-    left: -100px;
+    left: -5vw !important;    
+    margin-top: -30vh;
 }
 
 .card-screens-project {
@@ -14,16 +16,60 @@
     width: calc(100% - 5%);
 }
 
-.screens-movil{
-    display: flex;
-    flex-wrap: nowrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 55vh; 
-}
-
 .rotate-arrow {
     transform: rotate(180deg);
 }
- 
+
+.image-carousel-android {
+    width: auto;
+    height: 55vh;
+    transition: all 0.3s ease-out;
+}
+
+.image-carousel-android:hover {
+    height: 61vh;
+    transition: all 0.3s ease-in;
+}
+
+/* borrar */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+}
+
+.image-wrapper {
+    flex: 0 0 auto;
+    width: 20%;
+    text-align: center;
+}
+
+.carousel-image {
+    width: auto;
+    height: 55vh;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}

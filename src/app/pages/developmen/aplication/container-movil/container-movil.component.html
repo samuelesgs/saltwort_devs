@@ -1,30 +1,42 @@
-<div 
-*ngIf="selectedButton === 'movil'"
-class="col-11 ms-5 mt-5 bg-white-transparent card-screens-project p-3 text-white"
->
-<div class="row screens-movil" >
-    
-    <div class="col" *ngFor="let screen of selectProject!.screens">
-        <img 
-            class=" mt-4"
-            src="./assets/images/{{screen.url}}.png"
-        />
+<div
+    *ngIf="selectedButton === 'movil'"
+     class="col-11 ms-5 mt-5 bg-white-transparent card-screens-project p-3 text-white"
+     >
+
+    <!-- CONTAINER IMG -->
+    <div class="carousel-container">
+        <div class="carousel-images">
+            <div class="image-wrapper" *ngFor="let screen of selectProject!.screens">
+                <img 
+                    [src]="'./assets/images/' + screen.url + '.png'"
+                    alt="Imagen carrusel"
+                    class="carousel-image image-carousel-android mt-4"
+                />
+            </div>
+        </div>
     </div>
-</div>
-<button
-    class="carousel-control-prev"
-    (click)="onClickCarouselMovil(true)"
-    ><img
-    src="./assets/images/icon-arrow.png"
-    class="d-block"
-    />
-</button>
-<button
-    class="carousel-control-next rotate-arrow"
-    (click)="onClickCarouselMovil(false)"
-    ><img
-    src="./assets/images/icon-arrow.png"
-    class="d-block"
-    />
-</button>
+
+    <!-- BUTTON BACK -->
+    <button 
+        class="carousel-control-prev"
+        (click)="onClickCarouselMovil(true)"
+        >
+        <img 
+            src="./assets/images/icon-arrow.png" 
+            class="d-block" 
+            alt="Flecha izquierda"
+        />
+    </button>
+
+    <!-- BUTTON NEXT -->
+    <button 
+        class="carousel-control-next rotate-arrow"
+        (click)="onClickCarouselMovil(false)"
+        >
+        <img 
+            src="./assets/images/icon-arrow.png" 
+            class="d-block" 
+            alt="Flecha derecha"
+        />
+    </button>
 </div>
