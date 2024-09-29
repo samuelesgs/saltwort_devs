@@ -20,7 +20,7 @@ export class NavBarComponent {
   LocalStorageManager = new LocalStorageManager();
 
   constructor(private translateService : TranslateService, private appService : AppService) {
-    this.translateService.use(this.LocalStorageManager.getItem("lang"));
+    this.translateService.use(this.LocalStorageManager.getItem("lang"));    
   }
 
   setLang(lang : string) {

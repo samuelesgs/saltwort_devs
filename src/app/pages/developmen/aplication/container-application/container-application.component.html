@@ -42,7 +42,7 @@
             <ul class="ms-5">
                 <li
                     *ngFor="let skill of selectProject?.relevantSkills"
-                    >{{skill}}
+                    >{{skill | translate }}
                 </li>
             </ul>
         </div>    
@@ -58,7 +58,7 @@
             </div> 
             <div class="col mt-5 bg-white-transparent size-box-application p-3 text-white">
               <p>
-                {{selectProject?.detail}}
+                {{selectProject!.detail | translate}}
               </p>
             </div>
         </div>

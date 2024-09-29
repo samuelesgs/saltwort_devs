@@ -3,13 +3,15 @@ import { ActivatedRoute, RouterModule } from '@angular/router';
 import { Develpments, ProfileData, Project, typeProject } from '../../../../utils/interface/general.interface';
 import { CommonModule } from '@angular/common';
 import { AppService } from '../../../../app.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-container-application',
   standalone: true,
   imports: [
     CommonModule, 
-    RouterModule
+    RouterModule,
+    TranslateModule
   ],
   templateUrl: './container-application.component.html',
   styleUrls:['./container-application.component.css']
