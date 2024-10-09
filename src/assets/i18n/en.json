@@ -31,7 +31,7 @@
         "title-3" : " Title 3",
         "screen-3" : " Screen 3"
     },
-    "activity-planner" : {
+    "apps-features" : {
         "properties" : {
             "name-1-activityp" : "Manage your time",
             "detail-1-activityp" : "You will be able to manage your time better and won’t forget things.",
@@ -55,7 +55,7 @@
       "objectives" : " Objectives",
       "mision-desc" : " Our commitment is to develop proposals that drive the growth and efficiency of our clients, providing solutions tailored to an ever-evolving environment, with the goal of building a more sustainable and competitive future.",
       "vision-desc" : " To be recognized as leaders in innovation and the development of technological solutions that transform the way companies operate and adapt to an ever-changing world. We aspire to set new standards of efficiency and sustainability in every sector we engage in, becoming the preferred partner for organizations seeking not only to grow but also to evolve with agility and resilience. At Saltwort, we envision a future where our solutions not only solve current problems but also anticipate future needs, creating a lasting and positive impact on society and the environment.",
-      "objetives-desc" : " At Saltwort, we focus on developing innovative technologies that optimize the operational efficiency of our clients, enabling them to adapt swiftly to market changes. We are committed to continuous research, creating sustainable solutions, and strategic expansion in global markets, while prioritizing customer satisfaction by delivering personalized, high-quality solutions."
+      "objectives-desc" : " At Saltwort, we focus on developing innovative technologies that optimize the operational efficiency of our clients, enabling them to adapt swiftly to market changes. We are committed to continuous research, creating sustainable solutions, and strategic expansion in global markets, while prioritizing customer satisfaction by delivering personalized, high-quality solutions."
     },
     "Devs" : {
         "Luis-desc" : "I am a junior developer with experience in various technologies, including using Android Studio with Kotlin and Visual Studio with C#. I have skills in database management, working with PostgreSQL, MySQL, and SQL Server Management. I consider myself a highly motivated person with a strong willingness to learn and grow in the development field.",
@@ -63,29 +63,36 @@
         "Aksel-desc" : "With experience in native iOS development using Swift and in building web applications with Angular, I also have skills in creating REST APIs with NestJS in Node.js environments. My experience includes integrating external services, migrating technologies, and optimizing systems to enhance performance and scalability."
     },
     "Devs-big-desc" : {
-        "Luis-desc" : "I am a junior developer with experience in various technologies, highlighting my proficiency in Android Studio with Kotlin for mobile app development, where I have created intuitive user interfaces and integrated advanced features. I also have experience with Visual Studio and C#, developing efficient desktop applications and services. My expertise extends to database management, with knowledge of PostgreSQL, MySQL, and administration tools. I consider myself a highly motivated individual, eager to learn, with a constant focus on improving my skills and growing in the development field.",
-        "Samuel-desc" : "Developer with over 5 years of experience in web and backend development, and expertise in Android Studio with Java and Kotlin. In mobile development, I have used Android Studio to create robust applications, optimizing performance and user experience with Java and Kotlin. I have experience in designing interfaces with XML, integrating APIs, and implementing architectures like MVVM. In the web domain, I am proficient in frontend technologies such as JavaScript, HTML, CSS, and Angular, with a focus on creating responsive interfaces. On the backend, I have extensive knowledge of Node.js, PHP, and NestJS, along with experience in generating XLSX and CSV files. Additionally, I am well-versed in AWS cloud services, including EC2, S3, and ELB, with experience in deploying applications on EC2 subdomains and managing S3 containers. I have used PM2 for deployments on AWS and have implemented purchase validations through Google APIs in backend projects. My experience also includes utilizing Bootstrap for CSS design and deploying applications in high-availability production environments.",
-        "Aksel-desc" : "I am a programmer with extensive experience in mobile application development for iOS using Swift, creating efficient and well-designed solutions for the Apple platform. In web development, I am proficient in Angular, building dynamic and responsive user interfaces that adapt to different devices. I have a strong background in creating REST APIs with NestJS in Node.js environments, enabling secure and efficient communication between systems. My experience includes integrating external services, migrating technologies to ensure smooth transitions without interruptions, and optimizing systems to enhance performance and scalability, adapting to the growing demands of the market.",
-        "related-projects" : "Related Projects"
+        "properties" : {
+            "Luis-desc" : "I am a junior developer with experience in various technologies, highlighting my proficiency in Android Studio with Kotlin for mobile app development, where I have created intuitive user interfaces and integrated advanced features. I also have experience with Visual Studio and C#, developing efficient desktop applications and services. My expertise extends to database management, with knowledge of PostgreSQL, MySQL, and administration tools. I consider myself a highly motivated individual, eager to learn, with a constant focus on improving my skills and growing in the development field.",
+            "Samuel-desc" : "Developer with over 5 years of experience in web and backend development, and expertise in Android Studio with Java and Kotlin. In mobile development, I have used Android Studio to create robust applications, optimizing performance and user experience with Java and Kotlin. I have experience in designing interfaces with XML, integrating APIs, and implementing architectures like MVVM. In the web domain, I am proficient in frontend technologies such as JavaScript, HTML, CSS, and Angular, with a focus on creating responsive interfaces. On the backend, I have extensive knowledge of Node.js, PHP, and NestJS, along with experience in generating XLSX and CSV files. Additionally, I am well-versed in AWS cloud services, including EC2, S3, and ELB, with experience in deploying applications on EC2 subdomains and managing S3 containers. I have used PM2 for deployments on AWS and have implemented purchase validations through Google APIs in backend projects. My experience also includes utilizing Bootstrap for CSS design and deploying applications in high-availability production environments.",
+            "Aksel-desc" : "I am a programmer with extensive experience in mobile application development for iOS using Swift, creating efficient and well-designed solutions for the Apple platform. In web development, I am proficient in Angular, building dynamic and responsive user interfaces that adapt to different devices. I have a strong background in creating REST APIs with NestJS in Node.js environments, enabling secure and efficient communication between systems. My experience includes integrating external services, migrating technologies to ensure smooth transitions without interruptions, and optimizing systems to enhance performance and scalability, adapting to the growing demands of the market.",
+            "related-projects" : "Related Projects"
+        }
+        
     },
     "specific-project": {
-        "project-detail-ventaplus-luis" : "Point of sale.",
-        "revelant-skills-1-ventaplus-luis" : "Actualizacion de versiones",
-        "revelant-skills-2-ventaplus-luis" : "Cambio de la version 24 a la version 33",
-        "project-detail-crm-luis" :"CRM for clients.",
-        "revelant-skills-1-crm-luis" : "Database queries",
-        "revelant-skills-2-crm-luis" : "PDF creation and Excel export",
-        "revelant-skills-3-crm-luis" : "MVC architecture",
-        "project-detail-cvm-luis" : "Internal project.",
-        "revelant-skills-cvm-1-luis" : "Dependency injection",
-        "revelant-skills-cvm-2-luis" : "Retrofit",
-        "revelant-skills-cvm-3-luis" : "MVVM architecture.",
-        "project-detail-encode-aksel" : "Income capture in the project.",
-        "revelant-skills-encode-aksel" : "Change of CocoaPods.",
-        "project-detail-shopping-expense-samuel" :"Income capture in the project.",
-        "revelant-skills-shopping-expenses-samuel" : "Project creation.",
-        "project-detail-daily-expenses-samuel"  :"Income capture in the project.",
-        "revelant-skills-daily-expenses-samuel" : "Project creation"
-
+        "properties" : {
+            "project-detail-ventaplus-luis" : "Point of sale.",
+            "revelant-skills-1-ventaplus-luis" : "Actualizacion de versiones",
+            "revelant-skills-2-ventaplus-luis" : "Cambio de la version 24 a la version 33",
+            "project-detail-crm-luis" :"CRM for clients.",
+            "revelant-skills-1-crm-luis" : "Database queries",
+            "revelant-skills-2-crm-luis" : "PDF creation and Excel export",
+            "revelant-skills-3-crm-luis" : "MVC architecture",
+            "project-detail-cvm-luis" : "Internal project.",
+            "revelant-skills-cvm-1-luis" : "Dependency injection",
+            "revelant-skills-cvm-2-luis" : "Retrofit",
+            "revelant-skills-cvm-3-luis" : "MVVM architecture.",
+            "project-detail-encode-aksel" : "Income capture in the project.",
+            "revelant-skills-encode-aksel" : "Change of CocoaPods.",
+            "project-detail-shopping-expense-samuel" :"Income capture in the project.",
+            "revelant-skills-shopping-expenses-samuel" : "Project creation.",
+            "project-detail-daily-expenses-samuel"  :"Income capture in the project.",
+            "revelant-skills-daily-expenses-samuel" : "Project creation"
+        }
+    },
+    "random-text" : {
+        "knowmore" : "know more"
     }
 }

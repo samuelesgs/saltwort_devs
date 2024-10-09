@@ -86,7 +86,7 @@ export class AplicationComponent {
 
     if (!selectedProject) {
       console.error('Proyecto no encontrado, redireccionando...');
-      this.router.navigate(['/desarrolladores']); // Redirige a la ruta deseada
+      this.router.navigate(['/desarrolladores']); 
       return;
     }
 

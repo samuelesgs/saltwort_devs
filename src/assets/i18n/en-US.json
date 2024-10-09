@@ -30,7 +30,7 @@
         "title-3" : " Title 3",
         "screen-3" : " Screen 3"
     },
-    "activity-planner" : {
+    "apps-features" : {
         "properties" : {
             "name-1-activityp" : "Manage your time",
             "detail-1-activityp" : "You will be able to manage your time better and won’t forget things.",
@@ -54,7 +54,7 @@
       "objectives" : " Objectives",
       "mision-desc" : " Our commitment is to develop proposals that drive the growth and efficiency of our clients, providing solutions tailored to an ever-evolving environment, with the goal of building a more sustainable and competitive future.",
       "vision-desc" : " To be recognized as leaders in innovation and the development of technological solutions that transform the way companies operate and adapt to an ever-changing world. We aspire to set new standards of efficiency and sustainability in every sector we engage in, becoming the preferred partner for organizations seeking not only to grow but also to evolve with agility and resilience. At Saltwort, we envision a future where our solutions not only solve current problems but also anticipate future needs, creating a lasting and positive impact on society and the environment.",
-      "objetives-desc" : " At Saltwort, we focus on developing innovative technologies that optimize the operational efficiency of our clients, enabling them to adapt swiftly to market changes. We are committed to continuous research, creating sustainable solutions, and strategic expansion in global markets, while prioritizing customer satisfaction by delivering personalized, high-quality solutions."
+      "objectives-desc" : " At Saltwort, we focus on developing innovative technologies that optimize the operational efficiency of our clients, enabling them to adapt swiftly to market changes. We are committed to continuous research, creating sustainable solutions, and strategic expansion in global markets, while prioritizing customer satisfaction by delivering personalized, high-quality solutions."
     },
     "Devs" : {
         "Luis-desc" : "I am a junior developer with experience in various technologies, including using Android Studio with Kotlin and Visual Studio with C#. I have skills in database management, working with PostgreSQL, MySQL, and SQL Server Management. I consider myself a highly motivated person with a strong willingness to learn and grow in the development field.",
@@ -68,24 +68,28 @@
         "related-projects" : "Related Projects"
     },
     "specific-project": {
-        "project-detail-ventaplus-luis" : "Point of sale.",
-        "revelant-skills-1-ventaplus-luis" : "Version update",
-        "revelant-skills-2-ventaplus-luis" : "Change from version 24 to version 33.",
-        "project-detail-crm-luis" :"CRM for clients.",
-        "revelant-skills-1-crm-luis" : "Database queries",
-        "revelant-skills-2-crm-luis" : "PDF creation and Excel export",
-        "revelant-skills-3-crm-luis" : "MVC architecture",
-        "project-detail-cvm-luis" : "Internal project",
-        "revelant-skills-cvm-1-luis" : "Dependency injection",
-        "revelant-skills-cvm-2-luis" : "Retrofit",
-        "revelant-skills-cvm-3-luis" : "MVVM architecture",
-        "project-detail-encode-aksel" : "Income capture in the project.",
-        "revelant-skills-encode-aksel" : "Change of CocoaPods.",
-        "project-detail-shopping-expense-samuel" :"Income capture in the project.",
-        "revelant-skills-shopping-expenses-samuel" : "Project creation.",
-        "project-detail-daily-expenses-samuel"  :"Income capture in the project.",
-        "revelant-skills-daily-expenses-samuel" : "Project creation"
-
+        "properties" : {
+            "project-detail-ventaplus-luis" : "Point of sale.",
+            "revelant-skills-1-ventaplus-luis" : "Actualizacion de versiones",
+            "revelant-skills-2-ventaplus-luis" : "Cambio de la version 24 a la version 33",
+            "project-detail-crm-luis" :"CRM for clients.",
+            "revelant-skills-1-crm-luis" : "Database queries",
+            "revelant-skills-2-crm-luis" : "PDF creation and Excel export",
+            "revelant-skills-3-crm-luis" : "MVC architecture",
+            "project-detail-cvm-luis" : "Internal project.",
+            "revelant-skills-cvm-1-luis" : "Dependency injection",
+            "revelant-skills-cvm-2-luis" : "Retrofit",
+            "revelant-skills-cvm-3-luis" : "MVVM architecture.",
+            "project-detail-encode-aksel" : "Income capture in the project.",
+            "revelant-skills-encode-aksel" : "Change of CocoaPods.",
+            "project-detail-shopping-expense-samuel" :"Income capture in the project.",
+            "revelant-skills-shopping-expenses-samuel" : "Project creation.",
+            "project-detail-daily-expenses-samuel"  :"Income capture in the project.",
+            "revelant-skills-daily-expenses-samuel" : "Project creation"
+        }
+    },
+    "random-text" : {
+        "knowmore" : "know more"
     }
     
 }

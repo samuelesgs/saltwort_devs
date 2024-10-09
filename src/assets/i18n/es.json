@@ -90,5 +90,8 @@
             "project-detail-daily-expenses-samuel"  :"Capturador de ingreso en proyecto",
             "revelant-skills-daily-expenses-samuel" : "Creacion de proyecto"
         }
+    },
+    "random-text" : {
+        "knowmore" : "Conoce mas"
     }
 }

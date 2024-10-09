@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
-import { Develpments, ProfileData, Project } from '../../../../utils/interface/general.interface';
+import { Develpments, ProfileData, Project, typeProject } from '../../../../utils/interface/general.interface';
 import { AppService } from '../../../../app.service';
 import { Subscription } from 'rxjs';
 
@@ -134,4 +134,12 @@ export class ContainerMovilComponent {
   getVisibleScreens() {
     return this.selectProject!.screens.slice(this.currentIndex, this.currentIndex + this.visibleImagesCount);
   }
+  getMobileScreens() {
+    return this.selectProject?.screens.filter(screen =>
+      screen.typeProject.includes(typeProject.android) || screen.typeProject.includes(typeProject.ios)
+    );
+  }
+  
+  
+  
 }

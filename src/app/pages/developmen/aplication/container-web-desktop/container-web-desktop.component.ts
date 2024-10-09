@@ -1,16 +1,18 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ActivatedRoute, Router, RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterLinkWithHref, RouterModule } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { Develpments, ProfileData, Project } from '../../../../utils/interface/general.interface';
+import { Develpments, ProfileData, Project, typeProject } from '../../../../utils/interface/general.interface';
 import { AppService } from '../../../../app.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-container-web-desktop',
   standalone: true,
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    TranslateModule
   ],
   templateUrl: './container-web-desktop.component.html',
   styleUrl: './container-web-desktop.component.css'
@@ -98,6 +100,8 @@ export class ContainerWebDesktopComponent {
   }
 
   incrementOrDecrease(increment : number) {
+    console.log(increment);
+    console.log(this.itemSize);
     if (this.itemSize < 0) {
       this.itemActive = this.itemSize - 1;
     } else if (increment >= this.itemSize) {
@@ -107,9 +111,12 @@ export class ContainerWebDesktopComponent {
     }
   }
 
-
   getScreen(){
-    return this.selectProject!.screens[this.itemActive];
+    const screens = this.selectProject!.screens.filter(screen =>
+    screen.typeProject.includes(typeProject.desktop) || screen.typeProject.includes(typeProject.web));
+    const screen = screens[this.itemActive]; // Usar `itemActive` para obtener la pantalla activa
+    console.log("This is the screen: ", screen);
+    return screen
   }
 
 }

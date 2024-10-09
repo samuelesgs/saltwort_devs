@@ -6,7 +6,7 @@
     <!-- CONTAINER IMG -->
     <div class="carousel-container">
         <div class="carousel-images">
-            <div class="image-wrapper" *ngFor="let screen of selectProject!.screens">
+            <div class="image-wrapper" *ngFor="let screen of getMobileScreens()">
                 <img 
                     [src]="'./assets/images/' + screen.url + '.png'"
                     alt="Imagen carrusel"
