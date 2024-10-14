@@ -87,7 +87,7 @@ export class Develpments {
                                 icon: {
                                     name: 'name',
                                     detail: 'detail',
-                                    url: 'VentaPlusMovil',
+                                    url: 'venta+-icon',
                                     typeProject: [typeProject.android, typeProject.desktop]
                                 },
                                 screens: [
@@ -171,7 +171,7 @@ export class Develpments {
                                 icon: {
                                     name: 'ControlVehicular',
                                     detail: 'detail',
-                                    url: 'url',
+                                    url: 'cvm-icon',
                                     typeProject: [typeProject.android]
                                 },
                                 screens: [
@@ -277,7 +277,7 @@ export class Develpments {
                                 id: 3,
                                 platforms : [typeProject.desktop],
                                 name : 'CRM Generico',
-                                detail : 'specific-project.properties.project-detail-crm-luis ',
+                                detail : 'specific-project.properties.project-detail-crm-luis',
                                 relevantSkills : [
                                     "specific-project.properties.revelant-skills-1-crm-luis",
                                     "specific-project.properties.revelant-skills-2-crm-luis",
@@ -289,16 +289,88 @@ export class Develpments {
                                 icon: {
                                     name: 'name',
                                     detail: 'detail',
-                                    url: 'url',
+                                    url: 'crm-icon',
                                     typeProject: [typeProject.desktop]
                                 },
                                 screens: [
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'url',
+                                        url: 'crm1',
                                         typeProject: [typeProject.desktop]
-                                    }
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'crm2',
+                                        typeProject: [typeProject.desktop]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'crm3',
+                                        typeProject: [typeProject.desktop]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'crm4',
+                                        typeProject: [typeProject.desktop]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'crm5',
+                                        typeProject: [typeProject.desktop]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'crm6',
+                                        typeProject: [typeProject.desktop]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'crm7',
+                                        typeProject: [typeProject.desktop]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'crm8',
+                                        typeProject: [typeProject.desktop]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'crm9',
+                                        typeProject: [typeProject.desktop]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'crm10',
+                                        typeProject: [typeProject.desktop]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'crm11',
+                                        typeProject: [typeProject.desktop]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'crm12',
+                                        typeProject: [typeProject.desktop]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'crm13',
+                                        typeProject: [typeProject.desktop]
+                                    },
                                 ]
                             }
 
@@ -421,8 +493,7 @@ export class Develpments {
                                 id: 1,
                                 name : 'Gastos de compra',
                                 platforms : [
-                                    typeProject.android,
-                                    typeProject.web
+                                    typeProject.android
                                 ],
                                 detail : 'specific-project.properties.project-detail-shopping-expense-samuel',
                                 relevantSkills : [
@@ -431,9 +502,7 @@ export class Develpments {
                                 tools : [
                                     "android",
                                     "angular",
-                                    "nestjs",
-                                    "nestjs",
-                                    "nestjs",
+                                    "nestjs"
                                 ],
                                 icon: {
                                     name: 'name',
@@ -444,18 +513,84 @@ export class Develpments {
                                 screens: [
                                     {
                                         name: 'screen-1',
-                                        detail: 'detail',
-                                        url: 'url',
+                                        detail: 'Pantalla principal',
+                                        url: 'gc1',
                                         typeProject: [typeProject.android]
-                                    }
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'gc2',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'gc3',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'gc4',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'gc5',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'gc6',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'gc8',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'gc9',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'gc10',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'gc11',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'gc12',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'gc13',
+                                        typeProject: [typeProject.android]
+                                    },
+
                                 ]
                             },
                             {
                                 id: 2,
                                 name : 'Gastos de diarios',
                                 platforms : [
-                                    typeProject.android,
-                                    typeProject.web
+                                    typeProject.android
                                 ],
                                 detail : 'specific-project.properties.project-detail-daily-expenses-samuel',
                                 relevantSkills : [
@@ -475,9 +610,52 @@ export class Develpments {
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'url',
+                                        url: 'gd1',
                                         typeProject: [typeProject.android]
-                                    }
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'gd2',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'gd3',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'gd4',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'gd5',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'gd6',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'gd7',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'gd8',
+                                        typeProject: [typeProject.android]
+                                    },
+
                                 ]
                             }
                         ]
