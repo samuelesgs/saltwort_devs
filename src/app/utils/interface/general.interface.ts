@@ -383,11 +383,11 @@ export class Develpments {
             case 'aksel':
                 return {
                     fullName:  'Aksel Akemi Herrera Gonzalez',
-                    imgName: 'peso-pluma.jpg',
+                    imgName: 'aksel.png',
                     email: 'akselherrera18@gmail.com',
                     urlLinkedin: '',
                     title: 'Jr. Developer',
-                    desc: 'Devs-big-desc.properties.Aksel-desc.',
+                    desc: 'Devs-big-desc.properties.Aksel-desc',
                     tools : [
                         "swift",
                         "angular",
@@ -588,7 +588,7 @@ export class Develpments {
                             },
                             {
                                 id: 2,
-                                name : 'Gastos de diarios',
+                                name : 'Gastos diarios 4',
                                 platforms : [
                                     typeProject.android
                                 ],

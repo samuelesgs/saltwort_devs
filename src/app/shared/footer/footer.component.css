@@ -9,6 +9,8 @@
 
 .icon-contact {
     height: 6vh;
+    border-radius: 8px;
+    margin-right: 5px;
 }
 
 .section-imgs {

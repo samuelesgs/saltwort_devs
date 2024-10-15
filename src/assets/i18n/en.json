@@ -1,7 +1,10 @@
 {
     "app-name" : "Salwort Devs",
     "page" : {
-        "home" : "Home"
+        "home" : "Home",
+        "devs" : "Developers",
+        "apps" : "Applications",
+        "about" : "About of"
     },
     "policy_privaticy" : {
         "title" : "Privacy Policy",

@@ -15,7 +15,7 @@ export class ModelSaltwortApplication {
     return [
         {
             title : "Activity Planner",
-            img : "angular",
+            img : "AP-logo",
             properties : [
                 {
                     name : "apps-features.properties.name-1-activityp",
@@ -36,26 +36,7 @@ export class ModelSaltwortApplication {
             propertySelected : null,
             routeToNavigate :  "/ActivityPlanner",
             isExpanded : false
-        },
-        {
-            title : "Cooking Home",
-            img : "android",
-            properties : [
-                {
-                    name : "apps-features.properties.name-1-cooking",
-                    detail : "apps-features.properties.detail-1-cooking",
-                    click : false
-                },
-                {
-                    name : "apps-features.properties.name-2-cooking",
-                    detail : "apps-features.properties.detail-2-cooking",
-                    click : false
-                }
-            ],
-            propertySelected: null,
-            routeToNavigate: "",
-            isExpanded : false
-        },
+        }
     ];
   }
 }

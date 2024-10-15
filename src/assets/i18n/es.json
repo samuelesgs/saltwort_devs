@@ -1,7 +1,10 @@
 {
     "app-name" : "Salwort Devs",
     "page" : {
-        "home" : "Inicio"
+        "home" : "Inicio",
+        "devs" : "Desarrolladores",
+        "apps" : "Aplicaciones",
+        "about" : "Acerca de"
     },
     "policy_privaticy" : {
         "title" : "Politicas de privacidad",
@@ -55,7 +58,7 @@
       "objectives" : " Objectivos",
       "mision-desc" : " Nuestro compromiso es desarrollar propuestas que impulsen el crecimiento y la eficiencia de nuestros clientes, proporcionando soluciones adaptadas a un entorno en constante evolución, con el objetivo de construir un futuro más sostenible y competitivo.",
       "vision-desc" : "  Ser reconocidos como líderes en innovación y desarrollo de soluciones tecnológicas que transformen la forma en que las empresas operan y se adaptan a un mundo en constante cambio. Aspiramos a establecer nuevos estándares de eficiencia y sostenibilidad en cada sector en el que participamos, convirtiéndonos en el socio preferido para organizaciones que buscan no solo crecer, sino también evolucionar con agilidad y resiliencia. En Saltwort, visualizamos un futuro donde nuestras soluciones no solo resuelven problemas actuales, sino que también anticipan las necesidades futuras, creando un impacto duradero y positivo en la sociedad y el medio ambiente.",
-      "objetives-desc" : " En Saltwort nos enfocamos en desarrollar tecnologías innovadoras que optimicen la eficiencia operativa de nuestros clientes, permitiéndoles adaptarse con agilidad a los cambios del mercado. Nos comprometemos a la investigación continua, la creación de soluciones sostenibles y la expansión estratégica en mercados globales, mientras priorizamos la satisfacción del cliente mediante la entrega de soluciones personalizadas y de alta calidad."
+      "objectives-desc" : " En Saltwort nos enfocamos en desarrollar tecnologías innovadoras que optimicen la eficiencia operativa de nuestros clientes, permitiéndoles adaptarse con agilidad a los cambios del mercado. Nos comprometemos a la investigación continua, la creación de soluciones sostenibles y la expansión estratégica en mercados globales, mientras priorizamos la satisfacción del cliente mediante la entrega de soluciones personalizadas y de alta calidad."
     },
     "Devs" : {
         "Luis-desc" : "Soy un desarrollador junior con experiencia en varias tecnologías, incluyendo el uso de Android Studio con Kotlin y Visual Studio con C#. Tengo habilidades en la gestión de bases de datos, trabajando con PostgreSQL, MySQL y Management. Me considero una persona con gran disposición para aprender y crecer en el campo del desarrollo",
