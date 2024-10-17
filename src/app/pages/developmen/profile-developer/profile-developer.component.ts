@@ -3,7 +3,8 @@ import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { Company, Develpments, ProfileData, Project } from '../../../utils/interface/general.interface';
 import { CommonModule } from '@angular/common';
 import { AppService } from '../../../app.service';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { LocalStorageManager } from '../../../utils/localStorageManager';
 
 @Component({
   selector: 'app-profile-developer',
@@ -19,8 +20,16 @@ import { TranslateModule } from '@ngx-translate/core';
 export class ProfileDeveloperComponent implements OnInit {
   public profile!: ProfileData;
   public currentName: string = "";
+  private LocalStorageManger = new LocalStorageManager();
 
-  constructor(private service: AppService, private route: ActivatedRoute, private router: Router) {
+  constructor(private service: AppService, 
+    private route: ActivatedRoute, 
+    private router: Router,
+    private translateService : TranslateService) {
+      translateService.use(this.LocalStorageManger.getItem('lang'));
+      this.service.getChangeLang().subscribe(result => {
+        this.translateService.use(result);
+      });
     this.service.setRoute(false);
   }
 

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CarouselActivityPlannerComponent } from './carousel-activity-planner/carousel-activity-planner.component';
 import { AppService } from '../../app.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { LocalStorageManager } from '../../utils/localStorageManager';
 
 @Component({
   selector: 'app-home',
@@ -11,8 +12,14 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  constructor(private service: AppService, private translateService : TranslateService) {
-    this.translateService.use('en');
+  private LocalStorageManger = new LocalStorageManager();
+  constructor(
+    private service: AppService, 
+    private translateService : TranslateService) {
+      translateService.use(this.LocalStorageManger.getItem('lang'));//Copiar en todas las paginas
+      this.service.getChangeLang().subscribe(result => {//Copiar en todas las paginas
+        this.translateService.use(result);//Copiar en todas las paginas
+      });
     this.service.setRoute(true);
   }
 }

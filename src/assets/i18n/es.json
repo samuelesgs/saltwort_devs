@@ -75,6 +75,7 @@
     },
     "specific-project": {
         "properties" : {
+            "desc-general" : "Dentro de este proyecto implemente el puesto como desarrollador android, de las funciones relevantes dentro de esta aplicacion son: ",
             "project-detail-ventaplus-luis" : "Punto de venta",
             "revelant-skills-1-ventaplus-luis" : "Actualizacion de versiones",
             "revelant-skills-2-ventaplus-luis" : "Cambio de la version 24 a la version 33",

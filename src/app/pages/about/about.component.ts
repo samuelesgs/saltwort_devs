@@ -2,7 +2,8 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { AppService } from '../../app.service';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { LocalStorageManager } from '../../utils/localStorageManager';
 
 @Component({
   selector: 'app-about',
@@ -17,8 +18,10 @@ import { TranslateModule } from '@ngx-translate/core';
 export class AboutComponent {
   public currentContainer = "";
   public showAnySection = false;
-  
-  constructor(private service: AppService) {
+  private LocalStorageManger = new LocalStorageManager();
+  constructor(
+    private service: AppService,
+    private translateService : TranslateService) {
     this.service.setRoute(true);
   }
 

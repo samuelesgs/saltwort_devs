@@ -76,6 +76,7 @@
     },
     "specific-project": {
         "properties" : {
+            "desc-general" : "In this project, I served as an Android developer. Some of the key functions within this application are:  ",
             "project-detail-ventaplus-luis" : "Point of sale.",
             "revelant-skills-1-ventaplus-luis" : "Actualizacion de versiones",
             "revelant-skills-2-ventaplus-luis" : "Cambio de la version 24 a la version 33",

@@ -94,62 +94,62 @@ export class Develpments {
                                     {
                                         name: 'screen-1',
                                         detail: 'detalle de la pantalla 1',
-                                        url: 'screen1',
+                                        url: 'vm/screen1',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-2',
                                         detail: 'detalle de la pantalla 2',
-                                        url: 'screen2',
+                                        url: 'vm/screen2',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-3',
                                         detail: 'detalle de la pantalla 3',
-                                        url: 'screen3',
+                                        url: 'vm/screen3',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-4',
                                         detail: 'detalle de la pantalla 4',
-                                        url: 'screen1',
+                                        url: 'vm/screen1',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-5',
                                         detail: 'detalle de la pantalla 5',
-                                        url: 'screen2',
+                                        url: 'vm/screen2',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-6',
                                         detail: 'detalle de la pantalla 6',
-                                        url: 'screen3',
+                                        url: 'vm/screen3',
                                         typeProject: [typeProject.android]
                                         
                                     },
                                     {
                                         name: 'screen-7',
                                         detail: 'detalle de la pantalla 7',
-                                        url: 'screen1',
+                                        url: 'vm/screen1',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-8',
                                         detail: 'detalle de la pantalla 8',
-                                        url: 'screen2',
+                                        url: 'vm/screen2',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-9',
                                         detail: 'detalle de la pantalla 7',
-                                        url: 'screen1',
+                                        url: 'vm/screen1',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-10',
                                         detail: 'detalle de la pantalla 8',
-                                        url: 'screen2',
+                                        url: 'vm/screen2',
                                         typeProject: [typeProject.android]
                                     }
                                 ]
@@ -178,97 +178,97 @@ export class Develpments {
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'url',
+                                        url: 'cv/url',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-2',
                                         detail: 'Escoger empresa',
-                                        url: 'cv1',
+                                        url: 'cv/cv1',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-3',
                                         detail: 'Pantalla principal',
-                                        url: 'cv2',
+                                        url: 'cv/cv2',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'Catalogo de llaves, se pueden ver las llaves, actualizar y crear una nueva',
-                                        url: 'cv3',
+                                        url: 'cv/cv3',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'Agregar llave, se puede agregar una llave y sirve para actualizar una llave ',
-                                        url: 'cv4',
+                                        url: 'cv/cv4',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'Catalogo de vehiculos, se pueden ver los vehiculos, exportar a excel y agregar un nuevo ',
-                                        url: 'cv5',
+                                        url: 'cv/cv5',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'Agregar un vehiculo',
-                                        url: 'cv6',
+                                        url: 'cv/cv6',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'Aqui se puede ver como se actualiza un vehiculo',
-                                        url: 'cv7',
+                                        url: 'cv/cv7',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'En el catalogo de agentes puedes ver los agentes que tienes, buscarlos, agregar un nuevo, consultar uno y actualizarlo si asi se lo desea',
-                                        url: 'cv8',
+                                        url: 'cv/cv8',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'Aqui se esta consultando un agente',
-                                        url: 'cv9',
+                                        url: 'cv/cv9',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'Aqui se esta insertando un agente',
-                                        url: 'cv10',
+                                        url: 'cv/cv10',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'Se le puede asignar una llave a un agente',
-                                        url: 'cv11',
+                                        url: 'cv/cv11',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'Recepcion de llave, se le recibe una llave ',
-                                        url: 'cv12',
+                                        url: 'cv/cv12',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'Historial de llaves, se muestra en una tabla que s e puede exportar a excel los datos',
-                                        url: 'cv13',
+                                        url: 'cv/cv13',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'Reporte que muestra un listadp de todos las rutas, sus detalles, pueden ser consultadas para ver lo detalles mas especificos',
-                                        url: 'cv14',
+                                        url: 'cv/cv14',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'Reporte que muestra el consumo de gasolina de los vehiculos.',
-                                        url: 'cv15',
+                                        url: 'cv/cv15',
                                         typeProject: [typeProject.desktop]
                                     },
                                 ]
@@ -296,79 +296,79 @@ export class Develpments {
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'crm1',
+                                        url: 'crm/crm1',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'crm2',
+                                        url: 'crm/crm2',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'crm3',
+                                        url: 'crm/crm3',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'crm4',
+                                        url: 'crm/crm4',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'crm5',
+                                        url: 'crm/crm5',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'crm6',
+                                        url: 'crm/crm6',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'crm7',
+                                        url: 'crm/crm7',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'crm8',
+                                        url: 'crm/crm8',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'crm9',
+                                        url: 'crm/crm9',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'crm10',
+                                        url: 'crm/crm10',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'crm11',
+                                        url: 'crm/crm11',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'crm12',
+                                        url: 'crm/crm12',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'crm13',
+                                        url: 'crm/crm13',
                                         typeProject: [typeProject.desktop]
                                     },
                                 ]
@@ -428,31 +428,31 @@ export class Develpments {
                                         {
                                             name: 'screen-1',
                                             detail: 'Pagina principal de encode web',
-                                            url: 'encode1',
+                                            url: 'encode/encode1',
                                             typeProject: [typeProject.web]
                                         },
                                         {
                                             name: 'screen-2',
                                             detail: 'Gastos diarios 2 principal',
-                                            url: 'encode2',
+                                            url: 'encode/encode2',
                                             typeProject: [typeProject.web]
                                         },
                                         {
                                             name: 'screen-3',
                                             detail: 'Gastos diarios 3 principal',
-                                            url: 'encode3',
+                                            url: 'encode/encode3',
                                             typeProject: [typeProject.web]
                                         },
                                         {
                                             name: 'screen-4',
                                             detail: 'Gastos diarios 4 principal',
-                                            url: 'encode4',
+                                            url: 'encode/encode4',
                                             typeProject: [typeProject.web]
                                         },
                                         {
                                             name: 'screen-5',
                                             detail: 'Gastos diarios IOS',
-                                            url: 'encode5',
+                                            url: 'encode/encode5',
                                             typeProject: [typeProject.web]
                                         }
                                     ]
@@ -493,7 +493,8 @@ export class Develpments {
                                 id: 1,
                                 name : 'Gastos de compra',
                                 platforms : [
-                                    typeProject.android
+                                    typeProject.android,
+                                    typeProject.web
                                 ],
                                 detail : 'specific-project.properties.project-detail-shopping-expense-samuel',
                                 relevantSkills : [
@@ -514,73 +515,73 @@ export class Develpments {
                                     {
                                         name: 'screen-1',
                                         detail: 'Pantalla principal',
-                                        url: 'gc1',
+                                        url: 'gc/gc1',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'gc2',
+                                        url: 'gc/gc2',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'gc3',
+                                        url: 'gc/gc3',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'gc4',
+                                        url: 'gc/gc4',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'gc5',
+                                        url: 'gc/gc5',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'gc6',
+                                        url: 'gc/gc6',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'gc8',
+                                        url: 'gc/gc8',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'gc9',
+                                        url: 'gc/gc9',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'gc10',
+                                        url: 'gc/gc10',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'gc11',
+                                        url: 'gc/gc11',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'gc12',
+                                        url: 'gc/gc12',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'gc13',
+                                        url: 'gc/gc13',
                                         typeProject: [typeProject.android]
                                     },
 
@@ -590,7 +591,8 @@ export class Develpments {
                                 id: 2,
                                 name : 'Gastos diarios 4',
                                 platforms : [
-                                    typeProject.android
+                                    typeProject.android,
+                                    typeProject.web
                                 ],
                                 detail : 'specific-project.properties.project-detail-daily-expenses-samuel',
                                 relevantSkills : [
@@ -610,49 +612,49 @@ export class Develpments {
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'gd1',
+                                        url: 'gd/gd1',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'gd2',
+                                        url: 'gd/gd2',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'gd3',
+                                        url: 'gd/gd3',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'gd4',
+                                        url: 'gd/gd4',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'gd5',
+                                        url: 'gd/gd5',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'gd6',
+                                        url: 'gd/gd6',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'gd7',
+                                        url: 'gd/gd7',
                                         typeProject: [typeProject.android]
                                     },
                                     {
                                         name: 'screen-1',
                                         detail: 'detail',
-                                        url: 'gd8',
+                                        url: 'gd/gd8',
                                         typeProject: [typeProject.android]
                                     },
 

@@ -2,7 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppService } from '../../app.service';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { LocalStorageManager } from '../../utils/localStorageManager';
 
 @Component({
   selector: 'app-developmen',
@@ -16,6 +17,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './developmen.component.css'
 })
 export class DevelopmenComponent {
+  private LocalStorageManger = new LocalStorageManager();
 
   toolsSamuel = [
     "android",
@@ -57,7 +59,13 @@ export class DevelopmenComponent {
     "managment"
   ];
 
-  constructor(private service: AppService) {
+  constructor(
+    private service: AppService,
+    private translateService : TranslateService) {
+      translateService.use(this.LocalStorageManger.getItem('lang'));
+      this.service.getChangeLang().subscribe(result => {
+        this.translateService.use(result);
+      });
     this.service.setRoute(true);
   }
 
