@@ -375,7 +375,42 @@ export class Develpments {
                             }
 
                         ]
-                    }
+                    },
+                    {
+                            name: "Saltwort",
+                            projects : [
+                                {
+                                    id: 2,
+                                    platforms : [
+                                        typeProject.web
+                                    ],
+                                    name : 'Saltwort',
+                                    detail : '',
+                                    relevantSkills : [
+                                        ""
+                                    ],
+                                    tools : [
+                                        "angular",
+                                        "figma",
+                                        "typescript"
+                                    ],
+                                    icon: {
+                                        name: 'name',
+                                        detail: 'Pagina de la empresa de Saltwort donde vas a poder conocer todos sus proyectos y a sus  integrantes ',
+                                        url: 'AP-logo',
+                                        typeProject: [typeProject.web]
+                                    },
+                                    screens: [
+                                        {
+                                            name: 'Pagina principal',
+                                            detail: 'En esta pantañña tu puedes registrarte en caso de tu tener una cuenta ya, crear una o ingresar con Google',
+                                            url: 'ap/ap1',
+                                            typeProject: [typeProject.web]
+                                        }
+                                    ]
+                                },
+                            ],                   
+                        }
                 ],
                 linkedin : "https://www.linkedin.com/in/luis-paulo-calderón-nava-2003bb257/",
                 gmail  :"mailto:pavicalderon49@gmail.com",
@@ -416,7 +451,10 @@ export class Develpments {
                                         "specific-project.properties.revelant-skills-encode-aksel",
                                     ],
                                     tools : [
-                                        "swift"
+                                        "angular",
+                                        "nestjs",
+                                        "nodejs",
+                                        "typescript"
                                     ],
                                     icon: {
                                         name: 'name',
@@ -457,7 +495,170 @@ export class Develpments {
                                         }
                                     ]
                                 },
-                            ],                            
+                                {
+                                    id: 2,
+                                    platforms : [
+                                        typeProject.web,
+                                        typeProject.ios
+                                    ],
+                                    name : 'Gastos de compra',
+                                    detail : 'specific-project.properties.project-detail-encode-aksel',
+                                    relevantSkills : [
+                                        "specific-project.properties.revelant-skills-encode-aksel",
+                                    ],
+                                    tools : [
+                                        "swift",
+                                        "angular",
+                                        "nestjs",
+                                        "nodejs",
+                                        "typescript"
+                                    ],
+                                    icon: {
+                                        name: 'name',
+                                        detail: 'Pagina principal de encode mx donde consultas informacion sobre las aplicaciones ',
+                                        url: 'encode-logo',
+                                        typeProject: [typeProject.web, typeProject.ios]
+                                    },
+                                    screens: [
+                                        {
+                                            name: 'screen-1',
+                                            detail: 'Pagina principal de gastos de compra',
+                                            url: 'encode/encode1',
+                                            typeProject: [typeProject.web]
+                                        },
+                                    ]
+                                },
+                                {
+                                    id: 3,
+                                    platforms : [
+                                        typeProject.web
+                                    ],
+                                    name : 'Consola encodemx',
+                                    detail : 'specific-project.properties.project-detail-encode-aksel',
+                                    relevantSkills : [
+                                        "specific-project.properties.revelant-skills-encode-aksel",
+                                    ],
+                                    tools : [
+                                        "angular",
+                                        "nestjs",
+                                        "nodejs",
+                                        "typescript"
+                                    ],
+                                    icon: {
+                                        name: 'name',
+                                        detail: 'Pagina principal de encode mx donde consultas informacion sobre las aplicaciones ',
+                                        url: 'encode-logo',
+                                        typeProject: [typeProject.web]
+                                    },
+                                    screens: [
+                                        {
+                                            name: 'screen-1',
+                                            detail: 'Pagina principal de gastos de compra',
+                                            url: 'encode/encode1',
+                                            typeProject: [typeProject.web]
+                                        },
+                                    ]
+                                },
+                                {
+                                    id: 4,
+                                    platforms : [
+                                        typeProject.web
+                                    ],
+                                    name : 'Productivity',
+                                    detail : 'specific-project.properties.project-detail-encode-aksel',
+                                    relevantSkills : [
+                                        "specific-project.properties.revelant-skills-encode-aksel",
+                                    ],
+                                    tools : [
+                                        "angular",
+                                        "nestjs",
+                                        "nodejs",
+                                        "typescript"
+                                    ],
+                                    icon: {
+                                        name: 'name',
+                                        detail: 'Pagina principal de encode mx donde consultas informacion sobre las aplicaciones ',
+                                        url: 'encode-logo',
+                                        typeProject: [typeProject.web]
+                                    },
+                                    screens: [
+                                        {
+                                            name: 'screen-1',
+                                            detail: 'Pagina principal de gastos de compra',
+                                            url: 'encode/encode1',
+                                            typeProject: [typeProject.web]
+                                        },
+                                    ]
+                                },
+                                {
+                                    id: 5,
+                                    platforms : [
+                                        typeProject.web
+                                    ],
+                                    name : 'Gastos diarios web',
+                                    detail : 'specific-project.properties.project-detail-encode-aksel',
+                                    relevantSkills : [
+                                        "specific-project.properties.revelant-skills-encode-aksel",
+                                    ],
+                                    tools : [
+                                        "angular",
+                                        "nestjs",
+                                        "nodejs",
+                                        "typescript"
+                                    ],
+                                    icon: {
+                                        name: 'name',
+                                        detail: 'Pagina principal de encode mx donde consultas informacion sobre las aplicaciones ',
+                                        url: 'encode-logo',
+                                        typeProject: [typeProject.web]
+                                    },
+                                    screens: [
+                                        {
+                                            name: 'screen-1',
+                                            detail: 'Pagina principal de gastos diarios 4 web',
+                                            url: 'encode/encode1',
+                                            typeProject: [typeProject.web]
+                                        },
+                                    ]
+                                }
+                            ],
+                                     
+                        },
+                        {
+                            name: "Saltwort",
+                            projects : [
+                                {
+                                    id: 2,
+                                    platforms : [
+                                        typeProject.web
+                                    ],
+                                    name : 'Activity planner',
+                                    detail : '',
+                                    relevantSkills : [
+                                        ""
+                                    ],
+                                    tools : [
+                                        "angular",
+                                        "figma",
+                                        "nestjs",
+                                        "typescript"
+                                    ],
+                                    icon: {
+                                        name: 'name',
+                                        detail: 'Aqui vas a poder administrar tu tiempo y actividades de la mejor manera posible ',
+                                        url: 'AP-logo',
+                                        typeProject: [typeProject.web]
+                                    },
+                                    screens: [
+                                        {
+                                            name: 'Pagina principal',
+                                            detail: 'En esta pantalla tu puedes registrarte en caso de tu tener una cuenta ya, crear una o ingresar con Google',
+                                            url: 'ap/ap1',
+                                            typeProject: [typeProject.web]
+                                        }
+                                    ]
+                                },
+                            ],                   
                         }
                     ],
                     linkedin : "https://www.linkedin.com/in/aksel-akemi-herrera-gonzalez-08054a213/",
@@ -661,6 +862,79 @@ export class Develpments {
                                 ]
                             }
                         ]
+                    },
+                    {
+                        name: "Saltwort",
+                        projects : [
+                            {
+                                id: 2,
+                                platforms : [
+                                    typeProject.web
+                                ],
+                                name : 'Activity planner',
+                                detail : '',
+                                relevantSkills : [
+                                    ""
+                                ],
+                                tools : [
+                                    "angular",
+                                    "figma",
+                                    "nestjs",
+                                    "typescript"
+                                ],
+                                icon: {
+                                    name: 'name',
+                                    detail: 'Aqui vas a poder administrar tu tiempo y actividades de la mejor manera posible ',
+                                    url: 'AP-logo',
+                                    typeProject: [typeProject.web]
+                                },
+                                screens: [
+                                    {
+                                        name: 'Pagina principal',
+                                        detail: 'En esta pantañña tu puedes registrarte en caso de tu tener una cuenta ya, crear una o ingresar con Google',
+                                        url: 'ap/ap1',
+                                        typeProject: [typeProject.web]
+                                    }
+                                ]
+                            },
+                        ],                   
+                    },
+                    {
+                        name: "Neoris/Telcel",
+                        projects : [
+                            {
+                                id: 3,
+                                platforms : [
+                                    typeProject.web,
+                                    typeProject.android
+                                ],
+                                name : '',
+                                detail : '',
+                                relevantSkills : [
+                                    ""
+                                ],
+                                tools : [
+                                    "angular",
+                                    "figma",
+                                    "nestjs",
+                                    "typescript"
+                                ],
+                                icon: {
+                                    name: 'name',
+                                    detail: 'Aqui vas a poder administrar tu tiempo y actividades de la mejor manera posible ',
+                                    url: 'AP-logo',
+                                    typeProject: [typeProject.web]
+                                },
+                                screens: [
+                                    {
+                                        name: 'Pagina principal',
+                                        detail: 'En esta pantañña tu puedes registrarte en caso de tu tener una cuenta ya, crear una o ingresar con Google',
+                                        url: 'ap/ap1',
+                                        typeProject: [typeProject.web]
+                                    }
+                                ]
+                            },
+                        ],                   
                     }
                 ],
                 linkedin : "https://www.linkedin.com/in/edgar-samuel-guerrero-5a9471214/",

@@ -71,3 +71,13 @@
     height: 50%;
     transition: width 0.5s ease, height 0.5s ease;
 }
+
+.arrow-icon {
+    position: absolute;
+    top: 10px;      /* Ajusta la distancia desde la parte superior */
+    right: 10px;    /* Ajusta la distancia desde la derecha */
+    width: 65px;    /* Ajusta el tamaño de la imagen */
+    height: auto;
+    transform: rotate(90deg); /* Gira la imagen hacia la derecha */
+    filter: brightness(0) invert(1); /* Hace que la imagen sea blanca */
+  }
