@@ -464,32 +464,32 @@ export class Develpments {
                                     },
                                     screens: [
                                         {
-                                            name: 'screen-1',
+                                            name: 'Pagina principal',
                                             detail: 'Pagina principal de encode web',
                                             url: 'encode/encode1',
                                             typeProject: [typeProject.web]
                                         },
                                         {
-                                            name: 'screen-2',
-                                            detail: 'Gastos diarios 2 principal',
+                                            name: 'Pagina de gastos diarios 2',
+                                            detail: 'Informacion sobre la aplicación',
                                             url: 'encode/encode2',
                                             typeProject: [typeProject.web]
                                         },
                                         {
-                                            name: 'screen-3',
-                                            detail: 'Gastos diarios 3 principal',
+                                            name: 'Gastos diarios 3 principal',
+                                            detail: 'Observar informacion relevante de la aplicación',
                                             url: 'encode/encode3',
                                             typeProject: [typeProject.web]
                                         },
                                         {
-                                            name: 'screen-4',
-                                            detail: 'Gastos diarios 4 principal',
+                                            name: 'Gastos diarios 4 principal',
+                                            detail: 'Informacion relevante de la aplicacion',
                                             url: 'encode/encode4',
                                             typeProject: [typeProject.web]
                                         },
                                         {
-                                            name: 'screen-5',
-                                            detail: 'Gastos diarios IOS',
+                                            name: 'Gastos diarios IOS',
+                                            detail: 'Informacion de la aplicacion',
                                             url: 'encode/encode5',
                                             typeProject: [typeProject.web]
                                         }
@@ -515,16 +515,57 @@ export class Develpments {
                                     ],
                                     icon: {
                                         name: 'name',
-                                        detail: 'Pagina principal de encode mx donde consultas informacion sobre las aplicaciones ',
+                                        detail: 'Pagina principal de encode mx donde consultas informacion sobre las aplicaciones',
                                         url: 'encode-logo',
                                         typeProject: [typeProject.web, typeProject.ios]
                                     },
                                     screens: [
                                         {
                                             name: 'screen-1',
+                                            detail: '',
+                                            url: 'gcios/gcios1',
+                                            typeProject: [typeProject.android]
+                                        },
+                                        {
+                                            name: 'screen-1',
+                                            detail: '',
+                                            url: 'gcios/gcios2',
+                                            typeProject: [typeProject.ios]
+                                        },
+                                        {
+                                            name: 'screen-1',
+                                            detail: '',
+                                            url: 'gcios/gcios3',
+                                            typeProject: [typeProject.ios]
+                                        },
+                                        {
+                                            name: 'screen-1',
+                                            detail: '',
+                                            url: 'gcios/gcios4',
+                                            typeProject: [typeProject.ios]
+                                        },  {
+                                            name: 'screen-1',
+                                            detail: '',
+                                            url: 'gcios/gcios5',
+                                            typeProject: [typeProject.ios]
+                                        },
+                                        {
+                                            name: 'screen-1',
                                             detail: 'Pagina principal de gastos de compra',
-                                            url: 'encode/encode1',
-                                            typeProject: [typeProject.web]
+                                            url: 'gcios/gcios6',
+                                            typeProject: [typeProject.ios]
+                                        },
+                                        {
+                                            name: 'screen-1',
+                                            detail: 'Pagina principal de gastos de compra',
+                                            url: 'gcios/gcios7',
+                                            typeProject: [typeProject.ios]
+                                        },
+                                        {
+                                            name: 'screen-1',
+                                            detail: 'Pagina principal de gastos de compra',
+                                            url: 'gcios/gcios8',
+                                            typeProject: [typeProject.ios]
                                         },
                                     ]
                                 },
@@ -546,15 +587,46 @@ export class Develpments {
                                     ],
                                     icon: {
                                         name: 'name',
-                                        detail: 'Pagina principal de encode mx donde consultas informacion sobre las aplicaciones ',
+                                        detail: 'Pagina principal de encode mx donde consultas informacion sobre las aplicaciones',
                                         url: 'encode-logo',
                                         typeProject: [typeProject.web]
                                     },
                                     screens: [
                                         {
-                                            name: 'screen-1',
-                                            detail: 'Pagina principal de gastos de compra',
-                                            url: 'encode/encode1',
+                                            name: 'Pantalla principal de la consola de encode',
+                                            detail: 'Tienes un login en el cual registrar tu usuario y contraseña',
+                                            url: 'consoleencode/c1',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Pantalla de las licencias',
+                                            detail: 'Las licencias que tienen algunos usuarios de las aplicaciones',
+                                            url: 'consoleencode/c2',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Agregar licencia',
+                                            detail: 'Puedes agregar una licencia y personalizarla',
+                                            url: 'consoleencode/c3',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Usuarios',
+                                            detail: 'Puedes ver los usuarios a forma de tabla, donde lso pueds buscar o limpiar',
+                                            url: 'consoleencode/c4',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Consultar usuario',
+                                            detail: 'Puedes ver los detalles del usuario',
+                                            url: 'consoleencode/c5',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        
+                                        {
+                                            name: 'Edición de suscripción',
+                                            detail: 'Puedes ver editar la suscripcion de un usuario, pudiendo estableer fecha inicial, fecha final y tipo de suscripcion',
+                                            url: 'consoleencode/c6',
                                             typeProject: [typeProject.web]
                                         },
                                     ]
@@ -577,15 +649,57 @@ export class Develpments {
                                     ],
                                     icon: {
                                         name: 'name',
-                                        detail: 'Pagina principal de encode mx donde consultas informacion sobre las aplicaciones ',
+                                        detail: 'Principal donde puedes ver los meses y sus actividades ',
                                         url: 'encode-logo',
                                         typeProject: [typeProject.web]
                                     },
                                     screens: [
                                         {
-                                            name: 'screen-1',
-                                            detail: 'Pagina principal de gastos de compra',
-                                            url: 'encode/encode1',
+                                            name: 'Pantalla principal',
+                                            detail: 'Puedes ver los meses con sus actividades por mes, empezando en el mes actual',
+                                            url: 'pro/pro1',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Tareas por mes',
+                                            detail: 'En la anterior pantalla se mostraban las actividades por dia, ahora se muestran las actividades por mes ',
+                                            url: 'pro/pro2',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Tareas completadas',
+                                            detail: 'Aqui ya has completado todas las tareas',
+                                            url: 'pro/pro3',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Perfil de usuario',
+                                            detail: 'los detalles del usuario',
+                                            url: 'pro/pro4',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Categorias',
+                                            detail: 'Categorias de todas tus actividades',
+                                            url: 'pro/pro5',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Agregar estado',
+                                            detail: 'Puedes agregar estados, por si los que estan ahi no describen tu actividad',
+                                            url: 'pro/pro6',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Prioridades ',
+                                            detail: 'Prioridades de las actividades',
+                                            url: 'pro/pro7',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Reporte de tu mes',
+                                            detail: 'Reporte e tu mes, donde puedes ver las actividades en las que has gastado tiempo',
+                                            url: 'pro/pro8',
                                             typeProject: [typeProject.web]
                                         },
                                     ]
@@ -595,7 +709,7 @@ export class Develpments {
                                     platforms : [
                                         typeProject.web
                                     ],
-                                    name : 'Gastos diarios web',
+                                    name : 'Gastos diarios 4 web',
                                     detail : 'specific-project.properties.project-detail-encode-aksel',
                                     relevantSkills : [
                                         "specific-project.properties.revelant-skills-encode-aksel",
@@ -608,17 +722,101 @@ export class Develpments {
                                     ],
                                     icon: {
                                         name: 'name',
-                                        detail: 'Pagina principal de encode mx donde consultas informacion sobre las aplicaciones ',
+                                        detail: 'Pagina que apoya a la aplicacion de gastos diarios 4 movil, siendo ua extension de la misma  ',
                                         url: 'encode-logo',
                                         typeProject: [typeProject.web]
                                     },
                                     screens: [
                                         {
-                                            name: 'screen-1',
-                                            detail: 'Pagina principal de gastos diarios 4 web',
-                                            url: 'encode/encode1',
+                                            name: 'Pantalla principal de gastos diarios 4',
+                                            detail: 'Puedes ver tus datos, en forma de grafica, los ultimos 10 movimientos, el balance de la cuenta, las categorias donde has gastado, etc.',
+                                            url: 'gd4web/gdweb1',
                                             typeProject: [typeProject.web]
                                         },
+                                        {
+                                            name: 'Movimientos',
+                                            detail: 'En esta pantalla se muestran tus movimientos ordenados por dia en el mes seleccionado',
+                                            url: 'gd4web/gdweb2',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Categorias',
+                                            detail: 'Puedes ver las categorias que puedes usar',
+                                            url: 'gd4web/gdweb3',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Cuentas ',
+                                            detail: 'Aqui se muestra como un balance de las cuentas que posees',
+                                            url: 'gd4web/gdweb4',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Agenda',
+                                            detail: 'Visualizas un calendario con tu agenda del mes ',
+                                            url: 'gd4web/gdweb5',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Reportes por fecha',
+                                            detail: 'Reportes en forma de barras, que puedes organizar por mes ',
+                                            url: 'gd4web/gdweb6',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Reportes por categoria',
+                                            detail: 'Reportes en forma de pastel, donde puedes analizar de una manera mas facil tus categorias ',
+                                            url: 'gd4web/gdweb7',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Categorias en tendencia',
+                                            detail: 'Las categorias que mas has usado en el mes ',
+                                            url: 'gd4web/gdweb8',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Presupuesto',
+                                            detail: 'Presupuesto que tienes para las categorias',
+                                            url: 'gd4web/gdweb9',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        
+                                        {
+                                            name: 'Deudas',
+                                            detail: 'Personas que te deben, visualizas con una barra para que veas el procentaje de pagado',
+                                            url: 'gd4web/gdweb10',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        
+                                        {
+                                            name: 'Metas',
+                                            detail: 'Las matas que te propones de ahorrar ',
+                                            url: 'gd4web/gdweb11',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        
+                                        {
+                                            name: 'Registros frecuentes',
+                                            detail: 'Las categorias que mas frecuentas  ',
+                                            url: 'gd4web/gdweb12',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        
+                                        {
+                                            name: 'Configuraciones',
+                                            detail: 'Configuraciones y preferencias que puedes establecer para la aplicación',
+                                            url: 'gd4web/gdweb13',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        
+                                        {
+                                            name: 'Perfil de usuario',
+                                            detail: 'Correo, contraseña, opciones de configuracion ',
+                                            url: 'gd4web/gdweb14',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        
                                     ]
                                 }
                             ],
