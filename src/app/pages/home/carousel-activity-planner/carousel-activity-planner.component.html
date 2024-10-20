@@ -3,29 +3,71 @@
       <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 0}" aria-current="true"></button>
       <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 1}" aria-label="Slide 2"></button>
       <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 2}" aria-label="Slide 3"></button>
+      <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 3}" aria-current="true"></button>
+      <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 4}" aria-label="Slide 2"></button>
+      <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 5}" aria-label="Slide 3"></button>
+      <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 6}" aria-current="true"></button>
+      <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 7}" aria-label="Slide 2"></button>
+      <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 8}" aria-label="Slide 3"></button>
     </div>
     <div class="offset-1 col-10 pb-4 card-style mt-5 pt-5" >
         <div class="row mt-4">
             <div class="offset-1 col-5 mb-5">
-                <div class="carousel-item size-item" *ngIf="itemActive == 0">
-                    <img src="./assets/images/icon-app.png" class="d-block" alt="...">
+                  <div class="carousel-item size-item" *ngIf="itemActive == 0">
+                    <img src="./assets/images/ap/ap1.png" class="d-block" alt="...">
                   </div>
                   <div class="carousel-item size-item" *ngIf="itemActive == 1">
-                    <img src="./assets/images/language-spanish-image.webp" class="d-block" alt="...">
+                    <img src="./assets/images/ap/ap2.png" class="d-block" alt="...">
                   </div>
                   <div class="carousel-item size-item" *ngIf="itemActive == 2">
-                    <img src="./assets/images/icon-app.png" class="d-block" alt="...">
+                    <img src="./assets/images/ap/ap3.png" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item size-item" *ngIf="itemActive == 3">
+                    <img src="./assets/images/ap/ap4.png" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item size-item" *ngIf="itemActive == 4">
+                    <img src="./assets/images/ap/ap5.png" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item size-item" *ngIf="itemActive == 5">
+                    <img src="./assets/images/ap/ap6.png" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item size-item" *ngIf="itemActive == 6">
+                    <img src="./assets/images/ap/ap7.png" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item size-item" *ngIf="itemActive == 7">
+                    <img src="./assets/images/ap/ap8.png" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item size-item" *ngIf="itemActive == 8">
+                    <img src="./assets/images/ap/ap9.png" class="d-block" alt="...">
                   </div>
             </div>
             <div class="col-5 text-center">
-                <p class="text-carousel" *ngIf="itemActive == 0">Titulo 1</p>
-                <p class="subtitle-carousel" *ngIf="itemActive == 0">Pantalla 1</p>
+                <p class="text-carousel" *ngIf="itemActive == 0">Pagina principal</p>
+                <p class="subtitle-carousel" *ngIf="itemActive == 0">En esta pantalla tu puedes registrarte en caso de tu tener una cuenta ya, crear una o ingresar con Google</p>
 
-                <p class="text-carousel" *ngIf="itemActive == 1">Titulo 2</p>
-                <p class="subtitle-carousel" *ngIf="itemActive == 1">Pantalla 2</p>
+                <p class="text-carousel" *ngIf="itemActive == 1">Pagina de inicio</p>
+                <p class="subtitle-carousel" *ngIf="itemActive == 1">Podras observar varias secciones, los tabaleros que tienes, sus estados y abajo un top de categorias, para que puedas ver las categorias que mas has usado</p>
 
-                <p class="text-carousel" *ngIf="itemActive == 2">Titulo 3</p>
-                <p class="subtitle-carousel" *ngIf="itemActive == 2">Pantalla 3</p>
+                <p class="text-carousel" *ngIf="itemActive == 2">Tableros</p>
+                <p class="subtitle-carousel" *ngIf="itemActive == 2">Aqui puedes agregar un  tablero junto con su detalle</p>
+
+                <p class="text-carousel" *ngIf="itemActive == 3">Tablero guardado</p>
+                <p class="subtitle-carousel" *ngIf="itemActive == 3">Aqui ya puedes apreciar como se guardó el tablero</p>
+
+                <p class="text-carousel" *ngIf="itemActive == 4">Categorias</p>
+                <p class="subtitle-carousel" *ngIf="itemActive == 4">En esta pantalla puedes agregar tus categorias</p>
+
+                <p class="text-carousel" *ngIf="itemActive == 5">Como agregar categorias</p>
+                <p class="subtitle-carousel" *ngIf="itemActive == 5">Basta con darle al boton de mas para poder agregar una categoria, posteriormente solo debes pulsar la confirmación</p>
+
+                <p class="text-carousel" *ngIf="itemActive == 6">Estados</p>
+                <p class="subtitle-carousel" *ngIf="itemActive == 6">Puedes visualizar un listado de tus estados, asi como un ejemplo de como se ven.</p>
+
+                <p class="text-carousel" *ngIf="itemActive == 7">Como agregar estados</p>
+                <p class="subtitle-carousel" *ngIf="itemActive == 7">Es tan simple como pulsar el boton de agregar, colocarle un nombre a tu estado asi como sus colores, y luego confirmar</p>
+
+                <p class="text-carousel" *ngIf="itemActive == 8">Perfil de usuario</p>
+                <p class="subtitle-carousel" *ngIf="itemActive == 8">Tus datos de usuario, puedes actualizar tu nombre correo y contraseña</p>
             </div>
         </div>
         

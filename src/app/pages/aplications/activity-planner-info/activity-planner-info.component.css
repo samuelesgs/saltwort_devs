@@ -4,4 +4,10 @@
 
 .box-border {
     border-radius: 16px;
+    height: 150px;
+}
+
+.card-style{
+    height: auto; 
+    width: auto;
 }

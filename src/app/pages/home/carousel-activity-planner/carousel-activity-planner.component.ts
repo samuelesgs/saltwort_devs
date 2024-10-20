@@ -11,13 +11,13 @@ import { Component } from '@angular/core';
 export class CarouselActivityPlannerComponent {
   itemActive = 0;
 
-  itemSize = 3;
+  itemSize = 9;
 
   onClickCarouse(isAfter : boolean) {
     const increment = isAfter ? this.itemActive - 1 : this.itemActive + 1;
     if (increment < 0) {
-      this.itemActive = 2;
-    } else if (increment > 2) {
+      this.itemActive = 8;
+    } else if (increment > 8) {
       this.itemActive = 0
     } else {
       this.itemActive = increment

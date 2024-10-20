@@ -524,7 +524,7 @@ export class Develpments {
                                             name: 'screen-1',
                                             detail: '',
                                             url: 'gcios/gcios1',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.ios]
                                         },
                                         {
                                             name: 'screen-1',
@@ -567,6 +567,54 @@ export class Develpments {
                                             url: 'gcios/gcios8',
                                             typeProject: [typeProject.ios]
                                         },
+                                        {
+                                            name: 'Pantalla de login',
+                                            detail: 'Puedes ingresar tu correo y contraseña, escoger idioma o entrar con Google',
+                                            url: 'gcweb/gcweb1',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Pantalla principal',
+                                            detail: 'En la pantalla principal puedes visualizar con categorias su detalle y su cantidad. Puedes cambiar entre secciones.',
+                                            url: 'gcweb/gcweb2',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Reportes',
+                                            detail: 'En forma de grafica de pastel puedes ver tus conceptos y la cantidad de esos conceptos',
+                                            url: 'gcweb/gcweb3',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Proyectos',
+                                            detail: 'Lista de tus proyectos, en forma de lista, tienes un botón para agregar un proyecto en caso de ser necesario',
+                                            url: 'gcweb/gcweb4',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Categorias',
+                                            detail: 'Listado de categorias, se dividen en 2, categorias de ingresos y gastados, em ambas puedes agregar categorias',
+                                            url: 'gcweb/gcweb5',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Opciones',
+                                            detail: 'En esta pantalla puedes elegir entre varias tipos de monedas y establecer las preferencias a tu gusto.',
+                                            url: 'gcweb/gcweb6',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Añadir ingreso',
+                                            detail: 'Puedes añadir un ingreso, estableciendo la cantidad, escogiendo la categoria y una breve descripción',
+                                            url: 'gcweb/gcweb7',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Añadir proyecto',
+                                            detail: 'En este modal puedes establecer el nombre de tu proyecto',
+                                            url: 'gcweb/gcweb8',
+                                            typeProject: [typeProject.web]
+                                        },
                                     ]
                                 },
                                 {
@@ -592,12 +640,7 @@ export class Develpments {
                                         typeProject: [typeProject.web]
                                     },
                                     screens: [
-                                        {
-                                            name: 'Pantalla principal de la consola de encode',
-                                            detail: 'Tienes un login en el cual registrar tu usuario y contraseña',
-                                            url: 'consoleencode/c1',
-                                            typeProject: [typeProject.web]
-                                        },
+                                    
                                         {
                                             name: 'Pantalla de las licencias',
                                             detail: 'Las licencias que tienen algunos usuarios de las aplicaciones',
@@ -853,7 +896,56 @@ export class Develpments {
                                             detail: 'En esta pantalla tu puedes registrarte en caso de tu tener una cuenta ya, crear una o ingresar con Google',
                                             url: 'ap/ap1',
                                             typeProject: [typeProject.web]
-                                        }
+                                        },
+                                        {
+                                            name: 'Pagina de inicio',
+                                            detail: 'Podras observar varias secciones, los tabaleros que tienes, sus estados y abajo un top de categorias, para que puedas ver las categorias que mas has usado',
+                                            url: 'ap/ap2',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Tableros',
+                                            detail: 'Aqui puedes agregar un  tablero junto con su detalle ',
+                                            url: 'ap/ap3',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Tablero guardado',
+                                            detail: 'Aqui ya puedes apreciar como se guardó el tablero',
+                                            url: 'ap/ap4',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Categorias',
+                                            detail: 'En esta pantalla puedes agregar tus categorias',
+                                            url: 'ap/ap5',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Como agregar categorias',
+                                            detail: 'Basta con darle al boton de mas para poder agregar una categoria, posteriormente solo debes pulsar la confirmación',
+                                            url: 'ap/ap6',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Estados',
+                                            detail: 'Puedes visualizar un listado de tus estados, asi como un ejemplo de como se ven.',
+                                            url: 'ap/ap7',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Como agregar estados',
+                                            detail: 'Es tan simple como pulsar el boton de agregar, colocarle un nombre a tu estado asi como sus colores, y luego confirmar',
+                                            url: 'ap/ap8',
+                                            typeProject: [typeProject.web]
+                                        },
+                                        {
+                                            name: 'Perfil de usuario',
+                                            detail: 'Tus datos de usuario, puedes actualizar tu nombre correo y contraseña',
+                                            url: 'ap/ap9',
+                                            typeProject: [typeProject.web]
+                                        },
+
                                     ]
                                 },
                             ],                   
@@ -1089,10 +1181,58 @@ export class Develpments {
                                 screens: [
                                     {
                                         name: 'Pagina principal',
-                                        detail: 'En esta pantañña tu puedes registrarte en caso de tu tener una cuenta ya, crear una o ingresar con Google',
+                                        detail: 'En esta pantalla tu puedes registrarte en caso de tu tener una cuenta ya, crear una o ingresar con Google',
                                         url: 'ap/ap1',
                                         typeProject: [typeProject.web]
-                                    }
+                                    },
+                                    {
+                                        name: 'Pagina de inicio',
+                                        detail: 'Podras observar varias secciones, los tabaleros que tienes, sus estados y abajo un top de categorias, para que puedas ver las categorias que mas has usado',
+                                        url: 'ap/ap2',
+                                        typeProject: [typeProject.web]
+                                    },
+                                    {
+                                        name: 'Tableros',
+                                        detail: 'Aqui puedes agregar un  tablero junto con su detalle ',
+                                        url: 'ap/ap3',
+                                        typeProject: [typeProject.web]
+                                    },
+                                    {
+                                        name: 'Tablero guardado',
+                                        detail: 'Aqui ya puedes apreciar como se guardó el tablero',
+                                        url: 'ap/ap4',
+                                        typeProject: [typeProject.web]
+                                    },
+                                    {
+                                        name: 'Categorias',
+                                        detail: 'En esta pantalla puedes agregar tus categorias',
+                                        url: 'ap/ap5',
+                                        typeProject: [typeProject.web]
+                                    },
+                                    {
+                                        name: 'Como agregar categorias',
+                                        detail: 'Basta con darle al boton de mas para poder agregar una categoria, posteriormente solo debes pulsar la confirmación',
+                                        url: 'ap/ap6',
+                                        typeProject: [typeProject.web]
+                                    },
+                                    {
+                                        name: 'Estados',
+                                        detail: 'Puedes visualizar un listado de tus estados, asi como un ejemplo de como se ven.',
+                                        url: 'ap/ap7',
+                                        typeProject: [typeProject.web]
+                                    },
+                                    {
+                                        name: 'Como agregar estados',
+                                        detail: 'Es tan simple como pulsar el boton de agregar, colocarle un nombre a tu estado asi como sus colores, y luego confirmar',
+                                        url: 'ap/ap8',
+                                        typeProject: [typeProject.web]
+                                    },
+                                    {
+                                        name: 'Perfil de usuario',
+                                        detail: 'Tus datos de usuario, puedes actualizar tu nombre correo y contraseña',
+                                        url: 'ap/ap9',
+                                        typeProject: [typeProject.web]
+                                    },
                                 ]
                             },
                         ],                   

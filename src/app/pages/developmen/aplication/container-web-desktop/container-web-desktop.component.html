@@ -4,7 +4,7 @@
 >
     <div class="carousel-indicators">
         <button
-            *ngFor="let screen of selectProject?.screens; let i = index"
+            *ngFor="let screen of filteredScreens; let i = index"
             class="radius-selector"
             data-bs-target="#carouselExampleIndicators"
             [ngClass]="{'active' : itemActive == i}"
