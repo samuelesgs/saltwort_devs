@@ -56,7 +56,9 @@ export class DevelopmenComponent {
     "figma",
     "mariadb",
     "c-sharp",
-    "managment"
+    "managment",
+    "angular",
+    "html"
   ];
 
   constructor(

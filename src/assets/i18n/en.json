@@ -26,13 +26,25 @@
 
     }, 
     "home" : {
-        "home-description" : "At Salwort we are a young and innovative company. Committed to research, optimization and systematizing solutions.",
-        "title-1" : "Title 1",
-        "screen-1" : " Screen 1 ",
-        "title-2" : "Title 2",
-        "screen-2" : " Screen 2",
-        "title-3" : " Title 3",
-        "screen-3" : " Screen 3"
+        "home-description" : "At Salwort, we are a young and innovative company. Committed to research, optimization, and streamlining solutions.",
+        "title-1" : "Main Screen",
+        "screen-1" : "On this screen, you can register if you already have an account, create one, or log in with Google",
+        "title-2" : "Home Page",
+        "screen-2" : "You can see various sections, the boards you have, their statuses, and at the bottom, a top categories list to see the categories you use the most",
+        "title-3" : "Boards",
+        "screen-3" : "Here, you can add a board along with its details",
+        "title-4" : "Board Saved",
+        "screen-4" : "Here, you can see how the board has been saved",
+        "title-5" : "Categories",
+        "screen-5" : "On this screen, you can add your categories",
+        "title-6" : "How to Add Categories",
+        "screen-6" : "Just click the add button to add a category, and then simply confirm",
+        "title-7" : "Statuses",
+        "screen-7" : "You can view a list of your statuses, as well as an example of how they look",
+        "title-8" : "How to Add Statuses",
+        "screen-8" : "It's as simple as pressing the add button, naming your status, choosing colors, and then confirming",
+        "title-9" : "User Profile",
+        "screen-9" : "Your user details, you can update your name, email, and password"
     },
     "apps-features" : {
         "properties" : {
@@ -98,5 +110,47 @@
     },
     "random-text" : {
         "knowmore" : "know more"
-    }
+    },
+    "ap-app-info" : {
+        "screen1-title" : "Home",
+        "screen1-text1" : "On this screen, you can enter your username and password",
+        "screen1-text2" : "If you don't have a registered email, you can create an account",
+        "screen1-text3" : "If you don't feel like creating an account, you can sign in with Google",
+        "screen1-text4" : "You can recover your password if you have forgotten it",
+        "screen2-title" : "Main Screen",
+        "screen2-text1" : "This is the main screen",
+        "screen2-text2" : "Your dashboard information will be shown as soon as you enter the app",
+        "screen2-text3" : "At the bottom, you can see the top 3 categories you use the most",
+        "screen2-text4" : "On the left side, you have all the sections",
+        "screen3-title" : "Add Statuses",
+        "screen3-text1" : "You only need to write the name of your status, choose your colors, and confirm the status when you're done",
+        "screen3-text2" : "Once added, the status will appear in the list",
+        "screen3-text3" : "You can see an example of how your status looks",
+        "screen4-title" : "Board Added",
+        "screen4-text1" : "This is how it looks when you add a board",
+        "screen4-text2" : "On the card, you can see the name and details you previously added",
+        "screen4-text3" : "You can add as many as you like",
+        "screen5-title" : "Categories",
+        "screen5-text1" : "You can see your categories in a list format",
+        "screen5-text2" : "You can add more categories",
+        "screen5-text3" : "Edit them if you wish",
+        "screen6-title" : "Category Added",
+        "screen6-text1" : "To add a category, just click the add button and it will let you write the name of your category",
+        "screen6-text2" : "Once added, it will appear in the list",
+        "screen6-text3" : "You can sort your categories alphabetically or delete them",
+        "screen6-text4" : "You can also search through your categories",
+        "screen7-title" : "Statuses",
+        "screen7-text1" : "These are the statuses you have, ordered in a list format",
+        "screen7-text2" : "You can add more statuses if you wish",
+        "screen7-text3" : "Sorting your statuses alphabetically is also possible or searching through them",
+        "screen8-title" : "Add Statuses",
+        "screen8-text1" : "You only need to write the name of your status, choose your colors, and confirm the status when you're done",
+        "screen8-text2" : "Once added, the status will appear in the list",
+        "screen8-text3" : "You can see an example of how your status looks",
+        "screen9-title" : "User Information",
+        "screen9-text1" : "These are your user details",
+        "screen9-text2" : "You can change them anytime you want",
+        "screen9-text3" : "You can choose your preferred colors"
+    }   
+    
 }

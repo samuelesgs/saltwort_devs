@@ -64,7 +64,8 @@ export class Develpments {
                     "figma",
                     "mariadb",
                     "c-sharp",
-                    "managment"
+                    "managment",
+                    "angular"
                 ],
               
                 companies : [
@@ -166,7 +167,9 @@ export class Develpments {
                                 ],
                                 tools : [
                                     "android",
-                                    "kotlin"
+                                    "kotlin",
+                                    "c-sharp",
+                                    "managment"
                                 ],
                                 icon: {
                                     name: 'ControlVehicular',
@@ -182,92 +185,92 @@ export class Develpments {
                                         typeProject: [typeProject.android]
                                     },
                                     {
-                                        name: 'screen-2',
-                                        detail: 'Escoger empresa',
+                                        name: 'Empresas',
+                                        detail: 'Listado de empresas de las cuales puedes escoger',
                                         url: 'cv/cv1',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
-                                        name: 'screen-3',
+                                        name: 'Principal',
                                         detail: 'Pantalla principal',
                                         url: 'cv/cv2',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
-                                        name: 'screen-1',
+                                        name: 'LLaves',
                                         detail: 'Catalogo de llaves, se pueden ver las llaves, actualizar y crear una nueva',
                                         url: 'cv/cv3',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
-                                        name: 'screen-1',
+                                        name: 'Agregar llave',
                                         detail: 'Agregar llave, se puede agregar una llave y sirve para actualizar una llave ',
                                         url: 'cv/cv4',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
-                                        name: 'screen-1',
+                                        name: 'Vehiculos',
                                         detail: 'Catalogo de vehiculos, se pueden ver los vehiculos, exportar a excel y agregar un nuevo ',
                                         url: 'cv/cv5',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
-                                        name: 'screen-1',
-                                        detail: 'Agregar un vehiculo',
+                                        name: 'Agregar vehiculo',
+                                        detail: 'En esta pantalla puedes agregar un vehiculo con todas sus caracteristicas',
                                         url: 'cv/cv6',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
-                                        name: 'screen-1',
+                                        name: 'Actualización de vehiculo',
                                         detail: 'Aqui se puede ver como se actualiza un vehiculo',
                                         url: 'cv/cv7',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
-                                        name: 'screen-1',
+                                        name: 'Agentes',
                                         detail: 'En el catalogo de agentes puedes ver los agentes que tienes, buscarlos, agregar un nuevo, consultar uno y actualizarlo si asi se lo desea',
                                         url: 'cv/cv8',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
-                                        name: 'screen-1',
+                                        name: 'Actualización agentes',
                                         detail: 'Aqui se esta consultando un agente',
                                         url: 'cv/cv9',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
-                                        name: 'screen-1',
+                                        name: 'Inserción agente',
                                         detail: 'Aqui se esta insertando un agente',
                                         url: 'cv/cv10',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
-                                        name: 'screen-1',
+                                        name: 'Asignar llave',
                                         detail: 'Se le puede asignar una llave a un agente',
                                         url: 'cv/cv11',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
-                                        name: 'screen-1',
+                                        name: 'Recibir llave',
                                         detail: 'Recepcion de llave, se le recibe una llave ',
                                         url: 'cv/cv12',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
-                                        name: 'screen-1',
-                                        detail: 'Historial de llaves, se muestra en una tabla que s e puede exportar a excel los datos',
+                                        name: 'Historial llaves',
+                                        detail: 'Historial de llaves, se muestra en una tabla que se puede exportar a excel los datos de todas las llaves',
                                         url: 'cv/cv13',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
-                                        name: 'screen-1',
+                                        name: 'Reporte rutas',
                                         detail: 'Reporte que muestra un listadp de todos las rutas, sus detalles, pueden ser consultadas para ver lo detalles mas especificos',
                                         url: 'cv/cv14',
                                         typeProject: [typeProject.desktop]
                                     },
                                     {
-                                        name: 'screen-1',
-                                        detail: 'Reporte que muestra el consumo de gasolina de los vehiculos.',
+                                        name: 'Reporte consumo de gasolina',
+                                        detail: 'Reporte que muestra el consumo de gasolina de los vehiculos, con sus fechas, y su calculos del kilometraje y los litros de gasolina. Este reporte se puede exportar a excel.',
                                         url: 'cv/cv15',
                                         typeProject: [typeProject.desktop]
                                     },
@@ -284,7 +287,8 @@ export class Develpments {
                                     "specific-project.properties.revelant-skills-3-crm-luis"
                                 ],
                                 tools : [
-                                    "c-sharp"
+                                    "c-sharp",
+                                    "managment"
                                 ],
                                 icon: {
                                     name: 'name',
@@ -372,6 +376,100 @@ export class Develpments {
                                         typeProject: [typeProject.desktop]
                                     },
                                 ]
+                            },
+                            {
+                                id: 4,
+                                platforms : [typeProject.desktop, typeProject.android],
+                                name : 'Ruta +',
+                                detail : 'specific-project.properties.project-detail-crm-luis',
+                                relevantSkills : [
+                                    "specific-project.properties.revelant-skills-1-crm-luis",
+                                    "specific-project.properties.revelant-skills-2-crm-luis",
+                                    "specific-project.properties.revelant-skills-3-crm-luis"
+                                ],
+                                tools : [
+                                    "c-sharp",
+                                    "android",
+                                    "java",
+                                    "managment"
+                                ],
+                                icon: {
+                                    name: 'name',
+                                    detail: 'detail',
+                                    url: 'crm-icon',
+                                    typeProject: [typeProject.desktop, typeProject.android]
+                                },
+                                screens: [
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'crm/crm1',
+                                        typeProject: [typeProject.desktop]
+                                    },
+                                    
+                                ]
+                            },
+                            {
+                                id: 5,
+                                platforms : [typeProject.android],
+                                name : 'Verificador de precios movil',
+                                detail : 'specific-project.properties.project-detail-crm-luis',
+                                relevantSkills : [
+                                    "specific-project.properties.revelant-skills-1-crm-luis",
+                                    "specific-project.properties.revelant-skills-2-crm-luis",
+                                    "specific-project.properties.revelant-skills-3-crm-luis"
+                                ],
+                                tools : [
+                                    "android",
+                                    "kotlin",
+                                    "managment"
+                                ],
+                                icon: {
+                                    name: 'name',
+                                    detail: 'detail',
+                                    url: 'crm-icon',
+                                    typeProject: [ typeProject.android]
+                                },
+                                screens: [
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'crm/crm1',
+                                        typeProject: [typeProject.desktop]
+                                    },
+                                    
+                                ]
+                            },
+                            {
+                                id: 6,
+                                platforms : [typeProject.android],
+                                name : 'Lista de precios',
+                                detail : 'specific-project.properties.project-detail-crm-luis',
+                                relevantSkills : [
+                                    "specific-project.properties.revelant-skills-1-crm-luis",
+                                    "specific-project.properties.revelant-skills-2-crm-luis",
+                                    "specific-project.properties.revelant-skills-3-crm-luis"
+                                ],
+                                tools : [
+                                    "android",
+                                    "java",
+                                    "managment"
+                                ],
+                                icon: {
+                                    name: 'name',
+                                    detail: 'detail',
+                                    url: 'crm-icon',
+                                    typeProject: [typeProject.desktop, typeProject.android]
+                                },
+                                screens: [
+                                    {
+                                        name: 'screen-1',
+                                        detail: 'detail',
+                                        url: 'crm/crm1',
+                                        typeProject: [typeProject.desktop]
+                                    },
+                                    
+                                ]
                             }
 
                         ]
@@ -392,7 +490,9 @@ export class Develpments {
                                     tools : [
                                         "angular",
                                         "figma",
-                                        "typescript"
+                                        "typescript",
+                                        "html",
+                                        "css-3"
                                     ],
                                     icon: {
                                         name: 'name',
@@ -516,7 +616,7 @@ export class Develpments {
                                     icon: {
                                         name: 'name',
                                         detail: 'Pagina principal de encode mx donde consultas informacion sobre las aplicaciones',
-                                        url: 'encode-logo',
+                                        url: 'gcicon',
                                         typeProject: [typeProject.web, typeProject.ios]
                                     },
                                     screens: [
@@ -635,27 +735,27 @@ export class Develpments {
                                     ],
                                     icon: {
                                         name: 'name',
-                                        detail: 'Pagina principal de encode mx donde consultas informacion sobre las aplicaciones',
-                                        url: 'encode-logo',
+                                        detail: 'Pagina principal de encode mx donde consultas informacion sobre las aplicaciones.',
+                                        url: 'encodemx',
                                         typeProject: [typeProject.web]
                                     },
                                     screens: [
                                     
                                         {
                                             name: 'Pantalla de las licencias',
-                                            detail: 'Las licencias que tienen algunos usuarios de las aplicaciones',
+                                            detail: 'Las licencias que tienen algunos usuarios de las aplicaciones.',
                                             url: 'consoleencode/c2',
                                             typeProject: [typeProject.web]
                                         },
                                         {
                                             name: 'Agregar licencia',
-                                            detail: 'Puedes agregar una licencia y personalizarla',
+                                            detail: 'Puedes agregar una licencia y personalizarla.',
                                             url: 'consoleencode/c3',
                                             typeProject: [typeProject.web]
                                         },
                                         {
                                             name: 'Usuarios',
-                                            detail: 'Puedes ver los usuarios a forma de tabla, donde lso pueds buscar o limpiar',
+                                            detail: 'Puedes ver los usuarios a forma de tabla, donde lso pueds buscar o limpiar.',
                                             url: 'consoleencode/c4',
                                             typeProject: [typeProject.web]
                                         },
@@ -693,7 +793,7 @@ export class Develpments {
                                     icon: {
                                         name: 'name',
                                         detail: 'Principal donde puedes ver los meses y sus actividades ',
-                                        url: 'encode-logo',
+                                        url: 'productivity',
                                         typeProject: [typeProject.web]
                                     },
                                     screens: [
@@ -766,7 +866,7 @@ export class Develpments {
                                     icon: {
                                         name: 'name',
                                         detail: 'Pagina que apoya a la aplicacion de gastos diarios 4 movil, siendo ua extension de la misma  ',
-                                        url: 'encode-logo',
+                                        url: 'daily_expenses_4',
                                         typeProject: [typeProject.web]
                                     },
                                     screens: [
@@ -998,8 +1098,8 @@ export class Develpments {
                                 ],
                                 icon: {
                                     name: 'name',
-                                    detail: 'detail',
-                                    url: 'url',
+                                    detail: ' ',
+                                    url: 'gcicon',
                                     typeProject: [typeProject.android]
                                 },
                                 screens: [
@@ -1062,19 +1162,7 @@ export class Develpments {
                                         detail: 'detail',
                                         url: 'gc/gc11',
                                         typeProject: [typeProject.android]
-                                    },
-                                    {
-                                        name: 'screen-1',
-                                        detail: 'detail',
-                                        url: 'gc/gc12',
-                                        typeProject: [typeProject.android]
-                                    },
-                                    {
-                                        name: 'screen-1',
-                                        detail: 'detail',
-                                        url: 'gc/gc13',
-                                        typeProject: [typeProject.android]
-                                    },
+                                    }
 
                                 ]
                             },
@@ -1096,7 +1184,7 @@ export class Develpments {
                                 icon: {
                                     name: 'name',
                                     detail: 'detail',
-                                    url: 'url',
+                                    url: 'daily_expenses_4',
                                     typeProject: [typeProject.android]
                                 },
                                 screens: [
