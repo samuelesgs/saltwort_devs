@@ -381,10 +381,10 @@ export class Develpments {
                                 id: 4,
                                 platforms : [typeProject.desktop, typeProject.android],
                                 name : 'Ruta +',
-                                detail : 'specific-project.properties.project-detail-crm-luis',
+                                detail : 'Aplicación que sirve para el envio de pedidos a clientes, consta de dos aplicaciones, una movil y una de esscritorio, la de movil solo envia pedidos, mientras que la de escritorio se encarga de administrar los pedidos, pudiendo enviarlos a comercial y egenrando los documentos necesarios para factura',
                                 relevantSkills : [
-                                    "specific-project.properties.revelant-skills-1-crm-luis",
-                                    "specific-project.properties.revelant-skills-2-crm-luis",
+                                    "Sincronización API",
+                                    "Conexión impresora",
                                     "specific-project.properties.revelant-skills-3-crm-luis"
                                 ],
                                 tools : [
@@ -396,15 +396,129 @@ export class Develpments {
                                 icon: {
                                     name: 'name',
                                     detail: 'detail',
-                                    url: 'crm-icon',
+                                    url: 'rutaicon',
                                     typeProject: [typeProject.desktop, typeProject.android]
                                 },
                                 screens: [
                                     {
-                                        name: 'screen-1',
-                                        detail: 'detail',
-                                        url: 'crm/crm1',
+                                        name: 'Empresas',
+                                        detail: 'como primera instancia te aparecera un listado de empresas de las cuale puedas escoger una.',
+                                        url: 'ruta+/rd1',
                                         typeProject: [typeProject.desktop]
+                                    },
+                                    {
+                                        name: 'Pantalla principal',
+                                        detail: 'Una vez escogida una empresa te aparecera directamente la pestaña de pedidos.',
+                                        url: 'ruta+/rd2',
+                                        typeProject: [typeProject.desktop]
+                                    },
+                                    {
+                                        name: 'Configuraciones',
+                                        detail: 'Datos de tu servidor',
+                                        url: 'ruta+/rd4',
+                                        typeProject: [typeProject.desktop]
+                                    },
+                                    {
+                                        name: 'Permisos',
+                                        detail: 'Establecer preferencias para tus precios y productos, ademas de la manera de vender. Todo esto se manda a una api y se guarda en el servidor',
+                                        url: 'ruta+/rd5',
+                                        typeProject: [typeProject.desktop]
+                                    },
+                                    {
+                                        name: 'Configuraciones de caja',
+                                        detail: 'Configuraciones de tu terminal',
+                                        url: 'ruta+/rd6',
+                                        typeProject: [typeProject.desktop]
+                                    },
+                                    {
+                                        name: 'Sincronizar',
+                                        detail: 'Sincroniza tus catalogos',
+                                        url: 'ruta+/rd7',
+                                        typeProject: [typeProject.desktop]
+                                    },
+                                    {
+                                        name: 'Nuevo pedido',
+                                        detail: 'En esta pantalla vas a apoder hacer nuevo pedido',
+                                        url: 'ruta+/rd8',
+                                        typeProject: [typeProject.desktop]
+                                    },
+                                    {
+                                        name: 'Remisión',
+                                        detail: 'Generar envio a comercial',
+                                        url: 'ruta+/rd9',
+                                        typeProject: [typeProject.desktop]
+                                    },
+                                    {
+                                        name: '',
+                                        detail: '',
+                                        url: 'ruta+/rm1',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: '',
+                                        detail: '',
+                                        url: 'ruta+/rm2',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: '',
+                                        detail: '',
+                                        url: 'ruta+/rm3',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: '',
+                                        detail: '',
+                                        url: 'ruta+/rm4',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: '',
+                                        detail: '',
+                                        url: 'ruta+/rm5',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: '',
+                                        detail: '',
+                                        url: 'ruta+/rm6',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: '',
+                                        detail: '',
+                                        url: 'ruta+/rm7',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: '',
+                                        detail: '',
+                                        url: 'ruta+/rm8',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: '',
+                                        detail: '',
+                                        url: 'ruta+/rm9',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: '',
+                                        detail: '',
+                                        url: 'ruta+/rm10',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: '',
+                                        detail: '',
+                                        url: 'ruta+/rm11',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: '',
+                                        detail: '',
+                                        url: 'ruta+/rm12',
+                                        typeProject: [typeProject.android]
                                     },
                                     
                                 ]
@@ -413,7 +527,7 @@ export class Develpments {
                                 id: 5,
                                 platforms : [typeProject.android],
                                 name : 'Verificador de precios movil',
-                                detail : 'specific-project.properties.project-detail-crm-luis',
+                                detail : 'Ves los productos de la empresa, y puedes configurar los precios que ves en pantalla, siendo un total de 10 precios diferentes ',
                                 relevantSkills : [
                                     "specific-project.properties.revelant-skills-1-crm-luis",
                                     "specific-project.properties.revelant-skills-2-crm-luis",
@@ -427,7 +541,7 @@ export class Develpments {
                                 icon: {
                                     name: 'name',
                                     detail: 'detail',
-                                    url: 'crm-icon',
+                                    url: 'vpicon',
                                     typeProject: [ typeProject.android]
                                 },
                                 screens: [
@@ -444,7 +558,7 @@ export class Develpments {
                                 id: 6,
                                 platforms : [typeProject.android],
                                 name : 'Lista de precios',
-                                detail : 'specific-project.properties.project-detail-crm-luis',
+                                detail : '',
                                 relevantSkills : [
                                     "specific-project.properties.revelant-skills-1-crm-luis",
                                     "specific-project.properties.revelant-skills-2-crm-luis",
@@ -458,15 +572,57 @@ export class Develpments {
                                 icon: {
                                     name: 'name',
                                     detail: 'detail',
-                                    url: 'crm-icon',
+                                    url: 'lpicon',
                                     typeProject: [typeProject.desktop, typeProject.android]
                                 },
                                 screens: [
                                     {
-                                        name: 'screen-1',
-                                        detail: 'detail',
-                                        url: 'crm/crm1',
-                                        typeProject: [typeProject.desktop]
+                                        name: '',
+                                        detail: '',
+                                        url: 'listaprecios/lp1',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: '',
+                                        detail: '',
+                                        url: 'listaprecios/lp2',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: '',
+                                        detail: '',
+                                        url: 'listaprecios/lp3',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: '',
+                                        detail: '',
+                                        url: 'listaprecios/lp4',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: '',
+                                        detail: '',
+                                        url: 'listaprecios/lp5',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: '',
+                                        detail: '',
+                                        url: 'listaprecios/lp6',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: '',
+                                        detail: '',
+                                        url: 'listaprecios/lp7',
+                                        typeProject: [typeProject.android]
+                                    },
+                                    {
+                                        name: '',
+                                        detail: '',
+                                        url: 'listaprecios/lp8',
+                                        typeProject: [typeProject.android]
                                     },
                                     
                                 ]
