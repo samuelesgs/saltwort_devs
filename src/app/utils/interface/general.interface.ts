@@ -1330,7 +1330,13 @@ export class Develpments {
                                             {
                                                 title : 'Cambio de manejador de base de datos',
                                                 detail : 'Se realizo el cambio de modelo de base de datos de cursor a room database',
-                                                relevance : Relevance['HIGH'],
+                                                relevance : Relevance['VERY_HIGH'],
+                                                icon : ''
+                                            },
+                                            {
+                                                title : 'Cambios importantes en diseño de toda la aplicación',
+                                                detail : 'Se realizaron novedosos cambios en el diseño de la aplicacion conforme colorimetria presentada por el equipo de diseño',
+                                                relevance : Relevance['MEDIUM'],
                                                 icon : ''
                                             }
                                         ]

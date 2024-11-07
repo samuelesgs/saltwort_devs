@@ -49,20 +49,24 @@
 </div>
 
 <div class="col-12 center-horizontal mt-3">
-    <div class="col-8" style="background-color: green;">
-        <div class="col-12 bh-white-transparent p-3 text-white">
+    <div class="col-8">
+        <div class="col-12 bg-card-dark p-3 text-white">
             <h3>Relenvacia en proyecto</h3>
             <div class="row">
                 <div class="record-achievement" *ngFor="let achievemnt of getAchievemnts()">
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="./assets/images/icons-relevance/cerrar.svg" class="relevance-icon">
+                    <div class="row mt-2 ">
+                        <div class="col-2 text-center center-horizontal">
+                            <img
+                                *ngFor="let index of getNumberArrayRelevance(achievemnt.relevance)"
+                                src="./assets/images/icons-relevance/star.png"
+                                class="relevance-icon"
+                                >
                         </div>
-                        <div class="col-8">
-                            <p class="col-12 white-text p-3 mt-4">
+                        <div class="col me-3 bg-white-transparent border-card-radius p-2 ps-4">
+                            <h5 class="col-12  white-text mb-2 no-padding">
                                 {{achievemnt.title}}
-                            </p>
-                            <p class="col-12 white-text p-3 mt-4">
+                            </h5>
+                            <p class="col-12 white-text no-space">
                                 {{achievemnt.detail}}
                             </p>
                         </div>

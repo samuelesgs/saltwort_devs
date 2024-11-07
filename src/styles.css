@@ -60,8 +60,8 @@ h3 {
 }
 
 .no-space {
-    margin: 0px;
-    padding: 0px;
+    margin: 0px !important;
+    padding: 0px !important;
 }
 
 .vertical-center {

@@ -119,4 +119,12 @@ export class ContainerApplicationComponent {
     return [];
   }
 
+  getNumberArrayRelevance(relevance : number) {
+    const array = [];
+    for (let index = 0; index < relevance; index++) {
+      array.push(index);
+    }
+    return array
+  }
+
 }
