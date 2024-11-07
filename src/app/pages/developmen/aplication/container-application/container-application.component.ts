@@ -21,6 +21,7 @@ export class ContainerApplicationComponent {
   public profile!: ProfileData;
   public selectProject: Project | null = null;
   public selectedButton: string | null = null;
+  public numberButtonSelected : number = 0;
 
   name = "";
   company = "";
@@ -30,9 +31,9 @@ export class ContainerApplicationComponent {
 
   ngOnInit(): void {
     this.loadingData();
-    this.appService.button$.subscribe(button => {
-      this.selectedButton = button; 
-    });
+    /*this.appService.button$.subscribe(button => {
+      this.selectedButton = button;
+    });*/
 
     this.appService.profile$.subscribe(profile => {
       this.profile = profile!;
@@ -40,7 +41,7 @@ export class ContainerApplicationComponent {
 
     this.appService.project$.subscribe(project => {
       this.selectProject = project;
-      this.selectDefaultButton();
+      this.selectedPlatform();
     });
   }
 
@@ -76,20 +77,46 @@ export class ContainerApplicationComponent {
     return  this.selectProject!.platforms.filter(row => row.typeProject == typeProject['desktop']).length > 0;
   }
 
-  selectButton(button: string): void {
-    this.selectedButton = button;
-    this.appService.setButton(button);
-  }
-  selectDefaultButton(): void {
+  selectedPlatform(key? : string): void {
+    let platform = '';
     if (this.selectProject) {
-      if (this.isMovil()) {
-        this.selectButton('movil');
-      } else if (this.isWeb()) {
-        this.selectButton('web');
-      } else if (this.isDesktop()) {
-        this.selectButton('desktop');
+      if (!key) {
+        if (this.isMovil()) {
+          platform = 'movil';
+          this.numberButtonSelected = 0;
+        } else if (this.isWeb()) {
+          platform = 'web';
+          this.numberButtonSelected = 1;
+        } else if (this.isDesktop()) {
+          platform = 'desktop';
+          this.numberButtonSelected = 2;
+        }
+      } else {
+        platform = key
       }
+      this.selectedButton = platform;
+      this.appService.setButton(platform);
     }
+  }
+
+  getTypeProject() {
+    switch (this.selectedButton) {
+      case 'movil' :
+        return typeProject['android'];
+      case 'web' : 
+        return typeProject['web'];
+      default :
+        return typeProject['desktop'];
+    }
+  }
+
+  getAchievemnts() {
+    const platform = this.selectProject!.platforms.find(row => row.typeProject == this.getTypeProject());
+    if (platform) {
+      console.log(platform.achievements);
+      return platform.achievements;
+    }
+    return [];
   }
 
 }

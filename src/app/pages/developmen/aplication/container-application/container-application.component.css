@@ -53,3 +53,8 @@
 .active {
     background-color:  white;
 }
+
+.relevance-icon {
+    height: 4vh;
+    width: 4vh;
+}

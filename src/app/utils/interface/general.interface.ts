@@ -1326,7 +1326,14 @@ export class Develpments {
                                 platforms : [
                                     {
                                         typeProject : typeProject.android,
-                                        achievements : []
+                                        achievements : [
+                                            {
+                                                title : 'Cambio de manejador de base de datos',
+                                                detail : 'Se realizo el cambio de modelo de base de datos de cursor a room database',
+                                                relevance : Relevance['HIGH'],
+                                                icon : ''
+                                            }
+                                        ]
                                     },
                                     {
                                         typeProject : typeProject.web,

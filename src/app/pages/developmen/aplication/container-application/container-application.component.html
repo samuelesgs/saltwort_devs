@@ -1,65 +1,90 @@
 <div
-        class="col-12 center-horizontal"
-        *ngIf="selectProject!.platforms.length > 1"
-        >
-        <div class="col-11 container-buttons p-1">
-            <button *ngIf="isMovil()"
-                class="buttons-switch col ms-2 me-2"
-                [ngClass]="{'selected-item-background': selectedButton === 'movil'}"
-                (click)="selectButton('movil')"
-                >Movil
-            </button>
-            <button *ngIf="isWeb()"
-                class="buttons-switch col ms-2 me-2"
-                [ngClass]="{'selected-item-background': selectedButton === 'web'}"
-                (click)="selectButton('web')"
-                >Web
-            </button>
-            <button *ngIf="isDesktop()"
-                class="buttons-switch col ms-2 me-2"
-                [ngClass]="{'selected-item-background': selectedButton === 'desktop'}"
-                (click)="selectButton('desktop')"
-                >Escritorio
-            </button>
-        </div>
+    class="col-12 center-horizontal"
+    *ngIf="selectProject!.platforms.length > 1"
+    >
+    <div class="col-11 container-buttons p-1">
+        <button *ngIf="isMovil()"
+            class="buttons-switch col ms-2 me-2"
+            [ngClass]="{'selected-item-background': selectedButton === 'movil'}"
+            (click)="selectedPlatform('movil')"
+            >Movil
+        </button>
+        <button *ngIf="isWeb()"
+            class="buttons-switch col ms-2 me-2"
+            [ngClass]="{'selected-item-background': selectedButton === 'web'}"
+            (click)="selectedPlatform('web')"
+            >Web
+        </button>
+        <button *ngIf="isDesktop()"
+            class="buttons-switch col ms-2 me-2"
+            [ngClass]="{'selected-item-background': selectedButton === 'desktop'}"
+            (click)="selectedPlatform('desktop')"
+            >Escritorio
+        </button>
     </div>
+</div>
 
-    <div class="col-12 center-horizontal">
-        <div class="col-11 mt-5 bg-white-transparent size-box-application p-3 text-white" style="height: auto;">
+<div class="col-12 center-horizontal">
+    <div class="col-11 mt-5 bg-white-transparent size-box-application p-3 text-white" style="height: auto;">
+        <div class="row">
+            <p class="col">
+                {{ "specific-project.properties.desc-general" | translate}}
+            </p>
+            <div class="col-4 icons-container">
+                <img 
+                    class="icons-tools"
+                    *ngFor="let tool of selectProject?.tools"
+                    src="./assets/images/tools/{{tool}}.png"
+                    />
+            </div>
+        </div>
+        
+        <!--<ul class="ms-5">
+            <li
+                *ngFor="let skill of selectProject?.relevantSkills"
+                >{{skill | translate }}
+            </li>
+        </ul>-->
+    </div>    
+</div>
+
+<div class="col-12 center-horizontal mt-3">
+    <div class="col-8" style="background-color: green;">
+        <div class="col-12 bh-white-transparent p-3 text-white">
+            <h3>Relenvacia en proyecto</h3>
             <div class="row">
-                <p class="col">
-                    {{ "specific-project.properties.desc-general" | translate}}
-                </p>
-                <div class="col-4 icons-container">
-                    <img 
-                        class="icons-tools"
-                        *ngFor="let tool of selectProject?.tools"
-                        src="./assets/images/tools/{{tool}}.png"
-                        />
+                <div class="record-achievement" *ngFor="let achievemnt of getAchievemnts()">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="./assets/images/icons-relevance/cerrar.svg" class="relevance-icon">
+                        </div>
+                        <div class="col-8">
+                            <p class="col-12 white-text p-3 mt-4">
+                                {{achievemnt.title}}
+                            </p>
+                            <p class="col-12 white-text p-3 mt-4">
+                                {{achievemnt.detail}}
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-            <ul class="ms-5">
-                <li
-                    *ngFor="let skill of selectProject?.relevantSkills"
-                    >{{skill | translate }}
-                </li>
-            </ul>
-        </div>    
-    </div>
-    
-    <div class="col-12 center-horizontal">
-        <div class="col-11 row">
-            <div class="col-1 me-3 mt-5 bg-white-transparent size-box-application p-3 text-white">
-                <img
-                    class="icon-project"
-                    src="./assets/images/projectsIcons/{{selectProject?.icon?.url}}.png"
-                    />
-            </div> 
-            <div class="col mt-5 bg-white-transparent size-box-application p-3 text-white">
-              <p>
-                {{selectProject!.detail | translate}}
-              </p>
-            </div>
         </div>
     </div>
+</div>
+    
+<div class="col-12 center-horizontal">
+    <div class="col-11 row">
+        <div class="col-1 me-3 mt-5 bg-white-transparent size-box-application p-3 text-white">
+            <img
+                class="icon-project"
+                src="./assets/images/projectsIcons/{{selectProject?.icon?.url}}.png"
+                />
+        </div> 
+        <div class="col mt-5 bg-white-transparent size-box-application p-3 text-white">
+            <p>
+            {{selectProject!.detail | translate}}
+            </p>
+        </div>
+    </div>
+</div>
