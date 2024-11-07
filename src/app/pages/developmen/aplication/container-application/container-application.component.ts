@@ -65,15 +65,15 @@ export class ContainerApplicationComponent {
   }
 
   isMovil(): boolean {
-    return this.selectProject!.platforms.includes(typeProject['android']) || this.selectProject!.platforms.includes(typeProject['ios']);
+    return this.selectProject!.platforms.filter(row => row.typeProject == typeProject['android'] || row.typeProject == typeProject['ios']).length > 0;
   }
 
   isWeb(): boolean {
-    return this.selectProject!.platforms.includes(typeProject['web']);
+    return  this.selectProject!.platforms.filter(row => row.typeProject == typeProject['web']).length > 0;
   }
 
   isDesktop(): boolean {
-    return this.selectProject!.platforms.includes(typeProject['desktop']);
+    return  this.selectProject!.platforms.filter(row => row.typeProject == typeProject['desktop']).length > 0;
   }
 
   selectButton(button: string): void {

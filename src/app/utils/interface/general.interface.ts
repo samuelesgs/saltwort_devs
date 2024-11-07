@@ -24,7 +24,7 @@ export interface Project {
     tools : string [];
     screens: Screen[];
     icon: Screen;
-    platforms : typeProject[];
+    platforms : platforms[];
 }
 
 export interface Screen {
@@ -32,6 +32,26 @@ export interface Screen {
     detail: string;
     url: string;
     typeProject: typeProject[];
+}
+
+export interface platforms {
+    typeProject  : typeProject,
+    achievements : Achievements[]
+}
+
+export  interface Achievements {
+    title : string;
+    detail: string;
+    icon : string;
+    relevance : Relevance;
+}
+
+export enum  Relevance {
+    VERY_LOW = 1,
+    LOW = 2,
+    MEDIUM = 3,
+    HIGH = 4,
+    VERY_HIGH = 5
 }
 
 export enum typeProject {
@@ -74,7 +94,12 @@ export class Develpments {
                         projects : [
                             {
                                 id: 1,
-                                platforms : [typeProject.android],
+                                platforms : [
+                                    {
+                                        typeProject : typeProject.android,
+                                        achievements : []
+                                    }
+                                ],
                                 name : 'Venta plus Movil',
                                 detail : 'specific-project.properties.project-detail-ventaplus-luis',
                                 relevantSkills : [
@@ -157,7 +182,16 @@ export class Develpments {
                             }, 
                             {
                                 id: 2,
-                                platforms : [typeProject.android, typeProject.desktop],
+                                platforms : [
+                                    {
+                                        typeProject : typeProject.android,
+                                        achievements : []
+                                    },
+                                    {
+                                        typeProject : typeProject.desktop,
+                                        achievements : []
+                                    }
+                                ],
                                 name : 'Control Vehicular',
                                 detail : 'specific-project.properties.project-detail-cvm-luis',
                                 relevantSkills : [
@@ -278,7 +312,12 @@ export class Develpments {
                             },
                             {
                                 id: 3,
-                                platforms : [typeProject.desktop],
+                                platforms : [
+                                    {
+                                        typeProject : typeProject.desktop,
+                                        achievements : []
+                                    }
+                                ],
                                 name : 'CRM Generico',
                                 detail : 'specific-project.properties.project-detail-crm-luis',
                                 relevantSkills : [
@@ -379,7 +418,16 @@ export class Develpments {
                             },
                             {
                                 id: 4,
-                                platforms : [typeProject.desktop, typeProject.android],
+                                platforms : [
+                                    {
+                                        typeProject : typeProject.desktop,
+                                        achievements : []
+                                    },
+                                    {
+                                        typeProject : typeProject.android,
+                                        achievements : []
+                                    }
+                                ],
                                 name : 'Ruta +',
                                 detail : 'Aplicación que sirve para el envio de pedidos a clientes, consta de dos aplicaciones, una movil y una de esscritorio, la de movil solo envia pedidos, mientras que la de escritorio se encarga de administrar los pedidos, pudiendo enviarlos a comercial y egenrando los documentos necesarios para factura',
                                 relevantSkills : [
@@ -525,7 +573,12 @@ export class Develpments {
                             },
                             {
                                 id: 5,
-                                platforms : [typeProject.android],
+                                platforms : [
+                                    {
+                                        typeProject : typeProject.android,
+                                        achievements : []
+                                    }
+                                ],
                                 name : 'Verificador de precios movil',
                                 detail : 'Ves los productos de la empresa, y puedes configurar los precios que ves en pantalla, siendo un total de 10 precios diferentes ',
                                 relevantSkills : [
@@ -556,7 +609,12 @@ export class Develpments {
                             },
                             {
                                 id: 6,
-                                platforms : [typeProject.android],
+                                platforms : [
+                                    {
+                                        typeProject : typeProject.android,
+                                        achievements : []
+                                    }
+                                ],
                                 name : 'Lista de precios',
                                 detail : '',
                                 relevantSkills : [
@@ -636,7 +694,10 @@ export class Develpments {
                                 {
                                     id: 2,
                                     platforms : [
-                                        typeProject.web
+                                        {
+                                            typeProject : typeProject.web,
+                                            achievements : []
+                                        }
                                     ],
                                     name : 'Saltwort',
                                     detail : '',
@@ -699,7 +760,12 @@ export class Develpments {
                                 {
                                     id: 1,
                                     platforms : [
-                                        typeProject.web
+                                        {
+                                            typeProject : typeProject.web,
+                                            achievements : [
+
+                                            ]
+                                        }
                                     ],
                                     name : 'Encodemx Web',
                                     detail : 'specific-project.properties.project-detail-encode-aksel',
@@ -754,8 +820,14 @@ export class Develpments {
                                 {
                                     id: 2,
                                     platforms : [
-                                        typeProject.web,
-                                        typeProject.ios
+                                        {
+                                            typeProject : typeProject.web,
+                                            achievements : []
+                                        },
+                                        {
+                                            typeProject : typeProject.ios,
+                                            achievements : []
+                                        }
                                     ],
                                     name : 'Gastos de compra',
                                     detail : 'specific-project.properties.project-detail-encode-aksel',
@@ -876,7 +948,10 @@ export class Develpments {
                                 {
                                     id: 3,
                                     platforms : [
-                                        typeProject.web
+                                        {
+                                            typeProject : typeProject.web,
+                                            achievements : []
+                                        }
                                     ],
                                     name : 'Consola encodemx',
                                     detail : 'specific-project.properties.project-detail-encode-aksel',
@@ -933,7 +1008,10 @@ export class Develpments {
                                 {
                                     id: 4,
                                     platforms : [
-                                        typeProject.web
+                                        {
+                                            typeProject : typeProject.web,
+                                            achievements : []
+                                        }
                                     ],
                                     name : 'Productivity',
                                     detail : 'specific-project.properties.project-detail-encode-aksel',
@@ -1006,7 +1084,10 @@ export class Develpments {
                                 {
                                     id: 5,
                                     platforms : [
-                                        typeProject.web
+                                        {
+                                            typeProject : typeProject.web,
+                                            achievements : []
+                                        }
                                     ],
                                     name : 'Gastos diarios 4 web',
                                     detail : 'specific-project.properties.project-detail-encode-aksel',
@@ -1127,7 +1208,10 @@ export class Develpments {
                                 {
                                     id: 2,
                                     platforms : [
-                                        typeProject.web
+                                        {
+                                            typeProject : typeProject.web,
+                                            achievements : []
+                                        }
                                     ],
                                     name : 'Activity planner',
                                     detail : '',
@@ -1240,12 +1324,18 @@ export class Develpments {
                                 id: 1,
                                 name : 'Gastos de compra',
                                 platforms : [
-                                    typeProject.android,
-                                    typeProject.web
+                                    {
+                                        typeProject : typeProject.android,
+                                        achievements : []
+                                    },
+                                    {
+                                        typeProject : typeProject.web,
+                                        achievements : []
+                                    }
                                 ],
                                 detail : 'specific-project.properties.project-detail-shopping-expense-samuel',
                                 relevantSkills : [
-                                    "specific-project.properties.revelant-skills-shopping-expense-aksel",
+                                    "specific-project.properties.revelant-skills-shopping-expenses-samuel",
                                 ],
                                 tools : [
                                     "android",
@@ -1326,8 +1416,14 @@ export class Develpments {
                                 id: 2,
                                 name : 'Gastos diarios 4',
                                 platforms : [
-                                    typeProject.android,
-                                    typeProject.web
+                                    {
+                                        typeProject : typeProject.android,
+                                        achievements : []
+                                    },
+                                    {
+                                        typeProject : typeProject.web,
+                                        achievements : []
+                                    }
                                 ],
                                 detail : 'specific-project.properties.project-detail-daily-expenses-samuel',
                                 relevantSkills : [
@@ -1403,7 +1499,10 @@ export class Develpments {
                             {
                                 id: 2,
                                 platforms : [
-                                    typeProject.web
+                                    {
+                                        typeProject : typeProject.web,
+                                        achievements : []
+                                    }
                                 ],
                                 name : 'Activity planner',
                                 detail : '',
@@ -1487,8 +1586,14 @@ export class Develpments {
                             {
                                 id: 3,
                                 platforms : [
-                                    typeProject.web,
-                                    typeProject.android
+                                    {
+                                        typeProject : typeProject.web,
+                                        achievements : []
+                                    },
+                                    {
+                                        typeProject : typeProject.android,
+                                        achievements : []
+                                    }                                    
                                 ],
                                 name : '',
                                 detail : '',
