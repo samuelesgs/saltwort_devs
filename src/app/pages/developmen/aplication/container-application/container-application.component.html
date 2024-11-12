@@ -24,7 +24,7 @@
     </div>
 </div>
 
-<div class="col-12 center-horizontal">
+<!--<div class="col-12 center-horizontal">
     <div class="col-11 mt-5 bg-white-transparent size-box-application p-3 text-white" style="height: auto;">
         <div class="row">
             <p class="col">
@@ -38,29 +38,34 @@
                     />
             </div>
         </div>
-        
-        <!--<ul class="ms-5">
-            <li
-                *ngFor="let skill of selectProject?.relevantSkills"
-                >{{skill | translate }}
-            </li>
-        </ul>-->
     </div>    
-</div>
+</div>-->
 
 <div class="col-12 center-horizontal mt-3">
-    <div class="col-8">
+    <div class="col-11">
         <div class="col-12 bg-card-dark p-3 text-white">
-            <h3>Relenvacia en proyecto</h3>
+            <div class="row">
+                <h3 class="col-8">Relevancia en proyecto</h3>
+                <div class="col-4 icons-container">
+                    <img 
+                        class="icons-tools"
+                        *ngFor="let tool of selectProject?.tools"
+                        src="./assets/images/tools/{{tool}}.png"
+                        />
+                </div>
+            </div>
             <div class="row">
                 <div class="record-achievement" *ngFor="let achievemnt of getAchievemnts()">
                     <div class="row mt-2 ">
-                        <div class="col-2 text-center center-horizontal">
-                            <img
-                                *ngFor="let index of getNumberArrayRelevance(achievemnt.relevance)"
-                                src="./assets/images/icons-relevance/star.png"
-                                class="relevance-icon"
-                                >
+                        <div class="col-2 text-center mt-3">
+                            <div class="col-12 center-horizontal">
+                                <img
+                                    *ngFor="let index of getNumberArrayRelevance(achievemnt.relevance)"
+                                    src="./assets/images/icons-relevance/star.png"
+                                    class="relevance-icon"
+                                    >
+                            </div>
+                                <p class="text-gray">{{strRelevance(achievemnt.relevance)}}</p>
                         </div>
                         <div class="col me-3 bg-white-transparent border-card-radius p-2 ps-4">
                             <h5 class="col-12  white-text mb-2 no-padding">

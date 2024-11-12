@@ -87,7 +87,6 @@
     },
     "specific-project": {
         "properties" : {
-            "desc-general" : "Dentro de este proyecto implemente el puesto como desarrollador android, de las funciones relevantes dentro de esta aplicacion son: ",
             "project-detail-ventaplus-luis" : "Punto de venta",
             "revelant-skills-1-ventaplus-luis" : "Actualizacion de versiones",
             "revelant-skills-2-ventaplus-luis" : "Cambio de la version 24 a la version 33",
@@ -101,7 +100,8 @@
             "revelant-skills-cvm-3-luis" : "Arquitectura MVVM",
             "project-detail-encode-aksel" : "Capturador de ingreso en proyecto",
             "revelant-skills-encode-aksel" : "Cambio de cocoa pods",
-            "project-detail-shopping-expense-samuel" :"Capturador de ingreso en proyecto",
+            "desc-general" : "Dentro de este proyecto implemente el puesto como desarrollador android, de las funciones relevantes dentro de esta aplicacion son: ",
+            "project-detail-shopping-expense-samuel" :"Proyecto de funcionalidad o herramienta diseñada para registrar, de manera sistemática y organizada, toda la información relevante sobre la entrada de datos en un proyecto. Permite gestionar y almacenar detalles específicos de cada ingreso, asegurando precisión y trazabilidad. Este sistema facilita la administración y el seguimiento de los datos ingresados, optimizando el flujo de trabajo y brindando soporte en la toma de decisiones al permitir una visión clara y actualizada del progreso en el proyecto.",
             "revelant-skills-shopping-expenses-samuel" : "Creacion de proyecto",
             "project-detail-daily-expenses-samuel"  :"Capturador de ingreso en proyecto",
             "revelant-skills-daily-expenses-samuel" : "Creacion de proyecto"

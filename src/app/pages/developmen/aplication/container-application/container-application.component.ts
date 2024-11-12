@@ -118,6 +118,8 @@ export class ContainerApplicationComponent {
     }
     return [];
   }
+  
+
 
   getNumberArrayRelevance(relevance : number) {
     const array = [];
@@ -125,6 +127,23 @@ export class ContainerApplicationComponent {
       array.push(index);
     }
     return array
+  }
+
+  strRelevance( relevance : number) {
+    switch (relevance) {
+      case 1:
+        return 'Muy baja '
+      case 2: 
+        return 'Baja'
+      case 3: 
+        return 'Media'
+      case 4: 
+        return 'Alta'
+      case 5: 
+        return 'Muy Alta'
+      default:
+       return 'Muy baja'
+    }
   }
 
 }
