@@ -8,17 +8,21 @@
 
 .icon-radius {
     border-radius: 5px;
+    width: 5vw;
 }
 
-.icons-tools{
-    width: 6vh;
+.icons-tools {
+    width: 6vw;
 }
 
-.box-icons-tools{
+.box-icons-tools {
     display: flex;
-    justify-content: center; /* Centra las imágenes horizontalmente */
-    align-items: center; /* Centra las imágenes verticalmente */
-    flex-wrap: wrap; /* Permite que las imágenes se envuelvan si hay muchas */
+    justify-content: center;
+    /* Centra las imágenes horizontalmente */
+    align-items: center;
+    /* Centra las imágenes verticalmente */
+    flex-wrap: wrap;
+    /* Permite que las imágenes se envuelvan si hay muchas */
 }
 
 .desc-text {
@@ -42,12 +46,41 @@
     width: 4vh;
 }
 
-.icons-tools {
-    width: 6vh;
-}
-
 .more-about {
     background-color: red;
     margin-top: -1vh;
     border-radius: 16px;
+}
+
+@media(min-width : 300px) and (max-width : 699px) {
+    .icons-tools {
+        width: 15vw !important;
+    }
+
+    .icon-radius {
+        border-radius: 5px;
+        width: 5vw !important;
+    }
+}
+
+@media(min-width : 700px) and (max-width : 1200px) {
+    .icons-tools {
+        width: 9vw !important;
+    }
+
+    .icon-radius {
+        border-radius: 5px;
+        width: 2vw !important;
+    }
+}
+
+@media(min-width : 1201px){
+    .icons-tools {
+        width: 5vw !important;
+    }
+
+    .icon-radius {
+        border-radius: 5px;
+        width: 3vw !important;
+    }
 }
