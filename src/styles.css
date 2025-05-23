@@ -69,6 +69,12 @@ h3 {
     justify-content: center;
 }
 
+.horizontal-center {
+    display: flex !important;
+    align-items: center !important;
+}
+
+
 .center {
     display: flex !important;
     justify-content: center !important;
