@@ -8,11 +8,27 @@
 }
 
 .icon-contact {
-    height: 6vh;
+    height: 4vh;
     border-radius: 8px;
     margin-right: 5px;
 }
 
 .section-imgs {
     margin-top: -1vh;
+}
+
+.text-aling{
+    text-align: right;
+}
+
+@media(min-width : 300px) and (max-width : 699px) {
+    .icon-contact {
+        height: 6vh;
+        border-radius: 8px;
+        margin-right: 5px;
+    }
+
+    .text-aling {
+        text-align: center;
+    }
 }
