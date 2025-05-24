@@ -1,7 +1,7 @@
 <div
     *ngIf="selectedButton === 'movil'"
-     class="col-11 ms-5 mt-5 bg-white-transparent card-screens-project p-3 text-white"
-     >
+     class="col-11 mt-5 bg-white-transparent card-screens-project p-3 text-white"
+     style="position: relative;">
 
     <!-- CONTAINER IMG -->
     <div class="carousel-container">
@@ -10,7 +10,7 @@
                 <img 
                     [src]="'./assets/images/' + screen.url + '.png'"
                     alt="Imagen carrusel"
-                    class="carousel-image image-carousel-android mt-4"
+                    class="carousel-image image-carousel-android mt-4 me-1"
                 />
             </div>
         </div>
@@ -23,7 +23,7 @@
         >
         <img 
             src="./assets/images/icon-arrow.png" 
-            class="d-block" 
+            class="d-block img-btn" 
             alt="Flecha izquierda"
         />
     </button>
@@ -35,7 +35,7 @@
         >
         <img 
             src="./assets/images/icon-arrow.png" 
-            class="d-block" 
+            class="d-block img-btn" 
             alt="Flecha derecha"
         />
     </button>

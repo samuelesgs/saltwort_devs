@@ -1,19 +1,16 @@
 .carousel-control-next {
     opacity: 85%;
-    right: -5vw !important;
     margin-top: -30vh;
 }
 
 .carousel-control-prev {
     opacity: 85%;
-    left: -5vw !important;    
     margin-top: -30vh;
 }
 
 .card-screens-project {
     border-radius: 16px;
     height: 65vh;
-    width: calc(100% - 5%);
 }
 
 .rotate-arrow {
@@ -66,10 +63,47 @@
     cursor: pointer;
 }
 
-.carousel-control-prev {
-    left: 10px;
+@media(min-width : 300px) and (max-width : 699px) {
+    .image-wrapper {
+        flex: auto;
+        width: 90% !important;
+    }
+
+    .img-btn {
+        width: 10vw;
+    }
+
+    .carousel-control-prev {
+        left: -5vw;
+    }
+
+    .carousel-control-next {
+        right: -5vw;
+    }
 }
 
-.carousel-control-next {
-    right: 10px;
+@media(min-width : 700px) and (max-width : 1200px) {
+
+    .image-wrapper {
+        flex: auto;
+        width: 50%;
+    }
+
+    .carousel-control-prev {
+        left: -5vw;
+    }
+
+    .carousel-control-next {
+        right: -5vw;
+    }
+}
+
+@media(min-width : 1201px) {
+    .carousel-control-prev {
+        left: -7vw;
+    }
+
+    .carousel-control-next {
+        right: -7vw;
+    }
 }

@@ -112,28 +112,19 @@ export class ContainerMovilComponent {
   // Función para cambiar el índice del carrusel
   onClickCarouselMovil(isPrev: boolean) {
     const carousel = document.querySelector('.carousel-images')!;
-    const scrollAmount = carousel.clientWidth / 1; // Ajusta el scroll en función del número de imágenes visibles
+    const scrollAmount = carousel.clientWidth / 2;
   
     if (isPrev) {
-      carousel.scrollLeft -= scrollAmount; // Desplazar a la izquierda
+      carousel.scrollLeft -= scrollAmount;
     } else {
-      carousel.scrollLeft += scrollAmount; // Desplazar a la derecha
+      carousel.scrollLeft += scrollAmount;
     }
-    /* 
-    const totalImages = this.selectProject!.screens.length;
-
-    // Avanzar o retroceder en el carrusel
-    if (isPrev) {
-      this.currentIndex = (this.currentIndex === 0) ? totalImages - this.visibleImagesCount : this.currentIndex - 1;
-    } else {
-      this.currentIndex = (this.currentIndex >= totalImages - this.visibleImagesCount) ? 0 : this.currentIndex + 1;
-    } */
   }
 
-  // Obtener las imágenes visibles en el carrusel
   getVisibleScreens() {
     return this.selectProject!.screens.slice(this.currentIndex, this.currentIndex + this.visibleImagesCount);
   }
+
   getMobileScreens() {
     return this.selectProject?.screens.filter(screen =>
       screen.typeProject.includes(typeProject.android) || screen.typeProject.includes(typeProject.ios)

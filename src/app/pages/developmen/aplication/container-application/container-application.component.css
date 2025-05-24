@@ -16,12 +16,11 @@
 }
 
 .icons-tools {
-    width: 6vh;
+    width: 6vw;
 }
 
 .size-box-application {
     border-radius: 16px;
-    height: 15vh;
 }
 
 .bg-card-dark {
@@ -71,4 +70,11 @@
 .text-gray {
     color: #aaaaaa;
     font-size: 12px;
+}
+
+
+@media(min-width : 1500px){
+    .icons-tools {
+        width: 3vw !important;
+    }
 }
