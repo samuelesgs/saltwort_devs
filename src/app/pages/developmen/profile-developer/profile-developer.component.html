@@ -8,8 +8,8 @@
         </h1>
         <div class="col-12">
             <div class="row mt-3 justify-content-center">
-                <div class="col-xs-12 col-md-6 ">
-                    <div class="col-xs-11 col-md-8 bg-white-transparent p-3 pb-0 box-radius">
+                <div class="col-xs-11 col-md-6 me-3">
+                    <div class="col-xs-1 col-md-12 bg-white-transparent p-3 box-radius me-3">
                         <img src="./assets/images/devs/{{profile.imgName}}" class="img-profile box-radius">
                         <div class="row mt-3 mb-2">
                             <p class="col-xs-12 col-md-9 mt-1 text-start text-body">
@@ -40,7 +40,7 @@
                         <img *ngFor="let tool of profile.tools" class="icons-tools"
                             src="./assets/images/tools/{{tool}}.png" [alt]="tool">
                     </div>
-                    <div class="row mt-3">
+                    <div class="row mt-3 p-3">
                         <p class="desc-text text-start">
                             {{profile.desc | translate}}
                         </p>
@@ -51,18 +51,19 @@
                         Proyectos relacionados
                     </h1>
 
-                    <div class="row justify-content-center">
-                        <div class=" me-2 col-5 bg-white-transparent size-box p-3 text-white mb-5"
-                            *ngFor="let company of profile.companies" style="height: auto;">
+                    <div class="row justify-content-center me-5 ms-3">
+                        <div class="me-2 col-xs-12 col-md-5 bg-white-transparent size-box p-3 text-white mb-5"
+                            *ngFor="let company of profile.companies">
                             <h3 class="text-start">{{company.name}}</h3>
                             <div class="row box-icons-tools">
-                                <div *ngFor="let project of company.projects" class="col-5 project-card m-3 "
+                                <div *ngFor="let project of company.projects" class="col-11 project-card m-3 "
                                     (click)="redirectToPage(project, company)">
                                     <div class="row mt-3 mb-3">
                                         <div class="col-5">
                                             <img *ngFor="let tool of project.tools"
+                                                class="icons-tools-company"
                                                 src="./assets/images/tools/{{tool}}.png"
-                                                ngClass="{{project.tools.length > 2 ? 'icons-tools-three' : 'icons-tools'}}" />
+                                                />
                                         </div>
                                         <div class="col-7">
                                             <div class="row">
@@ -80,7 +81,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

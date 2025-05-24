@@ -1,5 +1,5 @@
 .img-profile {
-    width: 100%;
+    width:80%;
 }
 
 .box-radius {
@@ -13,6 +13,10 @@
 
 .icons-tools {
     width: 6vw;
+}
+
+.icons-tools-company {
+    width: 4vw;
 }
 
 .box-icons-tools {
@@ -37,12 +41,11 @@
 .project-card {
     border-radius: 16px;
     background-color: #252525;
-    height: 10vh;
     color: white;
 }
 
 .icons-tools-three {
-    width: 4vh;
+    width: 4vw;
 }
 
 .more-about {
@@ -59,6 +62,14 @@
     .icon-radius {
         border-radius: 5px;
         width: 5vw !important;
+    }
+
+    .img-profile {
+        width: 70%;
+    }
+
+    .icons-tools-company {
+        width: 8vw;
     }
 }
 
