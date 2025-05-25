@@ -1,23 +1,22 @@
 <div class="col-12 mb-5">
-    <div class="container-img">
-        <img
-            src="./assets/images/triangulo.png"
-            class="w-100 img-size">
+  <div class="container-img">
+    <img src="./assets/images/triangulo.png" class="img-size">
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-6 mt-5">
+    <div class="col-12 col-lg-8 offset-lg-3 center">
+        <img src="./assets/images/icon-app.png" class="size-icon-app pe-2" alt="" />
     </div>
-    <div class="row">
-        <div class="col-6 mt-5 d-flex">
-            <div class="col-8 offset-3">
-                <img src="./assets/images/icon-app.png" class="size-icon-app pe-2" alt="" />
-            </div>
-         </div>
-         <div class="col-6 mt-5 text-center">
-            <div class="offset-1 col-7">
-                <p class="text-first-section">
-                    {{'home.home-description' | translate}}
-            </div>
-         </div>
     </div>
-    <div class="offset-1 col-10 mt-5">
-        <app-carousel-activity-planner></app-carousel-activity-planner>
+    <div class="col-12 col-lg-6 mt-5 mb-5 text-center">
+      <div class="offset-1 col-10">
+        <p class="text-first-section">
+          {{ 'home.home-description' | translate }}
+        </p>
+      </div>
     </div>
+  </div>
+  <!-- <div class="offset-1 col-10 mt-5">
+    <app-carousel-activity-planner></app-carousel-activity-planner>
+  </div> -->
 </div>

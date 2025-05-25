@@ -1,11 +1,9 @@
-<app-nav-bar>
-</app-nav-bar>
+<div class="app-container d-flex flex-column min-vh-100">
+  <app-nav-bar></app-nav-bar>
 
-<div class="col-12">
-  <router-outlet></router-outlet>
-  <div class="mt-5">
-    <app-footer
-      *ngIf="showFooter">
-    </app-footer>
-  </div>
+  <main class="flex-grow-1">
+    <router-outlet></router-outlet>
+  </main>
+
+  <app-footer *ngIf="showFooter"></app-footer>
 </div>
