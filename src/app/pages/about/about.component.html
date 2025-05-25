@@ -3,7 +3,7 @@
     <div class="col-8 center">
         <img
             src="./assets/images/icon-app.png"
-            class="w-25 border-color">
+            class="border-color img-size">
     </div>
 </div>
 <div
@@ -40,7 +40,7 @@
             (click)="showContainer($event, 'vission')">
             <h1>{{"about-of.vision" | translate}}</h1>
             <p
-                class="text-style mt-3 pe-5 ps-5"
+                class="text-style mt-3 "
                 [class.show-text]="(currentContainer == 'vission')"
                 [hidden]="currentContainer != 'vission'">
                 {{"about-of.vision-desc" | translate}}
@@ -56,7 +56,7 @@
             (click)="showContainer($event, 'objetives')">
             <h1> {{"about-of.objectives" | translate}}</h1>
             <p
-                class="text-style mt-3 pe-5 ps-5"
+                class="text-style mt-3"
                 [class.show-text]="(currentContainer == 'objetives')"
                 [hidden]="currentContainer != 'objetives'">
                 {{"about-of.objectives-desc" | translate}}
