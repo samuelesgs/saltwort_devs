@@ -1,70 +1,50 @@
 <nav class="navbar navbar-expand-lg  bg-navbar">
     <div class="container-fluid">
         <p class="text-white app-text no-space">
-            <img
-                src="./assets/images/icon-app.png"
-                class="size-img-app"
-                />
+            <img src="./assets/images/icon-app.png" class="size-img-app" />
             Salwort Devs
         </p>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="d-flex vertical-center">
-        <div class="collapse navbar-collapse mt-1 pe-3" id="navbarNav">
-            <ul class="navbar-nav text-navbar">
-                <li
-                    class="nav-item"
-                    >
-                    <a
-                        class="nav-link text-navbar"
-                        routerLink="Home"
-                        routerLinkActive="link-active"
-                        >{{'page.home' | translate}} |
-                    </a>
-                </li>
-                <li
-                    class="nav-item"
-                    >
-                    <a
-                        class="nav-link text-navbar"
-                        routerLink="Developers"
-                        routerLinkActive="link-active"
-                        >{{'page.devs' | translate}}  | 
-                    </a>
-                </li>
-                <li
-                    class="nav-item"
-                    >
-                    <a
-                        class="nav-link text-navbar"
-                        routerLink="Apps"
-                        routerLinkActive="link-active"
-                        >{{'page.apps' | translate}} |
-                    </a>
-                </li>
-                <li
-                    class="nav-item"
-                    >
-                    <a
-                        class="nav-link text-navbar"
-                        routerLink="About_of"
-                        routerLinkActive="link-active"
-                        >{{'page.about' | translate}}  |
-                    </a>
-                </li>
+        <button class="navbar-toggler ms-auto bg-button-movil" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      {{currentLang}}
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li (click)="setLang('es')" class="dropdown-item">Español</li>
-                      <li (click)="setLang('en')" class="dropdown-item">Ingles</li>
-                    </ul>
-                  </li>
-            </ul>
-          </div>
-      </div>
+        <div class="d-flex vertical-center">
+            <div class="collapse navbar-collapse mt-1 pe-3" id="navbarNav">
+                <ul class="navbar-nav text-navbar">
+                    <li class="nav-item">
+                        <a class="nav-link text-navbar" routerLink="Home" routerLinkActive="link-active">{{'page.home' |
+                            translate}} |
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-navbar" routerLink="Developers"
+                            routerLinkActive="link-active">{{'page.devs' | translate}} |
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-navbar" routerLink="Apps" routerLinkActive="link-active">{{'page.apps' |
+                            translate}} |
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-navbar" routerLink="About_of"
+                            routerLinkActive="link-active">{{'page.about' | translate}} |
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            {{currentLang}}
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li (click)="setLang('es')" class="dropdown-item">Español</li>
+                            <li (click)="setLang('en')" class="dropdown-item">Ingles</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </nav>
+</nav>
