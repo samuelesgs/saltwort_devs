@@ -1,15 +1,22 @@
 <div class="col-12 center-horizontal" *ngIf="selectProject!.platforms.length > 1">
     <div class="col-11 container-buttons p-1">
-        <button *ngIf="isMovil()" class="buttons-switch col ms-2 me-2"
+        <button
+            *ngIf="isMovil()" class="buttons-switch col ms-2 me-2"
             [ngClass]="{'selected-item-background': selectedButton === 'movil'}"
-            (click)="selectedPlatform('movil')">Movil
+            (click)="selectedPlatform('movil')"
+            >Movil
         </button>
-        <button *ngIf="isWeb()" class="buttons-switch col ms-2 me-2"
-            [ngClass]="{'selected-item-background': selectedButton === 'web'}" (click)="selectedPlatform('web')">Web
+        <button
+            *ngIf="isWeb()" class="buttons-switch col ms-2 me-2"
+            [ngClass]="{'selected-item-background': selectedButton === 'web'}"
+            (click)="selectedPlatform('web')"
+            >Web
         </button>
-        <button *ngIf="isDesktop()" class="buttons-switch col ms-2 me-2"
+        <button
+            *ngIf="isDesktop()" class="buttons-switch col ms-2 me-2"
             [ngClass]="{'selected-item-background': selectedButton === 'desktop'}"
-            (click)="selectedPlatform('desktop')">Escritorio
+            (click)="selectedPlatform('desktop')"
+            >Escritorio
         </button>
     </div>
 </div>
@@ -25,7 +32,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="record-achievement" *ngFor="let achievemnt of getAchievemnts()">
+                <div
+                    *ngFor="let achievemnt of getAchievemnts()"
+                    class="record-achievement"
+                    >
                     <div class="row mt-2 ms-3 me-3">
                         <div class="col-xs-12 col-xl-3 text-center mt-3">
                             <div class="col-12 center-horizontal">

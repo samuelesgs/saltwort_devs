@@ -1,50 +1,55 @@
 <div
-    *ngIf="selectedButton === 'web' || selectedButton === 'desktop'" 
-    class="col-11 ms-5 mt-5 bg-white-transparent card-screens-project p-3 text-white"
+    *ngIf="selectedButton === 'web' || selectedButton === 'desktop'"
+    class="d-flex justify-content-center "
 >
-    <div class="carousel-indicators">
+    <div class=" col-11 mt-5 bg-white-transparent card-screens-project p-3 text-white card-style">
+      <div class="carousel-indicators">
         <button
             *ngFor="let screen of filteredScreens; let i = index"
             class="radius-selector"
             data-bs-target="#carouselExampleIndicators"
             [ngClass]="{'active' : itemActive == i}"
             aria-current="true"
-            >
+        >
+        </button>
+        </div>
+
+
+        <div class="col-10 pb-4 mt-5 pt-5">
+            <div class="row mt-4">
+                <div class="offset-1 col-5 mb-5">
+                    <div class="col row ms-1">
+                        <p  class="title-screens">{{getScreen()!.name | translate}}</p>
+                        <p class="text-screens">{{getScreen()!.detail | translate}}</p>
+                    </div>
+                </div>
+
+                <div class="col row me-5">
+                    <img
+                        class="size-item ms-5"
+                        src="./assets/images/{{getScreen().url}}.png"
+                        />
+                </div>
+            </div>
+         
+        </div>
+        <button
+            class="carousel-control-prev"
+            type="button"
+            (click)="onClickCarouse(true)"
+            ><img
+            src="./assets/images/icon-arrow.png"
+            class="d-block"
+            />
+        </button>
+        <button
+            class="carousel-control-next rotate-arrow"
+            (click)="onClickCarouse(false)"
+            ><img
+            src="./assets/images/icon-arrow.png"
+            class="d-block"
+            />
         </button>
     </div>
-
-    <div class="col-10 ms-5 pb-4 mt-5 pt-5" >
-    <div class="row mt-4">
-        <div class="offset-1 col-5 mb-5">
-            <div class="col row ms-1">
-                <p  class="title-screens">{{getScreen()!.name | translate}}</p>
-                <p class="text-screens">{{getScreen()!.detail | translate}}</p>
-            </div>
-        </div>
-
-        <div class="col row me-5">
-                <img
-                    class="size-item ms-5"
-                    src="./assets/images/{{getScreen().url}}.png"
-                    />
-        </div>
-    </div>
-    </div>
-    <button
-        class="carousel-control-prev"
-        type="button"
-        (click)="onClickCarouse(true)"
-    ><img
-        src="./assets/images/icon-arrow.png"
-        class="d-block"
-        />
-    </button>
-    <button
-        class="carousel-control-next rotate-arrow"
-        (click)="onClickCarouse(false)"
-    ><img
-        src="./assets/images/icon-arrow.png"
-        class="d-block"
-        />
-    </button>
+    
 </div>

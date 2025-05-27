@@ -37,7 +37,22 @@
 
 .card-style {
     border-radius: 16px;
-    width: calc(100% - 6%);
-    
-    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.card-screens-project {
+  position: relative; /* Establece un contexto relativo para los elementos dentro de la tarjeta */
+  padding-bottom: 50px; /* Agrega espacio para que los botones no se tapen con el contenido */
+}
+
+.bottom {
+  position: absolute; /* Los botones se colocan en una posición absoluta dentro de la tarjeta */
+  bottom: 0; /* Pegado al final de la tarjeta */
+  left: 0;
+  right: 0; /* Asegura que los botones se extiendan por todo el ancho de la tarjeta */
+  background-color: rgba(217, 217, 217, 0.10); /* Fondo translúcido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0; /* Espaciado alrededor de los botones */
+  z-index: 10; /* Asegura que los botones estén por encima de cualquier otro contenido */
 }
