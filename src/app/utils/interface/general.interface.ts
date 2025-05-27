@@ -781,7 +781,7 @@ export class Develpments {
                                     icon: {
                                         name: 'name',
                                         detail: 'Pagina principal de encode mx donde consultas informacion sobre las aplicaciones ',
-                                        url: 'encode-logo',
+                                        url: 'encodemx',
                                         typeProject: [typeProject.web]
                                     },
                                     screens: [
