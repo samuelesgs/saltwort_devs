@@ -17,12 +17,10 @@
 
 .carousel-control-next {
     opacity: 85%;
-    right: -100px;
 }
 
 .carousel-control-prev {
     opacity: 85%;
-    left: -100px;
 }
 
 .size-item img {
@@ -55,4 +53,51 @@
   align-items: center;
   padding: 10px 0; /* Espaciado alrededor de los botones */
   z-index: 10; /* Asegura que los botones estén por encima de cualquier otro contenido */
+}
+
+
+
+@media(min-width : 300px) and (max-width : 699px) {
+    .image-wrapper {
+        flex: auto;
+        width: 90% !important;
+    }
+ 
+    .img-btn {
+        width: 10vw;
+    }
+    
+    .carousel-control-prev {
+        left: -5vw;
+    }
+
+    .carousel-control-next {
+        right: -5vw;
+    }
+}
+
+@media(min-width : 700px) and (max-width : 1200px) {
+
+    .image-wrapper {
+        flex: auto;
+        width: 50%;
+    }
+
+    .carousel-control-prev {
+        left: -5vw;
+    }
+
+    .carousel-control-next {
+        right: -5vw;
+    }
+}
+
+@media(min-width : 1201px) {
+    .carousel-control-prev {
+        left: -7vw;
+    }
+
+    .carousel-control-next {
+        right: -7vw;
+    }
 }

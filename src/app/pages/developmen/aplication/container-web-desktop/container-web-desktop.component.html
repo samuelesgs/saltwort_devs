@@ -1,6 +1,6 @@
 <div
     *ngIf="selectedButton === 'web' || selectedButton === 'desktop'"
-    class="d-flex justify-content-center "
+    class="d-flex justify-content-center mb-5"
 >
     <div class=" col-11 mt-5 bg-white-transparent card-screens-project p-3 text-white card-style">
       <div class="carousel-indicators">
@@ -15,16 +15,16 @@
         </div>
 
 
-        <div class="col-10 pb-4 mt-5 pt-5">
+        <div class="col-10 pb-4">
             <div class="row mt-4">
-                <div class="offset-1 col-5 mb-5">
+                <div class="col-12 mb-5">
                     <div class="col row ms-1">
                         <p  class="title-screens">{{getScreen()!.name | translate}}</p>
                         <p class="text-screens">{{getScreen()!.detail | translate}}</p>
                     </div>
                 </div>
 
-                <div class="col row me-5">
+                <div class="col-12 row me-5">
                     <img
                         class="size-item ms-5"
                         src="./assets/images/{{getScreen().url}}.png"
@@ -38,16 +38,16 @@
             type="button"
             (click)="onClickCarouse(true)"
             ><img
-            src="./assets/images/icon-arrow.png"
-            class="d-block"
+                src="./assets/images/icon-arrow.png"
+                class="d-block img-btn"
             />
         </button>
         <button
             class="carousel-control-next rotate-arrow"
             (click)="onClickCarouse(false)"
             ><img
-            src="./assets/images/icon-arrow.png"
-            class="d-block"
+                src="./assets/images/icon-arrow.png"
+                class="d-block img-btn"
             />
         </button>
     </div>
