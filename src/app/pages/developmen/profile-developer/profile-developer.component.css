@@ -54,6 +54,15 @@
     border-radius: 16px;
 }
 
+.font-size-project-name {
+    font-size: 1.7rem;
+}
+
+.center-card {
+    margin-top: 10%! important;
+}
+
+
 @media(min-width : 300px) and (max-width : 699px) {
     .icons-tools {
         width: 15vw !important;
@@ -71,6 +80,10 @@
     .icons-tools-company {
         width: 8vw;
     }
+    
+    .font-size-project-name {
+        font-size: 1.3rem;
+    }
 }
 
 @media(min-width : 700px) and (max-width : 1200px) {
@@ -83,6 +96,7 @@
         width: 2vw !important;
     }
 }
+    
 
 @media(min-width : 1201px){
     .icons-tools {

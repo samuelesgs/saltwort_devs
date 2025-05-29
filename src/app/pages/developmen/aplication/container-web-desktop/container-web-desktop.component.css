@@ -12,7 +12,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh; 
+    height: 40vh;
+    border-radius: 2rem !important;
+    object-fit: contain !important; 
 }
 
 .carousel-control-next {

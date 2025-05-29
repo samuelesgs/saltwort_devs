@@ -10,7 +10,7 @@
 
 .card-screens-project {
     border-radius: 16px;
-    height: 65vh;
+    height: 40vh;
 }
 
 .rotate-arrow {
@@ -18,14 +18,14 @@
 }
 
 .image-carousel-android {
-    width: auto;
-    height: 55vh;
     transition: all 0.3s ease-out;
+    position: relative;
+    z-index: 1;
 }
 
 .image-carousel-android:hover {
-    height: 61vh;
     transition: all 0.3s ease-in;
+    z-index: 10;
 }
 
 /* borrar */
@@ -80,6 +80,20 @@
     .carousel-control-next {
         right: -5vw;
     }
+
+    .image-carousel-android {
+        width: 58vw;
+        height: auto;
+    }
+
+    .image-carousel-android:hover {
+        width: 63vw;
+        height: auto;
+    }
+
+    .card-screens-project {
+        height: 75vh;
+    }
 }
 
 @media(min-width : 700px) and (max-width : 1200px) {
@@ -96,6 +110,20 @@
     .carousel-control-next {
         right: -5vw;
     }
+
+    .image-carousel-android {
+        width: 18vw;
+        height: auto;
+    }
+
+    .image-carousel-android:hover {
+        width: 20vw;
+        height: auto;
+    }
+
+    .card-screens-project {
+        height: 40vh;
+    }
 }
 
 @media(min-width : 1201px) {
@@ -105,5 +133,19 @@
 
     .carousel-control-next {
         right: -7vw;
+    }
+
+    .image-carousel-android {
+        width: 15vw;
+        height: auto;
+    }
+
+    .image-carousel-android:hover {
+        width: 17vw;
+        height: auto;
+    }
+
+    .card-screens-project {
+        height: 55vh;
     }
 }

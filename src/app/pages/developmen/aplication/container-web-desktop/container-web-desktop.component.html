@@ -15,23 +15,13 @@
         </div>
 
 
-        <div class="col-10 pb-4">
-            <div class="row mt-4">
-                <div class="col-12 mb-5">
-                    <div class="col row ms-1">
-                        <p  class="title-screens">{{getScreen()!.name | translate}}</p>
-                        <p class="text-screens">{{getScreen()!.detail | translate}}</p>
-                    </div>
-                </div>
-
-                <div class="col-12 row me-5">
-                    <img
-                        class="size-item ms-5"
-                        src="./assets/images/{{getScreen().url}}.png"
-                        />
-                </div>
+        <div class="col-12 pb-4">
+            <div class="col-12 row ms-1">
+                <img
+                    class="size-item"
+                    src="./assets/images/{{getScreen().url}}.png"
+                    />
             </div>
-         
         </div>
         <button
             class="carousel-control-prev"

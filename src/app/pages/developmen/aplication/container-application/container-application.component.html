@@ -61,9 +61,13 @@
 
 <div class="col-12 center-horizontal mt-2">
     <div class="col-11 row  bg-white-transparent size-box-application p-3 text-white center-horizontal" >
-            <img class="icon-project mb-2" src="./assets/images/projectsIcons/{{selectProject?.icon?.url}}.png" />
-            <p>
-                {{selectProject!.detail | translate}}
-            </p>
+        <h1 class="col-12 mb-3 center">{{selectProject?.name ?? '' | translate}}</h1>
+        <img
+            class="icon-project mb-2"
+            src="./assets/images/projectsIcons/{{selectProject?.icon?.url}}.png"
+            />
+        <p class="font-size">
+            {{selectProject!.detail | translate}}
+        </p>
     </div>
 </div>
