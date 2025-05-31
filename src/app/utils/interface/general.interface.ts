@@ -57,8 +57,7 @@ export enum Relevance {
 export enum typeProject {
     no_contains = 0,
     web = 1,
-    android = 2,
-    ios = 3,
+    movil = 2,
     desktop = 4
 };
 
@@ -68,6 +67,7 @@ export class Develpments {
 
     informationDev(name: string): ProfileData {
         switch (name.toLocaleLowerCase()) {
+            //MARK: LUIS PAULO CALDERON NAVA
             case 'luis':
                 return {
                     fullName: 'Luis Paulo Calderon Nava',
@@ -96,7 +96,7 @@ export class Develpments {
                                     id: 1,
                                     platforms: [
                                         {
-                                            typeProject: typeProject.android,
+                                            typeProject: typeProject.movil,
                                             achievements: []
                                         }
                                     ],
@@ -114,69 +114,69 @@ export class Develpments {
                                         name: 'name',
                                         detail: 'detail',
                                         url: 'venta+-icon',
-                                        typeProject: [typeProject.android, typeProject.desktop]
+                                        typeProject: [typeProject.movil, typeProject.desktop]
                                     },
                                     screens: [
                                         {
                                             name: 'screen-1',
                                             detail: 'detalle de la pantalla 1',
                                             url: 'vm/screen1',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-2',
                                             detail: 'detalle de la pantalla 2',
                                             url: 'vm/screen2',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-3',
                                             detail: 'detalle de la pantalla 3',
                                             url: 'vm/screen3',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-4',
                                             detail: 'detalle de la pantalla 4',
                                             url: 'vm/screen1',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-5',
                                             detail: 'detalle de la pantalla 5',
                                             url: 'vm/screen2',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-6',
                                             detail: 'detalle de la pantalla 6',
                                             url: 'vm/screen3',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
 
                                         },
                                         {
                                             name: 'screen-7',
                                             detail: 'detalle de la pantalla 7',
                                             url: 'vm/screen1',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-8',
                                             detail: 'detalle de la pantalla 8',
                                             url: 'vm/screen2',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-9',
                                             detail: 'detalle de la pantalla 7',
                                             url: 'vm/screen1',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-10',
                                             detail: 'detalle de la pantalla 8',
                                             url: 'vm/screen2',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         }
                                     ]
                                 },
@@ -184,7 +184,7 @@ export class Develpments {
                                     id: 2,
                                     platforms: [
                                         {
-                                            typeProject: typeProject.android,
+                                            typeProject: typeProject.movil,
                                             achievements: []
                                         },
                                         {
@@ -209,14 +209,14 @@ export class Develpments {
                                         name: 'ControlVehicular',
                                         detail: 'detail',
                                         url: 'cvm-icon',
-                                        typeProject: [typeProject.android]
+                                        typeProject: [typeProject.movil]
                                     },
                                     screens: [
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'cv/url',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'Empresas',
@@ -424,7 +424,7 @@ export class Develpments {
                                             achievements: []
                                         },
                                         {
-                                            typeProject: typeProject.android,
+                                            typeProject: typeProject.movil,
                                             achievements: []
                                         }
                                     ],
@@ -445,7 +445,7 @@ export class Develpments {
                                         name: 'name',
                                         detail: 'detail',
                                         url: 'rutaicon',
-                                        typeProject: [typeProject.desktop, typeProject.android]
+                                        typeProject: [typeProject.desktop, typeProject.movil]
                                     },
                                     screens: [
                                         {
@@ -500,73 +500,73 @@ export class Develpments {
                                             name: '',
                                             detail: '',
                                             url: 'ruta+/rm1',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: '',
                                             detail: '',
                                             url: 'ruta+/rm2',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: '',
                                             detail: '',
                                             url: 'ruta+/rm3',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: '',
                                             detail: '',
                                             url: 'ruta+/rm4',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: '',
                                             detail: '',
                                             url: 'ruta+/rm5',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: '',
                                             detail: '',
                                             url: 'ruta+/rm6',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: '',
                                             detail: '',
                                             url: 'ruta+/rm7',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: '',
                                             detail: '',
                                             url: 'ruta+/rm8',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: '',
                                             detail: '',
                                             url: 'ruta+/rm9',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: '',
                                             detail: '',
                                             url: 'ruta+/rm10',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: '',
                                             detail: '',
                                             url: 'ruta+/rm11',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: '',
                                             detail: '',
                                             url: 'ruta+/rm12',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
 
                                     ]
@@ -575,7 +575,7 @@ export class Develpments {
                                     id: 5,
                                     platforms: [
                                         {
-                                            typeProject: typeProject.android,
+                                            typeProject: typeProject.movil,
                                             achievements: []
                                         }
                                     ],
@@ -595,7 +595,7 @@ export class Develpments {
                                         name: 'name',
                                         detail: 'detail',
                                         url: 'vpicon',
-                                        typeProject: [typeProject.android]
+                                        typeProject: [typeProject.movil]
                                     },
                                     screens: [
                                         {
@@ -611,7 +611,7 @@ export class Develpments {
                                     id: 6,
                                     platforms: [
                                         {
-                                            typeProject: typeProject.android,
+                                            typeProject: typeProject.movil,
                                             achievements: []
                                         }
                                     ],
@@ -631,56 +631,56 @@ export class Develpments {
                                         name: 'name',
                                         detail: 'detail',
                                         url: 'lpicon',
-                                        typeProject: [typeProject.desktop, typeProject.android]
+                                        typeProject: [typeProject.desktop, typeProject.movil]
                                     },
                                     screens: [
                                         {
                                             name: '',
                                             detail: '',
                                             url: 'listaprecios/lp1',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: '',
                                             detail: '',
                                             url: 'listaprecios/lp2',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: '',
                                             detail: '',
                                             url: 'listaprecios/lp3',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: '',
                                             detail: '',
                                             url: 'listaprecios/lp4',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: '',
                                             detail: '',
                                             url: 'listaprecios/lp5',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: '',
                                             detail: '',
                                             url: 'listaprecios/lp6',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: '',
                                             detail: '',
                                             url: 'listaprecios/lp7',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: '',
                                             detail: '',
                                             url: 'listaprecios/lp8',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
 
                                     ]
@@ -732,6 +732,7 @@ export class Develpments {
                     linkedin: "https://www.linkedin.com/in/luis-paulo-calderón-nava-2003bb257/",
                     gmail: "mailto:pavicalderon49@gmail.com",
                 }
+            //MARK: AKSEL AKEMI HERRERA GONZALEZ
             case 'aksel':
                 return {
                     fullName: 'Aksel Akemi Herrera Gonzalez',
@@ -757,13 +758,43 @@ export class Develpments {
                         {
                             name: 'Encodemx',
                             projects: [
+                                //MARK: ENCODEMX WEB
                                 {
                                     id: 1,
                                     platforms: [
                                         {
                                             typeProject: typeProject.web,
                                             achievements: [
-
+                                                {
+                                                    title: 'project-relevance.encodemx-web.interface-creation-title',
+                                                    detail: 'project-relevance.encodemx-web.interface-creation',
+                                                    relevance: Relevance.VERY_HIGH,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.encodemx-web.translate-web-title',
+                                                    detail: 'project-relevance.encodemx-web.translate-web',
+                                                    relevance: Relevance.HIGH,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.encodemx-web.responsive-desing-title',
+                                                    detail: 'project-relevance.encodemx-web.responsive-desing',
+                                                    relevance: Relevance.HIGH,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.encodemx-web.better-response-title',
+                                                    detail: 'project-relevance.encodemx-web.better-response',
+                                                    relevance: Relevance.HIGH,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.encodemx-web.skeletons-loaders-title',
+                                                    detail: 'project-relevance.encodemx-web.skeletons-loaders',
+                                                    relevance: Relevance.MEDIUM,
+                                                    icon: ''
+                                                }
                                             ]
                                         }
                                     ],
@@ -773,10 +804,7 @@ export class Develpments {
                                         "specific-project.properties.revelant-skills-encode-aksel",
                                     ],
                                     tools: [
-                                        "angular",
-                                        "nestjs",
-                                        "nodejs",
-                                        "typescript"
+                                        "angular"
                                     ],
                                     icon: {
                                         name: 'name',
@@ -817,16 +845,85 @@ export class Develpments {
                                         }
                                     ]
                                 },
+                                //MARK: GASTOS DE COMPRA IOS
                                 {
                                     id: 2,
                                     platforms: [
                                         {
                                             typeProject: typeProject.web,
-                                            achievements: []
+                                            achievements: [
+                                                {
+                                                    title: 'project-relevance.shopping-expense-web.new-web-title',
+                                                    detail: 'project-relevance.shopping-expense-web.new-web',
+                                                    relevance: Relevance.VERY_HIGH,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.shopping-expense-web.implementation-frameworks-title',
+                                                    detail: 'project-relevance.shopping-expense-web.implementation-frameworks',
+                                                    relevance: Relevance.HIGH,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.shopping-expense-web.migration-request-title',
+                                                    detail: 'project-relevance.shopping-expense-web.migration-request',
+                                                    relevance: Relevance.VERY_HIGH,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.shopping-expense-web.deploy-version-title',
+                                                    detail: 'project-relevance.shopping-expense-web.deploy-version',
+                                                    relevance: Relevance.HIGH,
+                                                    icon: ''
+                                                },
+                                            ]
                                         },
                                         {
-                                            typeProject: typeProject.ios,
-                                            achievements: []
+                                            typeProject: typeProject.movil,
+                                            achievements: [
+                                                {
+                                                    title: 'project-relevance.shopping-expense-ios.new-backend-title',
+                                                    detail: 'project-relevance.shopping-expense-ios.new-backend',
+                                                    relevance: Relevance.VERY_HIGH,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.shopping-expense-ios.migration-request-title',
+                                                    detail: 'project-relevance.shopping-expense-ios.migration-request',
+                                                    relevance: Relevance.HIGH,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.shopping-expense-ios.backup-system-title',
+                                                    detail: 'project-relevance.shopping-expense-ios.backup-system',
+                                                    relevance: Relevance.HIGH,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.shopping-expense-ios.support-app-title',
+                                                    detail: 'project-relevance.shopping-expense-ios.support-app',
+                                                    relevance: Relevance.MEDIUM,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.shopping-expense-ios.better-time-title',
+                                                    detail: 'project-relevance.shopping-expense-ios.better-time',
+                                                    relevance: Relevance.HIGH,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.shopping-expense-ios.dependetion-system-title',
+                                                    detail: 'project-relevance.shopping-expense-ios.dependetion-system',
+                                                    relevance: Relevance.MEDIUM,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.shopping-expense-ios.sync-process-title',
+                                                    detail: 'project-relevance.shopping-expense-ios.sync-process',
+                                                    relevance: Relevance.HIGH,
+                                                    icon: ''
+                                                }
+                                            ]
                                         }
                                     ],
                                     name: 'Gastos de compra',
@@ -845,68 +942,68 @@ export class Develpments {
                                         name: 'name',
                                         detail: 'Pagina principal de encode mx donde consultas informacion sobre las aplicaciones',
                                         url: 'gcicon',
-                                        typeProject: [typeProject.web, typeProject.ios]
+                                        typeProject: [typeProject.web, typeProject.movil]
                                     },
                                     screens: [
                                         {
                                             name: 'screen-1',
                                             detail: 'Pantalla principal',
                                             url: 'gc/gc1',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gc/gc2',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gc/gc3',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gc/gc4',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gc/gc5',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gc/gc6',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gc/gc8',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gc/gc9',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gc/gc10',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gc/gc11',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'Pantalla de login',
@@ -958,12 +1055,38 @@ export class Develpments {
                                         },
                                     ]
                                 },
+                                //MARK: ENCODEMX CONSOLE
                                 {
                                     id: 3,
                                     platforms: [
                                         {
                                             typeProject: typeProject.web,
-                                            achievements: []
+                                            achievements: [
+                                                {
+                                                    title: 'project-relevance.console-encodemx-web.admin-user-title',
+                                                    detail: 'project-relevance.console-encodemx-web.admin-user',
+                                                    relevance: Relevance.VERY_HIGH,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.console-encodemx-web.admin-database-title',
+                                                    detail: 'project-relevance.console-encodemx-web.admin-database',
+                                                    relevance: Relevance.HIGH,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.console-encodemx-web.new-backend-title',
+                                                    detail: 'project-relevance.console-encodemx-web.new-backend',
+                                                    relevance: Relevance.VERY_HIGH,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.console-encodemx-web.cron-job-title',
+                                                    detail: 'project-relevance.console-encodemx-web.cron-job',
+                                                    relevance: Relevance.HIGH,
+                                                    icon: ''
+                                                }
+                                            ]
                                         }
                                     ],
                                     name: 'Consola encodemx',
@@ -1018,12 +1141,50 @@ export class Develpments {
                                         },
                                     ]
                                 },
+                                //MARK: PRODUCTIVITY
                                 {
                                     id: 4,
                                     platforms: [
                                         {
                                             typeProject: typeProject.web,
-                                            achievements: []
+                                            achievements: [
+                                                {
+                                                    title: 'project-relevance.productivity-web.proyect-requirements-title',
+                                                    detail: 'project-relevance.productivity-web.proyect-requirements',
+                                                    relevance: Relevance.VERY_HIGH,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.productivity-web.database-title',
+                                                    detail: 'project-relevance.productivity-web.database',
+                                                    relevance: Relevance.VERY_HIGH,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.productivity-web.interfaz-desing-title',
+                                                    detail: 'project-relevance.productivity-web.interfaz-desing',
+                                                    relevance: Relevance.HIGH,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.productivity-web.backend-title',
+                                                    detail: 'project-relevance.productivity-web.backend',
+                                                    relevance: Relevance.VERY_HIGH,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.productivity-web.deploy-web-title',
+                                                    detail: 'project-relevance.productivity-web.deploy-web',
+                                                    relevance: Relevance.HIGH,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.productivity-web.request-backend-title',
+                                                    detail: 'project-relevance.productivity-web.request-backend',
+                                                    relevance: Relevance.VERY_HIGH,
+                                                    icon: ''
+                                                },
+                                            ]
                                         }
                                     ],
                                     name: 'Productivity',
@@ -1094,12 +1255,50 @@ export class Develpments {
                                         },
                                     ]
                                 },
+                                //MARK: GASTOS DIARIOS 4
                                 {
                                     id: 5,
                                     platforms: [
                                         {
                                             typeProject: typeProject.web,
-                                            achievements: []
+                                            achievements: [
+                                                {
+                                                    title: 'project-relevance.daily-expenses-4-web.clean-code-title',
+                                                    detail: 'project-relevance.daily-expenses-4-web.clean-code',
+                                                    relevance: Relevance.VERY_HIGH,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.daily-expenses-4-web.migration-request-title',
+                                                    detail: 'project-relevance.daily-expenses-4-web.migration-request',
+                                                    relevance: Relevance.VERY_HIGH,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.daily-expenses-4-web.imlements-web-socket-title',
+                                                    detail: 'project-relevance.daily-expenses-4-web.imlements-web-socket',
+                                                    relevance: Relevance.VERY_HIGH,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.daily-expenses-4-web.multi-currency-title',
+                                                    detail: 'project-relevance.daily-expenses-4-web.multi-currency',
+                                                    relevance: Relevance.HIGH,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.daily-expenses-4-web.support-title',
+                                                    detail: 'project-relevance.daily-expenses-4-web.support',
+                                                    relevance: Relevance.MEDIUM,
+                                                    icon: ''
+                                                },
+                                                {
+                                                    title: 'project-relevance.daily-expenses-4-web.custom-components-title',
+                                                    detail: 'project-relevance.daily-expenses-4-web.custom-components',
+                                                    relevance: Relevance.HIGH,
+                                                    icon: ''
+                                                },
+                                            ]
                                         }
                                     ],
                                     name: 'Gastos diarios 4 web',
@@ -1307,6 +1506,7 @@ export class Develpments {
                     linkedin: "https://www.linkedin.com/in/aksel-akemi-herrera-gonzalez-08054a213/",
                     gmail: "mailto:akselherrera18@gmail.com",
                 };
+            //MARK: EDGAR SAMUEL GUERRERO SANDOVAL
             default:
                 return {
                     fullName: 'Edgar Samuel Guerrero Sandoval',
@@ -1338,7 +1538,7 @@ export class Develpments {
                                     name: 'Gastos de compra',
                                     platforms: [
                                         {
-                                            typeProject: typeProject.android,
+                                            typeProject: typeProject.movil,
                                             achievements: [
                                                 {
                                                     title: 'Cambio de manejador de base de datos',
@@ -1372,68 +1572,68 @@ export class Develpments {
                                         name: 'name',
                                         detail: ' ',
                                         url: 'gcicon',
-                                        typeProject: [typeProject.android]
+                                        typeProject: [typeProject.movil]
                                     },
                                     screens: [
                                         {
                                             name: 'screen-1',
                                             detail: 'Pantalla principal',
                                             url: 'gc/gc1',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gc/gc2',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gc/gc3',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gc/gc4',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gc/gc5',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gc/gc6',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gc/gc8',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gc/gc9',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gc/gc10',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gc/gc11',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
 
@@ -1491,7 +1691,7 @@ export class Develpments {
                                     name: 'Gastos diarios 4',
                                     platforms: [
                                         {
-                                            typeProject: typeProject.android,
+                                            typeProject: typeProject.movil,
                                             achievements: []
                                         },
                                         {
@@ -1511,56 +1711,56 @@ export class Develpments {
                                         name: 'name',
                                         detail: 'detail',
                                         url: 'daily_expenses_4',
-                                        typeProject: [typeProject.android]
+                                        typeProject: [typeProject.movil]
                                     },
                                     screens: [
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gd/gd1',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gd/gd2',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gd/gd3',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gd/gd4',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gd/gd5',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gd/gd6',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gd/gd7',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
                                         {
                                             name: 'screen-1',
                                             detail: 'detail',
                                             url: 'gd/gd8',
-                                            typeProject: [typeProject.android]
+                                            typeProject: [typeProject.movil]
                                         },
 
                                     ]
@@ -1665,7 +1865,7 @@ export class Develpments {
                                             achievements: []
                                         },
                                         {
-                                            typeProject: typeProject.android,
+                                            typeProject: typeProject.movil,
                                             achievements: []
                                         }
                                     ],

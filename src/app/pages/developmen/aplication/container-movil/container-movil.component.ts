@@ -126,9 +126,7 @@ export class ContainerMovilComponent {
   }
 
   getMobileScreens() {
-    return this.selectProject?.screens.filter(screen =>
-      screen.typeProject.includes(typeProject.android) || screen.typeProject.includes(typeProject.ios)
-    );
+    return this.selectProject?.screens.filter(screen => screen.typeProject.includes(typeProject.movil));
   }
   
   

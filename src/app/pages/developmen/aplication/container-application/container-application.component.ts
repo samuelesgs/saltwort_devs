@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { Develpments, ProfileData, Project, typeProject } from '../../../../utils/interface/general.interface';
 import { CommonModule } from '@angular/common';
@@ -16,7 +16,7 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './container-application.component.html',
   styleUrls:['./container-application.component.css']
 })
-export class ContainerApplicationComponent {
+export class ContainerApplicationComponent implements OnInit {
 
   public profile!: ProfileData;
   public selectProject: Project | null = null;
@@ -30,11 +30,12 @@ export class ContainerApplicationComponent {
   constructor( private route : ActivatedRoute, private appService: AppService) { }
 
   ngOnInit(): void {
+    const title = document.getElementById('name-developer')!
+    setTimeout(() => {
+      
+      title.scrollIntoView({behavior: 'smooth', block: 'center'})
+    }, 100);
     this.loadingData();
-    /*this.appService.button$.subscribe(button => {
-      this.selectedButton = button;
-    });*/
-
     this.appService.profile$.subscribe(profile => {
       this.profile = profile!;
     });
@@ -66,15 +67,15 @@ export class ContainerApplicationComponent {
   }
 
   isMovil(): boolean {
-    return this.selectProject!.platforms.filter(row => row.typeProject == typeProject['android'] || row.typeProject == typeProject['ios']).length > 0;
+    return this.selectProject!.platforms.some(row => row.typeProject == typeProject.movil);
   }
 
   isWeb(): boolean {
-    return  this.selectProject!.platforms.filter(row => row.typeProject == typeProject['web']).length > 0;
+    return  this.selectProject!.platforms.some(row => row.typeProject == typeProject.web);
   }
 
   isDesktop(): boolean {
-    return  this.selectProject!.platforms.filter(row => row.typeProject == typeProject['desktop']).length > 0;
+    return  this.selectProject!.platforms.some(row => row.typeProject == typeProject.desktop);
   }
 
   selectedPlatform(key? : string): void {
@@ -99,14 +100,14 @@ export class ContainerApplicationComponent {
     }
   }
 
-  getTypeProject() {
+  getTypeProject() {    
     switch (this.selectedButton) {
       case 'movil' :
-        return typeProject['android'];
+        return typeProject.movil;
       case 'web' : 
-        return typeProject['web'];
+        return typeProject.web;
       default :
-        return typeProject['desktop'];
+        return typeProject.desktop;
     }
   }
 

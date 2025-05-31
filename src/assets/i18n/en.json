@@ -1,156 +1,231 @@
 {
-    "app-name" : "Salwort Devs",
-    "page" : {
-        "home" : "Home",
-        "devs" : "Developers",
-        "apps" : "Applications",
-        "about" : "About of"
+    "app-name": "Salwort Devs",
+    "page": {
+        "home": "Home",
+        "devs": "Developers",
+        "apps": "Applications",
+        "about": "About of"
     },
-    "policy_privaticy" : {
-        "title" : "Privacy Policy",
-        "description" : "At Salwort Devs, we are committed to protecting and respecting your privacy. This privacy policy explains how we collect, use, disclose and protect your personal information when you visit our website and use our services.",
-        "title-point-1" : "Information we collect",
-        "description-point-1" : "We may collect and process the following personal data: Information you provide to us: Name, email address, phone number and any other information you submit to us through forms on our website. Information we collect automatically: Information about your visit, including traffic data, location data, weblogs and other communication data, and the resources that you access. Cookies and similar technologies: We use cookies to collect information about your online activity on our website. You can control the use of cookies through your browser settings.",
-        "title-point-2" : "Use of your information",
-        "description-point-2" : "We use the information we collect for the following purposes:\n\nTo provide and manage our services.\n\nTo personalize your experience on our website.\n\nTo communicate with you, including sending important notifications and updates.\n\nTo improve our website and services by analyzing how users interact with them.\n\nTo comply with our legal obligations and to resolve disputes.",
-        "title-point-3" : "Disclosure of your information",
-        "description-point-3" : "We may share your personal information with third parties in the following circumstances:\n\nWith service providers who help us operate our business, such as web hosting and data analysis services.\n\nIf we are under a legal obligation to disclose your information or to protect our rights, property, or safety.\n\nIn the event of a merger, acquisition, or asset sale, your data may be transferred as part of that transaction.",
-        "title-point-4" : "Security of your information", 
-        "description-point-4" : "We take reasonable steps to protect your personal information from unauthorized access, alteration, disclosure or destruction.\n\nHowever, no data transmission over the Internet or electronic storage is completely secure.\n\nTherefore, we cannot guarantee the absolute security of your information.",
-        "title-point-5" : "Data retention", 
-        "description-point-5" : "We retain your personal information only for as long as necessary to fulfill the purposes for which it was collected, including any legal, accounting, or reporting requirements.",
-        "title-point-6" : "Your rights", 
-        "description-point-6" : "You have the right to access, correct, update or delete your personal information. You may also have the right to restrict or object to the processing of your personal information, as well as request data portability. To exercise these rights, please contact us using the contact details provided below.",
-        "title-point-7" : "Changes to this privacy policy", 
-        "description-point-7" : "We may update this privacy policy from time to time. We will post any changes on this page and, if the changes are significant, we will notify you by email or by means of a notice on our website."
-
-    }, 
-    "home" : {
-        "home-description" : "At Salwort, we are a young and innovative company. Committed to research, optimization, and streamlining solutions.",
-        "title-1" : "Main Screen",
-        "screen-1" : "On this screen, you can register if you already have an account, create one, or log in with Google",
-        "title-2" : "Home Page",
-        "screen-2" : "You can see various sections, the boards you have, their statuses, and at the bottom, a top categories list to see the categories you use the most",
-        "title-3" : "Boards",
-        "screen-3" : "Here, you can add a board along with its details",
-        "title-4" : "Board Saved",
-        "screen-4" : "Here, you can see how the board has been saved",
-        "title-5" : "Categories",
-        "screen-5" : "On this screen, you can add your categories",
-        "title-6" : "How to Add Categories",
-        "screen-6" : "Just click the add button to add a category, and then simply confirm",
-        "title-7" : "Statuses",
-        "screen-7" : "You can view a list of your statuses, as well as an example of how they look",
-        "title-8" : "How to Add Statuses",
-        "screen-8" : "It's as simple as pressing the add button, naming your status, choosing colors, and then confirming",
-        "title-9" : "User Profile",
-        "screen-9" : "Your user details, you can update your name, email, and password"
+    "policy_privaticy": {
+        "title": "Privacy Policy",
+        "description": "At Salwort Devs, we are committed to protecting and respecting your privacy. This privacy policy explains how we collect, use, disclose and protect your personal information when you visit our website and use our services.",
+        "title-point-1": "Information we collect",
+        "description-point-1": "We may collect and process the following personal data: Information you provide to us: Name, email address, phone number and any other information you submit to us through forms on our website. Information we collect automatically: Information about your visit, including traffic data, location data, weblogs and other communication data, and the resources that you access. Cookies and similar technologies: We use cookies to collect information about your online activity on our website. You can control the use of cookies through your browser settings.",
+        "title-point-2": "Use of your information",
+        "description-point-2": "We use the information we collect for the following purposes:\n\nTo provide and manage our services.\n\nTo personalize your experience on our website.\n\nTo communicate with you, including sending important notifications and updates.\n\nTo improve our website and services by analyzing how users interact with them.\n\nTo comply with our legal obligations and to resolve disputes.",
+        "title-point-3": "Disclosure of your information",
+        "description-point-3": "We may share your personal information with third parties in the following circumstances:\n\nWith service providers who help us operate our business, such as web hosting and data analysis services.\n\nIf we are under a legal obligation to disclose your information or to protect our rights, property, or safety.\n\nIn the event of a merger, acquisition, or asset sale, your data may be transferred as part of that transaction.",
+        "title-point-4": "Security of your information",
+        "description-point-4": "We take reasonable steps to protect your personal information from unauthorized access, alteration, disclosure or destruction.\n\nHowever, no data transmission over the Internet or electronic storage is completely secure.\n\nTherefore, we cannot guarantee the absolute security of your information.",
+        "title-point-5": "Data retention",
+        "description-point-5": "We retain your personal information only for as long as necessary to fulfill the purposes for which it was collected, including any legal, accounting, or reporting requirements.",
+        "title-point-6": "Your rights",
+        "description-point-6": "You have the right to access, correct, update or delete your personal information. You may also have the right to restrict or object to the processing of your personal information, as well as request data portability. To exercise these rights, please contact us using the contact details provided below.",
+        "title-point-7": "Changes to this privacy policy",
+        "description-point-7": "We may update this privacy policy from time to time. We will post any changes on this page and, if the changes are significant, we will notify you by email or by means of a notice on our website."
     },
-    "apps-features" : {
-        "properties" : {
-            "name-1-activityp" : "Manage your time",
-            "detail-1-activityp" : "You will be able to manage your time better and won’t forget things.",
-            "name-2-activityp" : "Plan your activities.",
-            "detail-2-activityp" : "Planning your activities maximizes your time.",
-            "name-3-activityp" : "Make the most of your time.",
-            "detail-3-activityp" : "Making the most of your time will help you accurately measure your time.",
-            "name-1-cooking" : "Many types of food.",
-            "detail-1-cooking" : "In this app, you will be able to discover an unimaginable number of recipes that you will love.",
-            "name-2-cooking" : "Socialize through recipes.",
-            "detail-2-cooking" : "You will be able to leave feedback on the recipes, thereby letting everyone know the quality of the recipe." 
+    "home": {
+        "home-description": "At Salwort, we are a young and innovative company. Committed to research, optimization, and streamlining solutions.",
+        "title-1": "Main Screen",
+        "screen-1": "On this screen, you can register if you already have an account, create one, or log in with Google",
+        "title-2": "Home Page",
+        "screen-2": "You can see various sections, the boards you have, their statuses, and at the bottom, a top categories list to see the categories you use the most",
+        "title-3": "Boards",
+        "screen-3": "Here, you can add a board along with its details",
+        "title-4": "Board Saved",
+        "screen-4": "Here, you can see how the board has been saved",
+        "title-5": "Categories",
+        "screen-5": "On this screen, you can add your categories",
+        "title-6": "How to Add Categories",
+        "screen-6": "Just click the add button to add a category, and then simply confirm",
+        "title-7": "Statuses",
+        "screen-7": "You can view a list of your statuses, as well as an example of how they look",
+        "title-8": "How to Add Statuses",
+        "screen-8": "It's as simple as pressing the add button, naming your status, choosing colors, and then confirming",
+        "title-9": "User Profile",
+        "screen-9": "Your user details, you can update your name, email, and password"
+    },
+    "apps-features": {
+        "properties": {
+            "name-1-activityp": "Manage your time",
+            "detail-1-activityp": "You will be able to manage your time better and won’t forget things.",
+            "name-2-activityp": "Plan your activities.",
+            "detail-2-activityp": "Planning your activities maximizes your time.",
+            "name-3-activityp": "Make the most of your time.",
+            "detail-3-activityp": "Making the most of your time will help you accurately measure your time.",
+            "name-1-cooking": "Many types of food.",
+            "detail-1-cooking": "In this app, you will be able to discover an unimaginable number of recipes that you will love.",
+            "name-2-cooking": "Socialize through recipes.",
+            "detail-2-cooking": "You will be able to leave feedback on the recipes, thereby letting everyone know the quality of the recipe."
         }
     },
-    "footer" :  {
-        "description" : "Welcome to Saltwort Devs. We are committed to protecting and respecting your privacy. The data provided by users or contacts is highly protected by our rigorous privacy policies. To know our privacy policies,",
-        "contact-us" : "Contact us"
+    "footer": {
+        "description": "Welcome to Saltwort Devs. We are committed to protecting and respecting your privacy. The data provided by users or contacts is highly protected by our rigorous privacy policies. To know our privacy policies,",
+        "contact-us": "Contact us"
     },
-    "about-of" : {
-      "mision" : " Mission",
-      "vision"  : " Vision",
-      "objectives" : " Objectives",
-      "mision-desc" : " Our commitment is to develop proposals that drive the growth and efficiency of our clients, providing solutions tailored to an ever-evolving environment, with the goal of building a more sustainable and competitive future.",
-      "vision-desc" : " To be recognized as leaders in innovation and the development of technological solutions that transform the way companies operate and adapt to an ever-changing world. We aspire to set new standards of efficiency and sustainability in every sector we engage in, becoming the preferred partner for organizations seeking not only to grow but also to evolve with agility and resilience. At Saltwort, we envision a future where our solutions not only solve current problems but also anticipate future needs, creating a lasting and positive impact on society and the environment.",
-      "objectives-desc" : " At Saltwort, we focus on developing innovative technologies that optimize the operational efficiency of our clients, enabling them to adapt swiftly to market changes. We are committed to continuous research, creating sustainable solutions, and strategic expansion in global markets, while prioritizing customer satisfaction by delivering personalized, high-quality solutions."
+    "about-of": {
+        "mision": " Mission",
+        "vision": " Vision",
+        "objectives": " Objectives",
+        "mision-desc": " Our commitment is to develop proposals that drive the growth and efficiency of our clients, providing solutions tailored to an ever-evolving environment, with the goal of building a more sustainable and competitive future.",
+        "vision-desc": " To be recognized as leaders in innovation and the development of technological solutions that transform the way companies operate and adapt to an ever-changing world. We aspire to set new standards of efficiency and sustainability in every sector we engage in, becoming the preferred partner for organizations seeking not only to grow but also to evolve with agility and resilience. At Saltwort, we envision a future where our solutions not only solve current problems but also anticipate future needs, creating a lasting and positive impact on society and the environment.",
+        "objectives-desc": " At Saltwort, we focus on developing innovative technologies that optimize the operational efficiency of our clients, enabling them to adapt swiftly to market changes. We are committed to continuous research, creating sustainable solutions, and strategic expansion in global markets, while prioritizing customer satisfaction by delivering personalized, high-quality solutions."
     },
-    "Devs" : {
-        "Luis-desc" : "I am a junior developer with experience in various technologies, including using Android Studio with Kotlin and Visual Studio with C#. I have skills in database management, working with PostgreSQL, MySQL, and SQL Server Management. I consider myself a highly motivated person with a strong willingness to learn and grow in the development field.",
-        "Samuel-desc" : "With over 5 years of experience in various areas, I possess solid knowledge in developing Android applications using Java, Kotlin, and XML. In the web domain, I work with technologies such as JavaScript, HTML, CSS, Angular, and TypeScript to create interactive and efficient solutions. Additionally, I have experience in backend development with Node.js, PHP, and NestJS, as well as managing AWS services, including EC2, S3, and others.",
-        "Aksel-desc" : "With experience in native iOS development using Swift and in building web applications with Angular, I also have skills in creating REST APIs with NestJS in Node.js environments. My experience includes integrating external services, migrating technologies, and optimizing systems to enhance performance and scalability."
+    "Devs": {
+        "Luis-desc": "I am a junior developer with experience in various technologies, including using Android Studio with Kotlin and Visual Studio with C#. I have skills in database management, working with PostgreSQL, MySQL, and SQL Server Management. I consider myself a highly motivated person with a strong willingness to learn and grow in the development field.",
+        "Samuel-desc": "With over 5 years of experience in various areas, I possess solid knowledge in developing Android applications using Java, Kotlin, and XML. In the web domain, I work with technologies such as JavaScript, HTML, CSS, Angular, and TypeScript to create interactive and efficient solutions. Additionally, I have experience in backend development with Node.js, PHP, and NestJS, as well as managing AWS services, including EC2, S3, and others.",
+        "Aksel-desc": "With experience in native iOS development using Swift and in building web applications with Angular, I also have skills in creating REST APIs with NestJS in Node.js environments. My experience includes integrating external services, migrating technologies, and optimizing systems to enhance performance and scalability."
     },
-    "Devs-big-desc" : {
-        "properties" : {
-            "Luis-desc" : "I am a junior developer with experience in various technologies, highlighting my proficiency in Android Studio with Kotlin for mobile app development, where I have created intuitive user interfaces and integrated advanced features. I also have experience with Visual Studio and C#, developing efficient desktop applications and services. My expertise extends to database management, with knowledge of PostgreSQL, MySQL, and administration tools. I consider myself a highly motivated individual, eager to learn, with a constant focus on improving my skills and growing in the development field.",
-            "Samuel-desc" : "Developer with over 5 years of experience in web and backend development, and expertise in Android Studio with Java and Kotlin. In mobile development, I have used Android Studio to create robust applications, optimizing performance and user experience with Java and Kotlin. I have experience in designing interfaces with XML, integrating APIs, and implementing architectures like MVVM. In the web domain, I am proficient in frontend technologies such as JavaScript, HTML, CSS, and Angular, with a focus on creating responsive interfaces. On the backend, I have extensive knowledge of Node.js, PHP, and NestJS, along with experience in generating XLSX and CSV files. Additionally, I am well-versed in AWS cloud services, including EC2, S3, and ELB, with experience in deploying applications on EC2 subdomains and managing S3 containers. I have used PM2 for deployments on AWS and have implemented purchase validations through Google APIs in backend projects. My experience also includes utilizing Bootstrap for CSS design and deploying applications in high-availability production environments.",
-            "Aksel-desc" : "I am a programmer with extensive experience in mobile application development for iOS using Swift, creating efficient and well-designed solutions for the Apple platform. In web development, I am proficient in Angular, building dynamic and responsive user interfaces that adapt to different devices. I have a strong background in creating REST APIs with NestJS in Node.js environments, enabling secure and efficient communication between systems. My experience includes integrating external services, migrating technologies to ensure smooth transitions without interruptions, and optimizing systems to enhance performance and scalability, adapting to the growing demands of the market.",
-            "related-projects" : "Related Projects"
+    "Devs-big-desc": {
+        "properties": {
+            "Luis-desc": "I am a junior developer with experience in various technologies, highlighting my proficiency in Android Studio with Kotlin for mobile app development, where I have created intuitive user interfaces and integrated advanced features. I also have experience with Visual Studio and C#, developing efficient desktop applications and services. My expertise extends to database management, with knowledge of PostgreSQL, MySQL, and administration tools. I consider myself a highly motivated individual, eager to learn, with a constant focus on improving my skills and growing in the development field.",
+            "Samuel-desc": "Developer with over 5 years of experience in web and backend development, and expertise in Android Studio with Java and Kotlin. In mobile development, I have used Android Studio to create robust applications, optimizing performance and user experience with Java and Kotlin. I have experience in designing interfaces with XML, integrating APIs, and implementing architectures like MVVM. In the web domain, I am proficient in frontend technologies such as JavaScript, HTML, CSS, and Angular, with a focus on creating responsive interfaces. On the backend, I have extensive knowledge of Node.js, PHP, and NestJS, along with experience in generating XLSX and CSV files. Additionally, I am well-versed in AWS cloud services, including EC2, S3, and ELB, with experience in deploying applications on EC2 subdomains and managing S3 containers. I have used PM2 for deployments on AWS and have implemented purchase validations through Google APIs in backend projects. My experience also includes utilizing Bootstrap for CSS design and deploying applications in high-availability production environments.",
+            "Aksel-desc": "I am a programmer with extensive experience in mobile application development for iOS using Swift, creating efficient and well-designed solutions for the Apple platform. In web development, I am proficient in Angular, building dynamic and responsive user interfaces that adapt to different devices. I have a strong background in creating REST APIs with NestJS in Node.js environments, enabling secure and efficient communication between systems. My experience includes integrating external services, migrating technologies to ensure smooth transitions without interruptions, and optimizing systems to enhance performance and scalability, adapting to the growing demands of the market.",
+            "related-projects": "Related Projects"
         }
-        
     },
     "specific-project": {
-        "properties" : {
-            "desc-general" : "In this project, I served as an Android developer. Some of the key functions within this application are:  ",
-            "project-detail-ventaplus-luis" : "Point of sale.",
-            "revelant-skills-1-ventaplus-luis" : "Actualizacion de versiones",
-            "revelant-skills-2-ventaplus-luis" : "Cambio de la version 24 a la version 33",
-            "project-detail-crm-luis" :"CRM for clients.",
-            "revelant-skills-1-crm-luis" : "Database queries",
-            "revelant-skills-2-crm-luis" : "PDF creation and Excel export",
-            "revelant-skills-3-crm-luis" : "MVC architecture",
-            "project-detail-cvm-luis" : "Internal project.",
-            "revelant-skills-cvm-1-luis" : "Dependency injection",
-            "revelant-skills-cvm-2-luis" : "Retrofit",
-            "revelant-skills-cvm-3-luis" : "MVVM architecture.",
-            "project-detail-encode-aksel" : "Income capture in the project.",
-            "revelant-skills-encode-aksel" : "Change of CocoaPods.",
-            "project-detail-shopping-expense-samuel" :"Functionality project or tool designed to record, in a systematic and organized manner, all relevant information about data entry in a project. It allows to manage and store specific details of each entry, ensuring accuracy and traceability. This system facilitates the administration and monitoring of entered data, optimizing the workflow and providing support in decision making by allowing a clear and updated view of the progress in the project.",
-            "revelant-skills-shopping-expenses-samuel" : "Project creation.",
-            "project-detail-daily-expenses-samuel"  :"Income capture in the project.",
-            "revelant-skills-daily-expenses-samuel" : "Project creation"
+        "properties": {
+            "desc-general": "In this project, I served as an Android developer. Some of the key functions within this application are:  ",
+            "project-detail-ventaplus-luis": "Point of sale.",
+            "revelant-skills-1-ventaplus-luis": "Actualizacion de versiones",
+            "revelant-skills-2-ventaplus-luis": "Cambio de la version 24 a la version 33",
+            "project-detail-crm-luis": "CRM for clients.",
+            "revelant-skills-1-crm-luis": "Database queries",
+            "revelant-skills-2-crm-luis": "PDF creation and Excel export",
+            "revelant-skills-3-crm-luis": "MVC architecture",
+            "project-detail-cvm-luis": "Internal project.",
+            "revelant-skills-cvm-1-luis": "Dependency injection",
+            "revelant-skills-cvm-2-luis": "Retrofit",
+            "revelant-skills-cvm-3-luis": "MVVM architecture.",
+            "project-detail-encode-aksel": "Static web application developed in Angular that centralizes the user manuals of the company's internal applications, along with terms and conditions and privacy policies. Its goal is to provide clear and organized access to official documentation.",
+            "revelant-skills-encode-aksel": "Change of CocoaPods.",
+            "project-detail-shopping-expense-samuel": "Functionality project or tool designed to record, in a systematic and organized manner, all relevant information about data entry in a project. It allows to manage and store specific details of each entry, ensuring accuracy and traceability. This system facilitates the administration and monitoring of entered data, optimizing the workflow and providing support in decision making by allowing a clear and updated view of the progress in the project.",
+            "revelant-skills-shopping-expenses-samuel": "Project creation.",
+            "project-detail-daily-expenses-samuel": "Income capture in the project.",
+            "revelant-skills-daily-expenses-samuel": "Project creation"
         }
     },
-    "random-text" : {
-        "knowmore" : "know more"
+    "project-relevance": {
+        "encodemx-web": {
+            "interface-creation-title": "Interface creation.",
+            "interface-creation": "The site interface was fully designed and built, ensuring a clear structure, consistent aesthetics, and intuitive navigation.",
+            "translate-web-title": "Translation management.",
+            "translate-web": "An internationalization system was implemented to display content in three different languages, expanding the portal's reach to users of different languages.",
+            "responsive-desing-title": "Responsive design.",
+            "responsive-desing": "The interface was adapted to provide an optimal experience on mobile devices, ensuring functionality and readability on small screens.",
+            "better-response-title": "Improved load times.",
+            "better-response": "Site performance was optimized by converting heavy images to .webp format, significantly reducing loading times.",
+            "skeletons-loaders-title": "Add loading skeletons.",
+            "skeletons-loaders": "Skeletons were integrated as visual indicators during content loading, improving the perceived speed of the site."
+        },
+        "shopping-expense-ios": {
+            "new-backend-title": "Creation of new backend and deployment on server.",
+            "new-backend": "A new backend was developed from scratch and deployed on the server, providing a solid and scalable foundation for the application's operation.",
+            "migration-request-title": "Migration of requests in the iOS mobile version.",
+            "migration-request": "Network requests in the iOS mobile version were adapted and migrated to ensure compatibility and stability with the new backend.",
+            "backup-system-title": "Backup system in JSON format.",
+            "backend-system": "An automatic backup system in JSON format was created, allowing data recovery in case of failures.",
+            "support-app-title": "Support for user-reported issues.",
+            "support-app": "Functional issues reported by users were addressed and resolved, contributing to a more stable user experience.",
+            "better-time-title": "Improvement in certain loading times.",
+            "better-time": "Key processes in the backend and mobile app were optimized to reduce response and loading times.",
+            "dependetion-system-title": "Migration of dependencies from CocoaPods to Swift Package Manager.",
+            "dependetion-system": "iOS project dependencies were migrated from CocoaPods to Swift Package Manager, simplifying management and reducing integration errors.",
+            "sync-process-title": "Information synchronization processes with the server.",
+            "sync-process": "Synchronization mechanisms were developed to ensure the app functions correctly even offline, updating data when the network is restored."
+        },
+        "shopping-expense-web": {
+            "new-web-title": "Creation of new web version.",
+            "new-web": "A new version of the web application was developed, modernizing its structure and improving code maintainability and scalability.",
+            "implementation-frameworks-title": "Implementation of Angular Material in components.",
+            "implementation-frameworks": "Angular Material components, such as paginated tables, were integrated to enhance user experience and design consistency.",
+            "migration-request-title": "Connecting requests to the new backend.",
+            "migration-request": "The communication logic was adapted so that the web application consumes the new backend, ensuring data integrity and proper system operation.",
+            "deploy-version-title": "Deployment of the new version on the server.",
+            "deploy-version": "The new web system was deployed to production, ensuring its availability for users and monitoring its correct performance."
+        },
+        "console-encodemx-web": {
+            "admin-user-title": "Functions for managing application users.",
+            "admin-user": "Key user management functions were developed, including subscription validation, purchase verification, password recovery, restoration of deleted accounts, and modification of active subscriptions.",
+            "admin-database-title": "Administrative database functions.",
+            "admin-database": "Tools were implemented for advanced operations such as full data copying between databases and complete export of data for a specific user.",
+            "new-backend-title": "Creation of a new, more modern backend.",
+            "new-backend": "A completely new backend was developed using current technologies, improving the overall architecture, security, and system performance.",
+            "cron-job-title": "Scheduled jobs to validate user purchases periodically.",
+            "cron-job": "Automated tasks (cron jobs) were implemented to periodically validate user purchases, ensuring the validity of access and services."
+        },
+        "productivity-web": {
+            "proyect-requirements-title": "Gathering of general project requirements.",
+            "proyect-requirements": "A detailed analysis was conducted to define the functional and non-functional requirements of the system, aligning client needs with the project's technical objectives.",
+            "database-title": "Database creation and technical requirements analysis.",
+            "database": "The database structure was designed and implemented based on the analysis of information flows and relationships between entities.",
+            "interfaz-desing-title": "Interface creation and design.",
+            "interfaz-desing": "The user interface was developed with a focus on user experience, usability, and visual adaptability across different devices.",
+            "backend-title": "Backend development and deployment.",
+            "backend": "The backend was built to handle logic, data management, and security, and was deployed to the corresponding server.",
+            "deploy-web-title": "Web version deployment.",
+            "deploy-web": "The web application was published in the production environment, ensuring its availability to end users.",
+            "request-backend-title": "Make requests to the backend.",
+            "request-backend": "The interface was connected to the backend, enabling smooth and secure data transmission between client and server."
+        },
+        "daily-expenses-4-web": {
+            "clean-code-title": "Code restructuring and fixes.",
+            "clean-code": "A thorough reorganization of the code was carried out to improve readability, maintainability, and performance, while correcting detected errors.",
+            "migration-request-title": "Migration of requests to a new API.",
+            "migration-request": "System requests were adapted to consume a new API, ensuring compatibility and better performance.",
+            "imlements-web-socket-title": "Migration of the request system to WebSocket.",
+            "imlements-web-socket": "Communication via WebSocket was implemented to optimize real-time interaction between client and server.",
+            "multi-currency-title": "Multi-currency functionality with calculations.",
+            "multi-currency": "A function was developed to handle multiple currencies, performing conversions and automatic calculations within the system.",
+            "support-title": "Fixes for user-reported errors and support.",
+            "support": "User-reported errors were addressed and resolved, improving system stability and usability.",
+            "custom-components-title": "Creation of new custom components with new features.",
+            "custom-components": "Custom components were designed and implemented with specific functionalities tailored to the project's needs."
+        }
     },
-    "ap-app-info" : {
-        "screen1-title" : "Home",
-        "screen1-text1" : "On this screen, you can enter your username and password",
-        "screen1-text2" : "If you don't have a registered email, you can create an account",
-        "screen1-text3" : "If you don't feel like creating an account, you can sign in with Google",
-        "screen1-text4" : "You can recover your password if you have forgotten it",
-        "screen2-title" : "Main Screen",
-        "screen2-text1" : "This is the main screen",
-        "screen2-text2" : "Your dashboard information will be shown as soon as you enter the app",
-        "screen2-text3" : "At the bottom, you can see the top 3 categories you use the most",
-        "screen2-text4" : "On the left side, you have all the sections",
-        "screen3-title" : "Add Statuses",
-        "screen3-text1" : "You only need to write the name of your status, choose your colors, and confirm the status when you're done",
-        "screen3-text2" : "Once added, the status will appear in the list",
-        "screen3-text3" : "You can see an example of how your status looks",
-        "screen4-title" : "Board Added",
-        "screen4-text1" : "This is how it looks when you add a board",
-        "screen4-text2" : "On the card, you can see the name and details you previously added",
-        "screen4-text3" : "You can add as many as you like",
-        "screen5-title" : "Categories",
-        "screen5-text1" : "You can see your categories in a list format",
-        "screen5-text2" : "You can add more categories",
-        "screen5-text3" : "Edit them if you wish",
-        "screen6-title" : "Category Added",
-        "screen6-text1" : "To add a category, just click the add button and it will let you write the name of your category",
-        "screen6-text2" : "Once added, it will appear in the list",
-        "screen6-text3" : "You can sort your categories alphabetically or delete them",
-        "screen6-text4" : "You can also search through your categories",
-        "screen7-title" : "Statuses",
-        "screen7-text1" : "These are the statuses you have, ordered in a list format",
-        "screen7-text2" : "You can add more statuses if you wish",
-        "screen7-text3" : "Sorting your statuses alphabetically is also possible or searching through them",
-        "screen8-title" : "Add Statuses",
-        "screen8-text1" : "You only need to write the name of your status, choose your colors, and confirm the status when you're done",
-        "screen8-text2" : "Once added, the status will appear in the list",
-        "screen8-text3" : "You can see an example of how your status looks",
-        "screen9-title" : "User Information",
-        "screen9-text1" : "These are your user details",
-        "screen9-text2" : "You can change them anytime you want",
-        "screen9-text3" : "You can choose your preferred colors"
-    }   
-    
+    "random-text": {
+        "knowmore": "know more"
+    },
+    "ap-app-info": {
+        "screen1-title": "Home",
+        "screen1-text1": "On this screen, you can enter your username and password",
+        "screen1-text2": "If you don't have a registered email, you can create an account",
+        "screen1-text3": "If you don't feel like creating an account, you can sign in with Google",
+        "screen1-text4": "You can recover your password if you have forgotten it",
+        "screen2-title": "Main Screen",
+        "screen2-text1": "This is the main screen",
+        "screen2-text2": "Your dashboard information will be shown as soon as you enter the app",
+        "screen2-text3": "At the bottom, you can see the top 3 categories you use the most",
+        "screen2-text4": "On the left side, you have all the sections",
+        "screen3-title": "Add Statuses",
+        "screen3-text1": "You only need to write the name of your status, choose your colors, and confirm the status when you're done",
+        "screen3-text2": "Once added, the status will appear in the list",
+        "screen3-text3": "You can see an example of how your status looks",
+        "screen4-title": "Board Added",
+        "screen4-text1": "This is how it looks when you add a board",
+        "screen4-text2": "On the card, you can see the name and details you previously added",
+        "screen4-text3": "You can add as many as you like",
+        "screen5-title": "Categories",
+        "screen5-text1": "You can see your categories in a list format",
+        "screen5-text2": "You can add more categories",
+        "screen5-text3": "Edit them if you wish",
+        "screen6-title": "Category Added",
+        "screen6-text1": "To add a category, just click the add button and it will let you write the name of your category",
+        "screen6-text2": "Once added, it will appear in the list",
+        "screen6-text3": "You can sort your categories alphabetically or delete them",
+        "screen6-text4": "You can also search through your categories",
+        "screen7-title": "Statuses",
+        "screen7-text1": "These are the statuses you have, ordered in a list format",
+        "screen7-text2": "You can add more statuses if you wish",
+        "screen7-text3": "Sorting your statuses alphabetically is also possible or searching through them",
+        "screen8-title": "Add Statuses",
+        "screen8-text1": "You only need to write the name of your status, choose your colors, and confirm the status when you're done",
+        "screen8-text2": "Once added, the status will appear in the list",
+        "screen8-text3": "You can see an example of how your status looks",
+        "screen9-title": "User Information",
+        "screen9-text1": "These are your user details",
+        "screen9-text2": "You can change them anytime you want",
+        "screen9-text3": "You can choose your preferred colors"
+    }
 }

@@ -42,14 +42,14 @@
                                 <img *ngFor="let index of getNumberArrayRelevance(achievemnt.relevance)"
                                     src="./assets/images/icons-relevance/star.png" class="relevance-icon">
                             </div>
-                            <p class="text-gray">{{strRelevance(achievemnt.relevance)}}</p>
+                            <p class="text-gray">{{ strRelevance(achievemnt.relevance)}}</p>
                         </div>
                         <div class="col me-3 bg-white-transparent border-card-radius p-2 ps-4">
                             <h5 class="col-12  white-text mb-2 no-padding">
-                                {{achievemnt.title}}
+                                {{achievemnt.title | translate}}
                             </h5>
                             <p class="col-12 white-text no-space">
-                                {{achievemnt.detail}}
+                                {{achievemnt.detail | translate}}
                             </p>
                         </div>
                     </div>

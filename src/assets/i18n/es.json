@@ -97,13 +97,91 @@
             "revelant-skills-cvm-1-luis": "Inyección de dependencias",
             "revelant-skills-cvm-2-luis": "Retrofit",
             "revelant-skills-cvm-3-luis": "Arquitectura MVVM",
-            "project-detail-encode-aksel": "Capturador de ingreso en proyecto",
+            "project-detail-encode-aksel": "Aplicación web estática desarrollada en Angular que centraliza los manuales de usuario de las aplicaciones internas de la empresa, junto con los términos y condiciones y las políticas de privacidad. Su objetivo es facilitar el acceso a la documentación oficial de forma clara y organizada.",
             "revelant-skills-encode-aksel": "Cambio de cocoa pods",
             "desc-general": "Dentro de este proyecto implemente el puesto como desarrollador android, de las funciones relevantes dentro de esta aplicacion son: ",
             "project-detail-shopping-expense-samuel": "Proyecto de funcionalidad o herramienta diseñada para registrar, de manera sistemática y organizada, toda la información relevante sobre la entrada de datos en un proyecto. Permite gestionar y almacenar detalles específicos de cada ingreso, asegurando precisión y trazabilidad. Este sistema facilita la administración y el seguimiento de los datos ingresados, optimizando el flujo de trabajo y brindando soporte en la toma de decisiones al permitir una visión clara y actualizada del progreso en el proyecto.",
             "revelant-skills-shopping-expenses-samuel": "Creacion de proyecto",
             "project-detail-daily-expenses-samuel": "Capturador de ingreso en proyecto",
             "revelant-skills-daily-expenses-samuel": "Creacion de proyecto"
+        }
+    },
+    "project-relevance": {
+        "encodemx-web": {
+            "interface-creation-title": "Creación de la interfaz.",
+            "interface-creation": "Se diseñó y construyó completamente la interfaz del sitio, asegurando una estructura clara, estética coherente y navegación intuitiva.",
+            "translate-web-title": "Manejo de traducciones.",
+            "translate-web": "Se implementó un sistema de internacionalización que permite visualizar el contenido en tres idiomas distintos, ampliando el alcance del portal a usuarios con diferentes lenguas.",
+            "responsive-desing-title": "Diseño responsivo.",
+            "responsive-desing": "Se adaptó la interfaz para ofrecer una experiencia óptima en dispositivos móviles, garantizando la funcionalidad y legibilidad en pantallas pequeñas.",
+            "better-response-title": "Mejorar tiempos de carga.",
+            "better-response": "Se optimizó el rendimiento del sitio mediante la conversión de imágenes pesadas a formato .webp, reduciendo significativamente los tiempos de carga.",
+            "skeletons-loaders-title": "Agregar skeletons de carga.",
+            "skeletons-loaders": "Se integraron skeletons como indicadores visuales durante la carga de contenido, mejorando la percepción de velocidad del sitio."
+        },
+        "shopping-expense-ios": {
+            "new-backend-title": "Creación de nuevo backend y ejecución en el servidor.",
+            "new-backend": "Se desarrolló un nuevo backend desde cero y se implementó en el servidor, brindando una base sólida y escalable para el funcionamiento de la aplicación.",
+            "migration-request-title": "Migración de requests en la versión móvil iOS.",
+            "migration-request": "Se adaptaron y migraron las peticiones de red en la versión móvil iOS para asegurar compatibilidad y estabilidad con el nuevo backend.",
+            "backup-system-title": "Sistema de respaldos en formato JSON.",
+            "backend-system": "Se creó un sistema de respaldos automáticos en formato JSON, permitiendo la recuperación de datos en caso de fallos.",
+            "support-app-title": "Soporte a errores reportados por los usuarios.",
+            "support-app": "Se atendieron y resolvieron errores funcionales identificados por los usuarios, contribuyendo a una experiencia de uso más estable.",
+            "better-time-title": "Mejora en ciertos tiempos de carga.",
+            "better-time": "Se optimizaron procesos clave en el backend y en la app móvil para reducir los tiempos de respuesta y carga.",
+            "dependetion-system-title": "Migración de dependencias de CocoaPods a Swift Package Manager.",
+            "dependetion-system": "Se migraron las dependencias del proyecto iOS de CocoaPods a Swift Package Manager, simplificando la gestión y reduciendo errores de integración.",
+            "sync-process-title": "Procesos de sincronización de información con el servidor",
+            "sync-process": "Se desarrollaron mecanismos de sincronización para asegurar que la app funcione correctamente incluso sin conexión, actualizando datos al recuperar la red."
+        },
+        "shopping-expense-web": {
+            "new-web-title": "Creación de nueva versión web.",
+            "new-web": "Se desarrolló una nueva versión de la aplicación web, modernizando su estructura y mejorando la mantenibilidad y escalabilidad del código.",
+            "implementation-frameworks-title": "Implementación de Angular Material en componentes.",
+            "implementation-frameworks": "Se integraron componentes de Angular Material, como tablas con paginación, mejorando la experiencia de usuario y la consistencia del diseño.",
+            "migration-request-title": "Conexión de la request con el nuevo backend.",
+            "migration-request": "Se adaptó la lógica de comunicación para que la aplicación web consuma el nuevo backend, asegurando la integridad de los datos y el correcto funcionamiento del sistema.",
+            "deploy-version-title": "Despliegue de la nueva versión en el servidor.",
+            "deploy-version": "Se realizó la puesta en producción del nuevo sistema web, asegurando su disponibilidad para los usuarios y supervisando su correcto funcionamiento."
+        },
+        "console-encodemx-web": {
+            "admin-user-title": "Funciones para administrar usuarios de la aplicación.",
+            "admin-user": "Se desarrollaron funciones clave de gestión de usuarios, incluyendo validación de suscripciones, verificación de compras, recuperación de contraseñas, restauración de cuentas eliminadas y modificación de suscripciones activas.",
+            "admin-database-title": "Funciones administrativas de base de datos.",
+            "admin-database": "Se implementaron herramientas para operaciones avanzadas como la copia completa de información entre bases de datos y la exportación total de los datos de un usuario específico.",
+            "new-backend-title": "Creación de un nuevo backend más moderno",
+            "new-backend": "Se desarrolló un backend completamente nuevo con tecnologías actuales, mejorando la arquitectura general, la seguridad y el rendimiento del sistema.",
+            "cron-job-title": "Trabajos cronometrados para validar compras de usuarios cada cierto tiempo",
+            "cron-job": "Se implementaron tareas automatizadas (cron jobs) para validar periódicamente las compras de los usuarios, garantizando la vigencia de los accesos y servicios."
+        },
+        "productivity-web": {
+            "proyect-requirements-title": "Levantamiento de requerimientos generales del proyecto.",
+            "proyect-requirements": "Se realizó un análisis detallado para definir los requerimientos funcionales y no funcionales del sistema, alineando las necesidades del cliente con los objetivos técnicos del proyecto.",
+            "database-title": "Creación de la base de datos y análisis de requerimientos técnicos.",
+            "database": "Se diseñó e implementó la estructura de base de datos a partir del análisis de los flujos de información y relaciones entre entidades.",
+            "interfaz-desing-title": "Creación de interfaz y diseño.",
+            "interfaz-desing": "Se desarrolló la interfaz de usuario con enfoque en experiencia, usabilidad y adaptación visual para distintos dispositivos.",
+            "backend-title": "Creación del backend y despliegue.",
+            "backend": "Se construyó el backend para gestionar la lógica, el manejo de datos y la seguridad, y se desplegó en el servidor correspondiente.",
+            "deploy-web-title": "Despliegue de la versión web.",
+            "deploy-web": "Se publicó la aplicación web en el entorno de producción, garantizando su disponibilidad para los usuarios finales.",
+            "request-backend-title": "Realizar solicitudes con el backend.",
+            "request-backend": "Se conectó la interfaz con el backend, permitiendo la transmisión y recepción de datos entre cliente y servidor de forma fluida y segura."
+        },
+        "daily-expenses-4-web": {
+            "clean-code-title": "Reestructuración de código y correcciones.",
+            "clean-code": "Se realizó una reorganización profunda del código para mejorar la legibilidad, mantenimiento y rendimiento, corrigiendo errores detectados.",
+            "migration-request-title": "Migración de requests a un nuevo API",
+            "migration-request": "Se adaptaron las solicitudes del sistema para consumir un nuevo API, asegurando compatibilidad y mejor rendimiento.",
+            "imlements-web-socket-title": "Migración del sistema de requests a WebSocket.",
+            "imlements-web-socket": "Se implementó la comunicación mediante WebSocket para optimizar la interacción en tiempo real entre cliente y servidor.",
+            "multi-currency-title": "Función de multimoneda con cálculos.",
+            "multi-currency": "Se desarrolló una función que permite manejar múltiples monedas, realizando conversiones y cálculos automáticos dentro del sistema.",
+            "support-title": "Corrección de reportes de errores de usuarios y soporte.",
+            "support": "Se atendieron y resolvieron errores reportados por usuarios, mejorando la estabilidad y usabilidad del sistema.",
+            "custom-components-title": "Creación de nuevos componentes personalizados con nuevas funciones.",
+            "custom-components": "Se diseñaron e implementaron componentes personalizados que incorporan funcionalidades específicas, adaptadas a las necesidades del proyecto."
         }
     },
     "random-text": {
