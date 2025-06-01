@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
-import { Develpments, ProfileData, Project, typeProject } from '../../../../utils/interface/general.interface';
+import { ProfileData, Project, typeProject } from '../../../../utils/interface/general.interface';
 import { CommonModule } from '@angular/common';
 import { AppService } from '../../../../app.service';
 import { TranslateModule } from '@ngx-translate/core';
+import { Develoments } from '../../../../utils/interface/develoments';
 
 @Component({
   selector: 'app-container-application',
@@ -55,7 +56,7 @@ export class ContainerApplicationComponent implements OnInit {
   }
   
   private getFullName() {
-    this.profile = new Develpments().informationDev(this.name);
+    this.profile = new Develoments().informationDev(this.name);
     const selectCompany = this.profile.companies.find(row => row.name == this.company);
     const selectedProject = selectCompany?.projects.find(row => row.name == this.project);
 

@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router, RouterLinkWithHref, RouterModule } from '@angular/router';
-import { Develpments, ProfileData, Project, typeProject } from '../../../utils/interface/general.interface';
+import { ProfileData, Project, typeProject } from '../../../utils/interface/general.interface';
 import { CommonModule } from '@angular/common';
 import { ContainerApplicationComponent } from './container-application/container-application.component';
 import { ContainerMovilComponent } from './container-movil/container-movil.component';
 import { ContainerWebDesktopComponent } from './container-web-desktop/container-web-desktop.component';
 import { AppService } from '../../../app.service';
 import { Observable, Subject, Subscription } from 'rxjs';
+import { Develoments } from '../../../utils/interface/develoments';
 
 @Component({
   selector: 'app-aplication',
@@ -80,7 +81,7 @@ export class AplicationComponent {
   }
   
   private getFullName(): void {
-    this.profile = new Develpments().informationDev(this.name);
+    this.profile = new Develoments().informationDev(this.name);
     const selectCompany = this.profile.companies.find(row => row.name == this.company);
     const selectedProject = selectCompany?.projects.find(row => row.name == this.project);
 

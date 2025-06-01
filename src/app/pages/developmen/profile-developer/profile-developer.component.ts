@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
-import { Company, Develpments, ProfileData, Project } from '../../../utils/interface/general.interface';
+import { Company, ProfileData, Project } from '../../../utils/interface/general.interface';
 import { CommonModule } from '@angular/common';
 import { AppService } from '../../../app.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { LocalStorageManager } from '../../../utils/localStorageManager';
+import { Develoments } from '../../../utils/interface/develoments';
 
 @Component({
   selector: 'app-profile-developer',
@@ -51,6 +52,6 @@ export class ProfileDeveloperComponent implements OnInit {
 
   private getFullName() {
     
-    this.profile = new Develpments().informationDev(this.currentName);
+    this.profile = new Develoments().informationDev(this.currentName);
   }
 }

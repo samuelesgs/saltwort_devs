@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
-import { Develpments, ProfileData, Project, typeProject } from '../../../../utils/interface/general.interface';
+import { ProfileData, Project, typeProject } from '../../../../utils/interface/general.interface';
 import { AppService } from '../../../../app.service';
 import { Subscription } from 'rxjs';
+import { Develoments } from '../../../../utils/interface/develoments';
 
 @Component({
   selector: 'app-container-movil',
@@ -76,7 +77,7 @@ export class ContainerMovilComponent {
     }
 
   private getFullName(): void {
-      this.profile = new Develpments().informationDev(this.name);
+      this.profile = new Develoments().informationDev(this.name);
       const selectCompany = this.profile.companies.find(row => row.name == this.company);
       const selectedProject = selectCompany?.projects.find(row => row.name == this.project);
   
