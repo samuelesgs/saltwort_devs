@@ -103,7 +103,15 @@
             "project-detail-shopping-expense-samuel": "Proyecto de funcionalidad o herramienta diseñada para registrar, de manera sistemática y organizada, toda la información relevante sobre la entrada de datos en un proyecto. Permite gestionar y almacenar detalles específicos de cada ingreso, asegurando precisión y trazabilidad. Este sistema facilita la administración y el seguimiento de los datos ingresados, optimizando el flujo de trabajo y brindando soporte en la toma de decisiones al permitir una visión clara y actualizada del progreso en el proyecto.",
             "revelant-skills-shopping-expenses-samuel": "Creacion de proyecto",
             "project-detail-daily-expenses-samuel": "Capturador de ingreso en proyecto",
-            "revelant-skills-daily-expenses-samuel": "Creacion de proyecto"
+            "revelant-skills-daily-expenses-samuel": "Creacion de proyecto",
+            "project-name-zeus": "ZEUS",
+            "project-detail-zeus": "Implementación eficiente del seguimiento y resolución de tickets de soporte, integrando automatización para la actualización y control automático del estado de los folios, optimizando tiempos de respuesta y mejorando la trazabilidad de las incidencias.",
+            "project-name-sisap": "SISAP",
+            "project-detail-sisap": "PENDIENTE",
+            "project-name-blueboard": "BLUE BOARD",
+            "project-detail-blueboard": "PENDIENTE",
+            "project-name-gamstore": "GAMSTORE",
+            "project-detail-gamstore": "PENDIENTE"
         }
     },
     "project-relevance": {
@@ -120,8 +128,6 @@
             "skeletons-loaders": "Se integraron skeletons como indicadores visuales durante la carga de contenido, mejorando la percepción de velocidad del sitio."
         },
         "shopping-expense-ios": {
-            "new-backend-title": "Creación de nuevo backend y ejecución en el servidor.",
-            "new-backend": "Se desarrolló un nuevo backend desde cero y se implementó en el servidor, brindando una base sólida y escalable para el funcionamiento de la aplicación.",
             "migration-request-title": "Migración de requests en la versión móvil iOS.",
             "migration-request": "Se adaptaron y migraron las peticiones de red en la versión móvil iOS para asegurar compatibilidad y estabilidad con el nuevo backend.",
             "backup-system-title": "Sistema de respaldos en formato JSON.",
@@ -135,13 +141,43 @@
             "sync-process-title": "Procesos de sincronización de información con el servidor",
             "sync-process": "Se desarrollaron mecanismos de sincronización para asegurar que la app funcione correctamente incluso sin conexión, actualizando datos al recuperar la red."
         },
+        "shopping-expenses-android": {
+            "title-subscription": "Implementación de suscripciones.",
+            "detail-subscription": "Se implementó la librería Google Play Billing para habilitar la compra de suscripciones mensuales y anuales por parte de los usuarios.",
+            "title-profile-user": "Creación de sección de perfil.",
+            "detail-profile-user": "Se desarrolló una sección destinada a la gestión del perfil del usuario y la visualización de los detalles de sus suscripciones.",
+            "title-mangment-group": "Sección de gestión de usuarios.",
+            "detail-mangment-group": "Se creó una sección que permite la administración de usuarios por proyecto, facilitando la gestión multiusuario y el intercambio de información entre ellos.",
+            "title-connect-backend": "Conexión de aplicación con backend.",
+            "description-connect-backend": "Se estableció la sincronización de la información local con la base de datos del servidor, lo que permitió a los usuarios acceder a sus datos de forma asincrónica desde múltiples dispositivos.",
+            "title-change-model-room": "Migración a Room Database.",
+            "detail-change-model-room": "Se realizó la migración desde un sistema basado en Cursor a Room Database, implementando los ajustes necesarios para habilitar la sincronización entre dispositivos.",
+            "title-change-model-backups": "Migración del modelo de respaldos (locales y en línea).",
+            "detail-change-model-backups": "Se mejoró el mecanismo de creación y manejo de respaldos tanto locales como en la nube, proporcionando mayor seguridad y facilidad de uso para los usuarios.",
+            "title-backup-system": "Sistema de respaldos en formato JSON.",
+            "detail-backend-system": "Se implementó un sistema automático de respaldos en formato JSON, permitiendo la recuperación de datos ante fallos o pérdida de información.",
+            "title-migration-backend": "Migración del modelo de peticiones en Android.",
+            "description-migration-backend": "Se llevó a cabo la migración al nuevo modelo de backend, como parte de la segunda versión del sistema y la adopción de NestJS, lo cual incrementó la eficiencia en la sincronización de datos.",
+            "title-update-gradle": "Actualización de librerías en Gradle.",
+            "detail-update-gradle": "Se actualizaron las versiones de las librerías utilizadas en el proyecto, gestionadas mediante Gradle, para asegurar mejoras de compatibilidad y rendimiento.",
+            "title-managment-information": "Optimización del procesamiento de información.",
+            "detail-managment-information": "Se realizaron mejoras significativas en el procesamiento de datos, reduciendo hasta en un 40% el tiempo de espera de los usuarios al interactuar con la aplicación.",
+            "title-local-sync": "Gestión de almacenamiento local.",
+            "detail-local-sync": "Se adoptó un nuevo modelo para el almacenamiento local y la sincronización con servicios REST, lo cual mejoró la organización del código, el rendimiento en el manejo de datos y permitió la operación sin conexión.",
+            "title-library-graph": "Librería para visualización de gráficos.",
+            "detail-library-graph": "Se integró una librería especializada para la representación gráfica de la información del usuario, facilitando la interpretación visual de los datos presentados."
+        },
         "shopping-expense-web": {
             "new-web-title": "Creación de nueva versión web.",
-            "new-web": "Se desarrolló una nueva versión de la aplicación web, modernizando su estructura y mejorando la mantenibilidad y escalabilidad del código.",
+            "new-web": "Se desarrolló una nueva versión de la aplicación web, modernizando su estructura, haciendo su mantenimiento mas sencillo, estableciendo clean code y buenas practicas.",
+            "title-create-model-sync": "Diseño del modelo de sincronización inicial y actual.",
+            "detail-create-model-sync": "Se llevó a cabo la planificación y el análisis del modelo de sincronización entre dispositivos móviles, plataforma web, backend y base de datos, permitiendo la transmisión de información en tiempo real, así como el funcionamiento sin conexión y la sincronización de datos desde múltiples fuentes.",
+            "new-backend-title": "Creación de nuevo backend y ejecución en el servidor.",
+            "new-backend": "Se desarrolló un nuevo backend desde cero y se implementó en el servidor, brindando una base sólida y escalable para el funcionamiento de la aplicación.",
             "implementation-frameworks-title": "Implementación de Angular Material en componentes.",
-            "implementation-frameworks": "Se integraron componentes de Angular Material, como tablas con paginación, mejorando la experiencia de usuario y la consistencia del diseño.",
+            "implementation-frameworks": "Se integraro el framework de Angular Material, en algunas de estas tablas con paginación, mejorando la experiencia de usuario y diseño mas amigable.",
             "migration-request-title": "Conexión de la request con el nuevo backend.",
-            "migration-request": "Se adaptó la lógica de comunicación para que la aplicación web consuma el nuevo backend, asegurando la integridad de los datos y el correcto funcionamiento del sistema.",
+            "migration-request": "Se adaptó la lógica de comunicación entre backend web y movil, asegurando la integridad de los datos y el correcto funcionamiento del sistema.",
             "deploy-version-title": "Despliegue de la nueva versión en el servidor.",
             "deploy-version": "Se realizó la puesta en producción del nuevo sistema web, asegurando su disponibilidad para los usuarios y supervisando su correcto funcionamiento."
         },

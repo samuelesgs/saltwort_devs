@@ -135,6 +135,7 @@ export class InformationAksel {
     private get getShoppingExpensesArchivementsWeb() {
         return [
             { title: 'project-relevance.shopping-expense-web.new-web-title', detail: 'project-relevance.shopping-expense-web.new-web', relevance: Relevance.VERY_HIGH, icon: '' },
+            { title: 'project-relevance.shopping-expense-web.new-backend-title', detail: 'project-relevance.shopping-expense-web.new-backend', relevance: Relevance.VERY_HIGH, icon: '' },
             { title: 'project-relevance.shopping-expense-web.implementation-frameworks-title', detail: 'project-relevance.shopping-expense-web.implementation-frameworks', relevance: Relevance.HIGH, icon: '' },
             { title: 'project-relevance.shopping-expense-web.migration-request-title', detail: 'project-relevance.shopping-expense-web.migration-request', relevance: Relevance.VERY_HIGH, icon: '' },
             { title: 'project-relevance.shopping-expense-web.deploy-version-title', detail: 'project-relevance.shopping-expense-web.deploy-version', relevance: Relevance.HIGH, icon: '' }
@@ -143,7 +144,6 @@ export class InformationAksel {
 
     private get getShoppingExpensesArchivementsMovil() {
         return [
-            { title: 'project-relevance.shopping-expense-ios.new-backend-title', detail: 'project-relevance.shopping-expense-ios.new-backend', relevance: Relevance.VERY_HIGH, icon: '' },
             { title: 'project-relevance.shopping-expense-ios.migration-request-title', detail: 'project-relevance.shopping-expense-ios.migration-request', relevance: Relevance.HIGH, icon: '' },
             { title: 'project-relevance.shopping-expense-ios.backup-system-title', detail: 'project-relevance.shopping-expense-ios.backup-system', relevance: Relevance.HIGH, icon: '' },
             { title: 'project-relevance.shopping-expense-ios.support-app-title', detail: 'project-relevance.shopping-expense-ios.support-app', relevance: Relevance.MEDIUM, icon: '' },
@@ -335,7 +335,7 @@ export class InformationAksel {
         return {
             id: 5,
             platforms: this.getPlatformDailyExpenses4,
-            name: 'Gastos diarios 4 web',
+            name: 'Gastos diarios 4',
             detail: 'specific-project.properties.project-detail-encode-aksel',
             relevantSkills: ["specific-project.properties.revelant-skills-encode-aksel"],
             tools: ["angular", "nestjs", "nodejs", "typescript"],

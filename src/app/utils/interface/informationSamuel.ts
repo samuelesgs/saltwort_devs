@@ -2,8 +2,8 @@ import { ProfileData, Relevance, typeProject } from "./general.interface";
 
 export class InformationSamuel {
 
-    private data? : ProfileData;
-    
+    private data?: ProfileData;
+
     constructor() {
         this.loadInformation();
     }
@@ -29,9 +29,9 @@ export class InformationSamuel {
 
     private get getCompanies() {
         return [
+            this.getCompaniesNeoris,
             this.getCompaniesEncodemx,
-            this.getCompaniesSaltwort,
-            this.getCompaniesNeoris
+            this.getCompaniesSaltwort
         ];
     }
 
@@ -132,71 +132,217 @@ export class InformationSamuel {
         return {
             name: 'Encodemx',
             projects: [
-                {
-                    id: 1,
-                    name: 'Gastos de compra',
-                    platforms: [
-                        {
-                            typeProject: typeProject.movil,
-                            achievements: this.getAchievementsShoppingExpensesMovil
-                        },
-                        {
-                            typeProject: typeProject.web,
-                            achievements: []
-                        }
-                    ],
-                    detail: 'specific-project.properties.project-detail-shopping-expense-samuel',
-                    relevantSkills: [
-                        "specific-project.properties.revelant-skills-shopping-expenses-samuel",
-                    ],
-                    tools: [
-                        "android",
-                        "angular",
-                        "nestjs"
-                    ],
-                    icon: {
-                        name: 'name',
-                        detail: ' ',
-                        url: 'gcicon',
-                        typeProject: [typeProject.movil]
-                    },
-                    screens: [
-                        ...this.getScreenShoppingExpenses
-                    ]
-                },
-                {
-                    id: 2,
-                    name: 'Gastos diarios 4',
-                    platforms: [
-                        {
-                            typeProject: typeProject.movil,
-                            achievements: []
-                        },
-                        {
-                            typeProject: typeProject.web,
-                            achievements: []
-                        }
-                    ],
-                    detail: 'specific-project.properties.project-detail-daily-expenses-samuel',
-                    relevantSkills: [
-                        "specific-project.properties.revelant-skills-daily-expenses-aksel",
-                    ],
-                    tools: [
-                        "android",
-                        "angular"
-                    ],
-                    icon: {
-                        name: 'name',
-                        detail: 'detail',
-                        url: 'daily_expenses_4',
-                        typeProject: [typeProject.movil]
-                    },
-                    screens: [
-                        ...this.getScreenDailyExpenses
-                    ]
-                }
+                this.getShoppingExpenses,
+                this.getDailyExpenses4,
+                this.getEncodemxWeb,
+                this.getConsoleEncodemx
             ]
         };
+    }
+    
+    private get getEncodemxWeb() {
+        return {
+            id: 1,
+            platforms: this.getPlatformEncodemx,
+            name: 'Encodemx Web',
+            detail: 'specific-project.properties.project-detail-encode-aksel',
+            relevantSkills: ["specific-project.properties.revelant-skills-encode-aksel"],
+            tools: ["angular"],
+            icon: {
+                name: 'name',
+                detail: 'Pagina principal de encode mx donde consultas informacion sobre las aplicaciones ',
+                url: 'encodemx',
+                typeProject: [typeProject.web]
+            },
+            screens: this.getScreenEncodemx
+        };
+    }
+    
+    private get getScreenEncodemx() {
+        return [
+            { name: 'Pagina principal', detail: 'Pagina principal de encode web', url: 'encode/encode1', typeProject: [typeProject.web] },
+            { name: 'Pagina de gastos diarios 2', detail: 'Informacion sobre la aplicación', url: 'encode/encode2', typeProject: [typeProject.web] },
+            { name: 'Gastos diarios 3 principal', detail: 'Observar informacion relevante de la aplicación', url: 'encode/encode3', typeProject: [typeProject.web] },
+            { name: 'Gastos diarios 4 principal', detail: 'Informacion relevante de la aplicacion', url: 'encode/encode4', typeProject: [typeProject.web] },
+            { name: 'Gastos diarios IOS', detail: 'Informacion de la aplicacion', url: 'encode/encode5', typeProject: [typeProject.web] }
+        ];
+    }
+
+        private get getConsoleEncodemx() {
+        return {
+            id: 3,
+            platforms: this.getArchivementsConsoleEncodemx,
+            name: 'Consola encodemx',
+            detail: 'specific-project.properties.project-detail-encode-aksel',
+            relevantSkills: ["specific-project.properties.revelant-skills-encode-aksel"],
+            tools: [
+                "angular",
+                "nestjs",
+            ],
+            icon: {
+                name: 'name',
+                detail: 'Pagina principal de encode mx donde consultas informacion sobre las aplicaciones.',
+                url: 'encodemx',
+                typeProject: [typeProject.web]
+            },
+            screens: this.getScreenConsoleEncodemx
+        };
+    }
+
+    private get getScreenConsoleEncodemx() {
+        return [
+            { name: 'Pantalla de las licencias', detail: 'Las licencias que tienen algunos usuarios de las aplicaciones.', url: 'consoleencode/c2', typeProject: [typeProject.web] },
+            { name: 'Agregar licencia', detail: 'Puedes agregar una licencia y personalizarla.', url: 'consoleencode/c3', typeProject: [typeProject.web] },
+            { name: 'Usuarios', detail: 'Puedes ver los usuarios a forma de tabla, donde lso pueds buscar o limpiar.', url: 'consoleencode/c4', typeProject: [typeProject.web] },
+            { name: 'Consultar usuario', detail: 'Puedes ver los detalles del usuario', url: 'consoleencode/c5', typeProject: [typeProject.web] },
+            { name: 'Edición de suscripción', detail: 'Puedes ver editar la suscripcion de un usuario, pudiendo estableer fecha inicial, fecha final y tipo de suscripcion', url: 'consoleencode/c6', typeProject: [typeProject.web] }
+        ];
+    }
+    
+    private get getArchivementsConsoleEncodemx() {
+        return [
+            {
+                typeProject: typeProject.web,
+                achievements: [
+                    { title: 'project-relevance.console-encodemx-web.admin-user-title', detail: 'project-relevance.console-encodemx-web.admin-user', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.console-encodemx-web.admin-database-title', detail: 'project-relevance.console-encodemx-web.admin-database', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.console-encodemx-web.new-backend-title', detail: 'project-relevance.console-encodemx-web.new-backend', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.console-encodemx-web.cron-job-title', detail: 'project-relevance.console-encodemx-web.cron-job', relevance: Relevance.HIGH, icon: '' }
+                ]
+            }
+        ];
+    }
+
+    private get getPlatformEncodemx() {
+        return [
+            {
+                typeProject: typeProject.web,
+                achievements: [
+                    { title: 'project-relevance.encodemx-web.interface-creation-title', detail: 'project-relevance.encodemx-web.interface-creation', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.encodemx-web.translate-web-title', detail: 'project-relevance.encodemx-web.translate-web', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.encodemx-web.responsive-desing-title', detail: 'project-relevance.encodemx-web.responsive-desing', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.encodemx-web.better-response-title', detail: 'project-relevance.encodemx-web.better-response', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.encodemx-web.skeletons-loaders-title', detail: 'project-relevance.encodemx-web.skeletons-loaders', relevance: Relevance.MEDIUM, icon: '' }
+                ]
+            }
+        ];
+    }
+
+
+    private get getDailyExpenses4() {
+        return {
+            id: 5,
+            platforms: this.getPlatformDailyExpenses4,
+            name: 'Gastos diarios 4',
+            detail: 'specific-project.properties.project-detail-encode-aksel',
+            relevantSkills: ["specific-project.properties.revelant-skills-encode-aksel"],
+            tools: ["angular", "nestjs", "android"],
+            icon: {
+                name: 'name',
+                detail: 'Pagina que apoya a la aplicacion de gastos diarios 4 movil, siendo ua extension de la misma  ',
+                url: 'daily_expenses_4',
+                typeProject: [typeProject.web]
+            },
+            screens: this.getScreenDailyExpenses4
+        }
+    }
+
+    private get getScreenDailyExpenses4() {
+        return [
+            { name: 'Pantalla principal de gastos diarios 4', detail: 'Puedes ver tus datos, en forma de grafica, los ultimos 10 movimientos, el balance de la cuenta, las categorias donde has gastado, etc.', url: 'gd4web/gdweb1', typeProject: [typeProject.web] },
+            { name: 'Movimientos', detail: 'En esta pantalla se muestran tus movimientos ordenados por dia en el mes seleccionado', url: 'gd4web/gdweb2', typeProject: [typeProject.web] },
+            { name: 'Categorias', detail: 'Puedes ver las categorias que puedes usar', url: 'gd4web/gdweb3', typeProject: [typeProject.web] },
+            { name: 'Cuentas ', detail: 'Aqui se muestra como un balance de las cuentas que posees', url: 'gd4web/gdweb4', typeProject: [typeProject.web] },
+            { name: 'Agenda', detail: 'Visualizas un calendario con tu agenda del mes ', url: 'gd4web/gdweb5', typeProject: [typeProject.web] },
+            { name: 'Reportes por fecha', detail: 'Reportes en forma de barras, que puedes organizar por mes ', url: 'gd4web/gdweb6', typeProject: [typeProject.web] },
+            { name: 'Reportes por categoria', detail: 'Reportes en forma de pastel, donde puedes analizar de una manera mas facil tus categorias ', url: 'gd4web/gdweb7', typeProject: [typeProject.web] },
+            { name: 'Categorias en tendencia', detail: 'Las categorias que mas has usado en el mes ', url: 'gd4web/gdweb8', typeProject: [typeProject.web] },
+            { name: 'Presupuesto', detail: 'Presupuesto que tienes para las categorias', url: 'gd4web/gdweb9', typeProject: [typeProject.web] },
+            { name: 'Deudas', detail: 'Personas que te deben, visualizas con una barra para que veas el procentaje de pagado', url: 'gd4web/gdweb10', typeProject: [typeProject.web] },
+            { name: 'Metas', detail: 'Las matas que te propones de ahorrar ', url: 'gd4web/gdweb11', typeProject: [typeProject.web] },
+            { name: 'Registros frecuentes', detail: 'Las categorias que mas frecuentas  ', url: 'gd4web/gdweb12', typeProject: [typeProject.web] },
+            { name: 'Configuraciones', detail: 'Configuraciones y preferencias que puedes establecer para la aplicación', url: 'gd4web/gdweb13', typeProject: [typeProject.web] },
+            { name: 'Perfil de usuario', detail: 'Correo, contraseña, opciones de configuracion ', url: 'gd4web/gdweb14', typeProject: [typeProject.web] }
+        ];
+    }
+
+    private get getPlatformDailyExpenses4() {
+        return [
+            {
+                typeProject: typeProject.web,
+                achievements: [
+                    { title: 'project-relevance.daily-expenses-4-web.clean-code-title', detail: 'project-relevance.daily-expenses-4-web.clean-code', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.daily-expenses-4-web.migration-request-title', detail: 'project-relevance.daily-expenses-4-web.migration-request', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.daily-expenses-4-web.imlements-web-socket-title', detail: 'project-relevance.daily-expenses-4-web.imlements-web-socket', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.daily-expenses-4-web.multi-currency-title', detail: 'project-relevance.daily-expenses-4-web.multi-currency', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.daily-expenses-4-web.support-title', detail: 'project-relevance.daily-expenses-4-web.support', relevance: Relevance.MEDIUM, icon: '' },
+                    { title: 'project-relevance.daily-expenses-4-web.custom-components-title', detail: 'project-relevance.daily-expenses-4-web.custom-components', relevance: Relevance.HIGH, icon: '' }
+                ]
+            }
+        ];
+    }
+
+    private get getShoppingExpenses() {
+        return {
+            id: 1,
+            name: 'Gastos de compra',
+            platforms: this.getArchivimentsShoppingExpenses,
+            detail: 'specific-project.properties.project-detail-shopping-expense-samuel',
+            relevantSkills: [
+                "specific-project.properties.revelant-skills-shopping-expenses-samuel",
+            ],
+            tools: [
+                "android",
+                "angular",
+                "nestjs"
+            ],
+            icon: {
+                name: 'name',
+                detail: ' ',
+                url: 'gcicon',
+                typeProject: [typeProject.movil]
+            },
+            screens: [
+                ...this.getScreenShoppingExpenses
+            ]
+        }
+    }
+
+    private get getArchivimentsShoppingExpenses() {
+        return [
+            { typeProject: typeProject.web, achievements: this.getShoppingExpensesArchivementsWeb },
+            { typeProject: typeProject.movil, achievements: this.getShoppingExpensesArchivementsMovil }
+        ];
+    }
+
+    // --- GET ACHIEVEMENTS ---
+    private get getShoppingExpensesArchivementsWeb() {
+        return [
+            { title: 'project-relevance.shopping-expense-web.new-web-title', detail: 'project-relevance.shopping-expense-web.new-web', relevance: Relevance.VERY_HIGH, icon: '' },
+            { title: 'project-relevance.shopping-expense-web.title-create-model-sync', detail: 'project-relevance.shopping-expense-web.detail-create-model-sync', relevance: Relevance.VERY_HIGH, icon: '' },
+            { title: 'project-relevance.shopping-expense-web.new-backend-title', detail: 'project-relevance.shopping-expense-web.new-backend', relevance: Relevance.VERY_HIGH, icon: '' },
+            { title: 'project-relevance.shopping-expense-web.implementation-frameworks-title', detail: 'project-relevance.shopping-expense-web.implementation-frameworks', relevance: Relevance.VERY_HIGH, icon: '' },
+            { title: 'project-relevance.shopping-expense-web.migration-request-title', detail: 'project-relevance.shopping-expense-web.migration-request', relevance: Relevance.VERY_HIGH, icon: '' },
+            { title: 'project-relevance.shopping-expense-web.deploy-version-title', detail: 'project-relevance.shopping-expense-web.deploy-version', relevance: Relevance.VERY_HIGH, icon: '' }
+        ];
+    }
+
+
+    private get getShoppingExpensesArchivementsMovil() {
+        return [
+            { title: 'project-relevance.shopping-expenses-android.title-subscription', detail: 'project-relevance.shopping-expenses-android.detail-subscription', relevance: Relevance.VERY_HIGH, icon: '' },
+            { title: 'project-relevance.shopping-expenses-android.title-connect-backend', detail: 'project-relevance.shopping-expenses-android.description-connect-backend', relevance: Relevance.VERY_HIGH, icon: '' },
+            { title: 'project-relevance.shopping-expenses-android.title-migration-backend', detail: 'project-relevance.shopping-expenses-android.description-migration-backend', relevance: Relevance.VERY_HIGH, icon: '' },
+            { title: 'project-relevance.shopping-expenses-android.title-profile-user', detail: 'project-relevance.shopping-expenses-android.detail-profile-user', relevance: Relevance.HIGH, icon: '' },
+            { title: 'project-relevance.shopping-expenses-android.title-mangment-group', detail: 'project-relevance.shopping-expenses-android.detail-mangment-group', relevance: Relevance.HIGH, icon: '' },
+            { title: 'project-relevance.shopping-expenses-android.title-change-model-room', detail: 'project-relevance.shopping-expenses-android.detail-change-model-room', relevance: Relevance.HIGH, icon: '' },
+            { title: 'project-relevance.shopping-expenses-android.title-managment-information', detail: 'project-relevance.shopping-expenses-android.detail-managment-information', relevance: Relevance.HIGH, icon: '' },
+            { title: 'project-relevance.shopping-expenses-android.title-local-sync', detail: 'project-relevance.shopping-expenses-android.detail-local-sync', relevance: Relevance.HIGH, icon: '' },
+            { title: 'project-relevance.shopping-expenses-android.title-change-model-backups', detail: 'project-relevance.shopping-expenses-android.detail-change-model-backups', relevance: Relevance.MEDIUM, icon: '' },
+            { title: 'project-relevance.shopping-expenses-android.title-backup-system', detail: 'project-relevance.shopping-expenses-android.detail-backend-system', relevance: Relevance.MEDIUM, icon: '' },
+            { title: 'project-relevance.shopping-expenses-android.title-update-gradle', detail: 'project-relevance.shopping-expenses-android.detail-update-gradle', relevance: Relevance.MEDIUM, icon: '' },
+            { title: 'project-relevance.shopping-expenses-android.title-library-graph', detail: 'project-relevance.shopping-expenses-android.detail-library-graph', relevance: Relevance.MEDIUM, icon: '' }
+        ];
     }
 
     private get getCompaniesSaltwort() {
@@ -220,7 +366,6 @@ export class InformationSamuel {
                         "angular",
                         "figma",
                         "nestjs",
-                        "typescript"
                     ],
                     icon: {
                         name: 'name',
@@ -238,42 +383,133 @@ export class InformationSamuel {
 
     private get getCompaniesNeoris() {
         return {
-            name: "Neoris/Telcel",
+            name: "Neoris->Telcel",
             projects: [
-                {
-                    id: 3,
-                    platforms: [
-                        {
-                            typeProject: typeProject.web,
-                            achievements: []
-                        },
-                        {
-                            typeProject: typeProject.movil,
-                            achievements: []
-                        }
-                    ],
-                    name: '',
-                    detail: '',
-                    relevantSkills: [
-                        ""
-                    ],
-                    tools: [
-                        "angular",
-                        "figma",
-                        "nestjs",
-                        "typescript"
-                    ],
-                    icon: {
-                        name: 'name',
-                        detail: 'Aqui vas a poder administrar tu tiempo y actividades de la mejor manera posible ',
-                        url: 'AP-logo',
-                        typeProject: [typeProject.web]
-                    },
-                    screens: [
-                        ...this.getScreenNeoris
-                    ]
-                }
+                this.getZeus,
+                this.getBlueboard,
+                this.getSisap,
+                this.getGamstore,
             ]
         };
+    }
+
+    private get getZeus() {
+        return {
+            id: 3,
+            platforms: [
+                {
+                    typeProject: typeProject.web,
+                    achievements: []
+                },
+            ],
+            name: 'Zeus',
+            detail: 'specific-project.properties.project-detail-zeus',
+            relevantSkills: [
+                ""
+            ],
+            tools: [
+                "angular",
+                "figma",
+            ],
+            icon: {
+                name: 'name',
+                detail: 'Aqui vas a poder administrar tu tiempo y actividades de la mejor manera posible ',
+                url: 'AP-logo',
+                typeProject: [typeProject.web]
+            },
+            screens: [
+                ...this.getScreenNeoris
+            ]
+        }
+    }
+
+    
+    private get getBlueboard() {
+        return {
+            id: 3,
+            platforms: [
+                {
+                    typeProject: typeProject.movil,
+                    achievements: []
+                },
+            ],
+            name: 'Blueboard',
+            detail: 'specific-project.properties.project-detail-blue-board',
+            relevantSkills: [
+                ""
+            ],
+            tools: [
+                "android",
+            ],
+            icon: {
+                name: 'name',
+                detail: 'PENDIENTE',
+                url: 'AP-logo',
+                typeProject: [typeProject.movil]
+            },
+            screens: [
+                ...this.getScreenNeoris
+            ]
+        }
+    }
+
+    
+    private get getSisap() {
+        return {
+            id: 3,
+            platforms: [
+                {
+                    typeProject: typeProject.movil,
+                    achievements: []
+                },
+            ],
+            name: 'SISAP',
+            detail: 'specific-project.properties.project-detail-sisap',
+            relevantSkills: [
+                ""
+            ],
+            tools: [
+                "android",
+            ],
+            icon: {
+                name: 'name',
+                detail: 'PENDIENTE',
+                url: 'AP-logo',
+                typeProject: [typeProject.movil]
+            },
+            screens: [
+                ...this.getScreenNeoris
+            ]
+        }
+    }
+
+    
+    private get getGamstore() {
+        return {
+            id: 3,
+            platforms: [
+                {
+                    typeProject: typeProject.web,
+                    achievements: []
+                },
+            ],
+            name: 'Gamstore',
+            detail: 'specific-project.properties.project-detail-gamstore',
+            relevantSkills: [
+                ""
+            ],
+            tools: [
+                "android",
+            ],
+            icon: {
+                name: 'name',
+                detail: 'PENDIENTE',
+                url: 'AP-logo',
+                typeProject: [typeProject.web]
+            },
+            screens: [
+                ...this.getScreenNeoris
+            ]
+        }
     }
 }
