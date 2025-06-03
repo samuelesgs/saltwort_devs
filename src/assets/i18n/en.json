@@ -198,6 +198,42 @@
             "support": "User-reported errors were addressed and resolved, improving system stability and usability.",
             "custom-components-title": "Creation of new custom components with new features.",
             "custom-components": "Custom components were designed and implemented with specific functionalities tailored to the project's needs."
+        },
+        "samuel-daily-expenses-4-android": {
+            "title-desing": "XML Design for Android Views",
+            "detail-desing": "The necessary layouts and resource collections were created for the proper functioning of the application.",
+            "title-room": "Room Database Model",
+            "detail-room": "The database model and schema were created using Room for local data persistence.",
+            "title-sync": "Synchronization Model – Versions v1, v2, and v3",
+            "detail-sync": "The synchronization model was designed and developed for backend versions v1, v2, and v3, starting from scratch and evolving into a scalable version optimized for handling large volumes of data.",
+            "title-managment-reports": "Report Management",
+            "detail-managment-reports": "Classes were developed to manage various types of reports within the application, considering the specific logic of each report screen.",
+            "title-subscription": "Subscription Implementation",
+            "detail-subscription": "Google Play Billing was integrated to enable users to purchase monthly and annual subscriptions.",
+            "title-mangment-multi-account": "Multi-Account Management",
+            "detail-mangment-multi-account": "Functionality was implemented to manage multiple accounts within the application, allowing users to handle and compare them.",
+            "title-mangment-photo": "Image Handling",
+            "detail-mangment-photo": "Logic was added for uploading and synchronizing user-provided images, both individually and in bulk."
+        },
+        "samuel-daily-expenses-4-web": {
+            "title-database": "Database Modeling and Management",
+            "detail-database": "Analysis and design were carried out for the creation, maintenance, and modification of the project’s database.",
+            "title-backend": "Backend Development (Versions 1 to 3)",
+            "detail-backend": "In collaboration with the development team, the PHP backend was created with CRUD functionality for both the web and mobile versions, including improvements to the synchronization model.",
+            "title-frequent-operations": "Online Frequent Records",
+            "detail-frequent-operations": "An internal backend model was developed for managing and generating frequent records automatically.",
+            "title-purchased-php": "Subscription Management with Google Play Billing (PHP)",
+            "detail-purchased-php": "Subscription renewals were implemented using sockets and Google Play Billing, extending access time via PHP.",
+            "title-purchased-nestjs": "Subscription Management with Google Play Billing (NestJS)",
+            "detail-purchased-nestjs": "Subscription renewal functionality was implemented using sockets, this time with the NestJS framework for the backend.",
+            "title-bugs": "Production Version Bug Fixes",
+            "detail-bugs": "Bugs reported by users in the initial production release were fixed.",
+            "title-improvements": "Visual and Responsive Improvements",
+            "detail-improvements": "Design improvements requested by the designer were implemented across multiple web components.",
+            "title-sync": "Backend and Frontend Synchronization",
+            "detail-sync": "Enhancements were made to the data loading and synchronization logic between the backend and the web interface.",
+            "title-responsive": "Responsive Design",
+            "detail-responsive": "Responsive design was incorporated to support optimal use on tablets and mobile devices."
         }
     },
     "random-text": {

@@ -139,7 +139,7 @@ export class InformationSamuel {
             ]
         };
     }
-    
+
     private get getEncodemxWeb() {
         return {
             id: 1,
@@ -157,7 +157,7 @@ export class InformationSamuel {
             screens: this.getScreenEncodemx
         };
     }
-    
+
     private get getScreenEncodemx() {
         return [
             { name: 'Pagina principal', detail: 'Pagina principal de encode web', url: 'encode/encode1', typeProject: [typeProject.web] },
@@ -168,7 +168,7 @@ export class InformationSamuel {
         ];
     }
 
-        private get getConsoleEncodemx() {
+    private get getConsoleEncodemx() {
         return {
             id: 3,
             platforms: this.getArchivementsConsoleEncodemx,
@@ -198,7 +198,7 @@ export class InformationSamuel {
             { name: 'Edición de suscripción', detail: 'Puedes ver editar la suscripcion de un usuario, pudiendo estableer fecha inicial, fecha final y tipo de suscripcion', url: 'consoleencode/c6', typeProject: [typeProject.web] }
         ];
     }
-    
+
     private get getArchivementsConsoleEncodemx() {
         return [
             {
@@ -236,7 +236,7 @@ export class InformationSamuel {
             name: 'Gastos diarios 4',
             detail: 'specific-project.properties.project-detail-encode-aksel',
             relevantSkills: ["specific-project.properties.revelant-skills-encode-aksel"],
-            tools: ["angular", "nestjs", "android"],
+            tools: ["angular", "nestjs", "android", "php"],
             icon: {
                 name: 'name',
                 detail: 'Pagina que apoya a la aplicacion de gastos diarios 4 movil, siendo ua extension de la misma  ',
@@ -262,7 +262,15 @@ export class InformationSamuel {
             { name: 'Metas', detail: 'Las matas que te propones de ahorrar ', url: 'gd4web/gdweb11', typeProject: [typeProject.web] },
             { name: 'Registros frecuentes', detail: 'Las categorias que mas frecuentas  ', url: 'gd4web/gdweb12', typeProject: [typeProject.web] },
             { name: 'Configuraciones', detail: 'Configuraciones y preferencias que puedes establecer para la aplicación', url: 'gd4web/gdweb13', typeProject: [typeProject.web] },
-            { name: 'Perfil de usuario', detail: 'Correo, contraseña, opciones de configuracion ', url: 'gd4web/gdweb14', typeProject: [typeProject.web] }
+            { name: 'Perfil de usuario', detail: 'Correo, contraseña, opciones de configuracion ', url: 'gd4web/gdweb14', typeProject: [typeProject.web] },
+            { name: 'Pantalla de inicio', detail: 'Resumen de gastos diarios y acceso rápido a opciones.', url: 'gd/gd1', typeProject: [typeProject.movil] },
+            { name: 'Registro de gasto', detail: 'Formulario para ingresar nuevos gastos con categorías.', url: 'gd/gd2', typeProject: [typeProject.movil] },
+            { name: 'Gráficas de análisis', detail: 'Visualización de estadísticas de gasto por categoría.', url: 'gd/gd3', typeProject: [typeProject.movil] },
+            { name: 'Perfil de usuario', detail: 'Correo, contraseña, opciones de configuración.', url: 'gd/gd4', typeProject: [typeProject.movil] },
+            { name: 'Selección de cuenta', detail: 'Cambio entre cuentas múltiples registradas por el usuario.', url: 'gd/gd5', typeProject: [typeProject.movil] },
+            { name: 'Suscripciones', detail: 'Vista para activar o renovar suscripciones premium.', url: 'gd/gd6', typeProject: [typeProject.movil] },
+            { name: 'Historial de transacciones', detail: 'Listado detallado de todos los movimientos registrados.', url: 'gd/gd7', typeProject: [typeProject.movil] },
+            { name: 'Pantalla de sincronización', detail: 'Sincronización manual con la base de datos en la nube.', url: 'gd/gd8', typeProject: [typeProject.movil] }
         ];
     }
 
@@ -270,13 +278,29 @@ export class InformationSamuel {
         return [
             {
                 typeProject: typeProject.web,
+                achievements:
+                    [
+                        { title: 'project-relevance.samuel-daily-expenses-4-web.title-backend', detail: 'project-relevance.samuel-daily-expenses-4-web.detail-backend', relevance: Relevance.VERY_HIGH, icon: '' },
+                        { title: 'project-relevance.samuel-daily-expenses-4-web.title-database', detail: 'project-relevance.samuel-daily-expenses-4-web.detail-database', relevance: Relevance.HIGH, icon: '' },
+                        { title: 'project-relevance.samuel-daily-expenses-4-web.title-purchased-php', detail: 'project-relevance.samuel-daily-expenses-4-web.detail-purchased-php', relevance: Relevance.HIGH, icon: '' },
+                        { title: 'project-relevance.samuel-daily-expenses-4-web.title-purchased-nestjs', detail: 'project-relevance.samuel-daily-expenses-4-web.detail-purchased-nestjs', relevance: Relevance.HIGH, icon: '' },
+                        { title: 'project-relevance.samuel-daily-expenses-4-web.title-sync', detail: 'project-relevance.samuel-daily-expenses-4-web.detail-sync', relevance: Relevance.HIGH, icon: '' },
+                        { title: 'project-relevance.samuel-daily-expenses-4-web.title-responsive', detail: 'project-relevance.samuel-daily-expenses-4-web.detail-responsive', relevance: Relevance.HIGH, icon: '' },
+                        { title: 'project-relevance.samuel-daily-expenses-4-web.title-frequent-operations', detail: 'project-relevance.samuel-daily-expenses-4-web.detail-frequent-operations', relevance: Relevance.MEDIUM, icon: '' },
+                        { title: 'project-relevance.samuel-daily-expenses-4-web.title-bugs', detail: 'project-relevance.samuel-daily-expenses-4-web.detail-bugs', relevance: Relevance.MEDIUM, icon: '' },
+                        { title: 'project-relevance.samuel-daily-expenses-4-web.title-improvements', detail: 'project-relevance.samuel-daily-expenses-4-web.detail-improvements', relevance: Relevance.MEDIUM, icon: '' }
+                    ]
+            },
+            {
+                typeProject: typeProject.movil,
                 achievements: [
-                    { title: 'project-relevance.daily-expenses-4-web.clean-code-title', detail: 'project-relevance.daily-expenses-4-web.clean-code', relevance: Relevance.VERY_HIGH, icon: '' },
-                    { title: 'project-relevance.daily-expenses-4-web.migration-request-title', detail: 'project-relevance.daily-expenses-4-web.migration-request', relevance: Relevance.VERY_HIGH, icon: '' },
-                    { title: 'project-relevance.daily-expenses-4-web.imlements-web-socket-title', detail: 'project-relevance.daily-expenses-4-web.imlements-web-socket', relevance: Relevance.VERY_HIGH, icon: '' },
-                    { title: 'project-relevance.daily-expenses-4-web.multi-currency-title', detail: 'project-relevance.daily-expenses-4-web.multi-currency', relevance: Relevance.HIGH, icon: '' },
-                    { title: 'project-relevance.daily-expenses-4-web.support-title', detail: 'project-relevance.daily-expenses-4-web.support', relevance: Relevance.MEDIUM, icon: '' },
-                    { title: 'project-relevance.daily-expenses-4-web.custom-components-title', detail: 'project-relevance.daily-expenses-4-web.custom-components', relevance: Relevance.HIGH, icon: '' }
+                    { title: 'project-relevance.samuel-daily-expenses-4-android.title-sync', detail: 'project-relevance.samuel-daily-expenses-4-android.detail-sync', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.samuel-daily-expenses-4-android.title-desing', detail: 'project-relevance.samuel-daily-expenses-4-android.detail-desing', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.samuel-daily-expenses-4-android.title-room', detail: 'project-relevance.samuel-daily-expenses-4-android.detail-room', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.samuel-daily-expenses-4-android.title-subscription', detail: 'project-relevance.samuel-daily-expenses-4-android.detail-subscription', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.samuel-daily-expenses-4-android.title-managment-reports', detail: 'project-relevance.samuel-daily-expenses-4-android.detail-managment-reports', relevance: Relevance.MEDIUM, icon: '' },
+                    { title: 'project-relevance.samuel-daily-expenses-4-android.title-mangment-multi-account', detail: 'project-relevance.samuel-daily-expenses-4-android.detail-mangment-multi-account', relevance: Relevance.MEDIUM, icon: '' },
+                    { title: 'project-relevance.samuel-daily-expenses-4-android.title-mangment-photo', detail: 'project-relevance.samuel-daily-expenses-4-android.detail-mangment-photo', relevance: Relevance.MEDIUM, icon: '' }
                 ]
             }
         ];
@@ -300,7 +324,7 @@ export class InformationSamuel {
                 name: 'name',
                 detail: ' ',
                 url: 'gcicon',
-                typeProject: [typeProject.movil]
+                typeProject: [typeProject.movil, typeProject.web]
             },
             screens: [
                 ...this.getScreenShoppingExpenses
@@ -423,7 +447,7 @@ export class InformationSamuel {
         }
     }
 
-    
+
     private get getBlueboard() {
         return {
             id: 3,
@@ -453,7 +477,7 @@ export class InformationSamuel {
         }
     }
 
-    
+
     private get getSisap() {
         return {
             id: 3,
@@ -483,7 +507,7 @@ export class InformationSamuel {
         }
     }
 
-    
+
     private get getGamstore() {
         return {
             id: 3,

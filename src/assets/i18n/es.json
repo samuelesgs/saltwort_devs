@@ -218,6 +218,42 @@
             "support": "Se atendieron y resolvieron errores reportados por usuarios, mejorando la estabilidad y usabilidad del sistema.",
             "custom-components-title": "Creación de nuevos componentes personalizados con nuevas funciones.",
             "custom-components": "Se diseñaron e implementaron componentes personalizados que incorporan funcionalidades específicas, adaptadas a las necesidades del proyecto."
+        },
+        "samuel-daily-expenses-4-android": {
+            "title-desing": "Diseño en XML para vistas de Android",
+            "detail-desing": "Se crearon los diseños y colecciones necesarias para el funcionamiento de la aplicación.",
+            "title-room": "Modelo con Room Database",
+            "detail-room": "Se creó el modelo y esquema de base de datos utilizando Room para la persistencia local.",
+            "title-sync": "Modelo de sincronización – versiones v1, v2 y v3",
+            "detail-sync": "Se diseñó y desarrolló el modelo de sincronización para las versiones v1, v2 y v3 del backend, comenzando desde cero hasta una versión escalable, optimizada para manejar grandes volúmenes de datos.",
+            "title-managment-reports": "Manejo de reportes",
+            "detail-managment-reports": "Se desarrollaron clases para la gestión de diferentes tipos de reportes en la aplicación, considerando las diversas pantallas y su funcionalidad particular.",
+            "title-subscription": "Implementación de suscripciones",
+            "detail-subscription": "Se integró Google Play Billing para habilitar la compra de suscripciones mensuales y anuales por parte de los usuarios.",
+            "title-mangment-multi-account": "Gestión de múltiples cuentas",
+            "detail-mangment-multi-account": "Se implementó la funcionalidad para manejar múltiples cuentas dentro de la aplicación, permitiendo su administración y comparación.",
+            "title-mangment-photo": "Manejo de imágenes",
+            "detail-mangment-photo": "Se añadió lógica para la carga y sincronización de imágenes proporcionadas por los usuarios, tanto de forma individual como sincronizada."
+        },
+        "samuel-daily-expenses-4-web": {
+            "title-database": "Modelo y gestión de base de datos",
+            "detail-database": "Se realizó un análisis y diseño para la creación, mantenimiento y modificación de la base de datos del proyecto.",
+            "title-backend": "Desarrollo de backend (versiones 1 a 3)",
+            "detail-backend": "En conjunto con el equipo de desarrollo, se creó el backend en PHP con funcionalidades CRUD para las versiones web y móvil, incluyendo mejoras en el modelo de sincronización.",
+            "title-frequent-operations": "Registros frecuentes en línea",
+            "detail-frequent-operations": "Se desarrolló un modelo interno en el backend para la gestión y creación de registros frecuentes de forma automática.",
+            "title-purchased-php": "Gestión de suscripciones con Google Play Billing (PHP)",
+            "detail-purchased-php": "Se implementó la renovación de suscripciones mediante sockets, utilizando Google Play Billing y lenguaje PHP para la extensión automática del tiempo.",
+            "title-purchased-nestjs": "Gestión de suscripciones con Google Play Billing (NestJS)",
+            "detail-purchased-nestjs": "Se replicó la funcionalidad de renovación de suscripciones con sockets, utilizando el framework NestJS para el backend.",
+            "title-bugs": "Corrección de versión productiva",
+            "detail-bugs": "Se corrigieron errores reportados por usuarios en la versión inicial en producción.",
+            "title-improvements": "Mejoras visuales y responsivas",
+            "detail-improvements": "Se implementaron mejoras solicitadas por el diseñador en varios componentes de la interfaz web.",
+            "title-sync": "Sincronización entre backend y frontend",
+            "detail-sync": "Se realizaron mejoras en la lógica de carga y sincronización de datos entre el backend y la interfaz web.",
+            "title-responsive": "Diseño responsivo",
+            "detail-responsive": "Se adaptó el diseño para un uso óptimo en tablets y dispositivos móviles."
         }
     },
     "random-text": {
