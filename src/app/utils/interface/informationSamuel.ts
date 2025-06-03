@@ -204,10 +204,10 @@ export class InformationSamuel {
             {
                 typeProject: typeProject.web,
                 achievements: [
-                    { title: 'project-relevance.console-encodemx-web.admin-user-title', detail: 'project-relevance.console-encodemx-web.admin-user', relevance: Relevance.VERY_HIGH, icon: '' },
-                    { title: 'project-relevance.console-encodemx-web.admin-database-title', detail: 'project-relevance.console-encodemx-web.admin-database', relevance: Relevance.HIGH, icon: '' },
-                    { title: 'project-relevance.console-encodemx-web.new-backend-title', detail: 'project-relevance.console-encodemx-web.new-backend', relevance: Relevance.VERY_HIGH, icon: '' },
-                    { title: 'project-relevance.console-encodemx-web.cron-job-title', detail: 'project-relevance.console-encodemx-web.cron-job', relevance: Relevance.HIGH, icon: '' }
+                    { title: 'project-relevance.samuel-console-encodemx-web.title-crud-usuarios', detail: 'project-relevance.samuel-console-encodemx-web.detail-crud-usuarios', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.samuel-console-encodemx-web.title-migracion-respaldos', detail: 'project-relevance.samuel-console-encodemx-web.detail-migracion-respaldos', relevance: Relevance.MEDIUM, icon: '' },
+                    { title: 'project-relevance.samuel-console-encodemx-web.title-manejo-compras-v3', detail: 'project-relevance.samuel-console-encodemx-web.detail-manejo-compras-v3', relevance: Relevance.MEDIUM, icon: '' },
+                    { title: 'project-relevance.samuel-console-encodemx-web.title-migracion-datos-qa', detail: 'project-relevance.samuel-console-encodemx-web.detail-migracion-datos-qa', relevance: Relevance.MEDIUM, icon: '' },
                 ]
             }
         ];

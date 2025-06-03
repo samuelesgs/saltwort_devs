@@ -254,6 +254,16 @@
             "detail-sync": "Se realizaron mejoras en la lógica de carga y sincronización de datos entre el backend y la interfaz web.",
             "title-responsive": "Diseño responsivo",
             "detail-responsive": "Se adaptó el diseño para un uso óptimo en tablets y dispositivos móviles."
+        },
+        "samuel-console-encodemx-web": {
+            "title-migracion-respaldos": "Incorporación de migración de respaldos",
+            "detail-migracion-respaldos": "Se implementó la migración de respaldos para asegurar la integridad y disponibilidad de la información.",
+            "title-manejo-compras-v3": "Manejo y visualización de compras versión 3",
+            "detail-manejo-compras-v3": "Se gestionaron las compras y se habilitó la visualización de información de compras en la versión 3.",
+            "title-migracion-datos-qa": "Migración de datos a base de datos QA",
+            "detail-migracion-datos-qa": "Se migraron los datos de la versión productiva a la base de datos QA para gastos diarios 4.",
+            "title-crud-usuarios": "Implementación de CRUD para usuarios",
+            "detail-crud-usuarios": "Se desarrolló la funcionalidad CRUD para la gestión de usuarios, incluyendo la administración y actualización de la información de compras."
         }
     },
     "random-text": {
