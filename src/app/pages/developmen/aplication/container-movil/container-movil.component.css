@@ -141,11 +141,11 @@
     }
 
     .image-carousel-android:hover {
-        width: 17vw;
+        width: 16vw;
         height: auto;
     }
 
     .card-screens-project {
-        height: 55vh;
+        height: 76vh;
     }
 }

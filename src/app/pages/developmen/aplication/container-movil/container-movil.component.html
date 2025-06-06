@@ -11,6 +11,7 @@
                     [src]="'./assets/images/' + screen.url + '.png'"
                     alt="Imagen carrusel"
                     class="carousel-image image-carousel-android mt-4 me-1"
+                    (click)="openImageModal(screen.url)"
                 />
             </div>
         </div>
@@ -39,4 +40,16 @@
             alt="Flecha derecha"
         />
     </button>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark">
+      <div class="modal-body d-flex justify-content-center">
+        <img [src]="'./assets/images/' + selectedImage + '.png'" alt="Imagen ampliada" class="img-fluid" style="max-height: 85vh;">
+      </div>
+    </div>
+  </div>
 </div>

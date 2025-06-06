@@ -5,6 +5,7 @@ import { ProfileData, Project, typeProject } from '../../../../utils/interface/g
 import { AppService } from '../../../../app.service';
 import { Subscription } from 'rxjs';
 import { Develoments } from '../../../../utils/interface/develoments';
+import * as bootstrap from 'bootstrap';
 
 @Component({
   selector: 'app-container-movil',
@@ -21,14 +22,15 @@ export class ContainerMovilComponent {
   public profile!: ProfileData;
   public selectProject!: Project | null;
   public selectedButton: string | null = null;
-  currentIndex: number = 0;
-  visibleImagesCount: number = 6;  // Cantidad de imágenes visibles
-  name = "";
-  company = "";
-  project = "";
+  private currentIndex: number = 0;
+  private visibleImagesCount: number = 6;  // Cantidad de imágenes visibles
+  private name = "";
+  private company = "";
+  private project = "";
 
-  itemActive = 0;
-  itemSize = 0;
+  private itemActive = 0;
+  private itemSize = 0;
+  public selectedImage: string | null = null;
 
   private subscriptions: Subscription = new Subscription();
 
@@ -129,7 +131,15 @@ export class ContainerMovilComponent {
   getMobileScreens() {
     return this.selectProject?.screens.filter(screen => screen.typeProject.includes(typeProject.movil));
   }
-  
-  
-  
+
+  openImageModal(imageUrl: string) {
+  this.selectedImage = imageUrl;
+
+  // Usar Bootstrap JS para abrir el modal manualmente
+  const modalElement = document.getElementById('imageModal');
+  if (modalElement) {
+    const modal = new bootstrap.Modal(modalElement);
+    modal.show();
+  }
+}
 }
