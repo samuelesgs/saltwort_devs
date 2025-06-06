@@ -6,6 +6,7 @@ import { ProfileData, Project, Screen, typeProject } from '../../../../utils/int
 import { AppService } from '../../../../app.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { Develoments } from '../../../../utils/interface/develoments';
+import * as bootstrap from 'bootstrap';
 
 @Component({
   selector: 'app-container-web-desktop',
@@ -23,6 +24,7 @@ export class ContainerWebDesktopComponent {
   public profile!: ProfileData;
   public selectProject!: Project | null;
   public selectedButton: string | null = null;
+  public selectedImage: string | null = null;
 
   name = "";
   company = "";
@@ -34,16 +36,16 @@ export class ContainerWebDesktopComponent {
   filteredScreens: Screen[] = [];
   private subscriptions: Subscription = new Subscription();
 
-  constructor( 
-    private route : ActivatedRoute, 
-    private service: AppService, 
+  constructor(
+    private route: ActivatedRoute,
+    private service: AppService,
     private router: Router) { }
 
   ngOnInit(): void {
 
     this.loadingData();
-     // Subscribirse al perfil y proyecto del servicio
-     this.subscriptions.add(
+    // Subscribirse al perfil y proyecto del servicio
+    this.subscriptions.add(
       this.service.profile$.subscribe(profile => {
         if (profile) {
           this.profile = profile;
@@ -80,7 +82,7 @@ export class ContainerWebDesktopComponent {
     this.project = this.route.snapshot.paramMap.get('project')!;
     this.getFullName();
   }
-  
+
   private getFullName(): void {
     this.profile = new Develoments().informationDev(this.name);
     const selectCompany = this.profile.companies.find(row => row.name == this.company);
@@ -98,16 +100,16 @@ export class ContainerWebDesktopComponent {
     this.service.setProfile(this.profile);
     this.service.setProject(this.selectProject);
   }
-  
-  onClickCarouse(isAfter : boolean) {
-    this.itemSize = this.selectProject!.screens.filter(screen => 
+
+  onClickCarouse(isAfter: boolean) {
+    this.itemSize = this.selectProject!.screens.filter(screen =>
       screen.typeProject.includes(typeProject.desktop) || screen.typeProject.includes(typeProject.web)
     ).length;
     const increment = isAfter ? this.itemActive - 1 : this.itemActive + 1;
     this.incrementOrDecrease(increment);
   }
 
-  incrementOrDecrease(increment : number) {
+  incrementOrDecrease(increment: number) {
     if (this.itemSize < 0) {
       this.itemActive = this.itemSize - 1;
     } else if (increment >= this.itemSize) {
@@ -117,12 +119,24 @@ export class ContainerWebDesktopComponent {
     }
   }
 
-  getScreen(){
+  getScreen() {
     const screens = this.selectProject!.screens.filter(screen =>
-    screen.typeProject.includes(typeProject.desktop) || screen.typeProject.includes(typeProject.web));
+      screen.typeProject.includes(typeProject.desktop) || screen.typeProject.includes(typeProject.web));
     const screen = screens[this.itemActive]; // Usar `itemActive` para obtener la pantalla activa
     console.log("This is the screen: ", screen);
     return screen
   }
 
+  openImageModal(imageUrl: string) {
+    console.log("openImageModal",imageUrl);
+    
+    this.selectedImage = imageUrl;
+
+    // Usar Bootstrap JS para abrir el modal manualmente
+    const modalElement = document.getElementById('imageModal2');
+    if (modalElement) {
+      const modal = new bootstrap.Modal(modalElement);
+      modal.show();
+    }
+  }
 }

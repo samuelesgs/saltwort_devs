@@ -34,73 +34,73 @@ export class ContainerMovilComponent {
 
   private subscriptions: Subscription = new Subscription();
 
-  constructor( 
-    private route : ActivatedRoute, 
-    private service: AppService, 
+  constructor(
+    private route: ActivatedRoute,
+    private service: AppService,
     private router: Router) { }
 
 
-    ngOnInit(): void {
-      this.loadingData();
-       // Subscribirse al perfil y proyecto del servicio
-       this.subscriptions.add(
-        this.service.profile$.subscribe(profile => {
-          if (profile) {
-            this.profile = profile;
-          }
-        })
-      );
-  
-      this.subscriptions.add(
-        this.service.project$.subscribe(project => {
-          if (project) {
-            this.selectProject = project;
-            this.itemSize = this.selectProject.screens.length;
-          }
-        })
-      );
-  
-      this.subscriptions.add(
-        this.service.button$.subscribe(button => {
-          this.selectedButton = button;
-        })
-      );
-    }
-  
-    ngOnDestroy(): void {
-      this.subscriptions.unsubscribe();
-    }
+  ngOnInit(): void {
+    this.loadingData();
+    // Subscribirse al perfil y proyecto del servicio
+    this.subscriptions.add(
+      this.service.profile$.subscribe(profile => {
+        if (profile) {
+          this.profile = profile;
+        }
+      })
+    );
 
-    loadingData() {
-      this.name = this.route.snapshot.paramMap.get('name')!;
-      this.company = this.route.snapshot.paramMap.get('company')!;
-      this.project = this.route.snapshot.paramMap.get('project')!;
-      this.getFullName();
-    }
+    this.subscriptions.add(
+      this.service.project$.subscribe(project => {
+        if (project) {
+          this.selectProject = project;
+          this.itemSize = this.selectProject.screens.length;
+        }
+      })
+    );
+
+    this.subscriptions.add(
+      this.service.button$.subscribe(button => {
+        this.selectedButton = button;
+      })
+    );
+  }
+
+  ngOnDestroy(): void {
+    this.subscriptions.unsubscribe();
+  }
+
+  loadingData() {
+    this.name = this.route.snapshot.paramMap.get('name')!;
+    this.company = this.route.snapshot.paramMap.get('company')!;
+    this.project = this.route.snapshot.paramMap.get('project')!;
+    this.getFullName();
+  }
 
   private getFullName(): void {
-      this.profile = new Develoments().informationDev(this.name);
-      const selectCompany = this.profile.companies.find(row => row.name == this.company);
-      const selectedProject = selectCompany?.projects.find(row => row.name == this.project);
-  
-      if (!selectedProject) {
-        console.error('Proyecto no encontrado, redireccionando...');
-        this.router.navigate(['/desarrolladores']); // Redirige a la ruta deseada
-        return;
-      }
-  
-      this.selectProject = selectedProject;
-      this.itemSize = this.selectProject.screens.length;
-  
-      this.service.setProfile(this.profile);
-      this.service.setProject(this.selectProject);
+    this.profile = new Develoments().informationDev(this.name);
+    const selectCompany = this.profile.companies.find(row => row.name == this.company);
+    const selectedProject = selectCompany?.projects.find(row => row.name == this.project);
+
+    if (!selectedProject) {
+      console.error('Proyecto no encontrado, redireccionando...');
+      this.router.navigate(['/desarrolladores']); // Redirige a la ruta deseada
+      return;
     }
 
-/*  onClickCarouselMovil(isAfter: boolean){
-    this.itemSize = this.selectProject!.screens.length;
-    const increment = isAfter ? this.itemActive + 1 : this.itemActive - 1;
-    this.incrementOrDecreaseMovil(increment);
-  }*/
+    this.selectProject = selectedProject;
+    this.itemSize = this.selectProject.screens.length;
+
+    this.service.setProfile(this.profile);
+    this.service.setProject(this.selectProject);
+  }
+
+  /*  onClickCarouselMovil(isAfter: boolean){
+      this.itemSize = this.selectProject!.screens.length;
+      const increment = isAfter ? this.itemActive + 1 : this.itemActive - 1;
+      this.incrementOrDecreaseMovil(increment);
+    }*/
 
   incrementOrDecreaseMovil(increment: number) {
     if (increment < 0) {
@@ -116,7 +116,7 @@ export class ContainerMovilComponent {
   onClickCarouselMovil(isPrev: boolean) {
     const carousel = document.querySelector('.carousel-images')!;
     const scrollAmount = carousel.clientWidth / 2;
-  
+
     if (isPrev) {
       carousel.scrollLeft -= scrollAmount;
     } else {
@@ -133,13 +133,14 @@ export class ContainerMovilComponent {
   }
 
   openImageModal(imageUrl: string) {
-  this.selectedImage = imageUrl;
+    this.selectedImage = imageUrl;
 
-  // Usar Bootstrap JS para abrir el modal manualmente
-  const modalElement = document.getElementById('imageModal');
-  if (modalElement) {
-    const modal = new bootstrap.Modal(modalElement);
-    modal.show();
+    // Usar Bootstrap JS para abrir el modal manualmente
+    const modalElement = document.getElementById('imageModal');
+    if (modalElement) {
+      const modal = new bootstrap.Modal(modalElement);
+      modal.show();
+    }
   }
-}
+  
 }

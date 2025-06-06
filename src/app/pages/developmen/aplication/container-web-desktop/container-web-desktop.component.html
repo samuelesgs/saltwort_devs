@@ -1,45 +1,42 @@
-<div
-    *ngIf="selectedButton === 'web' || selectedButton === 'desktop'"
-    class="d-flex justify-content-center mb-5"
->
+<div *ngIf="selectedButton === 'web' || selectedButton === 'desktop'" class="d-flex justify-content-center mb-5">
     <div class=" col-11 mt-5 bg-white-transparent card-screens-project p-3 text-white card-style">
-      <div class="carousel-indicators">
-        <button
-            *ngFor="let screen of filteredScreens; let i = index"
-            class="radius-selector"
-            data-bs-target="#carouselExampleIndicators"
-            [ngClass]="{'active' : itemActive == i}"
-            aria-current="true"
-        >
-        </button>
+        <div class="carousel-indicators">
+            <button *ngFor="let screen of filteredScreens; let i = index" class="radius-selector"
+                data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == i}"
+                aria-current="true">
+            </button>
         </div>
 
 
         <div class="col-12 pb-4">
             <div class="col-12 row ms-1">
-                <img
-                    class="size-item"
-                    src="./assets/images/{{getScreen().url}}.png"
-                    />
+                <img class="size-item" src="./assets/images/{{getScreen().url}}.png"
+                    (click)="openImageModal(getScreen().url)" />
             </div>
         </div>
-        <button
-            class="carousel-control-prev"
-            type="button"
-            (click)="onClickCarouse(true)"
-            ><img
-                src="./assets/images/icon-arrow.png"
-                class="d-block img-btn"
-            />
+        <button class="carousel-control-prev" type="button" (click)="onClickCarouse(true)"><img
+                src="./assets/images/icon-arrow.png" class="d-block img-btn" />
         </button>
-        <button
-            class="carousel-control-next rotate-arrow"
-            (click)="onClickCarouse(false)"
-            ><img
-                src="./assets/images/icon-arrow.png"
-                class="d-block img-btn"
-            />
+        <button class="carousel-control-next rotate-arrow" (click)="onClickCarouse(false)"><img
+                src="./assets/images/icon-arrow.png" class="d-block img-btn" />
         </button>
     </div>
-    
+
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+            <div class="modal-body d-flex justify-content-center">
+                <img
+                    [src]="'assets/images/' + selectedImage + '.png'"
+                    alt="Imagen ampliada"
+                    class="img-fluid"
+                    style=" width: auto; height: 65vh;">
+            </div>
+        </div>
+    </div>
 </div>
