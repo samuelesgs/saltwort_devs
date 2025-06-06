@@ -22,6 +22,7 @@ export class ContainerApplicationComponent implements OnInit {
   public profile!: ProfileData;
   public selectProject: Project | null = null;
   public selectedButton: string | null = null;
+  public selectedButtonStart: string  = "All";
   public numberButtonSelected : number = 0;
 
   name = "";
@@ -115,8 +116,11 @@ export class ContainerApplicationComponent implements OnInit {
   getAchievemnts() {
     const platform = this.selectProject!.platforms.find(row => row.typeProject == this.getTypeProject());
     if (platform) {
-      console.log(platform.achievements);
-      return platform.achievements;
+      if (this.selectedButtonStart == "All") {
+        return platform.achievements;
+      } else {
+        return platform.achievements.filter(row => row.relevance.toString() == this.selectedButtonStart)
+      }
     }
     return [];
   }
@@ -146,6 +150,29 @@ export class ContainerApplicationComponent implements OnInit {
       default:
        return 'Muy baja'
     }
+  }
+
+  public get getArrayRelevance(){
+    const array = [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "All"
+    ];
+    let responseRelevance = [];
+    for (const row of array) {
+      const find = this.selectProject!.platforms.find(row => row.typeProject == this.getTypeProject())?.achievements.find(achievement => achievement.relevance.toString() == row);
+      if (find || row == "All") {
+        responseRelevance.push(row); 
+      }
+    }
+    return responseRelevance;
+  }
+
+  public selectButtonStart(item : any) {
+    this.selectedButtonStart = item;
   }
 
 }

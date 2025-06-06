@@ -1,22 +1,15 @@
 <div class="col-12 center-horizontal" *ngIf="selectProject!.platforms.length > 1">
     <div class="col-11 container-buttons p-1">
-        <button
-            *ngIf="isMovil()" class="buttons-switch col ms-2 me-2"
+        <button *ngIf="isMovil()" class="buttons-switch col ms-2 me-2"
             [ngClass]="{'selected-item-background': selectedButton === 'movil'}"
-            (click)="selectedPlatform('movil')"
-            >Movil
+            (click)="selectedPlatform('movil')">Movil
         </button>
-        <button
-            *ngIf="isWeb()" class="buttons-switch col ms-2 me-2"
-            [ngClass]="{'selected-item-background': selectedButton === 'web'}"
-            (click)="selectedPlatform('web')"
-            >Web
+        <button *ngIf="isWeb()" class="buttons-switch col ms-2 me-2"
+            [ngClass]="{'selected-item-background': selectedButton === 'web'}" (click)="selectedPlatform('web')">Web
         </button>
-        <button
-            *ngIf="isDesktop()" class="buttons-switch col ms-2 me-2"
+        <button *ngIf="isDesktop()" class="buttons-switch col ms-2 me-2"
             [ngClass]="{'selected-item-background': selectedButton === 'desktop'}"
-            (click)="selectedPlatform('desktop')"
-            >Escritorio
+            (click)="selectedPlatform('desktop')">Escritorio
         </button>
     </div>
 </div>
@@ -32,15 +25,28 @@
                 </div>
             </div>
             <div class="row">
-                <div
-                    *ngFor="let achievemnt of getAchievemnts()"
-                    class="record-achievement"
-                    >
+                <div class="col">
+                    <div class="item-start">
+                        <button *ngFor="let item of getArrayRelevance" class="vertical-center"
+                            [ngClass]="{'bg-start': selectedButtonStart != item, 'bg-start-selected': selectedButtonStart == item}"
+                            (click)="selectButtonStart(item)"
+                            [value]="item">
+                            <img
+                                [src]="(selectedButtonStart == item) ? './assets/images/check.png' : './assets/images/icons-relevance/star.png'"
+                                class="me-1 relevance-icon-button"
+                                />{{item}}
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div *ngFor="let achievemnt of getAchievemnts()" class="record-achievement col-xs-12 col-6">
                     <div class="row mt-2 ms-3 me-3">
                         <div class="col-xs-12 col-xl-3 text-center mt-3">
                             <div class="col-12 center-horizontal">
                                 <img *ngFor="let index of getNumberArrayRelevance(achievemnt.relevance)"
-                                    src="./assets/images/icons-relevance/star.png" class="relevance-icon">
+                                    src="./assets/images/icons-relevance/star.png" class="relevance-icon-img" />
                             </div>
                             <p class="text-gray">{{ strRelevance(achievemnt.relevance)}}</p>
                         </div>
@@ -60,12 +66,9 @@
 </div>
 
 <div class="col-12 center-horizontal mt-2">
-    <div class="col-11 row  bg-white-transparent size-box-application p-3 text-white center-horizontal" >
+    <div class="col-11 row  bg-white-transparent size-box-application p-3 text-white center-horizontal">
         <h1 class="col-12 mb-3 center">{{selectProject?.name ?? '' | translate}}</h1>
-        <img
-            class="icon-project mb-2"
-            src="./assets/images/projectsIcons/{{selectProject?.icon?.url}}.png"
-            />
+        <img class="icon-project mb-2" src="./assets/images/projectsIcons/{{selectProject?.icon?.url}}.png" />
         <p class="font-size">
             {{selectProject!.detail | translate}}
         </p>

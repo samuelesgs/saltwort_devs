@@ -65,14 +65,14 @@ export class InformationSamuel {
             { name: 'screen-1', detail: 'detail', url: 'gc/gc9', typeProject: [typeProject.movil] },
             { name: 'screen-1', detail: 'detail', url: 'gc/gc10', typeProject: [typeProject.movil] },
             { name: 'screen-1', detail: 'detail', url: 'gc/gc11', typeProject: [typeProject.movil] },
-            { name: 'Pantalla de login', detail: 'Puedes ingresar tu correo y contraseña, escoger idioma o entrar con Google', url: 'gcweb/gcweb1', typeProject: [typeProject.web] },
-            { name: 'Pantalla principal', detail: 'En la pantalla principal puedes visualizar con categorias su detalle y su cantidad. Puedes cambiar entre secciones.', url: 'gcweb/gcweb2', typeProject: [typeProject.web] },
-            { name: 'Reportes', detail: 'En forma de grafica de pastel puedes ver tus conceptos y la cantidad de esos conceptos', url: 'gcweb/gcweb3', typeProject: [typeProject.web] },
-            { name: 'Proyectos', detail: 'Lista de tus proyectos, en forma de lista, tienes un botón para agregar un proyecto en caso de ser necesario', url: 'gcweb/gcweb4', typeProject: [typeProject.web] },
-            { name: 'Categorias', detail: 'Listado de categorias, se dividen en 2, categorias de ingresos y gastados, em ambas puedes agregar categorias', url: 'gcweb/gcweb5', typeProject: [typeProject.web] },
-            { name: 'Opciones', detail: 'En esta pantalla puedes elegir entre varias tipos de monedas y establecer las preferencias a tu gusto.', url: 'gcweb/gcweb6', typeProject: [typeProject.web] },
-            { name: 'Añadir ingreso', detail: 'Puedes añadir un ingreso, estableciendo la cantidad, escogiendo la categoria y una breve descripción', url: 'gcweb/gcweb7', typeProject: [typeProject.web] },
-            { name: 'Añadir proyecto', detail: 'En este modal puedes establecer el nombre de tu proyecto', url: 'gcweb/gcweb8', typeProject: [typeProject.web] }
+            { name: 'Pantalla de login', detail: '', url: 'gcweb/gcweb1', typeProject: [typeProject.web] },
+            { name: 'Pantalla principal', detail: '', url: 'gcweb/gcweb2', typeProject: [typeProject.web] },
+            { name: 'Reportes', detail: '', url: 'gcweb/gcweb3', typeProject: [typeProject.web] },
+            { name: 'Proyectos', detail: '', url: 'gcweb/gcweb4', typeProject: [typeProject.web] },
+            { name: 'Categorias', detail: '', url: 'gcweb/gcweb5', typeProject: [typeProject.web] },
+            { name: 'Opciones', detail: '', url: 'gcweb/gcweb6', typeProject: [typeProject.web] },
+            { name: 'Añadir ingreso', detail: '', url: 'gcweb/gcweb7', typeProject: [typeProject.web] },
+            { name: 'Añadir proyecto', detail: '', url: 'gcweb/gcweb8', typeProject: [typeProject.web] }
         ];
     }
 
@@ -382,15 +382,14 @@ export class InformationSamuel {
     // --- GET ACHIEVEMENTS ---
     private get getShoppingExpensesArchivementsWeb() {
         return [
-            { title: 'project-relevance.shopping-expense-web.new-web-title', detail: 'project-relevance.shopping-expense-web.new-web', relevance: Relevance.VERY_HIGH, icon: '' },
-            { title: 'project-relevance.shopping-expense-web.title-create-model-sync', detail: 'project-relevance.shopping-expense-web.detail-create-model-sync', relevance: Relevance.VERY_HIGH, icon: '' },
             { title: 'project-relevance.shopping-expense-web.new-backend-title', detail: 'project-relevance.shopping-expense-web.new-backend', relevance: Relevance.VERY_HIGH, icon: '' },
-            { title: 'project-relevance.shopping-expense-web.implementation-frameworks-title', detail: 'project-relevance.shopping-expense-web.implementation-frameworks', relevance: Relevance.VERY_HIGH, icon: '' },
-            { title: 'project-relevance.shopping-expense-web.migration-request-title', detail: 'project-relevance.shopping-expense-web.migration-request', relevance: Relevance.VERY_HIGH, icon: '' },
-            { title: 'project-relevance.shopping-expense-web.deploy-version-title', detail: 'project-relevance.shopping-expense-web.deploy-version', relevance: Relevance.VERY_HIGH, icon: '' }
-        ];
+            { title: 'project-relevance.shopping-expense-web.deploy-version-title', detail: 'project-relevance.shopping-expense-web.deploy-version', relevance: Relevance.VERY_HIGH, icon: '' },
+            { title: 'project-relevance.shopping-expense-web.migration-request-title', detail: 'project-relevance.shopping-expense-web.migration-request', relevance: Relevance.HIGH, icon: '' },
+            { title: 'project-relevance.shopping-expense-web.new-web-title', detail: 'project-relevance.shopping-expense-web.new-web', relevance: Relevance.HIGH, icon: '' },
+            { title: 'project-relevance.shopping-expense-web.implementation-frameworks-title', detail: 'project-relevance.shopping-expense-web.implementation-frameworks', relevance: Relevance.MEDIUM, icon: '' },
+            { title: 'project-relevance.shopping-expense-web.title-create-model-sync', detail: 'project-relevance.shopping-expense-web.detail-create-model-sync', relevance: Relevance.MEDIUM, icon: '' }
+        ].sort((a, b) => b.relevance - a.relevance);
     }
-
 
     private get getShoppingExpensesArchivementsMovil() {
         return [
