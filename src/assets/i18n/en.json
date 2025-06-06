@@ -234,6 +234,20 @@
             "detail-sync": "Enhancements were made to the data loading and synchronization logic between the backend and the web interface.",
             "title-responsive": "Responsive Design",
             "detail-responsive": "Responsive design was incorporated to support optimal use on tablets and mobile devices."
+        },
+        "samuel-zeus": {
+            "title-modulo-swat": "Integration of the SWAT module for Help Desk customer service",
+            "detail-modulo-swat": "The SWAT module was integrated into the application to manage customer service requests from the Help Desk.",
+            "title-correccion-bugs": "Fixes for visual and functional bugs",
+            "detail-correccion-bugs": "Design issues and functional inconsistencies were resolved to enhance the user experience.",
+            "title-busqueda-bes": "Ticket search on the BES platform",
+            "detail-busqueda-bes": "A feature was implemented to allow ticket queries outside the Zeus environment via integration with the BES platform.",
+            "title-diseno-responsivo": "Functional responsive design",
+            "detail-diseno-responsivo": "The interface was adapted to ensure an optimal experience across various devices and screen sizes.",
+            "title-crud-servicios": "Implementation of CRUD for services",
+            "detail-crud-servicios": "A CRUD module was developed to manage the services available within the application.",
+            "title-mejoras-usuarios": "Improvements in user management",
+            "detail-mejoras-usuarios": "The process for creating, editing, and maintaining users was optimized to facilitate administration."
         }
     },
     "random-text": {

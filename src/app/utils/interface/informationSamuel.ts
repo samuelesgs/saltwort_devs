@@ -103,6 +103,34 @@ export class InformationSamuel {
         ];
     }
 
+
+    private get getScreenBlueBoard() {
+        return [
+            { name: 'Pagina principal', detail: '', url: 'blue-board/login', typeProject: [typeProject.movil] },
+            { name: 'Pagina principal', detail: '', url: 'blue-board/navbar', typeProject: [typeProject.movil] },
+            { name: 'Pagina principal', detail: '', url: 'blue-board/news', typeProject: [typeProject.movil] },
+            { name: 'Pagina principal', detail: '', url: 'blue-board/noticies', typeProject: [typeProject.movil] },
+            { name: 'Pagina principal', detail: '', url: 'blue-board/profile', typeProject: [typeProject.movil] }
+        ];
+    }
+
+    private get getScreenZeus() {
+        return [
+            { name: 'Admin users', detail: 'Pantalla de administración de usuarios.', url: 'zeus/movil/admin-users', typeProject: [typeProject.web] },
+            { name: 'Create ticket', detail: 'Pantalla para la creación de tickets.', url: 'zeus/movil/create-ticket', typeProject: [typeProject.web] },
+            { name: 'Detail SWAT', detail: 'Vista detallada del módulo SWAT.', url: 'zeus/movil/detail-swat', typeProject: [typeProject.web] },
+            { name: 'Detail', detail: 'Vista con detalle general del ticket.', url: 'zeus/movil/detail', typeProject: [typeProject.web] },
+            { name: 'Login', detail: 'Pantalla de inicio de sesión con opción de Google o registro.', url: 'zeus/movil/login', typeProject: [typeProject.web] },
+            { name: 'My tickets', detail: 'Pantalla para ver los tickets creados por el usuario.', url: 'zeus/movil/my-tickets', typeProject: [typeProject.web] },
+            { name: 'Navbar', detail: 'Pantalla con la barra de navegación principal.', url: 'zeus/movil/navbar', typeProject: [typeProject.web] },
+            { name: 'Pool Zeus Module', detail: 'Pantalla principal del módulo Pool de Zeus.', url: 'zeus/movil/pool-zeus-module', typeProject: [typeProject.web] },
+            { name: 'Search', detail: 'Pantalla con funcionalidades de búsqueda.', url: 'zeus/movil/search', typeProject: [typeProject.web] },
+            { name: 'Swat Module', detail: 'Pantalla principal del módulo SWAT.', url: 'zeus/movil/swat-module', typeProject: [typeProject.web] }
+        ];
+    }
+
+
+
     private get getScreenNeoris() {
         return [
             { name: 'Pagina principal', detail: 'En esta pantañña tu puedes registrarte en caso de tu tener una cuenta ya, crear una o ingresar con Google', url: 'ap/ap1', typeProject: [typeProject.web] }
@@ -412,25 +440,17 @@ export class InformationSamuel {
                 this.getZeus,
                 this.getBlueboard,
                 this.getSisap,
-                this.getGamstore,
             ]
         };
     }
 
     private get getZeus() {
         return {
-            id: 3,
-            platforms: [
-                {
-                    typeProject: typeProject.web,
-                    achievements: []
-                },
-            ],
+            id: 1,
+            platforms: this.getArchivimentsZeus,
             name: 'Zeus',
             detail: 'specific-project.properties.project-detail-zeus',
-            relevantSkills: [
-                ""
-            ],
+            relevantSkills: [ ],
             tools: [
                 "angular",
                 "figma",
@@ -438,77 +458,92 @@ export class InformationSamuel {
             icon: {
                 name: 'name',
                 detail: 'Aqui vas a poder administrar tu tiempo y actividades de la mejor manera posible ',
-                url: 'AP-logo',
+                url: 'zeus',
                 typeProject: [typeProject.web]
             },
             screens: [
-                ...this.getScreenNeoris
+                ...this.getScreenZeus
             ]
         }
+    }
+
+    private get getArchivimentsZeus() {
+        return [
+            {
+                typeProject: typeProject.web, achievements: [
+                    { title: 'project-relevance.samuel-zeus.title-modulo-swat', detail: 'project-relevance.samuel-zeus.detail-modulo-swat', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.samuel-zeus.title-correccion-bugs', detail: 'project-relevance.samuel-zeus.detail-correccion-bugs', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.samuel-zeus.title-busqueda-bes', detail: 'project-relevance.samuel-zeus.detail-busqueda-bes', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.samuel-zeus.title-diseno-responsivo', detail: 'project-relevance.samuel-zeus.detail-diseno-responsivo', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.samuel-zeus.title-crud-servicios', detail: 'project-relevance.samuel-zeus.detail-crud-servicios', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.samuel-zeus.title-mejoras-usuarios', detail: 'project-relevance.samuel-zeus.detail-mejoras-usuarios', relevance: Relevance.HIGH, icon: '' }
+                ]
+            }
+        ]
     }
 
 
     private get getBlueboard() {
-        return {
-            id: 3,
-            platforms: [
-                {
-                    typeProject: typeProject.movil,
-                    achievements: []
-                },
-            ],
-            name: 'Blueboard',
-            detail: 'specific-project.properties.project-detail-blue-board',
-            relevantSkills: [
-                ""
-            ],
-            tools: [
-                "android",
-            ],
-            icon: {
-                name: 'name',
-                detail: 'PENDIENTE',
-                url: 'AP-logo',
-                typeProject: [typeProject.movil]
-            },
-            screens: [
-                ...this.getScreenNeoris
-            ]
-        }
-    }
+                return {
+                    id: 3,
+                    platforms: [
+                        {
+                            typeProject: typeProject.movil,
+                            achievements: []
+                        },
+                    ],
+                    name: 'Blueboard',
+                    detail: 'specific-project.properties.project-detail-blue-board',
+                    relevantSkills: [
+                        ""
+                    ],
+                    tools: [
+                        "android",
+                    ],
+                    icon: {
+                        name: 'name',
+                        detail: 'PENDIENTE',
+                        url: 'blue-board',
+                        typeProject: [typeProject.movil]
+                    },
+                    screens: [
+                        ...this.getScreenBlueBoard
+                    ]
+                }
+            }
 
 
     private get getSisap() {
-        return {
-            id: 3,
-            platforms: [
-                {
-                    typeProject: typeProject.movil,
-                    achievements: []
-                },
-            ],
-            name: 'SISAP',
-            detail: 'specific-project.properties.project-detail-sisap',
-            relevantSkills: [
-                ""
-            ],
-            tools: [
-                "android",
-            ],
-            icon: {
-                name: 'name',
-                detail: 'PENDIENTE',
-                url: 'AP-logo',
-                typeProject: [typeProject.movil]
-            },
-            screens: [
-                ...this.getScreenNeoris
-            ]
-        }
-    }
+                return {
+                    id: 3,
+                    platforms: [
+                        {
+                            typeProject: typeProject.movil,
+                            achievements: []
+                        },
+                    ],
+                    name: 'SISAP',
+                    detail: 'specific-project.properties.project-detail-sisap',
+                    relevantSkills: [
+                        ""
+                    ],
+                    tools: [
+                        "android",
+                    ],
+                    icon: {
+                        name: 'name',
+                        detail: 'PENDIENTE',
+                        url: 'sisap',
+                        typeProject: [typeProject.movil]
+                    },
+                    screens: [
+                        ...this.getScreenNeoris
+                    ]
+                }
+            }
 
 
-    private get getGamstore() {
+    /*private get getGamstore() {
         return {
             id: 3,
             platforms: [
@@ -535,5 +570,5 @@ export class InformationSamuel {
                 ...this.getScreenNeoris
             ]
         }
-    }
+    }*/
 }

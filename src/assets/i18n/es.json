@@ -264,6 +264,20 @@
             "detail-migracion-datos-qa": "Se migraron los datos de la versión productiva a la base de datos QA para gastos diarios 4.",
             "title-crud-usuarios": "Implementación de CRUD para usuarios",
             "detail-crud-usuarios": "Se desarrolló la funcionalidad CRUD para la gestión de usuarios, incluyendo la administración y actualización de la información de compras."
+        },
+        "samuel-zeus": {
+            "title-modulo-swat": "Integración del módulo SWAT para atención al cliente en Mesa de Ayuda",
+            "detail-modulo-swat": "Se incorporó el módulo SWAT a la aplicación para gestionar solicitudes de atención al cliente desde la Mesa de Ayuda.",
+            "title-correccion-bugs": "Corrección de errores visuales y funcionales",
+            "detail-correccion-bugs": "Se solucionaron problemas de diseño e inconsistencias funcionales para mejorar la experiencia del usuario.",
+            "title-busqueda-bes": "Búsqueda de tickets en plataforma BES",
+            "detail-busqueda-bes": "Se implementó una funcionalidad que permite consultar tickets fuera del entorno de Zeus mediante integración con la plataforma BES.",
+            "title-diseno-responsivo": "Diseño responsivo funcional",
+            "detail-diseno-responsivo": "Se adaptó la interfaz para garantizar una experiencia óptima en distintos dispositivos y tamaños de pantalla.",
+            "title-crud-servicios": "Implementación de CRUD para servicios",
+            "detail-crud-servicios": "Se desarrolló un módulo CRUD para gestionar los servicios disponibles dentro del aplicativo.",
+            "title-mejoras-usuarios": "Mejoras en la gestión de usuarios",
+            "detail-mejoras-usuarios": "Se optimizó el proceso de creación, edición y mantenimiento de usuarios para facilitar su administración."
         }
     },
     "random-text": {
