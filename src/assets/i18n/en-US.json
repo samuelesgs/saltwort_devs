@@ -102,10 +102,10 @@
             "revelant-skills-shopping-expenses-samuel": "Project creation.",
             "project-detail-daily-expenses-samuel": "Income capture in the project.",
             "revelant-skills-daily-expenses-samuel": "Project creation",
-            "project-detail-zeus-samuel": "ZEUS",
-            "project-detail-sisap-samuel": "SISAP",
-            "project-detail-blueboard-samuel": "BLUE BOARD",
-            "project-detail-gamstore-samuel": "GAMSTORE"
+            "project-detail-zeus": "ZEUS",
+            "project-detail-sisap": "Application designed to provide mobility to Telcel's internal users for tracking SISAP tickets and the projects in which they are involved.",
+            "project-detail-blue-board": "Telcel seeks to streamline the management of news (promotions), which is why the “BLUE BOARD” application was created. This application is responsible for displaying news in real time through a mobile app to all clients (regional administrators, distributors, managers, and salespeople), regardless of which of the 8 regions they are in. They will be kept informed about the different news and promotions that Telcel launches nationwide.",
+            "project-detail-gamstore": "GAMSTORE"
         }
     },
     "project-relevance": {
@@ -261,6 +261,16 @@
             "title-crud-servicios": "Implementation of CRUD for services",
             "detail-crud-servicios": "A CRUD module was developed to manage the services available within the application.",
             "title-mejoras-usuarios": "Improvements in user management"
+        }, 
+        "samuel-sisap": {
+            "title-video-library": "Video playback library implementation",
+            "detail-video-library": "A library was integrated to enable multimedia playback within the application.",
+            "title-preferences-filters": "Filter management using preferences",
+            "detail-preferences-filters": "Custom filters were implemented using the user's preference system.",
+            "title-java-gradle-update": "Java version and Gradle update",
+            "detail-java-gradle-update": "The Java version was updated and migrated to a newer Gradle version to ensure compatibility and project security.",
+            "title-vulnerability-fix": "Vulnerability fixes detected by Checkmarks",
+            "detail-vulnerability-fix": "Critical vulnerabilities and warnings reported by Checkmarks static analysis were fixed to strengthen system security."
         }
     },
     "random-text": {

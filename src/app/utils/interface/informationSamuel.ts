@@ -114,6 +114,18 @@ export class InformationSamuel {
         ];
     }
 
+    private get getScreenSisap() {
+        return [
+            { name: 'Detalle 1', detail: 'Vista de detalle de folio SISAP (detalle-1)', url: 'sisap/detail-1', typeProject: [typeProject.movil] },
+            { name: 'Detalle 2', detail: 'Vista alternativa del detalle de folio SISAP (detalle-2)', url: 'sisap/detail-2', typeProject: [typeProject.movil] },
+            { name: 'Detalle', detail: 'Pantalla de detalle general de folio SISAP', url: 'sisap/detail', typeProject: [typeProject.movil] },
+            { name: 'Inicio de sesión', detail: 'Pantalla de login para usuarios de SISAP', url: 'sisap/login', typeProject: [typeProject.movil] },
+            { name: 'Navbar', detail: 'Barra de navegación principal de la aplicación SISAP', url: 'sisap/navbar', typeProject: [typeProject.movil] },
+            { name: 'Perfil', detail: 'Vista del perfil del usuario dentro de SISAP', url: 'sisap/profile', typeProject: [typeProject.movil] },
+            { name: 'Tickets', detail: 'Listado y seguimiento de tickets dentro de SISAP', url: 'sisap/tickets', typeProject: [typeProject.movil] }
+        ];
+    }
+
     private get getScreenZeus() {
         return [
             { name: 'Admin users', detail: 'Pantalla de administración de usuarios.', url: 'zeus/movil/admin-users', typeProject: [typeProject.web] },
@@ -450,7 +462,7 @@ export class InformationSamuel {
             platforms: this.getArchivimentsZeus,
             name: 'Zeus',
             detail: 'specific-project.properties.project-detail-zeus',
-            relevantSkills: [ ],
+            relevantSkills: [],
             tools: [
                 "angular",
                 "figma",
@@ -468,80 +480,94 @@ export class InformationSamuel {
     }
 
     private get getArchivimentsZeus() {
-        return [
-            {
-                typeProject: typeProject.web, achievements: [
-                    { title: 'project-relevance.samuel-zeus.title-modulo-swat', detail: 'project-relevance.samuel-zeus.detail-modulo-swat', relevance: Relevance.HIGH, icon: '' },
-                    { title: 'project-relevance.samuel-zeus.title-correccion-bugs', detail: 'project-relevance.samuel-zeus.detail-correccion-bugs', relevance: Relevance.HIGH, icon: '' },
-                    { title: 'project-relevance.samuel-zeus.title-busqueda-bes', detail: 'project-relevance.samuel-zeus.detail-busqueda-bes', relevance: Relevance.HIGH, icon: '' },
-                    { title: 'project-relevance.samuel-zeus.title-diseno-responsivo', detail: 'project-relevance.samuel-zeus.detail-diseno-responsivo', relevance: Relevance.HIGH, icon: '' },
-                    { title: 'project-relevance.samuel-zeus.title-crud-servicios', detail: 'project-relevance.samuel-zeus.detail-crud-servicios', relevance: Relevance.HIGH, icon: '' },
-                    { title: 'project-relevance.samuel-zeus.title-mejoras-usuarios', detail: 'project-relevance.samuel-zeus.detail-mejoras-usuarios', relevance: Relevance.HIGH, icon: '' }
-                ]
-            }
-        ]
+        return [{
+            typeProject: typeProject.web,
+            achievements: [
+                { title: 'project-relevance.samuel-zeus.title-modulo-swat', detail: 'project-relevance.samuel-zeus.detail-modulo-swat', relevance: Relevance.VERY_HIGH, icon: '' },
+                { title: 'project-relevance.samuel-zeus.title-crud-servicios', detail: 'project-relevance.samuel-zeus.detail-crud-servicios', relevance: Relevance.HIGH, icon: '' },
+                { title: 'project-relevance.samuel-zeus.title-correccion-bugs', detail: 'project-relevance.samuel-zeus.detail-correccion-bugs', relevance: Relevance.HIGH, icon: '' },
+                { title: 'project-relevance.samuel-zeus.title-busqueda-bes', detail: 'project-relevance.samuel-zeus.detail-busqueda-bes', relevance: Relevance.HIGH, icon: '' },
+                { title: 'project-relevance.samuel-zeus.title-diseno-responsivo', detail: 'project-relevance.samuel-zeus.detail-diseno-responsivo', relevance: Relevance.MEDIUM, icon: '' },
+                { title: 'project-relevance.samuel-zeus.title-mejoras-usuarios', detail: 'project-relevance.samuel-zeus.detail-mejoras-usuarios', relevance: Relevance.MEDIUM, icon: '' }
+            ]
+        }];
+    }
+
+    private get getBlueboard() {
+        return {
+            id: 2,
+            platforms: this.getArchivementsBlueboard,
+            name: 'Blueboard',
+            detail: 'specific-project.properties.project-detail-blue-board',
+            relevantSkills: [
+                ""
+            ],
+            tools: [
+                "android",
+            ],
+            icon: {
+                name: 'name',
+                detail: 'PENDIENTE',
+                url: 'blue-board',
+                typeProject: [typeProject.movil]
+            },
+            screens: [
+                ...this.getScreenBlueBoard
+            ]
+        }
+    }
+
+    private get getArchivementsBlueboard() {
+        return [{
+            typeProject: typeProject.movil,
+            achievements: [
+                { title: 'project-relevance.samuel-sisap.title-vulnerability-fix', detail: 'project-relevance.samuel-blue-board.detail-vulnerability-fix', relevance: Relevance.VERY_HIGH, icon: '' },
+                { title: 'project-relevance.samuel-sisap.title-java-gradle-update', detail: 'project-relevance.samuel-blue-board.detail-java-gradle-update', relevance: Relevance.HIGH, icon: '' },
+                { title: 'project-relevance.samuel-sisap.title-preferences-filters', detail: 'project-relevance.samuel-blue-board.detail-preferences-filters', relevance: Relevance.HIGH, icon: '' },
+                { title: 'project-relevance.samuel-sisap.title-video-library', detail: 'project-relevance.samuel-blue-board.detail-video-library', relevance: Relevance.MEDIUM, icon: '' }
+            ]
+        }];
     }
 
 
-    private get getBlueboard() {
-                return {
-                    id: 3,
-                    platforms: [
-                        {
-                            typeProject: typeProject.movil,
-                            achievements: []
-                        },
-                    ],
-                    name: 'Blueboard',
-                    detail: 'specific-project.properties.project-detail-blue-board',
-                    relevantSkills: [
-                        ""
-                    ],
-                    tools: [
-                        "android",
-                    ],
-                    icon: {
-                        name: 'name',
-                        detail: 'PENDIENTE',
-                        url: 'blue-board',
-                        typeProject: [typeProject.movil]
-                    },
-                    screens: [
-                        ...this.getScreenBlueBoard
-                    ]
-                }
-            }
-
-
     private get getSisap() {
-                return {
-                    id: 3,
-                    platforms: [
-                        {
-                            typeProject: typeProject.movil,
-                            achievements: []
-                        },
-                    ],
-                    name: 'SISAP',
-                    detail: 'specific-project.properties.project-detail-sisap',
-                    relevantSkills: [
-                        ""
-                    ],
-                    tools: [
-                        "android",
-                    ],
-                    icon: {
-                        name: 'name',
-                        detail: 'PENDIENTE',
-                        url: 'sisap',
-                        typeProject: [typeProject.movil]
-                    },
-                    screens: [
-                        ...this.getScreenNeoris
-                    ]
-                }
-            }
+        return {
+            id: 3,
+            platforms: this.getAchievementsSisap,
+            name: 'SISAP',
+            detail: 'specific-project.properties.project-detail-sisap',
+            relevantSkills: [
+                ""
+            ],
+            tools: [
+                "android",
+            ],
+            icon: {
+                name: 'name',
+                detail: 'PENDIENTE',
+                url: 'sisap',
+                typeProject: [typeProject.movil]
+            },
+            screens: [
+                ...this.getScreenSisap
+            ]
+        }
+    }
 
+    private get getAchievementsSisap() {
+        return [
+            {
+                typeProject: typeProject.movil,
+                achievements: [
+                    { title: 'project-relevance.samuel-sisap.title-vulnerability-fix', detail: 'project-relevance.samuel-sisap.detail-vulnerability-fix', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.samuel-sisap.title-backend-new-services', detail: 'project-relevance.samuel-sisap.detail-backend-new-services', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.samuel-sisap.title-java-gradle-update', detail: 'project-relevance.samuel-sisap.detail-java-gradle-update', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.samuel-sisap.title-preferences-filters', detail: 'project-relevance.samuel-sisap.detail-preferences-filters', relevance: Relevance.MEDIUM, icon: '' },
+                    { title: 'project-relevance.samuel-sisap.title-visual-fixes', detail: 'project-relevance.samuel-sisap.detail-visual-fixes', relevance: Relevance.MEDIUM, icon: '' }
+                ]
+            }
+        ];
+    }
 
     /*private get getGamstore() {
         return {

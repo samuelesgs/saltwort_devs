@@ -107,9 +107,8 @@
             "project-name-zeus": "ZEUS",
             "project-detail-zeus": "Implementación eficiente del seguimiento y resolución de tickets de soporte, integrando automatización para la actualización y control automático del estado de los folios, optimizando tiempos de respuesta y mejorando la trazabilidad de las incidencias.",
             "project-name-sisap": "SISAP",
-            "project-detail-sisap": "PENDIENTE",
-            "project-name-blueboard": "BLUE BOARD",
-            "project-detail-blueboard": "PENDIENTE",
+            "project-detail-sisap": "Applicación para brindar movilidad a los usuarios internos de Telcel en el seguimiento de folios SISAP los proyectos en donde se este involucrado.",
+            "project-detail-blue-board": "Telcel busca poder agilizar la gestión de noticias (promociones), por ello se creó la aplicación “BLUE BOARD”, esta aplicación se encarga de visualizar noticias. Estas noticias llegan en tiempo real por medio de una aplicación móvil, a todos los clientes (administradores regionales, distribuidores, gerentes y vendedores) no importando en cuál de las 8 regiones se encuentren, estarán informados de las diferentes noticias y promociones que Telcel lance a nivel nacional.",
             "project-name-gamstore": "GAMSTORE",
             "project-detail-gamstore": "PENDIENTE"
         }
@@ -278,6 +277,28 @@
             "detail-crud-servicios": "Se desarrolló un módulo CRUD para gestionar los servicios disponibles dentro del aplicativo.",
             "title-mejoras-usuarios": "Mejoras en la gestión de usuarios",
             "detail-mejoras-usuarios": "Se optimizó el proceso de creación, edición y mantenimiento de usuarios para facilitar su administración."
+        },
+        "samuel-blue-board": {
+            "title-video-library": "Implementación de librería para reproducción de videos",
+            "detail-video-library": "Se integró una librería para permitir la reproducción de contenido multimedia dentro de la aplicación.",
+            "title-preferences-filters": "Gestión de filtros mediante preferencias",
+            "detail-preferences-filters": "Se implementaron filtros personalizados utilizando el sistema de preferencias del usuario.",
+            "title-java-gradle-update": "Actualización de versión de Java y Gradle",
+            "detail-java-gradle-update": "Se actualizó la versión de Java y se migró a una versión más reciente de Gradle para mantener la compatibilidad y seguridad del proyecto.",
+            "title-vulnerability-fix": "Corrección de vulnerabilidades detectadas por Checkmarks",
+            "detail-vulnerability-fix": "Se corrigieron vulnerabilidades críticas y advertencias señaladas por el análisis estático de Checkmarks para reforzar la seguridad del sistema."
+        },
+        "samuel-sisap": {
+            "title-visual-fixes": "Correcciones o mejoras visuales",
+            "detail-visual-fixes": "Se realizaron ajustes para optimizar la apariencia y usabilidad del sistema, mejorando la experiencia del usuario.",
+            "title-preferences-filters": "Preferences filtros",
+            "detail-preferences-filters": "Se implementaron y optimizaron filtros personalizados en la sección de Preferencias para facilitar la búsqueda y selección de opciones.",
+            "title-java-gradle-update": "Cambio de versión de Java y actualización de Gradle",
+            "detail-java-gradle-update": "Se actualizó la versión de Java y se migró a una versión más reciente de Gradle para asegurar compatibilidad, estabilidad y mejor rendimiento.",
+            "title-vulnerability-fix": "Corrección de vulnerabilidades checkmarks",
+            "detail-vulnerability-fix": "Se corrigieron vulnerabilidades detectadas por Checkmarks, reforzando la seguridad y la integridad del sistema.",
+            "title-backend-new-services": "Incorporación de nuevos servicios en backend",
+            "detail-backend-new-services": "Se añadieron nuevos servicios para manejo de estado de folio, cancelación, detener folio, relocate, rechazar y resumen de folio."
         }
     },
     "random-text": {
