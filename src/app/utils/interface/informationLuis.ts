@@ -1,4 +1,4 @@
-import { ProfileData, typeProject } from "./general.interface";
+import { ProfileData, Relevance, typeProject } from "./general.interface";
 
 export class InformationLuis{
 
@@ -12,7 +12,7 @@ export class InformationLuis{
         this.data = 
         {
             fullName: 'Luis Paulo Calderon Nava',
-            imgName: 'profile-luis.png',
+            imgName: 'pavi.png',
             email: 'pavicalderon49@gmail.com',
             urlLinkedin: '',
             title: 'Jr. Developer',
@@ -23,20 +23,192 @@ export class InformationLuis{
             gmail: "mailto:pavicalderon49@gmail.com",
         }
     }
-
+    
     private get getCompanies() {
-        return  [
-            this.getCsInformatica,
-            {
+        return [
+            this.getCompaniesCS,
+            this.getCompaniesSaltwort
+        ];
+    }
+
+    private get getCompaniesCS() {
+        return {
+            name: 'CSINFORMATICA',
+            projects: [
+                this.getVentaPlus,
+                this.getControlVehicular,
+                this.getGenericCRM,
+                this.getRuta,
+                this.getCheckPrizes,
+                this.getPrizeList
+            ],
+        };
+    } 
+
+    private get getVentaPlus(){
+        return {
+            id: 1,
+            platforms: this.getArchivimentsVentaPlus,
+            name: 'Venta plus',
+            detail: 'specific-project.properties.project-detail-ventaplus-luis',
+            relevantSkills: [
+                "specific-project.properties.revelant-skills-1-ventaplus-luis",
+                "specific-project.properties.revelant-skills-2-ventaplus-luis"
+             ],
+            tools: [
+                    "android",
+                    "kotlin"
+                    ],
+            icon: {
+                    name: 'name',
+                    detail: 'detail',
+                    url: 'venta+-icon',
+                    typeProject: [typeProject.movil, typeProject.desktop]
+                },
+            screens: this.getScreensCsInformatica
+        };
+    }
+    private get getControlVehicular(){
+        return {
+            id: 2,
+                    platforms: this.getArchivimentsVehicularControl,
+                    name: 'Control Vehicular',
+                    detail: 'specific-project.properties.project-detail-cvm-luis',
+                    relevantSkills: [
+                        "specific-project.properties.revelant-skills-cvm-1-luis",
+                        "specific-project.properties.revelant-skills-cvm-2-luis",
+                        "specific-project.properties.revelant-skills-cvm-3-luis"
+                    ],
+                    tools: [
+                        "android",
+                        "kotlin",
+                        "c-sharp",
+                        "managment"
+                    ],
+                    icon: {
+                        name: 'ControlVehicular',
+                        detail: 'detail',
+                        url: 'cvm-icon',
+                        typeProject: [typeProject.movil]
+                    },
+                    screens: this.getScreenControlVehicular
+        };
+    }
+    private get getGenericCRM(){
+        return {
+            id: 3,
+            platforms: this.getPlatformGenericCRM,
+            name: 'CRM Generico',
+            detail: 'specific-project.properties.project-detail-crm-luis',
+            relevantSkills: [
+                "specific-project.properties.revelant-skills-1-crm-luis",
+                "specific-project.properties.revelant-skills-2-crm-luis",
+                "specific-project.properties.revelant-skills-3-crm-luis"
+            ],
+            tools: [
+                "c-sharp",
+                "managment"
+            ],
+            icon: {
+                name: 'name',
+                detail: 'detail',
+                url: 'crm-icon',
+                typeProject: [typeProject.desktop]
+            },
+            screens : this.getScreenCRM
+        };
+    }
+    private get getRuta(){
+        return {
+            id: 4,
+                    platforms: this.getArchivimentsRuta,
+                    name: 'Ruta +',
+                    detail: 'Aplicación que sirve para el envio de pedidos a clientes, consta de dos aplicaciones, una movil y una de esscritorio, la de movil solo envia pedidos, mientras que la de escritorio se encarga de administrar los pedidos, pudiendo enviarlos a comercial y egenrando los documentos necesarios para factura',
+                    relevantSkills: [
+                        "Sincronización API",
+                        "Conexión impresora",
+                        "specific-project.properties.revelant-skills-3-crm-luis"
+                    ],
+                    tools: [
+                        "c-sharp",
+                        "android",
+                        "java",
+                        "managment"
+                    ],
+                    icon: {
+                        name: 'name',
+                        detail: 'detail',
+                        url: 'rutaicon',
+                        typeProject: [typeProject.desktop, typeProject.movil]
+                    },
+                    screens: this.getScreenRutaPlus
+        };
+    }
+    private get getCheckPrizes(){
+        return {
+            id: 5,
+            platforms: this.getPlatformCheckPrizes,
+            name: 'Verificador de precios movil',
+            detail: 'Ves los productos de la empresa, y puedes configurar los precios que ves en pantalla, siendo un total de 10 precios diferentes ',
+            relevantSkills: [
+                "specific-project.properties.revelant-skills-1-crm-luis",
+                "specific-project.properties.revelant-skills-2-crm-luis",
+                "specific-project.properties.revelant-skills-3-crm-luis"
+            ],
+            tools: [
+                "android",
+                "kotlin",
+                "managment"
+            ],
+            icon: {
+                name: 'name',
+                detail: 'detail',
+                url: 'vpicon',
+                typeProject: [typeProject.movil]
+            },
+            screens: [
+                {
+                    name: 'screen-1',
+                    detail: 'detail',
+                    url: 'crm/crm1',
+                    typeProject: [typeProject.desktop]
+                },
+
+            ]
+        };
+    }
+    private get getPrizeList(){
+        return {
+            id: 6,
+            platforms: this.getPlatformPrizeList,
+            name: 'Lista de precios',
+            detail: 'specific-project.properties.project-detail-price-list',
+            relevantSkills: [
+                "specific-project.properties.revelant-skills-1-crm-luis",
+                "specific-project.properties.revelant-skills-2-crm-luis",
+                "specific-project.properties.revelant-skills-3-crm-luis"
+            ],
+            tools: [
+                "android",
+                "java",
+                "managment"
+            ],
+            icon: {
+                name: 'name',
+                detail: 'detail',
+                url: 'lpicon',
+                typeProject: [typeProject.desktop, typeProject.movil]
+            },
+            screens: this.getListPrecios
+        };
+    }
+    private get getCompaniesSaltwort() {
+        return  {
                 name: "Saltwort",
                 projects: [
                     {
                         id: 2,
-                        platforms: [
-                            {
-                                typeProject: typeProject.web,
-                                achievements: []
-                            }
+                        platforms: [ {typeProject: typeProject.web, achievements: [""] }
                         ],
                         name: 'Saltwort',
                         detail: '',
@@ -62,12 +234,11 @@ export class InformationLuis{
                                 detail: 'En esta pantañña tu puedes registrarte en caso de tu tener una cuenta ya, crear una o ingresar con Google',
                                 url: 'ap/ap1',
                                 typeProject: [typeProject.web]
-                            }
-                        ]
-                    },
-                ],
-            }
-        ];
+                        }
+                    ]
+                }
+            ]
+        };
     }
 
     private get getTools() {
@@ -80,7 +251,8 @@ export class InformationLuis{
             "mariadb",
             "c-sharp",
             "managment",
-            "angular"
+            "angular",
+            "net"
         ];
     }
 
@@ -88,195 +260,123 @@ export class InformationLuis{
         return this.data!
     }
 
-    private get getCsInformatica() {
-        return {
-            name: 'CS informatica',
-            projects: [
-                {
-                    id: 1,
-                    platforms: [
-                        {
-                            typeProject: typeProject.movil,
-                            achievements: []
-                        }
-                    ],
-                    name: 'Venta plus Movil',
-                    detail: 'specific-project.properties.project-detail-ventaplus-luis',
-                    relevantSkills: [
-                        "specific-project.properties.revelant-skills-1-ventaplus-luis",
-                        "specific-project.properties.revelant-skills-2-ventaplus-luis"
-                    ],
-                    tools: [
-                        "android",
-                        "kotlin"
-                    ],
-                    icon: {
-                        name: 'name',
-                        detail: 'detail',
-                        url: 'venta+-icon',
-                        typeProject: [typeProject.movil, typeProject.desktop]
-                    },
-                    screens: this.getScreensCsInformatica
-                },
-                {
-                    id: 2,
-                    platforms: [
-                        {
-                            typeProject: typeProject.movil,
-                            achievements: []
-                        },
-                        {
-                            typeProject: typeProject.desktop,
-                            achievements: []
-                        }
-                    ],
-                    name: 'Control Vehicular',
-                    detail: 'specific-project.properties.project-detail-cvm-luis',
-                    relevantSkills: [
-                        "specific-project.properties.revelant-skills-cvm-1-luis",
-                        "specific-project.properties.revelant-skills-cvm-2-luis",
-                        "specific-project.properties.revelant-skills-cvm-3-luis"
-                    ],
-                    tools: [
-                        "android",
-                        "kotlin",
-                        "c-sharp",
-                        "managment"
-                    ],
-                    icon: {
-                        name: 'ControlVehicular',
-                        detail: 'detail',
-                        url: 'cvm-icon',
-                        typeProject: [typeProject.movil]
-                    },
-                    screens: this.getScreenControlVehicular
-                },
-                {
-                    id: 3,
-                    platforms: [
-                        {
-                            typeProject: typeProject.desktop,
-                            achievements: []
-                        }
-                    ],
-                    name: 'CRM Generico',
-                    detail: 'specific-project.properties.project-detail-crm-luis',
-                    relevantSkills: [
-                        "specific-project.properties.revelant-skills-1-crm-luis",
-                        "specific-project.properties.revelant-skills-2-crm-luis",
-                        "specific-project.properties.revelant-skills-3-crm-luis"
-                    ],
-                    tools: [
-                        "c-sharp",
-                        "managment"
-                    ],
-                    icon: {
-                        name: 'name',
-                        detail: 'detail',
-                        url: 'crm-icon',
-                        typeProject: [typeProject.desktop]
-                    },
-                    screens : this.getScreenCRM
-                },
-                {
-                    id: 4,
-                    platforms: [
-                        {
-                            typeProject: typeProject.desktop,
-                            achievements: []
-                        },
-                        {
-                            typeProject: typeProject.movil,
-                            achievements: []
-                        }
-                    ],
-                    name: 'Ruta +',
-                    detail: 'Aplicación que sirve para el envio de pedidos a clientes, consta de dos aplicaciones, una movil y una de esscritorio, la de movil solo envia pedidos, mientras que la de escritorio se encarga de administrar los pedidos, pudiendo enviarlos a comercial y egenrando los documentos necesarios para factura',
-                    relevantSkills: [
-                        "Sincronización API",
-                        "Conexión impresora",
-                        "specific-project.properties.revelant-skills-3-crm-luis"
-                    ],
-                    tools: [
-                        "c-sharp",
-                        "android",
-                        "java",
-                        "managment"
-                    ],
-                    icon: {
-                        name: 'name',
-                        detail: 'detail',
-                        url: 'rutaicon',
-                        typeProject: [typeProject.desktop, typeProject.movil]
-                    },
-                    screens: this.getScreenRutaPlus
-                },
-                {
-                    id: 5,
-                    platforms: [
-                        {
-                            typeProject: typeProject.movil,
-                            achievements: []
-                        }
-                    ],
-                    name: 'Verificador de precios movil',
-                    detail: 'Ves los productos de la empresa, y puedes configurar los precios que ves en pantalla, siendo un total de 10 precios diferentes ',
-                    relevantSkills: [
-                        "specific-project.properties.revelant-skills-1-crm-luis",
-                        "specific-project.properties.revelant-skills-2-crm-luis",
-                        "specific-project.properties.revelant-skills-3-crm-luis"
-                    ],
-                    tools: [
-                        "android",
-                        "kotlin",
-                        "managment"
-                    ],
-                    icon: {
-                        name: 'name',
-                        detail: 'detail',
-                        url: 'vpicon',
-                        typeProject: [typeProject.movil]
-                    },
-                    screens: [
-                        {
-                            name: 'screen-1',
-                            detail: 'detail',
-                            url: 'crm/crm1',
-                            typeProject: [typeProject.desktop]
-                        },
+    private get getPlatformPrizeList() {
+        return [
+            {
+                typeProject: typeProject.movil,
+                achievements: [
+                    { title: 'project-relevance.price-list-movil.title-code-reestructure', detail: 'project-relevance.price-list-movil.detail-code-reestructure', relevance: Relevance.MEDIUM, icon: '' },
+                    { title: 'project-relevance.price-list-movil.title-creation-preferences', detail: 'project-relevance.price-list-movil.detail-creation-preferences', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.price-list-movil.title-delete-trashcode', detail: 'project-relevance.price-list-movil.detail-delete-trashcode', relevance: Relevance.MEDIUM, icon: '' }
+                ]
+            }
+        ];
+    }
+    private get getPlatformCheckPrizes() {
+        return [
+            {
+                typeProject: typeProject.movil,
+                achievements: [
+                    { title: 'project-relevance.price-list-movil.title-code-reestructure', detail: 'project-relevance.price-list-movil.detail-code-reestructure', relevance: Relevance.MEDIUM, icon: '' },
+                    { title: 'project-relevance.price-list-movil.title-creation-preferences', detail: 'project-relevance.price-list-movil.detail-creation-preferences', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.price-list-movil.title-delete-trashcode', detail: 'project-relevance.price-list-movil.detail-delete-trashcode', relevance: Relevance.MEDIUM, icon: '' }
+                ]
+            }
+        ];
+    }
+    private get getArchivimentsVentaPlus() {
+        return [
+            { typeProject: typeProject.movil, achievements: this.getPlatformVentaPlusMovil },
+            { typeProject: typeProject.desktop, achievements: this.getPlatformVentaPlusDesktop }
+        ];
+    }
+    private get getPlatformVentaPlusMovil() {
+        return [
+            
+             
+                    { title: 'project-relevance.price-list-movil.title-code-reestructure', detail: 'project-relevance.price-list-movil.detail-code-reestructure', relevance: Relevance.MEDIUM, icon: '' },
+                    { title: 'project-relevance.price-list-movil.title-creation-preferences', detail: 'project-relevance.price-list-movil.detail-creation-preferences', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.price-list-movil.title-delete-trashcode', detail: 'project-relevance.price-list-movil.detail-delete-trashcode', relevance: Relevance.MEDIUM, icon: '' }
+                
+            
+        ];
+    }
+    private get getPlatformVentaPlusDesktop() {
+        return [
+            
+                
+                    { title: 'project-relevance.price-list-movil.title-code-reestructure', detail: 'project-relevance.price-list-movil.detail-code-reestructure', relevance: Relevance.MEDIUM, icon: '' },
+                    { title: 'project-relevance.price-list-movil.title-creation-preferences', detail: 'project-relevance.price-list-movil.detail-creation-preferences', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.price-list-movil.title-delete-trashcode', detail: 'project-relevance.price-list-movil.detail-delete-trashcode', relevance: Relevance.MEDIUM, icon: '' }
+                
+            
+        ];
+    }
 
-                    ]
-                },
-                {
-                    id: 6,
-                    platforms: [
-                        {
-                            typeProject: typeProject.movil,
-                            achievements: []
-                        }
-                    ],
-                    name: 'Lista de precios',
-                    detail: '',
-                    relevantSkills: [
-                        "specific-project.properties.revelant-skills-1-crm-luis",
-                        "specific-project.properties.revelant-skills-2-crm-luis",
-                        "specific-project.properties.revelant-skills-3-crm-luis"
-                    ],
-                    tools: [
-                        "android",
-                        "java",
-                        "managment"
-                    ],
-                    icon: {
-                        name: 'name',
-                        detail: 'detail',
-                        url: 'lpicon',
-                        typeProject: [typeProject.desktop, typeProject.movil]
-                    },
-                    screens: this.getListPrecios
-                }
-            ]
-        };
+    private get getArchivimentsVehicularControl() {
+        return [
+            { typeProject: typeProject.movil, achievements: this.getPlatformVehicularControlMovil },
+            { typeProject: typeProject.desktop, achievements: this.getPlatformVehicularControlDesktop }
+        ];
+    }
+    private get getPlatformVehicularControlMovil() {
+        return [
+            
+                
+                    { title: 'project-relevance.price-list-movil.title-code-reestructure', detail: 'project-relevance.price-list-movil.detail-code-reestructure', relevance: Relevance.MEDIUM, icon: '' },
+                    { title: 'project-relevance.price-list-movil.title-creation-preferences', detail: 'project-relevance.price-list-movil.detail-creation-preferences', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.price-list-movil.title-delete-trashcode', detail: 'project-relevance.price-list-movil.detail-delete-trashcode', relevance: Relevance.MEDIUM, icon: '' }
+                
+            
+        ];
+    }
+    private get getPlatformVehicularControlDesktop() {
+        return [
+           
+                    { title: 'project-relevance.price-list-movil.title-code-reestructure', detail: 'project-relevance.price-list-movil.detail-code-reestructure', relevance: Relevance.MEDIUM, icon: '' },
+                    { title: 'project-relevance.price-list-movil.title-creation-preferences', detail: 'project-relevance.price-list-movil.detail-creation-preferences', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.price-list-movil.title-delete-trashcode', detail: 'project-relevance.price-list-movil.detail-delete-trashcode', relevance: Relevance.MEDIUM, icon: '' }
+                
+            
+        ];
+    }
+
+    private get getPlatformGenericCRM() {
+        return [
+            {
+                typeProject: typeProject.desktop,
+                achievements: [
+                    { title: 'project-relevance.price-list-movil.title-code-reestructure', detail: 'project-relevance.price-list-movil.detail-code-reestructure', relevance: Relevance.MEDIUM, icon: '' },
+                    { title: 'project-relevance.price-list-movil.title-creation-preferences', detail: 'project-relevance.price-list-movil.detail-creation-preferences', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.price-list-movil.title-delete-trashcode', detail: 'project-relevance.price-list-movil.detail-delete-trashcode', relevance: Relevance.MEDIUM, icon: '' }
+                ]
+            }
+        ];
+    }
+    private get getArchivimentsRuta() {
+        return [
+            { typeProject: typeProject.movil, achievements: this.getPlatformRutaMovil },
+            { typeProject: typeProject.desktop, achievements: this.getPlatformRutaDesktop }
+        ];
+    }
+    private get getPlatformRutaMovil() {
+        return [
+          
+                    { title: 'project-relevance.price-list-movil.title-code-reestructure', detail: 'project-relevance.price-list-movil.detail-code-reestructure', relevance: Relevance.MEDIUM, icon: '' },
+                    { title: 'project-relevance.price-list-movil.title-creation-preferences', detail: 'project-relevance.price-list-movil.detail-creation-preferences', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.price-list-movil.title-delete-trashcode', detail: 'project-relevance.price-list-movil.detail-delete-trashcode', relevance: Relevance.MEDIUM, icon: '' }
+                
+            
+        ];
+    }
+    private get getPlatformRutaDesktop() {
+        return [
+           
+                    { title: 'project-relevance.price-list-movil.title-code-reestructure', detail: 'project-relevance.price-list-movil.detail-code-reestructure', relevance: Relevance.MEDIUM, icon: '' },
+                    { title: 'project-relevance.price-list-movil.title-creation-preferences', detail: 'project-relevance.price-list-movil.detail-creation-preferences', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.price-list-movil.title-delete-trashcode', detail: 'project-relevance.price-list-movil.detail-delete-trashcode', relevance: Relevance.MEDIUM, icon: '' }
+                
+        ];
     }
 
     private get getScreensCsInformatica() {

@@ -110,7 +110,8 @@
             "project-detail-sisap": "Applicación para brindar movilidad a los usuarios internos de Telcel en el seguimiento de folios SISAP los proyectos en donde se este involucrado.",
             "project-detail-blue-board": "Telcel busca poder agilizar la gestión de noticias (promociones), por ello se creó la aplicación “BLUE BOARD”, esta aplicación se encarga de visualizar noticias. Estas noticias llegan en tiempo real por medio de una aplicación móvil, a todos los clientes (administradores regionales, distribuidores, gerentes y vendedores) no importando en cuál de las 8 regiones se encuentren, estarán informados de las diferentes noticias y promociones que Telcel lance a nivel nacional.",
             "project-name-gamstore": "GAMSTORE",
-            "project-detail-gamstore": "PENDIENTE"
+            "project-detail-gamstore": "PENDIENTE",
+            "project-detail-price-list": "Aplicacion movil que le muestra a los usuarios una lista de precios de todos sus productos, pudiendo filtrar porque precios mostrar y por un buscador de productos."
         }
     },
     "project-relevance": {
@@ -299,6 +300,14 @@
             "detail-vulnerability-fix": "Se corrigieron vulnerabilidades detectadas por Checkmarks, reforzando la seguridad y la integridad del sistema.",
             "title-backend-new-services": "Incorporación de nuevos servicios en backend",
             "detail-backend-new-services": "Se añadieron nuevos servicios para manejo de estado de folio, cancelación, detener folio, relocate, rechazar y resumen de folio."
+        },
+        "price-list-movil": {
+            "title-code-reestructure" : "Reconstruccion de codigo",
+            "detail-code-reestructure" : "Se modificaron clases para organizar de una manera mas eficiente la muestra de datos, mejorando lso tiempos",
+            "title-creation-preferences" : "Creacion de nuevas preferencias",
+            "detail-creation-preferences" : "Se crearon nuevas shared preferences para saber las listas de precios a usar por el usuario",
+            "title-delete-trashcode" : "Borrar codigo basura",
+            "detail-delete-trashcode" : "Se borró codigo basura de distintas clases, como consultas innecesarias, codigo comentado, funciones sin usar, etc."
         }
     },
     "random-text": {

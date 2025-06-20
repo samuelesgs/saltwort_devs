@@ -107,7 +107,9 @@
             "project-detail-zeus": "ZEUS",
             "project-detail-sisap": "Application designed to provide mobility to Telcel's internal users for tracking SISAP tickets and the projects in which they are involved.",
             "project-detail-blue-board": "Telcel seeks to streamline the management of news (promotions), which is why the “BLUE BOARD” application was created. This application is responsible for displaying news in real time through a mobile app to all clients (regional administrators, distributors, managers, and salespeople), regardless of which of the 8 regions they are in. They will be kept informed about the different news and promotions that Telcel launches nationwide.",
-            "project-detail-gamstore": "GAMSTORE"
+            "project-detail-gamstore": "GAMSTORE",
+            "project-detail-price-list": "Mobile application that shows users a price list of all their products, allowing them to filter which prices to display and search for products using a search bar."
+
         }
     },
     "project-relevance": {
@@ -258,6 +260,14 @@
             "detail-java-gradle-update": "The Java version was updated and migrated to a newer Gradle version to ensure compatibility and project security.",
             "title-vulnerability-fix": "Vulnerability fixes detected by Checkmarks",
             "detail-vulnerability-fix": "Critical vulnerabilities and warnings reported by Checkmarks static analysis were fixed to strengthen system security."
+        },
+        "price-list-movil": {
+            "title-code-reestructure": "Code Restructure",
+            "detail-code-reestructure": "Classes were modified to organize the data display more efficiently, improving performance times.",
+            "title-creation-preferences": "Creation of New Preferences",
+            "detail-creation-preferences": "New shared preferences were created to identify which price lists the user will use.",
+            "title-delete-trashcode": "Delete Trash Code",
+            "detail-delete-trashcode": "Unnecessary code was removed from various classes, such as redundant queries, commented-out code, unused functions, etc."
         }
     },
     "random-text": {

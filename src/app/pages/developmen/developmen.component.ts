@@ -58,7 +58,8 @@ export class DevelopmenComponent {
     "c-sharp",
     "managment",
     "angular",
-    "html"
+    "html",
+    "net"
   ];
 
   constructor(
