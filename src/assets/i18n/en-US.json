@@ -58,7 +58,6 @@
             "name-2-cooking": "Socialize through recipes.",
             "detail-2-cooking": "You will be able to leave feedback on the recipes, thereby letting everyone know the quality of the recipe."
         }
-        
     },
     "footer": {
         "description": "Welcome to Saltwort Devs. We are committed to protecting and respecting your privacy. The data provided by users or contacts is highly protected by our rigorous privacy policies. To know our privacy policies,",
@@ -75,7 +74,7 @@
     "Devs": {
         "Luis-desc": "I am a junior developer with experience in various technologies, including using Android Studio with Kotlin and Visual Studio with C#. I have skills in database management, working with PostgreSQL, MySQL, and SQL Server Management. I consider myself a highly motivated person with a strong willingness to learn and grow in the development field.",
         "Samuel-desc": "With over 5 years of experience in various areas, I possess solid knowledge in developing Android applications using Java, Kotlin, and XML. In the web domain, I work with technologies such as JavaScript, HTML, CSS, Angular, and TypeScript to create interactive and efficient solutions. Additionally, I have experience in backend development with Node.js, PHP, and NestJS, as well as managing AWS services, including EC2, S3, and others.",
-        "Aksel-desc": "With experience in native iOS development using Swift and in building web applications with Angular, I also have skills in creating REST APIs with NestJS in Node.js environments. My experience includes integrating external services, migrating technologies, and optimizing systems to enhance performance and scalability."
+        "Aksel-desc": "Software Development and Management Engineer, Full Stack Developer with 2 years of experience in developing native iOS applications (Swift) and web applications with Angular. Expert in creating scalable REST APIs using NestJS and Node.js. Experienced in integrating external services, migrating technologies, and optimizing systems to improve performance and maintainability."
     },
     "Devs-big-desc": {
         "Luis-desc": "I am a junior developer with experience in various technologies, highlighting my proficiency in Android Studio with Kotlin for mobile app development, where I have created intuitive user interfaces and integrated advanced features. I also have experience with Visual Studio and C#, developing efficient desktop applications and services. My expertise extends to database management, with knowledge of PostgreSQL, MySQL, and administration tools. I consider myself a highly motivated individual, eager to learn, with a constant focus on improving my skills and growing in the development field.",
@@ -108,7 +107,6 @@
             "project-detail-blue-board": "Telcel seeks to streamline the management of news (promotions), which is why the “BLUE BOARD” application was created. This application is responsible for displaying news in real time through a mobile app to all clients (regional administrators, distributors, managers, and salespeople), regardless of which of the 8 regions they are in. They will be kept informed about the different news and promotions that Telcel launches nationwide.",
             "project-detail-gamstore": "GAMSTORE",
             "project-detail-price-list": "Mobile application that shows users a price list of all their products, allowing them to filter which prices to display and search for products using a search bar."
-
         }
     },
     "project-relevance": {
@@ -216,6 +214,26 @@
             "custom-components-title": "Creation of new custom components with new features.",
             "custom-components": "Custom components were designed and implemented with specific functionalities tailored to the project's needs."
         },
+        "daily-expenses-4-ios": {
+            "library-implementation-title": "Integration of external libraries.",
+            "library-implementation": "Implemented and configured libraries such as SwiftyJSON, Charts, Alamofire, and Google SDKs to enhance the app's functionality and user experience.",
+            "new-backend-title": "Adaptation to new backend.",
+            "new-backend": "Updated network requests, migrating existing requests for compatibility with a new backend, ensuring service continuity and proper data integration.",
+            "core-data-manager-title": "Optimization of data handling with Core Data.",
+            "core-data-manager": "Redesigned the data insertion flow by directly using Core Data entities, removing intermediate steps with structures and improving performance and maintainability.",
+            "data-synchronization-title": "Local data synchronization.",
+            "data-synchronization": "Developed a synchronization system to keep the app's local data updated with the server, improving reliability and offline experience.",
+            "icon-update-title": "Application icon update.",
+            "icon-update": "Replaced and implemented new icons in the app to align with the corporate image redesign.",
+            "cocoapods-migration-title": "Migration from CocoaPods to Swift Package Manager.",
+            "cocoapods-migration": "Carried out the migration of dependencies from CocoaPods to Swift Package Manager, facilitating library management and improving project stability.",
+            "translations-title": "Implementation of multilingual translations.",
+            "translations": "Configured translation and localization management in English and Spanish using Localizable Strings, enabling multilingual support in the app.",
+            "data-persistence-title": "Persistence of complex and simple data.",
+            "data-persistence": "Developed persistence handling using Core Data for complex data and UserDefaults for simple data, improving efficiency and structure of local storage.",
+            "coredata-context-title": "Handling Core Data contexts.",
+            "coredata-context": "Implemented and properly configured Core Data's private and main contexts, ensuring safe and efficient persistence operations."
+        },
         "samuel-daily-expenses-4-android": {
             "title-desing": "XML Design for Android Views",
             "detail-desing": "The necessary layouts and resource collections were created for the proper functioning of the application.",
@@ -264,7 +282,7 @@
             "title-crud-servicios": "Implementation of CRUD for services",
             "detail-crud-servicios": "A CRUD module was developed to manage the services available within the application.",
             "title-mejoras-usuarios": "Improvements in user management"
-        }, 
+        },
         "samuel-sisap": {
             "title-video-library": "Video playback library implementation",
             "detail-video-library": "A library was integrated to enable multimedia playback within the application.",

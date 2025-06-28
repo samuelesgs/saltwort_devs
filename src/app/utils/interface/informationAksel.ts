@@ -1,7 +1,7 @@
 import { ProfileData, Relevance, typeProject } from "./general.interface";
 
 export class InformationAksel {
-    private data? : ProfileData
+    private data?: ProfileData
 
     constructor() {
         this.loadInformation();
@@ -13,7 +13,7 @@ export class InformationAksel {
             imgName: 'aksel.png',
             email: 'akselherrera18@gmail.com',
             urlLinkedin: '',
-            title: 'Jr. Developer',
+            title: 'iOS Developer / Full Stack Developer',
             desc: 'Devs-big-desc.properties.Aksel-desc',
             tools: this.getTools,
             companies: this.getCompanies,
@@ -127,7 +127,15 @@ export class InformationAksel {
             { name: 'Metas', detail: 'Las matas que te propones de ahorrar ', url: 'gd4web/gdweb11', typeProject: [typeProject.web] },
             { name: 'Registros frecuentes', detail: 'Las categorias que mas frecuentas  ', url: 'gd4web/gdweb12', typeProject: [typeProject.web] },
             { name: 'Configuraciones', detail: 'Configuraciones y preferencias que puedes establecer para la aplicación', url: 'gd4web/gdweb13', typeProject: [typeProject.web] },
-            { name: 'Perfil de usuario', detail: 'Correo, contraseña, opciones de configuracion ', url: 'gd4web/gdweb14', typeProject: [typeProject.web] }
+            { name: 'Perfil de usuario', detail: 'Correo, contraseña, opciones de configuracion ', url: 'gd4web/gdweb14', typeProject: [typeProject.web] },
+            { name: 'Pantalla de inicio', detail: 'Resumen de gastos diarios y acceso rápido a opciones.', url: 'gd/gd1', typeProject: [typeProject.movil] },
+            { name: 'Registro de gasto', detail: 'Formulario para ingresar nuevos gastos con categorías.', url: 'gd/gd2', typeProject: [typeProject.movil] },
+            { name: 'Gráficas de análisis', detail: 'Visualización de estadísticas de gasto por categoría.', url: 'gd/gd3', typeProject: [typeProject.movil] },
+            { name: 'Perfil de usuario', detail: 'Correo, contraseña, opciones de configuración.', url: 'gd/gd4', typeProject: [typeProject.movil] },
+            { name: 'Selección de cuenta', detail: 'Cambio entre cuentas múltiples registradas por el usuario.', url: 'gd/gd5', typeProject: [typeProject.movil] },
+            { name: 'Suscripciones', detail: 'Vista para activar o renovar suscripciones premium.', url: 'gd/gd6', typeProject: [typeProject.movil] },
+            { name: 'Historial de transacciones', detail: 'Listado detallado de todos los movimientos registrados.', url: 'gd/gd7', typeProject: [typeProject.movil] },
+            { name: 'Pantalla de sincronización', detail: 'Sincronización manual con la base de datos en la nube.', url: 'gd/gd8', typeProject: [typeProject.movil] }
         ];
     }
 
@@ -217,6 +225,20 @@ export class InformationAksel {
                     { title: 'project-relevance.daily-expenses-4-web.support-title', detail: 'project-relevance.daily-expenses-4-web.support', relevance: Relevance.MEDIUM, icon: '' },
                     { title: 'project-relevance.daily-expenses-4-web.custom-components-title', detail: 'project-relevance.daily-expenses-4-web.custom-components', relevance: Relevance.HIGH, icon: '' }
                 ]
+            },
+            {
+                typeProject: typeProject.movil,
+                achievements: [
+                    { title: 'project-relevance.daily-expenses-4-ios.library-implementation-title', detail: 'project-relevance.daily-expenses-4-ios.library-implementation', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.daily-expenses-4-ios.new-backend-title', detail: 'project-relevance.daily-expenses-4-ios.new-backend', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.daily-expenses-4-ios.core-data-manager-title', detail: 'project-relevance.daily-expenses-4-ios.core-data-manager', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.daily-expenses-4-ios.data-synchronization-title', detail: 'project-relevance.daily-expenses-4-ios.data-synchronization', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.daily-expenses-4-ios.icon-update-title', detail: 'project-relevance.daily-expenses-4-ios.icon-update', relevance: Relevance.MEDIUM, icon: '' },
+                    { title: 'project-relevance.daily-expenses-4-ios.cocoapods-migration-title', detail: 'project-relevance.daily-expenses-4-ios.cocoapods-migration', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.daily-expenses-4-ios.translations-title', detail: 'project-relevance.daily-expenses-4-ios.translations', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.daily-expenses-4-ios.data-persistence-title', detail: 'project-relevance.daily-expenses-4-ios.data-persistence', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.daily-expenses-4-ios.coredata-context-title', detail: 'project-relevance.daily-expenses-4-ios.coredata-context', relevance: Relevance.HIGH, icon: '' }
+                ]
             }
         ];
     }
@@ -225,7 +247,6 @@ export class InformationAksel {
     private get getCompanies() {
         return [
             this.getCompaniesEncodemx,
-            this.getCompaniesSaltwort
         ];
     }
 

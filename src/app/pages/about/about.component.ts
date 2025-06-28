@@ -33,16 +33,5 @@ export class AboutComponent {
       this.currentContainer = '';
       this.showAnySection = false;
     }
-    /*const container = event.target as HTMLElement;
-    const containerBtn = document.getElementById('container-btn')!;
-    if(current == 'vission' || current == 'objectives') {
-      container.remove();
-      containerBtn.prepend(container);
-    }
-    container.classList.add("box-mission");
-    setTimeout(() => {
-        container.classList.add('current-box')
-    }, 450);
-    this.currentContainer = current; */
   }
 }
