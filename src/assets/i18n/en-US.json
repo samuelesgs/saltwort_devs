@@ -282,7 +282,102 @@
             "detail-creation-preferences": "New shared preferences were created to identify which price lists the user will use.",
             "title-delete-trashcode": "Delete Trash Code",
             "detail-delete-trashcode": "Unnecessary code was removed from various classes, such as redundant queries, commented-out code, unused functions, etc."
-        }
+        },
+        "venta-movil": {
+              "title-code-reestructure": "Code Restructuring",
+                "detail-code-reestructure": "Classes were refactored to better organize data display, resulting in improved performance.",
+
+                "title-ui-design": "User Interface Design",
+                "detail-ui-design": "All main application screens were designed, including Home, Sales, Quotation, General Settings, Printer Settings, and essential dialogs like Price Checker, Price Change, and Quantity Adjustment, ensuring a cohesive and functional user experience.",
+
+                "title-architecture-setup": "MVVM & Clean Architecture Implementation",
+                "detail-architecture-setup": "The project was structured using the MVVM pattern and Clean Architecture principles to ensure separation of concerns, maintainability, and scalability.",
+
+                "title-api-integration": "API Integration Using Retrofit",
+                "detail-api-integration": "Retrofit was used to consume REST APIs, allowing the application to download essential catalog data such as products, clients, and price lists from the server.",
+
+                "title-dependency-injection": "Dependency Injection Setup",
+                "detail-dependency-injection": "A dependency injection system was implemented to manage repositories and ViewModels efficiently, improving code modularity and testing.",
+
+                "title-room-database": "Local Data Management with Room",
+                "detail-room-database": "Room was adopted for local database management, using DAOs to handle insertions, deletions, and updates in a reliable and scalable way.",
+
+                "title-printer-support": "Printer Integration for Ticket Printing",
+                "detail-printer-support": "The application was integrated with printing capabilities to generate and print sales tickets directly from the device.",
+
+                "title-functional-development": "Complete Feature Implementation",
+                "detail-functional-development": "All key functionalities were developed, including API consumption, sales operations, ticket printing, discount management, movement creation/editing, and configuration modules."
+        },
+          "venta-desktop" : {
+                "title-ui-enhancements": "UI Enhancements",
+                "detail-ui-enhancements": "New configuration options were added to the application, requiring improvements to the settings view in both design and functionality to properly accommodate these changes.",
+
+                "title-sellers-report-view": "Add Sellers Report View",
+                "detail-sellers-report-view": "A new view was added for the sellers report, featuring date range filters, a DataGridView for displaying results, and multiple ComboBoxes and CheckBoxes for advanced filtering options.",
+
+                "title-sellers-report-implementation": "Sellers Report Implementation",
+                "detail-sellers-report-implementation": "The sellers report was implemented using MVVM architecture, separating logic from presentation via interfaces between the view and controller. Specific methods were created to query and display the required data, using complex SQL queries with INNER JOIN clauses to retrieve all necessary report information. The view includes a grid for agents, date range selection, and detailed results.",
+
+                "title-excel-export": "Excel Creation and Export",
+                "detail-excel-export": "After retrieving the data, it is displayed in a grid and can be exported to an Excel file. An Excel utility was implemented in the system, along with a progress bar to indicate export progress, since a large number of records may be involved.",
+
+                "title-ticket-updates": "Ticket Modifications",
+                "detail-ticket-updates": "Modifications were made to various types of tickets, including delivery, payment, opening, opening close, and sales, to ensure they align with the new system configurations."
+            },
+             "cvm":{
+                "title-architecture-setup": "MVVM Structure",
+                "detail-architecture-setup": "The project was created and progressively configured following Clean Architecture principles and the MVVM pattern, enabling clear separation of concerns and maintainable code.",
+
+                "title-api-consumption": "API Consumption",
+                "detail-api-consumption": "Retrofit was used to consume an API that delivers essential catalog data to the mobile device, including products, routes, and agents.",
+
+                "title-dependency-injection": "Dependency Injection",
+                "detail-dependency-injection": "A dependency injection system was implemented as part of the architecture to better manage repositories and ViewModels, supporting organized and testable development.",
+
+                "title-route-management": "Route Management",
+                "detail-route-management": "The mobile app constantly receives notifications to check if a new route has been assigned to the user. This involves periodic API requests to retrieve updated route information.",
+
+                "title-report-sending": "Report Submission",
+                "detail-report-sending": "While on route, users can create a report, upload multiple photos, and send them via WhatsApp to share updates and provide visual documentation of their work.",
+
+                "title-fuel-consumption": "Fuel Consumption",
+                "detail-fuel-consumption": "A view was developed to calculate fuel consumption based on money spent, distance traveled, or amount refueled, providing users with better control over fuel usage."
+            },
+         "cv-desktop" : {
+            "title-wpf-ui": "WPF UI Screens",
+            "detail-wpf-ui": "WPF screens were created to deliver a more elegant, stylish, and modern user interface experience.",
+
+            "title-architecture-mvvm": "MVVM Architecture",
+            "detail-architecture-mvvm": "The project was developed using the MVVM architecture, which enabled better code organization and efficient handling of repositories and ViewModels.",
+
+            "title-excel-export": "Excel Creation and Export",
+            "detail-excel-export": "Once the data is retrieved, it is displayed in a grid and can be exported to an Excel file. An export utility was implemented, along with a progress bar to show the export status, which is especially useful when dealing with large datasets.",
+
+            "title-report-creation": "Report Creation",
+            "detail-report-creation": "Several reports were developed to provide insights into fuel consumption and allow users to view more detailed information within each report.",
+
+            "title-agent-management": "Agent Management",
+            "detail-agent-management": "A view was implemented to create new agents and update information for existing ones.",
+
+            "title-key-management": "Key Management",
+            "detail-key-management": "Functionality was added to create keys, assign them to agents or vehicles, and update them as needed.",
+
+            "title-vehicle-management": "Vehicle Management",
+            "detail-vehicle-management": "A view was added to create and update vehicle information, making their administration within the system easier."
+            },
+        "crm" : {
+                "title-ui-update": "UI Update",
+                "detail-ui-update": "New system configurations were added, which required modifying the settings dialog to include new options that improve the user experience.",
+
+                "title-reminders-module": "Reminders Module",
+                "detail-reminders-module": "A reminders module was developed and integrated with quotations. It allows users to create alerts for client follow-up calls, new quotation creation, quotation edits, and other relevant actions.",
+
+                "title-sql-queries": "SQL Query Development",
+                "detail-sql-queries": "SQL queries were created and modified to handle essential system data such as agents, quotation follow-ups, and quotations themselves. These queries were complex, as this was the initial phase of adopting SQL more consistently within the system.",
+
+                "title-design-refresh": "Icon and Design Refresh",
+                "detail-design-refresh": "The system was fully redesigned, including a new logo and updated color scheme. All views were adjusted to reflect the new design."
+                }
     },
     "random-text": {
         "knowmore": "know more"

@@ -308,7 +308,102 @@
             "detail-creation-preferences" : "Se crearon nuevas shared preferences para saber las listas de precios a usar por el usuario",
             "title-delete-trashcode" : "Borrar codigo basura",
             "detail-delete-trashcode" : "Se borró codigo basura de distintas clases, como consultas innecesarias, codigo comentado, funciones sin usar, etc."
-        }
+        },
+         "venta-movil": {
+           "title-code-reestructure": "Reconstrucción de código",
+            "detail-code-reestructure": "Se modificaron clases para organizar de una manera más eficiente la muestra de datos, mejorando los tiempos de respuesta.",
+
+            "title-ui-design": "Diseño de pantallas de usuario",
+            "detail-ui-design": "Se diseñaron todas las pantallas principales de la aplicación, incluyendo Home, Ventas, Cotización, Configuraciones generales, Configuraciones de impresora y diálogos esenciales como verificador de precios, cambio de precios y ajuste de cantidad, brindando una experiencia de usuario coherente y funcional.",
+
+            "title-architecture-setup": "Implementación de arquitectura MVVM y Clean Architecture",
+            "detail-architecture-setup": "El proyecto fue estructurado usando el patrón MVVM y principios de Clean Architecture para garantizar separación de responsabilidades, mantenibilidad y escalabilidad.",
+
+            "title-api-integration": "Integración de API con Retrofit",
+            "detail-api-integration": "Se utilizó Retrofit para consumir APIs REST, permitiendo a la aplicación descargar catálogos esenciales como productos, clientes y listas de precios desde el servidor.",
+
+            "title-dependency-injection": "Inyección de dependencias",
+            "detail-dependency-injection": "Se implementó un sistema de inyección de dependencias para gestionar eficientemente los repositorios y ViewModels, mejorando la modularidad y las pruebas del código.",
+
+            "title-room-database": "Manejo de datos locales con Room",
+            "detail-room-database": "Se adoptó Room para la gestión de base de datos local, utilizando DAOs para manejar inserciones, eliminaciones y actualizaciones de forma confiable y escalable.",
+
+            "title-printer-support": "Integración de impresora para impresión de tickets",
+            "detail-printer-support": "La aplicación fue integrada con funciones de impresión para generar y emitir tickets de venta directamente desde el dispositivo.",
+
+            "title-functional-development": "Implementación completa de funcionalidades",
+            "detail-functional-development": "Se desarrollaron todas las funcionalidades clave, incluyendo consumo de API, operaciones de venta, impresión de tickets, manejo de descuentos, creación/edición de movimientos y módulos de configuración."
+        },
+        "venta-desktop" :{
+            "title-ui-enhancements": "Mejoras en las vistas",
+            "detail-ui-enhancements": "Se agregaron nuevas configuraciones a la aplicación, lo que requirió mejoras visuales y funcionales en la vista de configuración para adaptarse correctamente a estos cambios.",
+
+            "title-sellers-report-view": "Agregar vista de reporte de vendedores",
+            "detail-sellers-report-view": "Se añadió una nueva vista para el reporte de vendedores, incluyendo filtros por rango de fechas, un DataGridView para mostrar los resultados, así como múltiples ComboBox y CheckBox para opciones de filtrado avanzadas.",
+
+            "title-sellers-report-implementation": "Creación del reporte de vendedores",
+            "detail-sellers-report-implementation": "El reporte de vendedores se implementó utilizando la arquitectura MVVM, separando lógica y presentación mediante interfaces entre la vista y el controlador. Se crearon métodos específicos para consultar y mostrar la información requerida, utilizando sentencias SQL complejas con INNER JOIN para obtener todos los datos necesarios. La vista incluye un grid con los agentes, el rango de fechas y resultados detallados.",
+
+            "title-excel-export": "Creación y exportación de Excel",
+            "detail-excel-export": "Una vez consultada la información, esta se muestra en un grid que puede ser exportado a un archivo Excel. Para ello se implementó una utilería que permite generar dicho archivo y se añadió una barra de progreso que indica el avance de la exportación, ya que puede involucrar grandes volúmenes de datos.",
+
+            "title-ticket-updates": "Modificación de tickets",
+            "detail-ticket-updates": "Se realizaron modificaciones a los tickets de reparto, abono, apertura, cierre de apertura, venta, entre otros, para adaptarlos correctamente a las nuevas configuraciones del sistema."
+        },
+        "cvm": {
+            "title-architecture-setup": "Estructura MVVM",
+            "detail-architecture-setup": "Se creó el proyecto y se fue configurando progresivamente para seguir los principios de Clean Architecture y el patrón MVVM, facilitando una separación clara de responsabilidades y un código más mantenible.",
+
+            "title-api-consumption": "Consumo de API",
+            "detail-api-consumption": "Se utilizó Retrofit para consumir una API que permite obtener los catálogos necesarios en el dispositivo móvil, tales como productos, rutas y agentes.",
+
+            "title-dependency-injection": "Inyección de dependencias",
+            "detail-dependency-injection": "Debido a la arquitectura adoptada, se implementó un sistema de inyección de dependencias para mejorar la gestión de repositorios y ViewModels, permitiendo un desarrollo más organizado y testable.",
+
+            "title-route-management": "Manejo de rutas",
+            "detail-route-management": "La aplicación recibe notificaciones constantes para verificar si se ha asignado una nueva ruta al usuario. Esto implica realizar consultas periódicas a la API para obtener la información actualizada de las rutas.",
+
+            "title-report-sending": "Envío de reportes",
+            "detail-report-sending": "Durante una ruta, el usuario puede generar un reporte, subir múltiples fotos relacionadas al mismo y enviarlas directamente a través de WhatsApp para facilitar la comunicación y evidencia de trabajo.",
+
+            "title-fuel-consumption": "Consumo de gasolina",
+            "detail-fuel-consumption": "Se desarrolló una vista que permite calcular el consumo de gasolina en función del gasto realizado, la distancia recorrida o el volumen llenado, brindando mayor control sobre el uso de combustible."
+        },
+        "cv-desktop": {
+            "title-wpf-ui": "Pantallas en WPF",
+            "detail-wpf-ui": "Se crearon las pantallas en WPF con el objetivo de ofrecer una interfaz más elegante, estilizada y moderna para el usuario.",
+
+            "title-architecture-mvvm": "Arquitectura MVVM",
+            "detail-architecture-mvvm": "Se utilizó la arquitectura MVVM para el desarrollo del proyecto, lo que permitió una mejor organización del código y facilitó la gestión de repositorios y ViewModels.",
+
+            "title-excel-export": "Creación y exportación de Excel",
+            "detail-excel-export": "Una vez consultada la información, esta se muestra en un grid y puede exportarse a un archivo Excel. Para ello se implementó una utilidad de exportación junto con una barra de progreso que muestra el avance del proceso, especialmente útil cuando se manejan grandes volúmenes de datos.",
+
+            "title-report-creation": "Creación de reportes",
+            "detail-report-creation": "Se desarrollaron varios reportes que permiten consultar información como el consumo de gasolina y acceder a datos más detallados dentro de cada reporte.",
+
+            "title-agent-management": "Creación de agentes",
+            "detail-agent-management": "Se implementó una vista que permite crear nuevos agentes y también actualizar la información de los ya existentes.",
+
+            "title-key-management": "Creación de llaves",
+            "detail-key-management": "Funcionalidad que permite crear llaves, asignarlas a un agente o vehículo y realizar actualizaciones según sea necesario.",
+
+            "title-vehicle-management": "Creación de vehículos",
+            "detail-vehicle-management": "Se agregó una vista para crear y actualizar la información de vehículos, facilitando su gestión dentro del sistema."
+            },
+        "crm" : {
+            "title-ui-update": "Modificación de pantallas",
+            "detail-ui-update": "Se añadieron nuevas configuraciones al sistema, lo que implicó modificar el diálogo de configuración para incorporar nuevas opciones que mejoran la experiencia del usuario.",
+
+            "title-reminders-module": "Módulo de recordatorios",
+            "detail-reminders-module": "Se desarrolló un módulo de recordatorios para integrarlo con las cotizaciones. Este permite generar avisos relacionados con llamadas al cliente, creación o edición de cotizaciones, y otros seguimientos relevantes.",
+
+            "title-sql-queries": "Creación de consultas",
+            "detail-sql-queries": "Se crearon y ajustaron consultas SQL que manejan información clave del sistema, como agentes, seguimientos y cotizaciones. Estas consultas representaron un reto debido a la complejidad de los datos y a que era el inicio del uso extensivo de SQL en el sistema.",
+
+            "title-design-refresh": "Cambio de ícono y diseño",
+            "detail-design-refresh": "El sistema fue rediseñado por completo, incluyendo la actualización del logotipo y un nuevo esquema de colores. Esto implicó aplicar los nuevos estilos a todas las vistas del sistema."
+            }
     },
     "random-text": {
         "knowmore": "Conoce mas"

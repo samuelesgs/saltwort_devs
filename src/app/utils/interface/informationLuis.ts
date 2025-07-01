@@ -57,7 +57,10 @@ export class InformationLuis{
              ],
             tools: [
                     "android",
-                    "kotlin"
+                    "kotlin",
+                    "net",
+                    "managment",
+                    "c-sharp"
                     ],
             icon: {
                     name: 'name',
@@ -83,13 +86,14 @@ export class InformationLuis{
                         "android",
                         "kotlin",
                         "c-sharp",
-                        "managment"
+                        "managment",
+                        "net"
                     ],
                     icon: {
                         name: 'ControlVehicular',
                         detail: 'detail',
                         url: 'cvm-icon',
-                        typeProject: [typeProject.movil]
+                        typeProject: [typeProject.movil, typeProject.desktop]
                     },
                     screens: this.getScreenControlVehicular
         };
@@ -107,7 +111,8 @@ export class InformationLuis{
             ],
             tools: [
                 "c-sharp",
-                "managment"
+                "managment",
+                "net"
             ],
             icon: {
                 name: 'name',
@@ -133,7 +138,8 @@ export class InformationLuis{
                         "c-sharp",
                         "android",
                         "java",
-                        "managment"
+                        "managment",
+                        "net"
                     ],
                     icon: {
                         name: 'name',
@@ -208,7 +214,7 @@ export class InformationLuis{
                 projects: [
                     {
                         id: 2,
-                        platforms: [ {typeProject: typeProject.web, achievements: [""] }
+                        platforms: [ {typeProject: typeProject.web, achievements: [] }
                         ],
                         name: 'Saltwort',
                         detail: '',
@@ -291,25 +297,64 @@ export class InformationLuis{
         ];
     }
     private get getPlatformVentaPlusMovil() {
-        return [
-            
-             
-                    { title: 'project-relevance.price-list-movil.title-code-reestructure', detail: 'project-relevance.price-list-movil.detail-code-reestructure', relevance: Relevance.MEDIUM, icon: '' },
-                    { title: 'project-relevance.price-list-movil.title-creation-preferences', detail: 'project-relevance.price-list-movil.detail-creation-preferences', relevance: Relevance.VERY_HIGH, icon: '' },
-                    { title: 'project-relevance.price-list-movil.title-delete-trashcode', detail: 'project-relevance.price-list-movil.detail-delete-trashcode', relevance: Relevance.MEDIUM, icon: '' }
-                
-            
-        ];
+       return [
+        {
+            title: 'project-relevance.venta-movil.title-code-reestructure',
+            detail: 'project-relevance.venta-movil.detail-code-reestructure',
+            relevance: Relevance.MEDIUM,
+            icon: ''
+        },
+        {
+            title: 'project-relevance.venta-movil.title-ui-design',
+            detail: 'project-relevance.venta-movil.detail-ui-design',
+            relevance: Relevance.HIGH,
+            icon: ''
+        },
+        {
+            title: 'project-relevance.venta-movil.title-architecture-setup',
+            detail: 'project-relevance.venta-movil.detail-architecture-setup',
+            relevance: Relevance.HIGH,
+            icon: ''
+        },
+        {
+            title: 'project-relevance.venta-movil.title-api-integration',
+            detail: 'project-relevance.venta-movil.detail-api-integration',
+            relevance: Relevance.HIGH,
+            icon: ''
+        },
+        {
+            title: 'project-relevance.venta-movil.title-dependency-injection',
+            detail: 'project-relevance.venta-movil.detail-dependency-injection',
+            relevance: Relevance.MEDIUM,
+            icon: ''
+        },
+        {
+            title: 'project-relevance.venta-movil.title-room-database',
+            detail: 'project-relevance.venta-movil.detail-room-database',
+            relevance: Relevance.MEDIUM,
+            icon: ''
+        },
+        {
+            title: 'project-relevance.venta-movil.title-printer-support',
+            detail: 'project-relevance.venta-movil.detail-printer-support',
+            relevance: Relevance.HIGH,
+            icon: ''
+        },
+        {
+            title: 'project-relevance.venta-movil.title-functional-development',
+            detail: 'project-relevance.venta-movil.detail-functional-development',
+            relevance: Relevance.VERY_HIGH,
+            icon: ''
+        }
+    ];
     }
     private get getPlatformVentaPlusDesktop() {
         return [
-            
-                
-                    { title: 'project-relevance.price-list-movil.title-code-reestructure', detail: 'project-relevance.price-list-movil.detail-code-reestructure', relevance: Relevance.MEDIUM, icon: '' },
-                    { title: 'project-relevance.price-list-movil.title-creation-preferences', detail: 'project-relevance.price-list-movil.detail-creation-preferences', relevance: Relevance.VERY_HIGH, icon: '' },
-                    { title: 'project-relevance.price-list-movil.title-delete-trashcode', detail: 'project-relevance.price-list-movil.detail-delete-trashcode', relevance: Relevance.MEDIUM, icon: '' }
-                
-            
+                    { title: 'project-relevance.venta-desktop.title-ui-enhancements', detail: 'project-relevance.venta-desktop.detail-ui-enhancements', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.venta-desktop.title-sellers-report-view', detail: 'project-relevance.venta-desktop.detail-sellers-report-view', relevance: Relevance.MEDIUM, icon: '' },
+                    { title: 'project-relevance.venta-desktop.title-sellers-report-implementation', detail: 'project-relevance.venta-desktop.detail-sellers-report-implementation', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.venta-desktop.title-excel-export', detail: 'project-relevance.venta-desktop.detail-excel-export', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.venta-desktop.title-ticket-updates', detail: 'project-relevance.venta-desktop.detail-ticket-updates', relevance: Relevance.HIGH, icon: '' }
         ];
     }
 
@@ -321,24 +366,24 @@ export class InformationLuis{
     }
     private get getPlatformVehicularControlMovil() {
         return [
-            
-                
-                    { title: 'project-relevance.price-list-movil.title-code-reestructure', detail: 'project-relevance.price-list-movil.detail-code-reestructure', relevance: Relevance.MEDIUM, icon: '' },
-                    { title: 'project-relevance.price-list-movil.title-creation-preferences', detail: 'project-relevance.price-list-movil.detail-creation-preferences', relevance: Relevance.VERY_HIGH, icon: '' },
-                    { title: 'project-relevance.price-list-movil.title-delete-trashcode', detail: 'project-relevance.price-list-movil.detail-delete-trashcode', relevance: Relevance.MEDIUM, icon: '' }
-                
-            
+                    { title: 'project-relevance.cvm.title-architecture-setup', detail: 'project-relevance.cvm.detail-architecture-setup', relevance: Relevance.LOW, icon: '' },
+                    { title: 'project-relevance.cvm.title-api-consumption', detail: 'project-relevance.cvm.detail-api-consumption', relevance: Relevance.MEDIUM, icon: '' },
+                    { title: 'project-relevance.cvm.title-dependency-injection', detail: 'project-relevance.cvm.detail-dependency-injection', relevance: Relevance.VERY_LOW, icon: '' },
+                    { title: 'project-relevance.cvm.title-route-management', detail: 'project-relevance.cvm.detail-route-management', relevance: Relevance.MEDIUM, icon: '' },
+                    { title: 'project-relevance.cvm.title-report-sending', detail: 'project-relevance.cvm.detail-report-sending', relevance: Relevance.MEDIUM, icon: '' },
+                    { title: 'project-relevance.cvm.title-fuel-consumption', detail: 'project-relevance.cvm.detail-fuel-consumption', relevance: Relevance.MEDIUM, icon: '' }
         ];
     }
     private get getPlatformVehicularControlDesktop() {
         return [
-           
-                    { title: 'project-relevance.price-list-movil.title-code-reestructure', detail: 'project-relevance.price-list-movil.detail-code-reestructure', relevance: Relevance.MEDIUM, icon: '' },
-                    { title: 'project-relevance.price-list-movil.title-creation-preferences', detail: 'project-relevance.price-list-movil.detail-creation-preferences', relevance: Relevance.VERY_HIGH, icon: '' },
-                    { title: 'project-relevance.price-list-movil.title-delete-trashcode', detail: 'project-relevance.price-list-movil.detail-delete-trashcode', relevance: Relevance.MEDIUM, icon: '' }
-                
-            
-        ];
+                    { title: 'project-relevance.cv-desktop.title-wpf-ui', detail: 'project-relevance.cv-desktop.detail-wpf-ui', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.cv-desktop.title-architecture-mvvm', detail: 'project-relevance.cv-desktop.detail-architecture-mvvm', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.cv-desktop.title-excel-export', detail: 'project-relevance.cv-desktop.detail-excel-export', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.cv-desktop.title-report-creation', detail: 'project-relevance.cv-desktop.detail-report-creation', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.cv-desktop.title-agent-management', detail: 'project-relevance.cv-desktop.detail-agent-management', relevance: Relevance.MEDIUM, icon: '' },
+                    { title: 'project-relevance.cv-desktop.title-key-management', detail: 'project-relevance.cv-desktop.detail-key-management', relevance: Relevance.MEDIUM, icon: '' },
+                    { title: 'project-relevance.cv-desktop.title-vehicle-management', detail: 'project-relevance.cv-desktop.detail-vehicle-management', relevance: Relevance.MEDIUM, icon: '' }
+        ]
     }
 
     private get getPlatformGenericCRM() {
@@ -346,9 +391,10 @@ export class InformationLuis{
             {
                 typeProject: typeProject.desktop,
                 achievements: [
-                    { title: 'project-relevance.price-list-movil.title-code-reestructure', detail: 'project-relevance.price-list-movil.detail-code-reestructure', relevance: Relevance.MEDIUM, icon: '' },
-                    { title: 'project-relevance.price-list-movil.title-creation-preferences', detail: 'project-relevance.price-list-movil.detail-creation-preferences', relevance: Relevance.VERY_HIGH, icon: '' },
-                    { title: 'project-relevance.price-list-movil.title-delete-trashcode', detail: 'project-relevance.price-list-movil.detail-delete-trashcode', relevance: Relevance.MEDIUM, icon: '' }
+                    { title: 'project-relevance.crm.title-ui-update', detail: 'project-relevance.crm.detail-ui-update', relevance: Relevance.HIGH, icon: '' },
+                { title: 'project-relevance.crm.title-reminders-module', detail: 'project-relevance.crm.detail-reminders-module', relevance: Relevance.MEDIUM, icon: '' },
+                { title: 'project-relevance.crm.title-sql-queries', detail: 'project-relevance.crm.detail-sql-queries', relevance: Relevance.HIGH, icon: '' },
+                { title: 'project-relevance.crm.title-design-refresh', detail: 'project-relevance.crm.detail-design-refresh', relevance: Relevance.MEDIUM, icon: '' }
                 ]
             }
         ];
