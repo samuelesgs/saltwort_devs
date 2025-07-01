@@ -18,7 +18,7 @@ export class InformationLuis{
             title: 'Jr. Developer',
             desc: 'Devs-big-desc.properties.Luis-desc',
             tools: this.getTools,
-            companies: this.getCompanies,
+            companies: this.getCompanies,//this.getCompanies,
             linkedin: "https://www.linkedin.com/in/luis-paulo-calderón-nava-2003bb257/",
             gmail: "mailto:pavicalderon49@gmail.com",
         }

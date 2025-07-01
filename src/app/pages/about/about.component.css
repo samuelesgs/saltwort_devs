@@ -1,3 +1,5 @@
+
+
 .border-color {
     border-radius: 16px;
 }
@@ -8,7 +10,8 @@
 }
 
 .img-size {
-    width: 40vw;
+    width: 30rem;
+    height: 30rem;
 }
 
 h1 {
@@ -20,19 +23,19 @@ h1 {
     border-radius: 16px !important;
 }
 
-.columns {
+/* .columns {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     gap: 10px;
     text-align: left;
     position: relative;
-}
+} */
 
-.item {
+/* .item {
     transition: all 0.5s ease-in-out;
     position: relative;
-}
+} */
 
 .item-2 {
     width: calc(50% - 10px);
@@ -52,22 +55,22 @@ h1 {
     width: 30% !important;
 }
 
-.h-80 {
-    height: 50vh;
+/* .h-80 {
     position: relative;
+    min-height: 35rem;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-}
+} */
 
-.top {
+/* .top {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 70%;
+    min-height: 22rem;
     z-index: 10;
     transition: all 0.5s ease-in-out;
-}
+} */
 
 .text-style {
     font-size: 24px;
@@ -75,9 +78,9 @@ h1 {
     color: var(--TextColor);
 }
 
-.show-text {
+/* .show-text {
     animation: showText 1s ease-in-out;
-}
+} */
 
 @keyframes showText {
     0% {
@@ -102,4 +105,85 @@ h1 {
         justify-content: center;
         align-items: flex-end;
     }
+}
+
+/* Ajustamos height y transiciones */
+.h-80 {
+    position: relative;
+    min-height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: min-height 0.5s ease-in-out;
+}
+
+@media(max-width: 699px) {
+    .h-80 {
+        min-height:  60vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: auto !important;
+    }
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 22rem;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+}
+
+.show-text {
+    animation: showText 0.5s ease forwards;
+}
+
+@keyframes showText {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    text-align: left;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+@media(max-width: 699px) {
+    .text-style {
+        font-size: 18px;
+    }
+    
+    .top {
+        min-height: fit-content;
+        max-height: 34rem;
+    }
+
+    .img-size {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .columns {
+        flex-direction: column;
+    }
+    .item-2, .item-3 {
+        width: 100% !important;
+    }
+}
+
+.item {
+    transition: all 0.5s ease-in-out;
 }

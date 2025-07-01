@@ -80,7 +80,7 @@
         "properties": {
             "Luis-desc": "Soy un desarrollador junior con experiencia en diversas tecnologías, destacando mi habilidad en Android Studio con Kotlin para el desarrollo de aplicaciones móviles, donde he creado interfaces de usuario intuitivas e integrado características avanzadas. También tengo experiencia en Visual Studio con C#, desarrollando aplicaciones de escritorio y servicios eficientes. Mi competencia se extiende a la gestión de bases de datos, con conocimientos en PostgreSQL, MySQL y herramientas de administración. Me considero una persona altamente motivada y dispuesta a aprender, con un enfoque constante en mejorar mis habilidades y crecer en el campo del desarrollo",
             "Samuel-desc": "Desarrollador con más de 5 años de experiencia en desarrollo web y backend, y experto en Android Studio con Java y Kotlin. En el desarrollo móvil, he utilizado Android Studio para crear aplicaciones robustas, optimizando el rendimiento y la experiencia del usuario con Java y Kotlin. Tengo experiencia en el diseño de interfaces con XML, la integración de APIs, y la implementación de arquitecturas como MVVM. En el ámbito web, soy competente en tecnologías frontend como JavaScript, HTML, CSS y Angular, con un enfoque en la creación de interfaces responsivas. En el backend, tengo amplios conocimientos en Node.js, PHP y NestJS, con experiencia en la generación de archivos XLSX y CSV. Además, manejo servicios en la nube de AWS, incluyendo EC2, S3 y ELB, con experiencia en el despliegue de aplicaciones en subdominios de EC2 y la administración de contenedores S3. He utilizado PM2 para despliegues en AWS y he implementado validaciones de compras a través de APIs de Google en proyectos backend. Mi experiencia también incluye el uso de Bootstrap para diseño CSS y el despliegue de aplicaciones en entornos de producción de alta disponibilidad",
-            "Aksel-desc": "Soy un programador con amplia experiencia en el desarrollo de aplicaciones móviles para iOS utilizando Swift, creando soluciones eficientes y bien diseñadas para la plataforma Apple. En el desarrollo web, manejo con soltura Angular para construir interfaces de usuario dinámicas y responsivas que se adaptan a diferentes dispositivos. Tengo un sólido conocimiento en la creación de APIs REST con NestJS en entornos Node.js, facilitando una comunicación segura y eficiente entre sistemas. Mi experiencia incluye la integración de servicios externos, la migración de tecnologías para asegurar transiciones suaves y sin interrupciones, y la optimización de sistemas para mejorar el rendimiento y la escalabilidad, adaptándome a las crecientes demandas del mercado",
+            "Aksel-desc": "Ingeniero en desarrollo y gestión de software, Developer Full Stack con 2 años de experiencia en el desarrollo de aplicaciones nativas iOS (Swift) y aplicaciones web con Angular. Experto en la creación de APIs REST escalables usando NestJS y Node.js. Con experiencia en la integración de servicios externos, migración de tecnologías y optimización de sistemas para mejorar el rendimiento y mantenibilidad.",
             "related-projects": "Proyectos relacionados"
         }
     },
@@ -218,6 +218,26 @@
             "support": "Se atendieron y resolvieron errores reportados por usuarios, mejorando la estabilidad y usabilidad del sistema.",
             "custom-components-title": "Creación de nuevos componentes personalizados con nuevas funciones.",
             "custom-components": "Se diseñaron e implementaron componentes personalizados que incorporan funcionalidades específicas, adaptadas a las necesidades del proyecto."
+        },
+        "daily-expenses-4-ios": {
+            "library-implementation-title": "Integración de librerías externas.",
+            "library-implementation": "Implementé y configuré librerías como SwiftyJSON, Charts, Alamofire y Google SDKs para mejorar la funcionalidad y experiencia de usuario de la aplicación.",
+            "new-backend-title": "Adaptación a nuevo backend.",
+            "new-backend": "Actualicé las peticiones de red, migrando los requests existentes para compatibilidad con un nuevo backend, asegurando continuidad del servicio y correcta integración de datos.",
+            "core-data-manager-title": "Optimización de manejo de datos con Core Data.",
+            "core-data-manager": "Rediseñé el flujo de inserción de datos utilizando directamente entidades de Core Data, eliminando pasos intermedios con estructuras y mejorando el rendimiento y la mantenibilidad.",
+            "data-synchronization-title": "Sincronización de datos locales.",
+            "data-synchronization": "Desarrollé un sistema de sincronización para mantener actualizados los datos locales de la app con el servidor, mejorando la confiabilidad y la experiencia offline.",
+            "icon-update-title": "Actualización de iconos de aplicación.",
+            "icon-update": "Reemplacé e implementé nuevos iconos en la aplicación para alinearla con el rediseño de imagen corporativa.",
+            "cocoapods-migration-title": "Migración de CocoaPods a Swift Package Manager.",
+            "cocoapods-migration": "Llevé a cabo la migración de las dependencias de CocoaPods a Swift Package Manager, facilitando la gestión de librerías y mejorando la estabilidad del proyecto.",
+            "translations-title": "Implementación de traducciones multilenguaje.",
+            "translations": "Configuré el manejo de traducciones y localización en inglés y español utilizando Localizable Strings, permitiendo soporte multilingüe en la aplicación.",
+            "data-persistence-title": "Persistencia de datos complejos y simples.",
+            "data-persistence": "Desarrollé el manejo de persistencia usando Core Data para datos complejos y UserDefaults para datos simples, mejorando la eficiencia y estructura del almacenamiento local.",
+            "coredata-context-title": "Manejo de contextos de Core Data.",
+            "coredata-context": "Implementé y configuré correctamente los contextos privados y principales de Core Data, asegurando operaciones de persistencia seguras y eficientes."
         },
         "samuel-daily-expenses-4-android": {
             "title-desing": "Diseño en XML para vistas de Android",
@@ -404,6 +424,7 @@
             "title-design-refresh": "Cambio de ícono y diseño",
             "detail-design-refresh": "El sistema fue rediseñado por completo, incluyendo la actualización del logotipo y un nuevo esquema de colores. Esto implicó aplicar los nuevos estilos a todas las vistas del sistema."
             }
+        
     },
     "random-text": {
         "knowmore": "Conoce mas"
