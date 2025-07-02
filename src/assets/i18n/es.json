@@ -111,7 +111,12 @@
             "project-detail-blue-board": "Telcel busca poder agilizar la gestión de noticias (promociones), por ello se creó la aplicación “BLUE BOARD”, esta aplicación se encarga de visualizar noticias. Estas noticias llegan en tiempo real por medio de una aplicación móvil, a todos los clientes (administradores regionales, distribuidores, gerentes y vendedores) no importando en cuál de las 8 regiones se encuentren, estarán informados de las diferentes noticias y promociones que Telcel lance a nivel nacional.",
             "project-name-gamstore": "GAMSTORE",
             "project-detail-gamstore": "PENDIENTE",
-            "project-detail-price-list": "Aplicacion movil que le muestra a los usuarios una lista de precios de todos sus productos, pudiendo filtrar porque precios mostrar y por un buscador de productos."
+            "project-detail-price-list": "Aplicacion movil que le muestra a los usuarios una lista de precios de todos sus productos, pudiendo filtrar porque precios mostrar y por un buscador de productos.",
+            "project-detail-venta-plus": "Sistema de punto de venta diseñado para facilitar el proceso de comercialización de productos. La venta inicia con una apertura y se gestionan las notas de venta donde se agregan productos mediante un buscador. Permite aplicar descuentos por movimiento, manejar unidades, cantidades y listas de precios. Incluye funcionalidades como recuperación de notas, cambio de agente y más. Al finalizar, el sistema permite imprimir el ticket, siempre que se cuente con una impresora configurada.",
+            "project-detail-cv": "Sistema de control vehicular que permite gestionar las rutas de los empleados mediante la asignación de llaves y vehículos. Como usuario, puedes enviar reportes vía WhatsApp, consultar reportes con información relevante como el consumo de gasolina y el historial de asignaciones o desasignaciones de llaves. Además, puedes iniciar y finalizar tu ruta al llegar a tu destino, asegurando un control completo del recorrido.",
+            "project-detail-crm": "Sistema que te permite gestionar tus cotizaciones de forma eficiente. Puedes visualizarlas, consultarlas en cualquier momento, darles seguimiento, asignar recordatorios y asociar contactos específicos a cada cotización. Además, puedes enviar las cotizaciones directamente por correo electrónico a los contactos deseados, facilitando la comunicación y el seguimiento comercial.",
+            "project-detail-ruta": "Aplicación diseñada para gestionar el envío de pedidos a clientes. Consta de dos partes: una aplicación móvil y una de escritorio. La versión móvil permite a los usuarios enviar pedidos directamente desde el dispositivo, mientras que la versión de escritorio se encarga de la administración de dichos pedidos, permitiendo su envío al área comercial y generando los documentos necesarios para su facturación."
+
         }
     },
     "project-relevance": {
@@ -423,7 +428,46 @@
 
             "title-design-refresh": "Cambio de ícono y diseño",
             "detail-design-refresh": "El sistema fue rediseñado por completo, incluyendo la actualización del logotipo y un nuevo esquema de colores. Esto implicó aplicar los nuevos estilos a todas las vistas del sistema."
-            }
+            },
+        "ruta-movil" : {
+            "title-java-usage": "Uso de Java",
+            "detail-java-usage": "Esta aplicación móvil está desarrollada en Java, sin el uso de ViewModels, DAOs u otra arquitectura estructurada como MVVM. Sin embargo, se mantiene una organización basada en Clean Architecture para separar responsabilidades de forma clara.",
+
+            "title-api-send-optimization": "Optimización de envíos de datos a la API",
+            "detail-api-send-optimization": "Se optimizaron los procesos de envío de notas a ruta hacia la API, ya que originalmente eran muy lentos incluso con una conexión rápida. Ahora el envío es mucho más eficiente y confiable.",
+
+            "title-force-sync-implementation": "Implementación de sincronización forzada",
+            "detail-force-sync-implementation": "Se implementó una función para forzar la descarga de catálogos completos, especialmente útil cuando alguno no se descargó correctamente. El sistema descarga desde el catálogo más antiguo hasta el más reciente, optimizado para funcionar incluso con mala conexión a internet.",
+
+            "title-view-modifications": "Modificaciones de vista",
+            "detail-view-modifications": "Se realizaron cambios en las vistas móviles debido a ajustes en la aplicación de escritorio. Las principales modificaciones fueron en la sección de configuraciones y en el apartado de envío de notas a ruta.",
+
+            "title-printing-enhancement": "Mejora de impresión",
+            "detail-printing-enhancement": "Se mejoró el proceso de impresión, haciéndolo más estable. Además, se añadió la funcionalidad para reimprimir notas incluso si estas ya fueron enviadas a la API."
+        },
+        "ruta-desktop" : {
+            "title-mvc-architecture": "Arquitectura MVC",
+            "detail-mvc-architecture": "Este proyecto fue configurado utilizando una arquitectura MVC, permitiendo una gestión organizada de múltiples controladores y facilitando la separación de responsabilidades dentro del sistema.",
+
+            "title-smtp-imap-email": "Envío de correos SMTP y IMAP",
+            "detail-smtp-imap-email": "Se actualizó la vista de configuración de correo para permitir al usuario elegir entre el envío por SMTP o IMAP. Esta mejora amplía las opciones disponibles, adaptándose a distintas configuraciones de servidor.",
+
+            "title-query-optimization": "Mejora de consultas",
+            "detail-query-optimization": "Se optimizaron consultas SQL complejas que manejaban información sensible y afectaban el rendimiento del sistema. También se mejoraron las funciones de sincronización, ya que las anteriores no consultaban la información de forma eficiente."
+            },
+        "check-prizes" : {
+            "title-mvvm-redesign": "Rediseño MVVM",
+            "detail-mvvm-redesign": "Inicialmente, esta aplicación no utilizaba arquitectura MVVM ni Clean Architecture. Se rediseñó completamente el proyecto para adaptarlo a estas estructuras, modificando la mayoría de las funciones existentes. Se crearon ViewModels, repositorios, entidades, DAOs y la base de datos local para estructurar adecuadamente el flujo de datos.",
+
+            "title-dependency-injection": "Inyección de dependencias",
+            "detail-dependency-injection": "Como parte del rediseño arquitectónico de la aplicación móvil, se implementó la inyección de dependencias para asegurar un acoplamiento limpio entre componentes y una mayor escalabilidad del sistema.",
+
+            "title-async-process-improvements": "Mejora de procesos asíncronos",
+            "detail-async-process-improvements": "La aplicación originalmente no manejaba procesos asíncronos. Se implementaron operaciones en segundo plano para mejorar el rendimiento, evitar bloqueos en la interfaz y mejorar la experiencia del usuario.",
+
+            "title-ui-enhancements": "Mejoras de las vistas",
+            "detail-ui-enhancements": "Como parte del rediseño general, se actualizaron varias vistas de la aplicación: se ajustaron campos de texto, etiquetas, colores y posiciones de elementos para ofrecer una interfaz más moderna y funcional."
+        }
         
     },
     "random-text": {

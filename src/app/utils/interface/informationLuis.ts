@@ -50,7 +50,7 @@ export class InformationLuis{
             id: 1,
             platforms: this.getArchivimentsVentaPlus,
             name: 'Venta plus',
-            detail: 'specific-project.properties.project-detail-ventaplus-luis',
+            detail: 'specific-project.properties.project-detail-venta-plus',
             relevantSkills: [
                 "specific-project.properties.revelant-skills-1-ventaplus-luis",
                 "specific-project.properties.revelant-skills-2-ventaplus-luis"
@@ -76,7 +76,7 @@ export class InformationLuis{
             id: 2,
                     platforms: this.getArchivimentsVehicularControl,
                     name: 'Control Vehicular',
-                    detail: 'specific-project.properties.project-detail-cvm-luis',
+                    detail: 'specific-project.properties.project-detail-cv',
                     relevantSkills: [
                         "specific-project.properties.revelant-skills-cvm-1-luis",
                         "specific-project.properties.revelant-skills-cvm-2-luis",
@@ -103,7 +103,7 @@ export class InformationLuis{
             id: 3,
             platforms: this.getPlatformGenericCRM,
             name: 'CRM Generico',
-            detail: 'specific-project.properties.project-detail-crm-luis',
+            detail: 'specific-project.properties.project-detail-crm',
             relevantSkills: [
                 "specific-project.properties.revelant-skills-1-crm-luis",
                 "specific-project.properties.revelant-skills-2-crm-luis",
@@ -128,7 +128,7 @@ export class InformationLuis{
             id: 4,
                     platforms: this.getArchivimentsRuta,
                     name: 'Ruta +',
-                    detail: 'Aplicación que sirve para el envio de pedidos a clientes, consta de dos aplicaciones, una movil y una de esscritorio, la de movil solo envia pedidos, mientras que la de escritorio se encarga de administrar los pedidos, pudiendo enviarlos a comercial y egenrando los documentos necesarios para factura',
+                    detail:  'specific-project.properties.project-detail-ruta',
                     relevantSkills: [
                         "Sincronización API",
                         "Conexión impresora",
@@ -283,9 +283,10 @@ export class InformationLuis{
             {
                 typeProject: typeProject.movil,
                 achievements: [
-                    { title: 'project-relevance.price-list-movil.title-code-reestructure', detail: 'project-relevance.price-list-movil.detail-code-reestructure', relevance: Relevance.MEDIUM, icon: '' },
-                    { title: 'project-relevance.price-list-movil.title-creation-preferences', detail: 'project-relevance.price-list-movil.detail-creation-preferences', relevance: Relevance.VERY_HIGH, icon: '' },
-                    { title: 'project-relevance.price-list-movil.title-delete-trashcode', detail: 'project-relevance.price-list-movil.detail-delete-trashcode', relevance: Relevance.MEDIUM, icon: '' }
+                    { title: 'project-relevance.check-prizes.title-mvvm-redesign', detail: 'project-relevance.check-prizes.detail-mvvm-redesign', relevance: Relevance.VERY_HIGH, icon: '' },
+                    { title: 'project-relevance.check-prizes.title-dependency-injection', detail: 'project-relevance.check-prizes.detail-dependency-injection', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.check-prizes.title-async-process-improvements', detail: 'project-relevance.check-prizes.detail-async-process-improvements', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.check-prizes.title-ui-enhancements', detail: 'project-relevance.check-prizes.detail-ui-enhancements', relevance: Relevance.MEDIUM, icon: '' }
                 ]
             }
         ];
@@ -407,21 +408,18 @@ export class InformationLuis{
     }
     private get getPlatformRutaMovil() {
         return [
-          
-                    { title: 'project-relevance.price-list-movil.title-code-reestructure', detail: 'project-relevance.price-list-movil.detail-code-reestructure', relevance: Relevance.MEDIUM, icon: '' },
-                    { title: 'project-relevance.price-list-movil.title-creation-preferences', detail: 'project-relevance.price-list-movil.detail-creation-preferences', relevance: Relevance.VERY_HIGH, icon: '' },
-                    { title: 'project-relevance.price-list-movil.title-delete-trashcode', detail: 'project-relevance.price-list-movil.detail-delete-trashcode', relevance: Relevance.MEDIUM, icon: '' }
-                
-            
+                { title: 'project-relevance.ruta-movil.title-java-usage', detail: 'project-relevance.ruta-movil.detail-java-usage', relevance: Relevance.MEDIUM, icon: '' },
+                { title: 'project-relevance.ruta-movil.title-api-send-optimization', detail: 'project-relevance.ruta-movil.detail-api-send-optimization', relevance: Relevance.HIGH, icon: '' },
+                { title: 'project-relevance.ruta-movil.title-force-sync-implementation', detail: 'project-relevance.ruta-movil.detail-force-sync-implementation', relevance: Relevance.VERY_HIGH, icon: '' },
+                { title: 'project-relevance.ruta-movil.title-view-modifications', detail: 'project-relevance.ruta-movil.detail-view-modifications', relevance: Relevance.MEDIUM, icon: '' },
+                { title: 'project-relevance.ruta-movil.title-printing-enhancement', detail: 'project-relevance.ruta-movil.detail-printing-enhancement', relevance: Relevance.HIGH, icon: '' }
         ];
     }
     private get getPlatformRutaDesktop() {
         return [
-           
-                    { title: 'project-relevance.price-list-movil.title-code-reestructure', detail: 'project-relevance.price-list-movil.detail-code-reestructure', relevance: Relevance.MEDIUM, icon: '' },
-                    { title: 'project-relevance.price-list-movil.title-creation-preferences', detail: 'project-relevance.price-list-movil.detail-creation-preferences', relevance: Relevance.VERY_HIGH, icon: '' },
-                    { title: 'project-relevance.price-list-movil.title-delete-trashcode', detail: 'project-relevance.price-list-movil.detail-delete-trashcode', relevance: Relevance.MEDIUM, icon: '' }
-                
+                    { title: 'project-relevance.ruta-desktop.title-mvc-architecture', detail: 'project-relevance.ruta-desktop.detail-mvc-architecture', relevance: Relevance.HIGH, icon: '' },
+                    { title: 'project-relevance.ruta-desktop.title-smtp-imap-email', detail: 'project-relevance.ruta-desktop.detail-smtp-imap-email', relevance: Relevance.MEDIUM, icon: '' },
+                    { title: 'project-relevance.ruta-desktop.title-query-optimization', detail: 'project-relevance.ruta-desktop.detail-query-optimization', relevance: Relevance.HIGH, icon: '' }
         ];
     }
 
