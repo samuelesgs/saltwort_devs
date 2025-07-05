@@ -155,7 +155,7 @@ export class InformationLuis{
             id: 5,
             platforms: this.getPlatformCheckPrizes,
             name: 'Verificador de precios movil',
-            detail: 'Ves los productos de la empresa, y puedes configurar los precios que ves en pantalla, siendo un total de 10 precios diferentes ',
+            detail: 'specific-project.properties.project-detail-checkprizes-movil',
             relevantSkills: [
                 "specific-project.properties.revelant-skills-1-crm-luis",
                 "specific-project.properties.revelant-skills-2-crm-luis",
@@ -485,6 +485,118 @@ export class InformationLuis{
                 detail: 'detalle de la pantalla 8',
                 url: 'vm/screen2',
                 typeProject: [typeProject.movil]
+            }
+            ,
+            {
+                name: 'Venta plus 1',
+                detail: 'detalle de la pantalla 1',
+                url: 'ventaplus/vp1',
+                typeProject: [typeProject.desktop]
+            }
+             ,
+            {
+                name: 'Venta plus 2',
+                detail: 'detalle de la pantalla 2',
+                url: 'ventaplus/vp2',
+                typeProject: [typeProject.desktop]
+            }
+              ,
+            {
+                name: 'Venta plus 3',
+                detail: 'detalle de la pantalla 3',
+                url: 'ventaplus/vp3',
+                typeProject: [typeProject.desktop]
+            }
+              ,
+            {
+                name: 'Venta plus 4',
+                detail: 'detalle de la pantalla 4',
+                url: 'ventaplus/vp4',
+                typeProject: [typeProject.desktop]
+            }
+              ,
+            {
+                name: 'Venta plus 5',
+                detail: 'detalle de la pantalla 5',
+                url: 'ventaplus/vp5',
+                typeProject: [typeProject.desktop]
+            }
+              ,
+            {
+                name: 'Venta plus 6',
+                detail: 'detalle de la pantalla 6',
+                url: 'ventaplus/vp6',
+                typeProject: [typeProject.desktop]
+            }
+              ,
+            {
+                name: 'Venta plus 7',
+                detail: 'detalle de la pantalla 7',
+                url: 'ventaplus/vp7',
+                typeProject: [typeProject.desktop]
+            }
+              ,
+            {
+                name: 'Venta plus 8',
+                detail: 'detalle de la pantalla 8',
+                url: 'ventaplus/vp8',
+                typeProject: [typeProject.desktop]
+            }
+              ,
+            {
+                name: 'Venta plus 9',
+                detail: 'detalle de la pantalla 9',
+                url: 'ventaplus/vp9',
+                typeProject: [typeProject.desktop]
+            }
+              ,
+            {
+                name: 'Venta plus 10',
+                detail: 'detalle de la pantalla 10',
+                url: 'ventaplus/vp10',
+                typeProject: [typeProject.desktop]
+            }
+              ,
+            {
+                name: 'Venta plus 11',
+                detail: 'detalle de la pantalla 11',
+                url: 'ventaplus/vp11',
+                typeProject: [typeProject.desktop]
+            }
+              ,
+            {
+                name: 'Venta plus 12',
+                detail: 'detalle de la pantalla 12',
+                url: 'ventaplus/vp12',
+                typeProject: [typeProject.desktop]
+            }
+              ,
+            {
+                name: 'Venta plus 13',
+                detail: 'detalle de la pantalla 13',
+                url: 'ventaplus/vp13',
+                typeProject: [typeProject.desktop]
+            }
+              ,
+            {
+                name: 'Venta plus 14',
+                detail: 'detalle de la pantalla 14',
+                url: 'ventaplus/vp14',
+                typeProject: [typeProject.desktop]
+            }
+              ,
+            {
+                name: 'Venta plus 15',
+                detail: 'detalle de la pantalla 15',
+                url: 'ventaplus/vp15',
+                typeProject: [typeProject.desktop]
+            }
+              ,
+            {
+                name: 'Venta plus 16',
+                detail: 'detalle de la pantalla 16',
+                url: 'ventaplus/vp16',
+                typeProject: [typeProject.desktop]
             }
         ];
     }
