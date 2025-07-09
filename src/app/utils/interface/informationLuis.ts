@@ -93,7 +93,7 @@ export class InformationLuis{
                         name: 'ControlVehicular',
                         detail: 'detail',
                         url: 'cvm-icon',
-                        typeProject: [typeProject.movil, typeProject.desktop]
+                        typeProject: [ typeProject.desktop]
                     },
                     screens: this.getScreenControlVehicular
         };
@@ -172,15 +172,7 @@ export class InformationLuis{
                 url: 'vpicon',
                 typeProject: [typeProject.movil]
             },
-            screens: [
-                {
-                    name: 'screen-1',
-                    detail: 'detail',
-                    url: 'crm/crm1',
-                    typeProject: [typeProject.desktop]
-                },
-
-            ]
+            screens: this.getScreenCheckPrizes
         };
     }
     private get getPrizeList(){
@@ -361,7 +353,7 @@ export class InformationLuis{
 
     private get getArchivimentsVehicularControl() {
         return [
-            { typeProject: typeProject.movil, achievements: this.getPlatformVehicularControlMovil },
+            //{ typeProject: typeProject.movil, achievements: this.getPlatformVehicularControlMovil },
             { typeProject: typeProject.desktop, achievements: this.getPlatformVehicularControlDesktop }
         ];
     }
@@ -960,6 +952,58 @@ export class InformationLuis{
                 url: 'listaprecios/lp8',
                 typeProject: [typeProject.movil]
             },
+        ];
+    }
+    private get getScreenCheckPrizes() {
+         return [
+            {
+                name: '',
+                detail: '',
+                url: 'verificador-precios/vp1',
+                typeProject: [typeProject.movil]
+            },
+            {
+                name: '',
+                detail: '',
+                url: 'verificador-precios/vp2',
+                typeProject: [typeProject.movil]
+            },
+            {
+                name: '',
+                detail: '',
+                url: 'verificador-precios/vp3',
+                typeProject: [typeProject.movil]
+            },
+            {
+                name: '',
+                detail: '',
+                url: 'verificador-precios/vp4',
+                typeProject: [typeProject.movil]
+            },
+            {
+                name: '',
+                detail: '',
+                url: 'verificador-precios/vp5',
+                typeProject: [typeProject.movil]
+            },
+            {
+                name: '',
+                detail: '',
+                url: 'verificador-precios/vp6',
+                typeProject: [typeProject.movil]
+            },
+            {
+                name: '',
+                detail: '',
+                url: 'verificador-precios/vp7',
+                typeProject: [typeProject.movil]
+            },
+            {
+                name: '',
+                detail: '',
+                url: 'verificador-precios/vp8',
+                typeProject: [typeProject.movil]
+            }
         ];
     }
 }
