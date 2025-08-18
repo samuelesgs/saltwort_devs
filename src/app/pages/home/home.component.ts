@@ -3,11 +3,15 @@ import { CarouselActivityPlannerComponent } from './carousel-activity-planner/ca
 import { AppService } from '../../app.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { LocalStorageManager } from '../../utils/localStorageManager';
+import { MyEarringsAppComponent } from "./my-earrings-app/my-earrings-app.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CarouselActivityPlannerComponent, TranslateModule],
+  imports: [
+    TranslateModule,
+    MyEarringsAppComponent
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

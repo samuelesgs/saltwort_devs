@@ -1,0 +1,70 @@
+<div class="col-12 text-center mt-5">
+    <h2 class="text-white">{{ "my-earrings.title" | translate }}</h2>
+    <div class="col-12 center">
+        <div class="col-8 bg-white-transparent p-3 box-border">
+            <p class="text-style text-white">{{ "my-earrings.description" | translate}}</p>
+        </div>
+    </div>
+
+    <!-- CARROUSEL -->
+    <div id="myCarousel" class="carousel slide mt-4" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-indicators">
+            <button 
+            *ngFor="let item of data; let i = index"
+            type="button"
+            data-bs-target="#myCarousel"
+            [attr.data-bs-slide-to]="i"
+            [ngClass]="{ 'active': i === 0 }"
+            aria-current="true">
+            </button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <div *ngFor="let item of data; let i = index" class="carousel-item" [ngClass]="{ 'active': i === 0 }">
+            
+            <div class="row col-12">
+                <ng-container *ngIf="i % 2 === 0; else oddSlide">
+                    <div class="col center">
+                        <img [src]="item.img" class="d-block w-50" alt="...">
+                    </div>
+                    <div class="col center me-5 pe-5">
+                        <div class="row me-3">
+                            <h2 class="text-white mb-3">{{ item.subtitle | translate}}</h2>
+                            <h4
+                                class="bg-white-transparent box-border p-4 text-white">
+                                {{ item.text | translate}}
+                            </h4>
+                        </div>
+                    </div>
+                </ng-container>
+                <ng-template #oddSlide>
+                    <div class="col center ms-5 ps-5">
+                        <div class="row ms-3">
+                            <h2 class="mb-3 text-white">{{ item.subtitle | translate }}</h2>
+                            <h4
+                                class="bg-white-transparent box-border p-4 text-white ms-4">
+                                {{ item.text | translate}}
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col center">
+                        <img [src]="item.img" class="d-block w-50" alt="...">
+                    </div>
+                </ng-template>
+            </div>
+
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
