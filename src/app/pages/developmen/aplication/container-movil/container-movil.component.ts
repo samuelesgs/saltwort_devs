@@ -1,18 +1,18 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { ProfileData, Project, typeProject } from '../../../../utils/interface/general.interface';
 import { AppService } from '../../../../app.service';
 import { Subscription } from 'rxjs';
 import { Develoments } from '../../../../utils/interface/develoments';
-import * as bootstrap from 'bootstrap';
+import { inject } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-container-movil',
   standalone: true,
   imports: [
     CommonModule,
-    RouterModule
   ],
   templateUrl: './container-movil.component.html',
   styleUrl: './container-movil.component.css'
@@ -34,11 +34,12 @@ export class ContainerMovilComponent {
 
   private subscriptions: Subscription = new Subscription();
 
-  constructor(
-    private route: ActivatedRoute,
-    private service: AppService,
-    private router: Router) { }
+  
+  private route = inject(ActivatedRoute);
+  private router = inject(Router);
+  private service = inject(AppService);
 
+  constructor() { }
 
   ngOnInit(): void {
     this.loadingData();
@@ -137,10 +138,10 @@ export class ContainerMovilComponent {
 
     // Usar Bootstrap JS para abrir el modal manualmente
     const modalElement = document.getElementById('imageModal');
-    if (modalElement) {
+    /*if (modalElement) {
       const modal = new bootstrap.Modal(modalElement);
       modal.show();
-    }
+    }*/
   }
   
 }

@@ -1,25 +1,25 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ActivatedRoute, Router, RouterLinkWithHref, RouterModule } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { ProfileData, Project, Screen, typeProject } from '../../../../utils/interface/general.interface';
 import { AppService } from '../../../../app.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { Develoments } from '../../../../utils/interface/develoments';
-import * as bootstrap from 'bootstrap';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-container-web-desktop',
   standalone: true,
   imports: [
     CommonModule,
-    RouterModule,
-    TranslateModule
   ],
   templateUrl: './container-web-desktop.component.html',
   styleUrl: './container-web-desktop.component.css'
 })
 export class ContainerWebDesktopComponent {
+  private route = inject(ActivatedRoute);
+  private router = inject(Router);
+  private service = inject(AppService);
 
   public profile!: ProfileData;
   public selectProject!: Project | null;
@@ -36,10 +36,7 @@ export class ContainerWebDesktopComponent {
   filteredScreens: Screen[] = [];
   private subscriptions: Subscription = new Subscription();
 
-  constructor(
-    private route: ActivatedRoute,
-    private service: AppService,
-    private router: Router) { }
+  constructor() { }
 
   ngOnInit(): void {
 
@@ -134,9 +131,9 @@ export class ContainerWebDesktopComponent {
 
     // Usar Bootstrap JS para abrir el modal manualmente
     const modalElement = document.getElementById('imageModal2');
-    if (modalElement) {
+    /*if (modalElement) {
       const modal = new bootstrap.Modal(modalElement);
       modal.show();
-    }
+    }*/
   }
 }
