@@ -4,14 +4,13 @@ import { CarrouselData } from '../../../utils/interface/HomeCarroucel.interfece'
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-my-earrings-app',
-  standalone: true,
-  imports: [
-    CommonModule,
-    TranslateModule
-  ],
-  templateUrl: './my-earrings-app.component.html',
-  styleUrl: './my-earrings-app.component.css'
+    selector: 'app-my-earrings-app',
+    imports: [
+        CommonModule,
+        TranslateModule
+    ],
+    templateUrl: './my-earrings-app.component.html',
+    styleUrl: './my-earrings-app.component.css'
 })
 export class MyEarringsAppComponent {
 

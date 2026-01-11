@@ -7,11 +7,10 @@ import { AppService } from './app.service';
 import { LocalStorageManager } from './utils/localStorageManager';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, NavBarComponent, FooterComponent, CommonModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    selector: 'app-root',
+    imports: [RouterOutlet, NavBarComponent, FooterComponent, CommonModule],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'SalwortDevs';

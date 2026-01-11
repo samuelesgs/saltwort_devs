@@ -9,13 +9,13 @@ import { CommonModule } from '@angular/common';
 
 
 @Component({
-  selector: 'app-container-movil',
-  standalone: true,
-  imports: [
-    CommonModule,
-  ],
-  templateUrl: './container-movil.component.html',
-  styleUrl: './container-movil.component.css'
+    selector: 'app-container-movil',
+    imports: [
+        CommonModule,
+    ],
+    standalone: true,
+    templateUrl: './container-movil.component.html',
+    styleUrl: './container-movil.component.css'
 })
 export class ContainerMovilComponent {
 

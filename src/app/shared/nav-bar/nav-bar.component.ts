@@ -5,14 +5,13 @@ import { LocalStorageManager } from '../../utils/localStorageManager';
 import { AppService } from '../../app.service';
 
 @Component({
-  selector: 'app-nav-bar',
-  standalone: true,
-  imports: [
-    RouterModule,
-    TranslateModule,
-  ],
-  templateUrl: './nav-bar.component.html',
-  styleUrl: './nav-bar.component.css'
+    selector: 'app-nav-bar',
+    imports: [
+        RouterModule,
+        TranslateModule,
+    ],
+    templateUrl: './nav-bar.component.html',
+    styleUrl: './nav-bar.component.css'
 })
 export class NavBarComponent {
 

@@ -10,17 +10,16 @@ import { Observable, Subject, Subscription } from 'rxjs';
 import { Develoments } from '../../../utils/interface/develoments';
 
 @Component({
-  selector: 'app-aplication',
-  standalone: true,
-  imports: [
-    CommonModule,
-    RouterModule,
-    ContainerApplicationComponent,
-    ContainerMovilComponent,
-    ContainerWebDesktopComponent
-  ],
-  templateUrl: './aplication.component.html',
-  styleUrls: ['./aplication.component.css']
+    selector: 'app-aplication',
+    imports: [
+        CommonModule,
+        RouterModule,
+        ContainerApplicationComponent,
+        ContainerMovilComponent,
+        ContainerWebDesktopComponent
+    ],
+    templateUrl: './aplication.component.html',
+    styleUrls: ['./aplication.component.css']
 })
 export class AplicationComponent {
 

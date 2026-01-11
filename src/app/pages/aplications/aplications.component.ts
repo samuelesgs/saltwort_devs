@@ -8,15 +8,14 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { LocalStorageManager } from '../../utils/localStorageManager';
 
 @Component({
-  selector: 'app-aplications',
-  standalone: true,
-  imports: [
-    CommonModule,
-    TranslateModule,
-    RouterModule
-  ],
-  templateUrl: './aplications.component.html',
-  styleUrl: './aplications.component.css'
+    selector: 'app-aplications',
+    imports: [
+        CommonModule,
+        TranslateModule,
+        RouterModule
+    ],
+    templateUrl: './aplications.component.html',
+    styleUrl: './aplications.component.css'
 })
 export class AplicationsComponent {
   public application: SaltwortApplication[];

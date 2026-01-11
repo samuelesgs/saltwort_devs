@@ -7,15 +7,14 @@ import { TranslateModule } from '@ngx-translate/core';
 import { Develoments } from '../../../../utils/interface/develoments';
 
 @Component({
-  selector: 'app-container-application',
-  standalone: true,
-  imports: [
-    CommonModule, 
-    RouterModule,
-    TranslateModule
-  ],
-  templateUrl: './container-application.component.html',
-  styleUrls:['./container-application.component.css']
+    selector: 'app-container-application',
+    imports: [
+        CommonModule,
+        RouterModule,
+        TranslateModule
+    ],
+    templateUrl: './container-application.component.html',
+    styleUrls: ['./container-application.component.css']
 })
 export class ContainerApplicationComponent implements OnInit {
 

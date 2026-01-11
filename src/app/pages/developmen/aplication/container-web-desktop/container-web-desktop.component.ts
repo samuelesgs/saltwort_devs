@@ -3,18 +3,17 @@ import { ActivatedRoute, Router, RouterLinkWithHref, RouterModule } from '@angul
 import { Subscription } from 'rxjs';
 import { ProfileData, Project, Screen, typeProject } from '../../../../utils/interface/general.interface';
 import { AppService } from '../../../../app.service';
-import { TranslateModule } from '@ngx-translate/core';
 import { Develoments } from '../../../../utils/interface/develoments';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-container-web-desktop',
-  standalone: true,
-  imports: [
-    CommonModule,
-  ],
-  templateUrl: './container-web-desktop.component.html',
-  styleUrl: './container-web-desktop.component.css'
+    selector: 'app-container-web-desktop',
+    imports: [
+        CommonModule,
+    ],
+    standalone: true,
+    templateUrl: './container-web-desktop.component.html',
+    styleUrl: './container-web-desktop.component.css'
 })
 export class ContainerWebDesktopComponent {
   private route = inject(ActivatedRoute);

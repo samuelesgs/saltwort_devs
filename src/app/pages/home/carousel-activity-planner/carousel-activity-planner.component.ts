@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-carousel-activity-planner',
-  standalone: true,
-  imports: [CommonModule, TranslateModule],
-  templateUrl: './carousel-activity-planner.component.html',
-  styleUrl: './carousel-activity-planner.component.css'
+    selector: 'app-carousel-activity-planner',
+    imports: [CommonModule, TranslateModule],
+    templateUrl: './carousel-activity-planner.component.html',
+    styleUrl: './carousel-activity-planner.component.css'
 })
 export class CarouselActivityPlannerComponent {
   itemActive = 0;

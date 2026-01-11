@@ -6,15 +6,14 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { LocalStorageManager } from '../../utils/localStorageManager';
 
 @Component({
-  selector: 'app-developmen',
-  standalone: true,
-  imports: [
-    RouterModule,
-    CommonModule,
-    TranslateModule
-  ],
-  templateUrl: './developmen.component.html',
-  styleUrl: './developmen.component.css'
+    selector: 'app-developmen',
+    imports: [
+        RouterModule,
+        CommonModule,
+        TranslateModule
+    ],
+    templateUrl: './developmen.component.html',
+    styleUrl: './developmen.component.css'
 })
 export class DevelopmenComponent {
   private LocalStorageManger = new LocalStorageManager();

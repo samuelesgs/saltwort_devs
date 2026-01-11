@@ -6,14 +6,13 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { LocalStorageManager } from '../../utils/localStorageManager';
 
 @Component({
-  selector: 'app-about',
-  standalone: true,
-  imports: [
-    CommonModule,
-    TranslateModule
-  ],
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.css'
+    selector: 'app-about',
+    imports: [
+        CommonModule,
+        TranslateModule
+    ],
+    templateUrl: './about.component.html',
+    styleUrl: './about.component.css'
 })
 export class AboutComponent {
   public currentContainer = "";

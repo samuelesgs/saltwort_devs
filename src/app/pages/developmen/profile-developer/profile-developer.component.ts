@@ -8,15 +8,14 @@ import { LocalStorageManager } from '../../../utils/localStorageManager';
 import { Develoments } from '../../../utils/interface/develoments';
 
 @Component({
-  selector: 'app-profile-developer',
-  standalone: true,
-  imports: [
-    CommonModule, 
-    RouterModule,
-    TranslateModule
-  ],
-  templateUrl: './profile-developer.component.html',
-  styleUrl: './profile-developer.component.css'
+    selector: 'app-profile-developer',
+    imports: [
+        CommonModule,
+        RouterModule,
+        TranslateModule
+    ],
+    templateUrl: './profile-developer.component.html',
+    styleUrl: './profile-developer.component.css'
 })
 export class ProfileDeveloperComponent implements OnInit {
   public profile!: ProfileData;
