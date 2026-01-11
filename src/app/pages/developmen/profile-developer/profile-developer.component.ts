@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { Company, ProfileData, Project } from '../../../utils/interface/general.interface';
-import { CommonModule } from '@angular/common';
+
 import { AppService } from '../../../app.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { LocalStorageManager } from '../../../utils/localStorageManager';
@@ -10,10 +10,9 @@ import { Develoments } from '../../../utils/interface/develoments';
 @Component({
     selector: 'app-profile-developer',
     imports: [
-        CommonModule,
-        RouterModule,
-        TranslateModule
-    ],
+    RouterModule,
+    TranslateModule
+],
     templateUrl: './profile-developer.component.html',
     styleUrl: './profile-developer.component.css'
 })

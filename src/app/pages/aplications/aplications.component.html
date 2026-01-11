@@ -1,62 +1,65 @@
 <div class="ps-5 pe-5 mt-5">
-    <div class="row justify-content-center">
-        <div class="col-11">
+  <div class="row justify-content-center">
+    <div class="col-11">
+      @for (item of application; track item) {
+        <div
+          class="row mb-3"
+          style="overflow-y: auto; overflow-x: hidden;">
+          <div
+            [ngClass]="{'col-12': item.isExpanded, 'col-4 center': !item.isExpanded}"
+            class="size-box pb-3 pt-3 bg-white-transparent me-3 vertical-center image-container"
+            (click)="toggleExpand(item)"
+            style="transition: all 0.5s ease;">
+            <img
+              [class.expsanded-img]="item.isExpanded"
+              [class.collapsed-img]="!item.isExpanded"
+              src="./assets/images/projectsIcons/{{item.img}}.png"
+              class="image-style pointer"
+              />
+            </div>
             <div
-                class="row mb-3"
-                *ngFor="let item of application"
-                style="overflow-y: auto; overflow-x: hidden;">
-                <div
-                    [ngClass]="{'col-12': item.isExpanded, 'col-4 center': !item.isExpanded}"
-                    class="size-box pb-3 pt-3 bg-white-transparent me-3 vertical-center image-container"
-                    (click)="toggleExpand(item)"
-                    style="transition: all 0.5s ease;">
-                    <img
-                        [class.expsanded-img]="item.isExpanded"
-                        [class.collapsed-img]="!item.isExpanded"
-                        src="./assets/images/projectsIcons/{{item.img}}.png"
-                        class="image-style pointer"
-                        />
-                </div>
-                <div 
-                    [ngClass]="{'col-12 mt-4': item.isExpanded, 'col': !item.isExpanded}" 
-                    class="size-box pb-3 transition-all pt-3 bg-white-transparent me-3 vertical-center" style="position: relative;">
-                    <div class="row">
-                       
-                        <p
-                            class="text-title text-center pointer"
-                            >{{item.title}} 
-                            <img
-                                src="./assets/images/flecha-arriba.png"
-                                class="arrow-icon" 
-                                [routerLink]="item.routeToNavigate"
-                            />
-                        </p>
-                        
-                        <h3
-                            class="text-clicked text-center"
-                            *ngIf="item.propertySelected != null"
-                            (click)="cleanProperty(item)">
-                            {{item.propertySelected.name | translate}}
-                        </h3>
-                        <p 
-                            class="text-detail text-center"
-                            *ngIf="item.propertySelected != null">
-                            {{item.propertySelected.detail | translate}}
-                        </p>
-                        <div class="row text-center p-0 m-0">
-                            <div
-                                *ngFor="let property of item.properties; let i = index"
+              [ngClass]="{'col-12 mt-4': item.isExpanded, 'col': !item.isExpanded}"
+              class="size-box pb-3 transition-all pt-3 bg-white-transparent me-3 vertical-center" style="position: relative;">
+              <div class="row">
+                <p
+                  class="text-title text-center pointer"
+                  >{{item.title}}
+                  <img
+                    src="./assets/images/flecha-arriba.png"
+                    class="arrow-icon"
+                    [routerLink]="item.routeToNavigate"
+                    />
+                  </p>
+                  @if (item.propertySelected != null) {
+                    <h3
+                      class="text-clicked text-center"
+                      (click)="cleanProperty(item)">
+                      {{item.propertySelected.name | translate}}
+                    </h3>
+                  }
+                  @if (item.propertySelected != null) {
+                    <p
+                      class="text-detail text-center"
+                      >
+                      {{item.propertySelected.detail | translate}}
+                    </p>
+                  }
+                  <div class="row text-center p-0 m-0">
+                    @for (property of item.properties; track property; let i = $index) {
+                      <div
                                 [ngClass]="{
                                     'col-6': i < 2,                                    
                                 }">
-                                <p (click)="setClickProperty(item, property)" class="text-description pointer">
-                                    {{property.name | translate}}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                        <p (click)="setClickProperty(item, property)" class="text-description pointer">
+                          {{property.name | translate}}
+                        </p>
+                      </div>
+                    }
+                  </div>
                 </div>
+              </div>
             </div>
+          }
         </div>
+      </div>
     </div>
-</div>

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router, RouterLinkWithHref, RouterModule } from '@angular/router';
 import { ProfileData, Project, typeProject } from '../../../utils/interface/general.interface';
-import { CommonModule } from '@angular/common';
+
 import { ContainerApplicationComponent } from './container-application/container-application.component';
 import { ContainerMovilComponent } from './container-movil/container-movil.component';
 import { ContainerWebDesktopComponent } from './container-web-desktop/container-web-desktop.component';
@@ -12,12 +12,11 @@ import { Develoments } from '../../../utils/interface/develoments';
 @Component({
     selector: 'app-aplication',
     imports: [
-        CommonModule,
-        RouterModule,
-        ContainerApplicationComponent,
-        ContainerMovilComponent,
-        ContainerWebDesktopComponent
-    ],
+    RouterModule,
+    ContainerApplicationComponent,
+    ContainerMovilComponent,
+    ContainerWebDesktopComponent
+],
     templateUrl: './aplication.component.html',
     styleUrls: ['./aplication.component.css']
 })

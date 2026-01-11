@@ -1,55 +1,55 @@
-<div
-    *ngIf="selectedButton === 'movil'"
-     class="col-11 mt-5 bg-white-transparent card-screens-project p-3 text-white mb-3"
-     style="position: relative;">
-
+@if (selectedButton === 'movil') {
+  <div
+    class="col-11 mt-5 bg-white-transparent card-screens-project p-3 text-white mb-3"
+    style="position: relative;">
     <!-- CONTAINER IMG -->
     <div class="carousel-container">
-        <div class="carousel-images">
-            <div class="image-wrapper" *ngFor="let screen of getMobileScreens()">
-                <img 
-                    [src]="'./assets/images/' + screen.url + '.png'"
-                    alt="Imagen carrusel"
-                    class="carousel-image image-carousel-android mt-4 me-1"
-                    (click)="openImageModal(screen.url)"
-                />
+      <div class="carousel-images">
+        @for (screen of getMobileScreens(); track screen) {
+          <div class="image-wrapper">
+            <img
+              [src]="'./assets/images/' + screen.url + '.png'"
+              alt="Imagen carrusel"
+              class="carousel-image image-carousel-android mt-4 me-1"
+              (click)="openImageModal(screen.url)"
+              />
             </div>
+          }
         </div>
-    </div>
-
-    <!-- BUTTON BACK -->
-    <button 
+      </div>
+      <!-- BUTTON BACK -->
+      <button
         class="carousel-control-prev"
         (click)="onClickCarouselMovil(true)"
         >
-        <img 
-            src="./assets/images/icon-arrow.png" 
-            class="d-block img-btn" 
-            alt="Flecha izquierda"
-        />
-    </button>
-
-    <!-- BUTTON NEXT -->
-    <button 
-        class="carousel-control-next rotate-arrow"
-        (click)="onClickCarouselMovil(false)"
-        >
-        <img 
-            src="./assets/images/icon-arrow.png" 
-            class="d-block img-btn" 
+        <img
+          src="./assets/images/icon-arrow.png"
+          class="d-block img-btn"
+          alt="Flecha izquierda"
+          />
+        </button>
+        <!-- BUTTON NEXT -->
+        <button
+          class="carousel-control-next rotate-arrow"
+          (click)="onClickCarouselMovil(false)"
+          >
+          <img
+            src="./assets/images/icon-arrow.png"
+            class="d-block img-btn"
             alt="Flecha derecha"
-        />
-    </button>
-</div>
+            />
+          </button>
+        </div>
+      }
 
 
-<!-- Modal -->
-<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content bg-dark">
-      <div class="modal-body d-flex justify-content-center">
-        <img [src]="'./assets/images/' + selectedImage + '.png'" alt="Imagen ampliada" class="img-fluid" style="max-height: 85vh;">
+      <!-- Modal -->
+      <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content bg-dark">
+            <div class="modal-body d-flex justify-content-center">
+              <img [src]="'./assets/images/' + selectedImage + '.png'" alt="Imagen ampliada" class="img-fluid" style="max-height: 85vh;">
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>

@@ -1,81 +1,135 @@
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 0}" aria-current="true"></button>
-      <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 1}" aria-label="Slide 2"></button>
-      <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 2}" aria-label="Slide 3"></button>
-      <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 3}" aria-current="true"></button>
-      <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 4}" aria-label="Slide 2"></button>
-      <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 5}" aria-label="Slide 3"></button>
-      <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 6}" aria-current="true"></button>
-      <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 7}" aria-label="Slide 2"></button>
-      <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 8}" aria-label="Slide 3"></button>
-    </div>
-    <div class="offset-1 col-10 pb-4 card-style mt-5 pt-5" >
-        <div class="row mt-4">
-            <div class="offset-1 col-5 mb-5">
-                  <div class="carousel-item size-item" *ngIf="itemActive == 0">
-                    <img src="./assets/images/ap/ap1.png" class="d-block" alt="...">
-                  </div>
-                  <div class="carousel-item size-item" *ngIf="itemActive == 1">
-                    <img src="./assets/images/ap/ap2.png" class="d-block" alt="...">
-                  </div>
-                  <div class="carousel-item size-item" *ngIf="itemActive == 2">
-                    <img src="./assets/images/ap/ap3.png" class="d-block" alt="...">
-                  </div>
-                  <div class="carousel-item size-item" *ngIf="itemActive == 3">
-                    <img src="./assets/images/ap/ap4.png" class="d-block" alt="...">
-                  </div>
-                  <div class="carousel-item size-item" *ngIf="itemActive == 4">
-                    <img src="./assets/images/ap/ap5.png" class="d-block" alt="...">
-                  </div>
-                  <div class="carousel-item size-item" *ngIf="itemActive == 5">
-                    <img src="./assets/images/ap/ap6.png" class="d-block" alt="...">
-                  </div>
-                  <div class="carousel-item size-item" *ngIf="itemActive == 6">
-                    <img src="./assets/images/ap/ap7.png" class="d-block" alt="...">
-                  </div>
-                  <div class="carousel-item size-item" *ngIf="itemActive == 7">
-                    <img src="./assets/images/ap/ap8.png" class="d-block" alt="...">
-                  </div>
-                  <div class="carousel-item size-item" *ngIf="itemActive == 8">
-                    <img src="./assets/images/ap/ap9.png" class="d-block" alt="...">
-                  </div>
-            </div>
-            <div class="col-5 text-center">
-                <p class="text-carousel" *ngIf="itemActive == 0">{{'home.title-1' | translate}}</p>
-                <p class="subtitle-carousel" *ngIf="itemActive == 0">{{'home.screen-1' | translate}}</p>
-
-                <p class="text-carousel" *ngIf="itemActive == 1">{{'home.title-2' | translate}}</p>
-                <p class="subtitle-carousel" *ngIf="itemActive == 1">{{'home.screen-2' | translate}}</p>
-
-                <p class="text-carousel" *ngIf="itemActive == 2">{{'home.title-3' | translate}}</p>
-                <p class="subtitle-carousel" *ngIf="itemActive == 2">{{'home.screen-3' | translate}}</p>
-
-                <p class="text-carousel" *ngIf="itemActive == 3">{{'home.title-4' | translate}}</p>
-                <p class="subtitle-carousel" *ngIf="itemActive == 3">{{'home.screen-4' | translate}}</p>
-
-                <p class="text-carousel" *ngIf="itemActive == 4">{{'home.title-5' | translate}}</p>
-                <p class="subtitle-carousel" *ngIf="itemActive == 4">{{'home.screen-5' | translate}}</p>
-
-                <p class="text-carousel" *ngIf="itemActive == 5">{{'home.title-6' | translate}}</p>
-                <p class="subtitle-carousel" *ngIf="itemActive == 5">{{'home.screen-6' | translate}}</p>
-
-                <p class="text-carousel" *ngIf="itemActive == 6">{{'home.title-7' | translate}}</p>
-                <p class="subtitle-carousel" *ngIf="itemActive == 6">{{'home.screen-7' | translate}}</p>
-
-                <p class="text-carousel" *ngIf="itemActive == 7">{{'home.title-8' | translate}}</p>
-                <p class="subtitle-carousel" *ngIf="itemActive == 7">{{'home.screen-8' | translate}}</p>
-
-                <p class="text-carousel" *ngIf="itemActive == 8">{{'home.title-9' | translate}}</p>
-                <p class="subtitle-carousel" *ngIf="itemActive == 8">{{'home.screen-9' | translate}}</p>
-            </div>
-        </div>
-        
-    </div>
-    <button class="carousel-control-prev" type="button"  (click)="onClickCarouse(true)">
-        <img src="./assets/images/icon-arrow.png" class="d-block" alt="...">
-    </button>
-    <button class="carousel-control-next rotate-arrow" type="button"  (click)="onClickCarouse(false)">
-        <img src="./assets/images/icon-arrow.png" class="d-block" alt="...">
-    </button>
+  <div class="carousel-indicators">
+    <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 0}" aria-current="true"></button>
+    <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 1}" aria-label="Slide 2"></button>
+    <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 2}" aria-label="Slide 3"></button>
+    <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 3}" aria-current="true"></button>
+    <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 4}" aria-label="Slide 2"></button>
+    <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 5}" aria-label="Slide 3"></button>
+    <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 6}" aria-current="true"></button>
+    <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 7}" aria-label="Slide 2"></button>
+    <button type="button" class="radius-selector" data-bs-target="#carouselExampleIndicators" [ngClass]="{'active' : itemActive == 8}" aria-label="Slide 3"></button>
   </div>
+  <div class="offset-1 col-10 pb-4 card-style mt-5 pt-5" >
+    <div class="row mt-4">
+      <div class="offset-1 col-5 mb-5">
+        @if (itemActive == 0) {
+          <div class="carousel-item size-item">
+            <img src="./assets/images/ap/ap1.png" class="d-block" alt="...">
+          </div>
+        }
+        @if (itemActive == 1) {
+          <div class="carousel-item size-item">
+            <img src="./assets/images/ap/ap2.png" class="d-block" alt="...">
+          </div>
+        }
+        @if (itemActive == 2) {
+          <div class="carousel-item size-item">
+            <img src="./assets/images/ap/ap3.png" class="d-block" alt="...">
+          </div>
+        }
+        @if (itemActive == 3) {
+          <div class="carousel-item size-item">
+            <img src="./assets/images/ap/ap4.png" class="d-block" alt="...">
+          </div>
+        }
+        @if (itemActive == 4) {
+          <div class="carousel-item size-item">
+            <img src="./assets/images/ap/ap5.png" class="d-block" alt="...">
+          </div>
+        }
+        @if (itemActive == 5) {
+          <div class="carousel-item size-item">
+            <img src="./assets/images/ap/ap6.png" class="d-block" alt="...">
+          </div>
+        }
+        @if (itemActive == 6) {
+          <div class="carousel-item size-item">
+            <img src="./assets/images/ap/ap7.png" class="d-block" alt="...">
+          </div>
+        }
+        @if (itemActive == 7) {
+          <div class="carousel-item size-item">
+            <img src="./assets/images/ap/ap8.png" class="d-block" alt="...">
+          </div>
+        }
+        @if (itemActive == 8) {
+          <div class="carousel-item size-item">
+            <img src="./assets/images/ap/ap9.png" class="d-block" alt="...">
+          </div>
+        }
+      </div>
+      <div class="col-5 text-center">
+        @if (itemActive == 0) {
+          <p class="text-carousel">{{'home.title-1' | translate}}</p>
+        }
+        @if (itemActive == 0) {
+          <p class="subtitle-carousel">{{'home.screen-1' | translate}}</p>
+        }
+
+        @if (itemActive == 1) {
+          <p class="text-carousel">{{'home.title-2' | translate}}</p>
+        }
+        @if (itemActive == 1) {
+          <p class="subtitle-carousel">{{'home.screen-2' | translate}}</p>
+        }
+
+        @if (itemActive == 2) {
+          <p class="text-carousel">{{'home.title-3' | translate}}</p>
+        }
+        @if (itemActive == 2) {
+          <p class="subtitle-carousel">{{'home.screen-3' | translate}}</p>
+        }
+
+        @if (itemActive == 3) {
+          <p class="text-carousel">{{'home.title-4' | translate}}</p>
+        }
+        @if (itemActive == 3) {
+          <p class="subtitle-carousel">{{'home.screen-4' | translate}}</p>
+        }
+
+        @if (itemActive == 4) {
+          <p class="text-carousel">{{'home.title-5' | translate}}</p>
+        }
+        @if (itemActive == 4) {
+          <p class="subtitle-carousel">{{'home.screen-5' | translate}}</p>
+        }
+
+        @if (itemActive == 5) {
+          <p class="text-carousel">{{'home.title-6' | translate}}</p>
+        }
+        @if (itemActive == 5) {
+          <p class="subtitle-carousel">{{'home.screen-6' | translate}}</p>
+        }
+
+        @if (itemActive == 6) {
+          <p class="text-carousel">{{'home.title-7' | translate}}</p>
+        }
+        @if (itemActive == 6) {
+          <p class="subtitle-carousel">{{'home.screen-7' | translate}}</p>
+        }
+
+        @if (itemActive == 7) {
+          <p class="text-carousel">{{'home.title-8' | translate}}</p>
+        }
+        @if (itemActive == 7) {
+          <p class="subtitle-carousel">{{'home.screen-8' | translate}}</p>
+        }
+
+        @if (itemActive == 8) {
+          <p class="text-carousel">{{'home.title-9' | translate}}</p>
+        }
+        @if (itemActive == 8) {
+          <p class="subtitle-carousel">{{'home.screen-9' | translate}}</p>
+        }
+      </div>
+    </div>
+
+  </div>
+  <button class="carousel-control-prev" type="button"  (click)="onClickCarouse(true)">
+    <img src="./assets/images/icon-arrow.png" class="d-block" alt="...">
+  </button>
+  <button class="carousel-control-next rotate-arrow" type="button"  (click)="onClickCarouse(false)">
+    <img src="./assets/images/icon-arrow.png" class="d-block" alt="...">
+  </button>
+</div>

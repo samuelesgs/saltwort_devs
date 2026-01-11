@@ -5,14 +5,12 @@ import { Subscription } from 'rxjs';
 import { Develoments } from '../../../../utils/interface/develoments';
 import { inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { CommonModule } from '@angular/common';
+
 
 
 @Component({
     selector: 'app-container-movil',
-    imports: [
-        CommonModule,
-    ],
+    imports: [],
     standalone: true,
     templateUrl: './container-movil.component.html',
     styleUrl: './container-movil.component.css'

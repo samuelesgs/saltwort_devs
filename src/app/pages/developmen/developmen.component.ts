@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppService } from '../../app.service';
@@ -8,10 +8,9 @@ import { LocalStorageManager } from '../../utils/localStorageManager';
 @Component({
     selector: 'app-developmen',
     imports: [
-        RouterModule,
-        CommonModule,
-        TranslateModule
-    ],
+    RouterModule,
+    TranslateModule
+],
     templateUrl: './developmen.component.html',
     styleUrl: './developmen.component.css'
 })
