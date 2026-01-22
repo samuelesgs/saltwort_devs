@@ -1,0 +1,103 @@
+:root {
+    --BlueDark: #0A0F1A;
+    --Black: #080A12;
+    --TextSecondary: #8892b0;
+    --CyanDark: #0D405F;
+    --PurpleDark: #322B67;
+}
+
+.bg-blue-dark {
+    background-color: var(--BlueDark);
+}
+
+.bg-sidebar {
+    background-color: var(--Black) !important;
+}
+
+.column-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.secondary-text {
+    color: var(--TextSecondary) !important;
+}
+
+.jump:hover {
+    animation: jump 0.3s ease-out forwards;
+    transition: all 0.3s ease-in-out;
+}
+
+.bg-blue-gradient {
+    background-image: linear-gradient(300deg, #006DFC, #00C6F4);
+}
+
+.text-cyan {
+    color: oklch(71.5% 0.143 215.221);
+}
+
+.bg-cyan {
+    background-color: oklch(10% 0.143 215.221);
+    border: 1px solid oklch(71.5% 0.143 215.221);
+}
+
+.text-title-gray {
+    color: #8892B0;
+}
+
+.text-title-gradient {
+    background: linear-gradient(90deg, #00CEF4, #AA49FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.shadow-gradient {
+    position: relative;
+    transform-style: preserve-3d;
+    border-radius: 0.5rem;
+}
+
+.shadow-gradient::before {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    background: conic-gradient(from 360deg,
+            #AA49FF,
+            #7A6CFF,
+            #3F9CFF,
+            #00CEF4,
+            #3F9CFF,
+            #7A6CFF,
+            #AA49FF);
+    filter: blur(7px);
+    transform: translate3d(0px, 0px, -1px);
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+.bg-box {
+    background-color: #112240;
+}
+
+.box-purple {
+    border: 1.5px solid var(--PurpleDark) !important;
+}
+
+.box-cyan {
+    border: 1.5px solid var(--CyanDark) !important;
+}
+
+
+.bg-separator {
+    background-image: linear-gradient(135deg, var(--CyanDark), var(--BlueDark));
+}
+
+@keyframes jump {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-5px);
+    }
+}
