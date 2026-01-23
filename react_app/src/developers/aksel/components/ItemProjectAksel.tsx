@@ -3,6 +3,8 @@ import { ItemDevToolAksel } from "./ItemDevToolAksel";
 import type { Project } from "../interfaces/Project.interface";
 import '../styles/aksel.style.css';
 import { SwitchTypeProject } from "./SwitchTypeProject";
+import { ContributionProjectAksel } from "./ContributionProjectAksel";
+import { CarrouselProjectAksel } from "./CarrouselProjectAksel";
 
 interface Props {
   project: Project;
@@ -13,7 +15,7 @@ interface Props {
 }
 
 export const ItemProjectAksel = ({ project, expanded, onSelectProject }: Props) => {
-  const { title, description, type, devTools } = project;
+  const { title, description, type, devTools, contributions } = project;
   let platforms: string[] = []
 
   const bgColor = () => {
@@ -103,8 +105,14 @@ export const ItemProjectAksel = ({ project, expanded, onSelectProject }: Props) 
             </p>
             <div className="flex justify-center mt-2">
               <SwitchTypeProject
-                types={platforms}/>
+                types={platforms} />
             </div>
+
+            <CarrouselProjectAksel
+              />
+
+            <ContributionProjectAksel
+              contributions={contributions} />
           </div>
         )
       }

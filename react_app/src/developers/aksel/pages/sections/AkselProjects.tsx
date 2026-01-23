@@ -13,6 +13,23 @@ const projects: Project[] = [
       { name: 'Node.js', image: './icons/node.png' },
       { name: 'Angular', image: './icons/angular.png' },
       { name: 'NestJS', image: './icons/nestjs.png' },
+    ],
+    contributions: [
+      {
+        details: 'Migración de requests en la versión móvil iOS',
+        rate: 4,
+        importValue: 'Alto'
+      },
+      {
+        details: 'Migración de requests en la versión móvil iOS',
+        rate: 5,
+        importValue: 'Alto'
+      },
+      {
+        details: 'Migración de requests en la versión móvil iOS',
+        rate: 3,
+        importValue: 'Alto'
+      },
     ]
   },
   {
@@ -22,7 +39,8 @@ const projects: Project[] = [
     devTools: [
       { name: 'Swift', image: './icons/swift.png' },
       { name: 'php', image: './icons/php.png' },
-    ]
+    ],
+    contributions: [],
   },  
   {
     title: 'Encodemx Web',
@@ -30,7 +48,8 @@ const projects: Project[] = [
     type: 'Web',
     devTools: [
       { name: 'Angular', image: './icons/angular.png' }
-    ]
+    ],
+    contributions: []
   },
   {
     title: 'Consola Encodemx',
@@ -41,7 +60,8 @@ const projects: Project[] = [
       { name: 'Node.js', image: './icons/node.png' },
       { name: 'NestJS', image: './icons/nestjs.png' },
       { name: 'TypeScript', image: './icons/typescript.png' },
-    ]
+    ],
+    contributions: []
   },
   {
     title: 'Productivity',
@@ -53,7 +73,8 @@ const projects: Project[] = [
       { name: 'NestJS', image: './icons/nestjs.png' },
       { name: 'TypeScript', image: './icons/typescript.png' },
       { name: 'Figma', image: './icons/figma.webp' },
-    ]
+    ],
+    contributions: []
   },
   {
     title: 'Gastos Diarios 4',
@@ -65,7 +86,8 @@ const projects: Project[] = [
       { name: 'NestJS', image: './icons/nestjs.png' },
       { name: 'PHP', image: './icons/php.png' },
       { name: 'Angular', image: './icons/angular.png' },
-    ]
+    ],
+    contributions: []
   }
 ]
 

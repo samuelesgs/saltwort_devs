@@ -60,6 +60,10 @@
     color: var(--Cyan);
 }
 
+.fill-cyan {
+    fill: var(--Cyan);
+}
+
 .bg-cyan {
     background-color: oklch(10% 0.143 215.221);
     border: 1px solid oklch(71.5% 0.143 215.221);

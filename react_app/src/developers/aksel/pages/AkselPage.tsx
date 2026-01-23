@@ -14,7 +14,7 @@ export const AkselPage = () => {
   
 
   return (
-    <div className="relative flex-1 p-10 overflow-y-auto">
+    <div className="relative flex-1 p-10 overflow-y-auto mb-80 md:mb-0">
       <TitleHeader />
       <AkselSkills />
       <AkselJobExperience />
