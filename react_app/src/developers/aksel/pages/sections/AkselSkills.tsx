@@ -29,7 +29,7 @@ export const AkselSkills = () => {
                 {
                     skillsArray.map(skill => (
                         <ItemSkillAksel
-                            key={skill.name}
+                            key={Math.random() * 100}
                             name={skill.name}
                             image={skill.image} />
                     ))

@@ -58,7 +58,7 @@ export const ItemProjectAksel = ({ project }: Props) => {
             {
               devTools.map(devTool => (
                 <ItemDevToolAksel
-                  key={devTool.name}
+                  key={Math.random() * 100}
                   tool={devTool} />
               ))
             }

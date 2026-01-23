@@ -80,7 +80,7 @@ export const AkselProjects = () => {
         {
           projects.map(rowItem => (
             <ItemProjectAksel
-              key={rowItem.title}
+              key={Math.random() * 100}
               project={rowItem}/>
           ))
         }
