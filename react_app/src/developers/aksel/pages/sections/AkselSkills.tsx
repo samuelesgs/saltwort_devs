@@ -4,16 +4,18 @@ import type { Skill } from '../../interfaces/Skills.interface';
 import '../../styles/aksel.style.css';
 
 const skillsArray: Skill[] = [
-    { name: 'Swift', image: './icons/swift.png' },
     { name: 'Angular', image: './icons/angular.png' },
-    { name: 'TypeScript', image: './icons/typescript.png' },
-    { name: 'Node.js', image: './icons/node.png' },
-    { name: 'NestJS', image: './icons/nestjs.png' },
-    { name: 'PHP', image: './icons/php.png' },
-    { name: 'HTML5', image: './icons/html.png' },
+    { name: 'AWS', image: './icons/aws.png' },
     { name: 'CSS3', image: './icons/css.png' },
     { name: 'Figma', image: './icons/figma.webp' },
+    { name: 'GitHub', image: './icons/github.png' },
+    { name: 'HTML5', image: './icons/html.png' },
+    { name: 'NestJS', image: './icons/nestjs.png' },
+    { name: 'Node.js', image: './icons/node.png' },
+    { name: 'PHP', image: './icons/php.png' },
     { name: 'React', image: './icons/react.png' },
+    { name: 'Swift', image: './icons/swift.png' },
+    { name: 'TypeScript', image: './icons/typescript.png' },
 ]
 
 export const AkselSkills = () => {
@@ -23,14 +25,13 @@ export const AkselSkills = () => {
                 <TitleSectionAksel
                     title='Stack Tecnológico' />
             </div>
-            {/* //TODO: LOS COMPONENTES DE LA SEGUNDA ROW NO SE MUESTRAN ABAJO */}
-            <div className='flex flex-warp justify-center gap-3 mt-2'>
+            <div className='flex flex-wrap justify-center md:justify-start gap-3 mt-2'>
                 {
                     skillsArray.map(skill => (
                         <ItemSkillAksel
                             key={skill.name}
                             name={skill.name}
-                            image={skill.image}/>
+                            image={skill.image} />
                     ))
                 }
             </div>

@@ -4,7 +4,8 @@ export const ItemSkillAksel = ({ name, image}: Skill) => {
   return (
     <div className='
       gap-3
-      flex flex-row items-center justify-center bg-box box-cyan text-white p-3 rounded-lg col-span-1 h-12'>
+      jum-hover border-gray border-cyan-hover
+      flex flex-row items-center justify-center bg-box text-white p-3 rounded-lg col-span-1 h-12'>
       <img
         src={image}
         alt="item-icon-swift"

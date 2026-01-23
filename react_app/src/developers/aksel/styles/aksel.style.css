@@ -4,6 +4,26 @@
     --TextSecondary: #8892b0;
     --CyanDark: #0D405F;
     --PurpleDark: #322B67;
+    --Cyan: #00B9D9;
+    --BlueBox: #10324F;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--BlueDark);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--CyanDark);
+    border-radius: 999px;
+}
+
+/* hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #22d3ee;
 }
 
 .bg-blue-dark {
@@ -32,8 +52,12 @@
     background-image: linear-gradient(300deg, #006DFC, #00C6F4);
 }
 
+.bg-type-project {
+    background-image: linear-gradient(90deg, #11364B, #2D2051);
+}
+
 .text-cyan {
-    color: oklch(71.5% 0.143 215.221);
+    color: var(--Cyan);
 }
 
 .bg-cyan {
@@ -42,7 +66,7 @@
 }
 
 .text-title-gray {
-    color: #8892B0;
+    color: var(--TextSecondary);
 }
 
 .text-title-gradient {
@@ -87,9 +111,66 @@
     border: 1.5px solid var(--CyanDark) !important;
 }
 
+.border-gray {
+    border: .50px solid var(--TextSecondary);
+}
 
 .bg-separator {
     background-image: linear-gradient(135deg, var(--CyanDark), var(--BlueDark));
+}
+
+.bg-box-blue {
+    background-color: var(--BlueBox);
+}
+
+.jum-hover {
+    transition:
+        transform 0.4s cubic-bezier(.34, 1.56, .64, 1) 0.1s,
+        box-shadow 0.4s ease 0.1s;
+    will-change: transform;
+}
+
+.cyan-hover:hover {
+    color: var(--Cyan);
+}
+
+.jum-hover:hover {
+    transform: translateY(-10px) scale(1.08);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
+}
+
+.border-cyan-hover {
+    transition:
+        transform 0.4s cubic-bezier(.34, 1.56, .64, 1) 0.1s,
+        box-shadow 0.4s ease 0.1s;
+    will-change: transform;
+}
+
+.border-cyan-hover:hover {
+    border-color: var(--Cyan);
+    box-shadow: 0 1px 3px var(--Cyan);
+}
+
+.border-cyan-hover:hover img {
+    transform: rotate(10deg);
+}
+
+.blinking {
+    animation: animationBlinking 1.8s ease-in-out infinite;
+}
+
+@keyframes animationBlinking {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes jump {

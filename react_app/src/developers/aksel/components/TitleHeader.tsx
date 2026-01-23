@@ -12,7 +12,7 @@ export const TitleHeader = () => {
                 </div>
             </div>
             <div className='col-span-1 md:col-span-4'>
-                <p className='text-cyan bg-cyan w-fit text-sm md:w-68 mx-auto md:mx-0 rounded-full border-red-400 p-2 mb-4'>
+                <p className='flex justify-center blinking text-cyan bg-cyan w-fit text-sm md:w-68 mx-auto md:mx-0 rounded-full p-2 mb-4'>
                     Disponible para nuevos proyectos
                 </p>
                 <div className='grid col-span-1 md:grid-cols-3 mb-5 text-center md:text-left'>
@@ -29,14 +29,14 @@ export const TitleHeader = () => {
                     </div>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3 mb-5 items-center sm:items-start">
-                    <div className="p-3 box-cyan rounded-lg bg-box flex gap-4">
+                    <div className="jum-hover p-3 box-cyan rounded-lg bg-box flex gap-4">
                         <img
                             src="./aksel/ios-phone.png"
                             alt="item-ios-phone"
                             className="object-fill w-5"/>
                         iOS Developer
                     </div>
-                    <div className="p-3 box-purple rounded-lg bg-box flex gap-4">
+                    <div className="jum-hover p-3 box-purple rounded-lg bg-box flex gap-4">
                         <img
                             src="./aksel/full-stack-arrows.png"
                             alt="item-ios-phone"

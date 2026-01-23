@@ -4,7 +4,7 @@ import '../styles/aksel.style.css';
 
 export const AkselLayout = () => {
     return (
-        <div className="bg-blue-dark flex flex-col md:flex-row overflow-auto">
+        <div className="h-screen bg-blue-dark flex flex-col md:flex-row">
             <SidebarAksel />
 
             <AkselPage />

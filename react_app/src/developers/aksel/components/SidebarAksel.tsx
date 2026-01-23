@@ -1,5 +1,8 @@
-import { Link } from 'react-router';
 import '../styles/aksel.style.css';
+import { Link } from 'react-router';
+import { GitHub } from '../../../assets/ui/GitHub.icon';
+import { LinkedIn } from '../../../assets/ui/LinkedIn.icon';
+import { Mail } from '../../../assets/ui/Mail.icon';
 
 export const SidebarAksel = () => {
   return (
@@ -24,18 +27,12 @@ export const SidebarAksel = () => {
 
       {/* ITEMS CENTER */}
       <div className='flex flex-row md:flex-col gap-6 md:gap-3'>
-        <img
-          src="./aksel/github.png"
-          alt="item-logo-github"
-          className='w-7 h-7 object-cover'/>
-        <img
-          src="./aksel/linkedin.png"
-          alt="item-logo-linkedin"
-          className='w-7 h-7 object-cover'/>
-        <img
-          src="./aksel/email.png"
-          alt="item-logo-email"
-          className='w-7 h-7 object-cover'/>
+        <GitHub
+          className='jum-hover cyan-hover text-title-gray w-7 h-7'/>
+        <LinkedIn
+          className='jum-hover cyan-hover text-title-gray w-7 h-7'/>
+        <Mail
+          className='jum-hover cyan-hover text-title-gray w-7 h-7'/>
       </div>
 
       {/* ITEMS BOTTOM */}

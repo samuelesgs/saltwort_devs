@@ -7,7 +7,7 @@ interface Props {
 export const TitleSectionAksel = ({ title }: Props) => {
     return (
         <>
-            <h1 className="text-white text-3xl font-bold">
+            <h1 className="text-white text-xl md:text-3xl font-bold">
                 { title }
             </h1>
             <div className="bg-white flex-1 h-0.5 bg-separator"></div>
