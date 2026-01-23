@@ -2,20 +2,33 @@ import { ChevronDown, ChevronsLeftRight, Globe, Smartphone } from "lucide-react"
 import { ItemDevToolAksel } from "./ItemDevToolAksel";
 import type { Project } from "../interfaces/Project.interface";
 import '../styles/aksel.style.css';
+import { SwitchTypeProject } from "./SwitchTypeProject";
 
 interface Props {
-  project: Project
+  project: Project;
+  expanded: boolean;
+
+  //METHODS
+  onSelectProject: (project: Project | null) => void;
 }
 
-export const ItemProjectAksel = ({ project }: Props) => {
-  const { title, type, devTools } = project;
+export const ItemProjectAksel = ({ project, expanded, onSelectProject }: Props) => {
+  const { title, description, type, devTools } = project;
+  let platforms: string[] = []
 
   const bgColor = () => {
     switch (type) {
-      case 'Web': return 'bg-purple-500/10';
-      case 'iOS + Web': return 'bg-cyan-950';
-      case 'iOS': return 'bg-cyan-950';
-      default: return 'bg-cyan-950';
+      case 'Web':
+        platforms = ['Web'];
+        return 'bg-purple-500/10';
+      case 'iOS + Web':
+        platforms = ['Móvil', 'Web'];
+        return 'bg-cyan-950';
+      case 'iOS':
+        platforms = ['Móvil'];
+        return 'bg-cyan-950';
+      default:
+        return 'bg-cyan-950';
     }
   }
 
@@ -65,10 +78,36 @@ export const ItemProjectAksel = ({ project }: Props) => {
           </div>
         </div>
       </div>
-      <div className="col-span-1 text-white flex justify-end items-center">
+      <div
+        className="group col-span-1 text-white flex justify-end items-center"
+        onClick={() =>
+          onSelectProject(expanded ? null : project)
+        }>
         <ChevronDown
-          className="text-cyan w-6 h-6" />
+          className={`
+            text-cyan w-6 h-6
+            transition-transform
+            duration-300
+            ease-in-out
+            origin-center
+            transform-gpu
+            cursor-pointer
+            ${expanded ? 'rotate-180' : 'rotate-0'}`
+          } />
       </div>
+      {
+        expanded && (
+          <div className='flex flex-col col-span-8 mt-2'>
+            <p className="secondary-text">
+              {description}
+            </p>
+            <div className="flex justify-center mt-2">
+              <SwitchTypeProject
+                types={platforms}/>
+            </div>
+          </div>
+        )
+      }
     </div>
   )
 }

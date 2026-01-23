@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { ItemProjectAksel } from "../../components/ItemProjectAksel"
 import { TitleSectionAksel } from "../../components/TitleSectionAksel"
 import type { Project } from "../../interfaces/Project.interface"
@@ -5,7 +6,7 @@ import type { Project } from "../../interfaces/Project.interface"
 const projects: Project[] = [
   {
     title: 'Gastos de compra',
-    description: 'Details',
+    description: 'Sistema de gestión de gastos e ingresos para proyectos con sincronización offline y respaldos automáticos en formato JSON.',
     type: 'iOS + Web',
     devTools: [
       { name: 'Swift', image: './icons/swift.png' },
@@ -69,6 +70,13 @@ const projects: Project[] = [
 ]
 
 export const AkselProjects = () => {
+
+  const [selectProject, setSelectProject] = useState<Project | null>(null);
+
+  const handleSelectProject = (project: Project | null) => {    
+    setSelectProject(project);
+  }
+
   return (
     <div>
       <div className="mt-15 flex items-center gap-3">
@@ -80,8 +88,10 @@ export const AkselProjects = () => {
         {
           projects.map(rowItem => (
             <ItemProjectAksel
-              key={Math.random() * 100}
-              project={rowItem}/>
+              key={rowItem.title}
+              project={rowItem}
+              expanded={selectProject === rowItem}
+              onSelectProject={handleSelectProject}/>
           ))
         }
 
