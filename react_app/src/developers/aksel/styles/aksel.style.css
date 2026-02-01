@@ -163,6 +163,10 @@
     animation: animationBlinking 1.8s ease-in-out infinite;
 }
 
+.border-carrousel {
+    border: 3px solid var(--Cyan);
+}
+
 @keyframes animationBlinking {
     0% {
         opacity: 1;

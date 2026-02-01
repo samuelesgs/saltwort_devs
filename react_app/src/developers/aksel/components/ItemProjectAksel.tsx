@@ -108,8 +108,19 @@ export const ItemProjectAksel = ({ project, expanded, onSelectProject }: Props) 
                 types={platforms} />
             </div>
 
+            {/* <CarrouselProjectAksel
+              /> */}
             <CarrouselProjectAksel
-              />
+              images={[
+                './icons/swift.png',
+                './icons/angular.png',
+                './icons/figma.webp',
+                './icons/nestjs.png',
+                './icons/node.png',
+                './icons/typescript.png',
+                './icons/github.png',
+                './icons/html.png',
+              ]} />
 
             <ContributionProjectAksel
               contributions={contributions} />
