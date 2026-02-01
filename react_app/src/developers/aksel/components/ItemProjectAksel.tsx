@@ -4,7 +4,8 @@ import type { Project } from "../interfaces/Project.interface";
 import '../styles/aksel.style.css';
 import { SwitchTypeProject } from "./SwitchTypeProject";
 import { ContributionProjectAksel } from "./ContributionProjectAksel";
-import { CarrouselProjectAksel } from "./CarrouselProjectAksel";
+import { CarrouselMobileAksel } from "./CarrouselMobileAksel";
+import { useState } from "react";
 
 interface Props {
   project: Project;
@@ -14,30 +15,41 @@ interface Props {
   onSelectProject: (project: Project | null) => void;
 }
 
-export const ItemProjectAksel = ({ project, expanded, onSelectProject }: Props) => {
-  const { title, description, type, devTools, contributions } = project;
-  let platforms: string[] = []
-
-  const bgColor = () => {
-    switch (type) {
-      case 'Web':
-        platforms = ['Web'];
-        return 'bg-purple-500/10';
-      case 'iOS + Web':
-        platforms = ['Móvil', 'Web'];
-        return 'bg-cyan-950';
-      case 'iOS':
-        platforms = ['Móvil'];
-        return 'bg-cyan-950';
-      default:
-        return 'bg-cyan-950';
-    }
+const getDataByProject = (typeProject: string) => {
+  switch (typeProject) {
+    case 'Web':
+      return {
+        color: 'bg-purple-500/10',
+        platforms: ['Web']
+      }
+    case 'iOS + Web':
+      return {
+        color: 'bg-cyan-950',
+        platforms: ['Móvil', 'Web']
+      }
+    case 'iOS':
+      return {
+        color: 'bg-cyan-950',
+        platforms: ['Móvil']
+      }
+    default:
+      return {
+        color: 'bg-purple-500/10',
+        platforms: ['Web']
+      }
   }
+}
+
+export const ItemProjectAksel = ({ project, expanded, onSelectProject }: Props) => {
+
+  const { title, description, type, devTools, contributions } = project;
+  const { platforms, color: bgColor } = getDataByProject(project.type);
+  const [typeProject, setTypeProject] = useState(platforms[0]);
 
   return (
     <div className="grid grid-cols-8 w-full p-5 bg-box box-cyan rounded-lg">
       <div className="flex flex-row col-span-7 gap-3">
-        <div className={`flex flex-row w-13 h-13 items-center justify-center rounded-lg ${bgColor()}`}>
+        <div className={`flex flex-row w-13 h-13 items-center justify-center rounded-lg ${bgColor}`}>
           {
             type === 'iOS + Web' && (
               <ChevronsLeftRight
@@ -105,22 +117,31 @@ export const ItemProjectAksel = ({ project, expanded, onSelectProject }: Props) 
             </p>
             <div className="flex justify-center mt-2">
               <SwitchTypeProject
-                types={platforms} />
+                types={platforms}
+                currentType={typeProject}
+                onSelectTypeProject={setTypeProject} />
             </div>
 
-            {/* <CarrouselProjectAksel
-              /> */}
-            <CarrouselProjectAksel
-              images={[
-                './icons/swift.png',
-                './icons/angular.png',
-                './icons/figma.webp',
-                './icons/nestjs.png',
-                './icons/node.png',
-                './icons/typescript.png',
-                './icons/github.png',
-                './icons/html.png',
-              ]} />
+            {
+              typeProject === 'Móvil' ? (
+                <CarrouselMobileAksel
+                  images={[
+                    './icons/swift.png',
+                    './icons/angular.png',
+                    './icons/figma.webp',
+                    './icons/nestjs.png',
+                    './icons/node.png',
+                    './icons/typescript.png',
+                    './icons/github.png',
+                    './icons/html.png',
+                  ]}
+                />
+              ) : (
+                <div>
+                  Carrousel web
+                </div>
+              )
+            }
 
             <ContributionProjectAksel
               contributions={contributions} />
