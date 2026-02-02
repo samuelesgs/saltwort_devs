@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from "@/components/ui/carousel"
 import { useEffect, useState } from "react"
 
@@ -27,7 +26,7 @@ export const CarrouselMobileAksel = ({ images }: Props) => {
   }, [api]);
 
   return (
-    <div className="flex justify-center mt-3 w-full">
+    <div className="flex justify-center my-3 w-full">
       <Carousel
         setApi={setApi}
         opts={{
@@ -35,7 +34,7 @@ export const CarrouselMobileAksel = ({ images }: Props) => {
           containScroll: 'trimSnaps',
           loop: true
         }}
-        className="w-full max-w-sm mx-auto"
+        className="w-full max-w-sm md:max-w-5xl mx-auto"
       >
         <CarouselContent
           className="">
@@ -45,19 +44,17 @@ export const CarrouselMobileAksel = ({ images }: Props) => {
                 key={index}
                 className="basis-[85%] md:basis-1/3">
                 <div className="p-1">
-                  <Card
+                  <img
+                    src={img}
+                    alt=""
                     className={`
                       transition duration-300
+                      rounded-xl
+                      object-cover
                       ${index === current
-                        ? 'shadow shadow-cyan-500 scale-110'
-                        : 'blur-[1px]'}
-                    `}>
-                    <CardContent className="flex aspect-square items-center justify-center p-6">
-                      <img
-                        src={img}
-                        alt="" />
-                    </CardContent>
-                  </Card>
+                        ? 'shadow scale-100'
+                        : 'blur-[3px]'}
+                    `} />
                 </div>
               </CarouselItem>
             ))

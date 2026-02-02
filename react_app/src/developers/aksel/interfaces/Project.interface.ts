@@ -5,6 +5,12 @@ export interface Project {
     type: TypeProject;
     devTools: DevTool[];
     contributions: ContributionProjects[];
+    images: ImagesProject;
+}
+
+export interface ImagesProject {
+    mobile?: string[];
+    web?: string[];
 }
 
 export interface DevTool {

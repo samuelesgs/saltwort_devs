@@ -9,11 +9,6 @@ interface Props {
 
 export const SwitchTypeProject = ({ types, currentType, onSelectTypeProject }: Props) => {
 
-    //const [selectType, setSelectType] = useState<string>(types[0]);
-
-    console.log({types});
-    
-
     return (
         <div className="flex flex-row bg-blue-dark py-1 px-1.5 rounded-lg border-gray">
             {

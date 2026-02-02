@@ -45,7 +45,7 @@ export const TitleHeader = () => {
                     </div>
                 </div>
                 <p className="col-span-2 secondary-text w-full md:w-180 text-center md:text-left">
-                    Ingeniero en desarrollo y gestión de software con 2 años de experiencia en el desarrollo de aplicaciones nativas iOS (Swift) y aplicaciones web con Angular. Experto en la creación de APIs REST escalables usando NestJS y Node.js.
+                    Ingeniero en desarrollo y gestión de software con amplia experiencia en la creación de aplicaciones móviles nativas para iOS y el desarrollo de aplicaciones web con Angular y React. Cuento con conocimientos en el diseño y desarrollo de APIs REST utilizando Node.js y NestJS. Tengo experiencia en la integración de servicios externos, la optimización de procesos y la migración tecnológica para mejorar el rendimiento y la escalabilidad de los sistemas.
                 </p>
             </div>
         </div>

@@ -6,6 +6,7 @@ import { SwitchTypeProject } from "./SwitchTypeProject";
 import { ContributionProjectAksel } from "./ContributionProjectAksel";
 import { CarrouselMobileAksel } from "./CarrouselMobileAksel";
 import { useState } from "react";
+import { CarrouselWebAksel } from "./CarrouselWebAksel";
 
 interface Props {
   project: Project;
@@ -45,6 +46,7 @@ export const ItemProjectAksel = ({ project, expanded, onSelectProject }: Props) 
   const { title, description, type, devTools, contributions } = project;
   const { platforms, color: bgColor } = getDataByProject(project.type);
   const [typeProject, setTypeProject] = useState(platforms[0]);
+  const [isChaging, setIsChanging] = useState(false);
 
   return (
     <div className="grid grid-cols-8 w-full p-5 bg-box box-cyan rounded-lg">
@@ -109,45 +111,62 @@ export const ItemProjectAksel = ({ project, expanded, onSelectProject }: Props) 
             ${expanded ? 'rotate-180' : 'rotate-0'}`
           } />
       </div>
-      {
-        expanded && (
-          <div className='flex flex-col col-span-8 mt-2'>
-            <p className="secondary-text">
-              {description}
-            </p>
-            <div className="flex justify-center mt-2">
-              <SwitchTypeProject
-                types={platforms}
-                currentType={typeProject}
-                onSelectTypeProject={setTypeProject} />
-            </div>
 
+      <div className={`
+            col-span-8
+            grid
+            transition-all
+            duration-500
+            ease-in-out
+            ${expanded
+          ? "grid-rows-[1fr] opacity-100 mt-2"
+          : "grid-rows-[0fr] opacity-0"
+        }
+          `}
+      >
+
+        <div className="overflow-hidden">
+          <p className="secondary-text">
+            {description}
+          </p>
+          <div className="flex justify-center mt-2">
+            <SwitchTypeProject
+              types={platforms}
+              currentType={typeProject}
+              onSelectTypeProject={(type) => {
+                if (type === typeProject) return;
+
+                setIsChanging(true);
+                setTimeout(() => {
+                  setTypeProject(type);
+                  setIsChanging(false);
+                }, 200);
+              }} />
+          </div>
+          <div
+            className={`
+                  transition-all duration-200 ease-out
+                  ${isChaging
+                ? `opacity-0 translate-x-2`
+                : "opacity-100 translate-x-0"}
+                `}>
             {
               typeProject === 'Móvil' ? (
                 <CarrouselMobileAksel
-                  images={[
-                    './icons/swift.png',
-                    './icons/angular.png',
-                    './icons/figma.webp',
-                    './icons/nestjs.png',
-                    './icons/node.png',
-                    './icons/typescript.png',
-                    './icons/github.png',
-                    './icons/html.png',
-                  ]}
+                  images={project.images?.mobile || []}
                 />
               ) : (
-                <div>
-                  Carrousel web
-                </div>
+                <CarrouselWebAksel
+                  images={project.images.web || []}
+                />
               )
             }
-
-            <ContributionProjectAksel
-              contributions={contributions} />
           </div>
-        )
-      }
+
+          <ContributionProjectAksel
+            contributions={contributions} />
+        </div>
+      </div>
     </div>
   )
 }
