@@ -27,12 +27,23 @@ export const SidebarAksel = () => {
 
       {/* ITEMS CENTER */}
       <div className='flex flex-row md:flex-col gap-6 md:gap-3'>
-        <GitHub
-          className='jum-hover cyan-hover text-title-gray w-7 h-7'/>
-        <LinkedIn
-          className='jum-hover cyan-hover text-title-gray w-7 h-7'/>
-        <Mail
-          className='jum-hover cyan-hover text-title-gray w-7 h-7'/>
+        <a
+          href="https://github.com/AkselBy18"
+          target='_blank'>
+          <GitHub
+            className='jum-hover cyan-hover text-title-gray w-7 h-7' />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/aksel-akemi-herrera-gonzalez-08054a213"
+          target='_blank'>
+          <LinkedIn
+            className='jum-hover cyan-hover text-title-gray w-7 h-7' />
+        </a>
+        <a
+          href="mailto:akselherrera18@gmail.com">
+          <Mail
+            className='jum-hover cyan-hover text-title-gray w-7 h-7' />
+        </a>
       </div>
 
       {/* ITEMS BOTTOM */}

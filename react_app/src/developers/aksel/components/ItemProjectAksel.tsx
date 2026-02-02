@@ -46,7 +46,7 @@ export const ItemProjectAksel = ({ project, expanded, onSelectProject }: Props) 
   const { title, description, type, devTools, contributions } = project;
   const { platforms, color: bgColor } = getDataByProject(project.type);
   const [typeProject, setTypeProject] = useState(platforms[0]);
-  const [isChaging, setIsChanging] = useState(false);
+  const [isChanging, setIsChanging] = useState(false);
 
   return (
     <div className="grid grid-cols-8 w-full p-5 bg-box box-cyan rounded-lg">
@@ -146,7 +146,7 @@ export const ItemProjectAksel = ({ project, expanded, onSelectProject }: Props) 
           <div
             className={`
                   transition-all duration-200 ease-out
-                  ${isChaging
+                  ${isChanging
                 ? `opacity-0 translate-x-2`
                 : "opacity-100 translate-x-0"}
                 `}>

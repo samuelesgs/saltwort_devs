@@ -9,7 +9,7 @@ interface Props {
 export const ContributionProjectAksel = ({ contributions }: Props) => {
 
     return (
-        <div className="mt-2 text-white">
+        <div className="my-3 text-white">
             <div className="flex flex-row items-center gap-2">
                 <Star
                     className="text-cyan"
@@ -20,9 +20,9 @@ export const ContributionProjectAksel = ({ contributions }: Props) => {
                 {
                     contributions.map(item => (
                         <div
-                            className="flex flex-row items-center gap-2 bg-blue-dark border-gray px-4 py-2 rounded-lg"
+                            className="flex flex-col justify-center md:flex-row items-center gap-2 bg-blue-dark border-gray px-4 py-2 rounded-lg"
                             key={Math.random()}>
-                            <p className="w-full">
+                            <p className="w-full text-center md:text-left">
                                 { item.details }
                             </p>
                             <RateStarsAksel

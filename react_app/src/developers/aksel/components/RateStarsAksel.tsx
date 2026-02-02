@@ -15,7 +15,7 @@ export const RateStarsAksel = ({ rateValue }: Props) => {
                     <Star
                         key={value + 'Star'}
                         className={`text-cyan ${value <= rateValue && 'fill-cyan'}`}
-                        size={12} />
+                        size={18} />
                 ))
             }
         </div>

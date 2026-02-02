@@ -11,13 +11,16 @@ export const AkselWorkTogether = () => {
           Estoy abierto a nuevas oportunidades y proyectos interesantes.
         </p>
         <div className="flex justify-center">
-          <button className="flex flex-row gap-3 cursor-pointer items-center bg-blue-gradient rounded-4xl px-5 py-3">
-            <Mail
-              className="text-white w-5 h-5" />
-            <span className="text-white">
-              Contáctame
-            </span>
-          </button>
+          <a href="mailto:akselherrera18@gmail.com">
+            <button
+              className="flex flex-row gap-3 cursor-pointer items-center bg-blue-gradient rounded-4xl px-5 py-3">
+              <Mail
+                className="text-white w-5 h-5" />
+              <span className="text-white">
+                Contáctame
+              </span>
+            </button>
+          </a>
         </div>
       </div>
     </div>

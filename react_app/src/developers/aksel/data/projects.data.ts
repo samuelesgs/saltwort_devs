@@ -266,18 +266,86 @@ export const PROJECTS_DATA: Project[] = [
             ]
         }
     },
+    //MARK: DAILY EXPENSES 4
     {
         title: 'Gastos Diarios 4',
-        description: '',
+        description: 'Aplicación de gestión financiera personal que permite organizar ingresos y gastos, visualizar reportes detallados y personalizar la experiencia según las necesidades del usuario. Cuenta con sincronización en la nube, acceso multiplataforma y herramientas para el control de presupuestos, deudas y metas financieras.',
         type: 'iOS + Web',
         devTools: [
             { name: 'Swift', image: './icons/swift.png' },
             { name: 'Angular', image: './icons/angular.png' },
             { name: 'NestJS', image: './icons/nestjs.png' },
             { name: 'PHP', image: './icons/php.png' },
-            { name: 'Angular', image: './icons/angular.png' },
         ],
-        contributions: [],
-        images: {}
+        contributions: [
+            {
+                details: 'Implementación de múltiples visualizaciones gráficas, mejorando la interpretación de datos en los distintos reportes.',
+                rate: 3,
+                importValue: 'Medio'
+            },
+            {
+                details: 'Implementación de múltiples visualizaciones gráficas, mejorando la interpretación de datos en los distintos reportes.',
+                rate: 3,
+                importValue: 'Medio'
+            },
+            {
+                details: 'Desarrollo de componentes reutilizables, promoviendo la consistencia visual y facilitando el mantenimiento de la aplicación.',
+                rate: 4,
+                importValue: 'Alto'
+            },
+            {
+                details: 'Gestión de despliegues continuos, asegurando la entrega constante de mejoras y actualizaciones.',
+                rate: 4,
+                importValue: 'Alto'
+            },
+            {
+                details: 'Implementación de un sistema multimoneda, permitiendo a los usuarios administrar cuentas en diferentes divisas.',
+                rate: 5,
+                importValue: 'Alto'
+            },
+            {
+                details: 'Mantenimiento correctivo y resolución de incidencias, incrementando la estabilidad del sistema.',
+                rate: 3,
+                importValue: 'Medio'
+            },
+            {
+                details: 'Migración y optimización del código, fortaleciendo la escalabilidad y simplificando futuras tareas de mantenimiento.',
+                rate: 5,
+                importValue: 'Alto'
+            },
+            {
+                details: 'Migración de peticiones hacia un nuevo backend, optimizando los procesos de carga y manteniendo la plataforma actualizada.',
+                rate: 4,
+                importValue: 'Alto'
+            },
+        ],
+        images: {
+            mobile: [
+                './aksel/daily-expenses-4/mobile/daily-expenses-img-1.png',
+                './aksel/daily-expenses-4/mobile/daily-expenses-img-2.png',
+                './aksel/daily-expenses-4/mobile/daily-expenses-img-3.png',
+                './aksel/daily-expenses-4/mobile/daily-expenses-img-4.png',
+                './aksel/daily-expenses-4/mobile/daily-expenses-img-5.png',
+                './aksel/daily-expenses-4/mobile/daily-expenses-img-6.png',
+                './aksel/daily-expenses-4/mobile/daily-expenses-img-7.png',
+                './aksel/daily-expenses-4/mobile/daily-expenses-img-8.png',
+            ],
+            web: [
+                './aksel/daily-expenses-4/web/daily-expenses-web-img-1.png',
+                './aksel/daily-expenses-4/web/daily-expenses-web-img-2.png',
+                './aksel/daily-expenses-4/web/daily-expenses-web-img-3.png',
+                './aksel/daily-expenses-4/web/daily-expenses-web-img-4.png',
+                './aksel/daily-expenses-4/web/daily-expenses-web-img-5.png',
+                './aksel/daily-expenses-4/web/daily-expenses-web-img-6.png',
+                './aksel/daily-expenses-4/web/daily-expenses-web-img-7.png',
+                './aksel/daily-expenses-4/web/daily-expenses-web-img-8.png',
+                './aksel/daily-expenses-4/web/daily-expenses-web-img-9.png',
+                './aksel/daily-expenses-4/web/daily-expenses-web-img-10.png',
+                './aksel/daily-expenses-4/web/daily-expenses-web-img-11.png',
+                './aksel/daily-expenses-4/web/daily-expenses-web-img-12.png',
+                './aksel/daily-expenses-4/web/daily-expenses-web-img-13.png',
+                './aksel/daily-expenses-4/web/daily-expenses-web-img-14.png',
+            ]
+        }
     }
 ]
