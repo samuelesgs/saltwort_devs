@@ -1,7 +1,12 @@
-
+import { SamuelPage } from '../pages/SamuelPage';
+import '../styles/samuel.style.css';
 
 export const SamuelLayout = () => {
   return (
-    <div>SamuelLayout</div>
+    <div
+      className="bg-dark-purple p-20">
+      <SamuelPage
+        />
+    </div>
   )
 }

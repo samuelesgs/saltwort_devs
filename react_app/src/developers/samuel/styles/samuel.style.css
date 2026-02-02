@@ -1,0 +1,37 @@
+:root {
+    --DarkPurple: #12111C;
+    --Purple: #2D2844;
+    --PurpleLight: #8373F7;
+    --Gray: #A8A3C0;
+
+    /* SPECIAL */
+    --BoxSkills: #171421;
+}
+
+.bg-dark-purple {
+    background-color: var(--DarkPurple);
+}
+
+.bg-purple {
+    background-color: var(--Purple);
+}
+
+.purple-light-color {
+    color: var(--PurpleLight);
+}
+
+.border-purple-light {
+    border: 1px solid var(--PurpleLight);
+}
+
+.border-purple {
+    border: 0.5px solid var(--Purple);
+}
+
+.box-skills {
+    background-color: var(--BoxSkills);
+}
+
+.text-secondary {
+    color: var(--Gray);
+}
