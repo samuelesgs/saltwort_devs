@@ -1,11 +1,15 @@
 import { TitleHeaderSamuel } from "../components/TitleHeaderSamuel"
-import { SkillsSamuel } from "./section/SkillsSamuel"
+import { SamuelAboutMe } from "./section/SamuelAboutMe"
+import { SamuelProjects } from "./section/SamuelProjects"
+import { SamuelSkills } from "./section/SamuelSkills"
 
 export const SamuelPage = () => {
   return (
     <div>
       <TitleHeaderSamuel />
-      <SkillsSamuel />
+      <SamuelSkills />
+      <SamuelAboutMe />
+      <SamuelProjects />
     </div>
   )
 }

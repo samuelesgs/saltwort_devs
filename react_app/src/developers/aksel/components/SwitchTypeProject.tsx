@@ -1,5 +1,4 @@
 import { Monitor, Smartphone } from "lucide-react"
-import { useState } from "react";
 
 interface Props {
     types: string[];

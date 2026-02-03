@@ -3,9 +3,18 @@
     --Purple: #2D2844;
     --PurpleLight: #8373F7;
     --Gray: #A8A3C0;
+    --BoxColor: #1B182B;
 
     /* SPECIAL */
     --BoxSkills: #171421;
+    --BorderBtn: #3d3660;
+    --BoxSalient: #262240;
+    --ItemColor: #3A3266;
+    --ButtonSwitch: #1E1A2E;
+}
+
+button {
+    cursor: pointer;
 }
 
 .bg-dark-purple {
@@ -14,6 +23,10 @@
 
 .bg-purple {
     background-color: var(--Purple);
+}
+
+.bg-purple-light {
+    background-color: var(--PurpleLight) !important;
 }
 
 .purple-light-color {
@@ -34,4 +47,24 @@
 
 .text-secondary {
     color: var(--Gray);
+}
+
+.box-salient {
+    background-color: var(--BoxSalient);
+}
+
+.bg-item {
+    background-color: var(--ItemColor);
+}
+
+.box-content {
+    background-color: var(--BoxColor);
+}
+
+.border-btn {
+    border: 1px solid var(--BorderBtn)
+}
+
+.btn-switch {
+    background-color: var(--ButtonSwitch);
 }
