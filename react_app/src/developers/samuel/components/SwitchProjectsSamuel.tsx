@@ -1,4 +1,4 @@
-import { Currency, Globe, Smartphone } from "lucide-react";
+import { Globe, Smartphone } from "lucide-react";
 import type { SwitchProjectData } from "../interfaces/project.interface"
 
 interface Props {
@@ -11,17 +11,18 @@ interface Props {
 export const SwitchProjectsSamuel = ({ projects, current, onSelectProject }: Props) => {
   return (
     <div
-      className="flex flex-row gap-3 mt-5">
+      className="flex flex-nowrap overflow-x-auto no-scrollbar md:flex-row gap-3 mt-5">
       {
         projects.map(project => (
           <button
-            key={Math.random()}
+            key={project.id}
             onClick={ () => onSelectProject(project) }
             className={`
-              transition-colors duration-300 ease-in-out
+              transition-all duration-300 ease-in-out
+              whitespace-nowrap
               flex flex-row btn-switch
               items-center gap-2 border-btn
-              px-5 py-3 rounded-xl text-sm
+              p-2 md:px-5 md:py-3 rounded-xl text-sm
               ${current?.name === project.name && 'bg-purple-light text-white font-bold'}
             `}>
             {
@@ -36,7 +37,7 @@ export const SwitchProjectsSamuel = ({ projects, current, onSelectProject }: Pro
                 )
             }
             <span
-              className={`${current?.name === project.name ? 'text-white' : 'text-secondary '}`}>
+              className={` ${current?.name === project.name ? 'text-white' : 'text-secondary '}`}>
               {project.name}
             </span>
           </button>

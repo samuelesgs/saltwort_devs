@@ -21,6 +21,7 @@ export interface StackSkill {
 }
 
 export interface SwitchProjectData {
+    id: number;
     name: string;
     type: TypeProject;
 }

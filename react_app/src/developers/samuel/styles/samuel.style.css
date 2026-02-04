@@ -17,6 +17,15 @@ button {
     cursor: pointer;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Oculta scrollbar en Firefox */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
 .bg-dark-purple {
     background-color: var(--DarkPurple);
 }

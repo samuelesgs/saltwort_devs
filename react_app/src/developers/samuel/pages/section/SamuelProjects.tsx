@@ -2,7 +2,8 @@ import { FolderKanban } from "lucide-react"
 import { PROJECTS_SAMUEL, TITLE_PROJECTS } from "../../data/projects.data"
 import { SwitchProjectsSamuel } from "../../components/SwitchProjectsSamuel";
 import { useEffect, useState } from "react";
-import type { SwitchProjectData } from "../../interfaces/project.interface";
+import type { Project, SwitchProjectData } from "../../interfaces/project.interface";
+import { ItemProjectSamuel } from "../../components/ItemProjectSamuel";
 
 export const SamuelProjects = () => {
 
@@ -10,13 +11,15 @@ export const SamuelProjects = () => {
   const switchProjects = TITLE_PROJECTS;
 
   const [currentSwitchProject, setCurrentSwitchProject] = useState<SwitchProjectData | null>(null);
+  const [currentProject, setCurrentProject] = useState<Project>();
 
   useEffect(() => {
     setCurrentSwitchProject(switchProjects[0]);
+    setCurrentProject(projects[0]);
     return;
   }, [])
 
-   return (
+  return (
     <div className="mt-10 text-white">
       {/* MARK: TITLE */}
       <div>
@@ -30,7 +33,18 @@ export const SamuelProjects = () => {
       <SwitchProjectsSamuel
         projects={TITLE_PROJECTS}
         current={currentSwitchProject}
-        onSelectProject={setCurrentSwitchProject}/>
+        onSelectProject={ (selectedProject) => {
+          const project = projects.find(row => row.name === selectedProject.name);
+          setCurrentProject(project);
+          setCurrentSwitchProject(selectedProject);
+        }} />
+
+      {
+        currentProject && (
+          <ItemProjectSamuel
+            project={currentProject} />
+        )
+      }
     </div>
   )
 }

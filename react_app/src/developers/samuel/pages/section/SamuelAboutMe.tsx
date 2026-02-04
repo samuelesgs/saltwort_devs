@@ -1,4 +1,4 @@
-import { Briefcase, CodeXml, FolderIcon, Rocket, User } from "lucide-react"
+import { Briefcase, CodeXml, Rocket, User } from "lucide-react"
 import type { ReactNode} from "react";
 
 interface ActionsSalient {
@@ -25,13 +25,13 @@ export const SamuelAboutMe = () => {
         },
         {
             icon: <Rocket />,
-            title: '+5',
-            detail: 'años de experiencia'
+            title: '+8',
+            detail: 'Projectos completados'
         },
         {
             icon: <CodeXml />,
-            title: '+5',
-            detail: 'años de experiencia'
+            title: '+15',
+            detail: 'Tecnologias domindas'
         },
     ]
 
@@ -43,7 +43,7 @@ export const SamuelAboutMe = () => {
                 SOBRE MI
             </h1>
             <div
-                className="grid grid-cols-4 mt-5">
+                className="grid gap-4 md:grid-cols-4">
                 <div
                     className="flex flex-col gap-5 col-span-3 text-secondary">
                     <p>
@@ -68,7 +68,7 @@ export const SamuelAboutMe = () => {
                     </div>
                 </div>
                 <div
-                    className="flex flex-col col-span-1 gap-3">
+                    className="flex flex-col md:col-span-1 gap-3">
                     {
                         actionSalients.map(action => (
                             <div
