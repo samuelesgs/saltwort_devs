@@ -8,9 +8,12 @@ interface Props {
 }
 
 export const ItemProjectSamuel = ({ project }: Props) => {
+
+
+
     return (
         <div
-            className="box-content rounded-xl border-btn mt-5 p-5">
+            className="box-content rounded-xl border-btn mt-5 p-5 animate-slide-in-up">
             <div
                 className="flex flex-row items-center gap-2">
                 <button
@@ -44,13 +47,15 @@ export const ItemProjectSamuel = ({ project }: Props) => {
             <div
                 className="flex flex-row flex-wrap mt-5 gap-2">
                 {
-                    project.tools.map(tool => (
+                    project.tools.map((tool, index) => (
                         <ItemSkillToolSamuel
                             name={tool.name}
                             icon={tool.icon}
                             isSmall={true}
                             animate={false}
-                            key={Math.random()}/>
+                            key={Math.random()}
+                            index={index}
+                            />
                     ))
                 }
             </div>

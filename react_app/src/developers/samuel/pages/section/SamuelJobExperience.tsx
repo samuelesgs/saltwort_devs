@@ -1,4 +1,4 @@
-import { ArrowRight, Building2, Handshake, MoveRight, Sparkle, Sparkles } from "lucide-react"
+import { ArrowRight, Building2, Handshake, Sparkles } from "lucide-react"
 import { ItemJobExperienceSamuel } from "../../components/ItemJobExperienceSamuel"
 import { JOB_EXPERIENCES } from "../../data/job-experiences.data"
 import { SectionTitleSamuel } from "../../components/SectionTitleSamuel";

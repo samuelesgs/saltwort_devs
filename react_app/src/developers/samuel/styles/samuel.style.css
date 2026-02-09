@@ -16,7 +16,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 button {
@@ -108,12 +108,12 @@ button {
 }
 
 .rotate-img img {
-  transform: rotate(0deg);
-  transition: transform .45s cubic-bezier(.4,0,.2,1);
+    transform: rotate(0deg);
+    transition: transform .45s cubic-bezier(.4, 0, .2, 1);
 }
 
 .rotate-img:hover img {
-  transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 .btn-email:hover {
@@ -130,6 +130,10 @@ button {
 
 .btn-github:hover * {
     color: var(--DarkPurple);
+}
+
+.animate-slide-in-up {
+    animation: slide-in-up 0.5s ease-out forwards;
 }
 
 .animate-pulse-glow {
@@ -309,5 +313,17 @@ button {
     54% {
         text-shadow: 0 0 8px var(--primary), 0 0 18px var(--primary), 0 0 35px var(--primary);
         opacity: 1;
+    }
+}
+
+@keyframes slide-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

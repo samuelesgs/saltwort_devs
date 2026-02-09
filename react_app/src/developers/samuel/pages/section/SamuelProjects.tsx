@@ -42,7 +42,8 @@ export const SamuelProjects = () => {
       {
         currentProject && (
           <ItemProjectSamuel
-            project={currentProject} />
+            project={currentProject}
+            key={currentProject.name}/>
         )
       }
     </div>

@@ -10,7 +10,7 @@ export const SamuelCollaborate = () => {
       <div
         className="text-white mt-10 box-content px-4 py-8 btn-border rounded-xl">
         <div
-          className="flex flex-row justify-center md:justify-start gap-10">
+          className="flex flex-col md:flex-row justify-center md:justify-start gap-10">
             <SectionTitleSamuel
               title="COLABOREMOS"
               icon={<Sparkles className="w-6 h-6" />}/>
@@ -62,18 +62,18 @@ export const SamuelCollaborate = () => {
                 <button
                   className="bg-purple rounded-full p-1.5">
                   <Mail
-                    className="text-white w-6 h-6"
+                    className="purple-light-color w-6 h-6"
                   />
                 </button>
                 <button
                   className="bg-purple rounded-full p-1.5">
                   <LinkedIn
-                    className="text-white w-6 h-6" />
+                    className="purple-light-color w-6 h-6" />
                 </button>
                 <button
                   className="bg-purple rounded-full p-1.5">
                   <GitHub
-                    className="text-white w-6 h-6" />
+                    className="purple-light-color w-6 h-6" />
                 </button>
               </div>
             </div>

@@ -7,7 +7,7 @@ import { SamuelSkills } from "./section/SamuelSkills"
 
 export const SamuelPage = () => {
   return (
-    <div>
+    <div className="pb-20 md:pb-0">
       <TitleHeaderSamuel />
       <SamuelSkills />
       <SamuelAboutMe />

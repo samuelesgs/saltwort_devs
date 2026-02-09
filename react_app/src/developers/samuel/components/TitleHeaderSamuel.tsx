@@ -32,20 +32,20 @@ export const TitleHeaderSamuel = () => {
       <div
         className="col-span-2 md:col-span-3 flex flex-row gap-5 justify-center md:justify-end">
         <button
-          className="bg-purple-light rounded-full p-1.5 transition-all ease-in-out duration-300 btn-email hover:scale-110 hover:rotate-6">
+          className="bg-purple rounded-full p-1.5 hover:text-white transition-all ease-in-out duration-300 btn-email hover:scale-110 hover:rotate-6">
           <Mail
-            className="text-white w-6 h-6"
+            className="purple-light-color w-6 h-6"
           />
         </button>
         <button
-          className="bg-purple-light rounded-full p-1.5 transition-all ease-in-out duration-300 btn-linkedin hover:scale-110 hover:rotate-6">
+          className="bg-purple rounded-full p-1.5 transition-all ease-in-out duration-300 btn-linkedin hover:scale-110 hover:rotate-6">
           <LinkedIn
-            className="text-white w-6 h-6" />
+            className="purple-light-color w-6 h-6" />
         </button>
         <button
-          className="bg-purple-light rounded-full p-1.5  transition-all ease-in-out duration-300 btn-github hover:scale-110 hover:rotate-6">
+          className="bg-purple rounded-full p-1.5  transition-all ease-in-out duration-300 btn-github hover:scale-110 hover:rotate-6">
           <GitHub
-            className="text-white w-6 h-6" />
+            className="purple-light-color w-6 h-6" />
         </button>
       </div>
     </div>
