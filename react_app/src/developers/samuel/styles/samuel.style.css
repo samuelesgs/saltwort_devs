@@ -11,6 +11,8 @@
     --BoxSalient: #262240;
     --ItemColor: #3A3266;
     --ButtonSwitch: #1E1A2E;
+    --LinkedInColor: #0077b5;
+    --GitHubColor: #e4e2f0;
 }
 
 button {
@@ -18,16 +20,20 @@ button {
 }
 
 .no-scrollbar::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 /* Oculta scrollbar en Firefox */
 .no-scrollbar {
-  scrollbar-width: none;
+    scrollbar-width: none;
 }
 
 .bg-dark-purple {
     background-color: var(--DarkPurple);
+}
+
+.bg-gray {
+    background-color: var(--Gray);
 }
 
 .bg-purple {
@@ -76,4 +82,219 @@ button {
 
 .btn-switch {
     background-color: var(--ButtonSwitch);
+}
+
+.item-contribution:hover {
+    border: 1px solid var(--PurpleLight);
+}
+
+.border-btn .item-skill:hover {
+    border-color: var(--PurpleLight);
+    outline: 2px solid var(--BoxColor);
+    box-shadow: 0 0 0 4px var(--PurpleLight);
+}
+
+.rotate-img img {
+  transform: rotate(0deg);
+  transition: transform .45s cubic-bezier(.4,0,.2,1);
+}
+
+.rotate-img:hover img {
+  transform: rotate(360deg);
+}
+
+.btn-email:hover {
+    background-color: var(--PurpleLight);
+}
+
+.btn-linkedin:hover {
+    background-color: var(--LinkedInColor);
+}
+
+.btn-github:hover {
+    background-color: var(--GitHubColor);
+}
+
+.btn-github:hover * {
+    color: var(--DarkPurple);
+}
+
+.animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-electric-line {
+    background: linear-gradient(90deg,
+            transparent 0%,
+            var(--PurpleLight) 25%,
+            white 50%,
+            var(--PurpleLight) 75%,
+            transparent 100%);
+    background-size: 200% 100%;
+    animation: electric-line 3s ease-in-out infinite;
+}
+
+.animate-spark {
+    animation: spark 4s ease-in-out infinite;
+}
+
+.animate-lightning {
+    animation: lightning 4s ease-in-out infinite;
+}
+
+.animate-lightning-bolt {
+    animation: lightning-bolt 4s ease-in-out infinite;
+}
+
+@keyframes lightning-bolt {
+
+    0%,
+    100% {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+
+    5% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    10% {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+
+    12% {
+        opacity: 0.8;
+        transform: scaleY(0.8);
+    }
+
+    15% {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+
+    50% {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+
+    52% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    55% {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+}
+
+@keyframes electric-line {
+
+    0%,
+    100% {
+        background-position: 200% center;
+        opacity: 0.3;
+    }
+
+    50% {
+        background-position: 0% center;
+        opacity: 1;
+    }
+}
+
+@keyframes pulse-glow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 5px var(--PurpleLight), 0 0 10px transparent;
+    }
+
+    50% {
+        box-shadow: 0 0 20px var(--PurpleLight), 0 0 30px var(--PurpleLight);
+    }
+}
+
+@keyframes spark {
+
+    0%,
+    100% {
+        opacity: 0;
+        transform: scale(0) rotate(0deg);
+    }
+
+    10% {
+        opacity: 1;
+        transform: scale(1) rotate(45deg);
+    }
+
+    20% {
+        opacity: 0;
+        transform: scale(0.5) rotate(90deg);
+    }
+
+    50% {
+        opacity: 0;
+        transform: scale(0) rotate(90deg);
+    }
+
+    55% {
+        opacity: 1;
+        transform: scale(1.2) rotate(180deg);
+    }
+
+    65% {
+        opacity: 0;
+        transform: scale(0) rotate(270deg);
+    }
+}
+
+@keyframes lightning {
+
+    0%,
+    100% {
+        text-shadow: 0 0 4px var(--primary), 0 0 8px var(--primary), 0 0 12px transparent;
+        opacity: 1;
+    }
+
+    10% {
+        text-shadow: 0 0 4px var(--primary), 0 0 12px var(--primary), 0 0 20px var(--primary), 0 0 40px var(--primary);
+        opacity: 1;
+    }
+
+    12% {
+        text-shadow: 0 0 2px var(--primary);
+        opacity: 0.8;
+    }
+
+    14% {
+        text-shadow: 0 0 4px var(--primary), 0 0 15px var(--primary), 0 0 30px var(--primary);
+        opacity: 1;
+    }
+
+    16% {
+        text-shadow: 0 0 2px var(--primary);
+        opacity: 0.9;
+    }
+
+    20% {
+        text-shadow: 0 0 4px var(--primary), 0 0 8px var(--primary);
+        opacity: 1;
+    }
+
+    50% {
+        text-shadow: 0 0 6px var(--primary), 0 0 12px var(--primary), 0 0 25px var(--primary), 0 0 50px var(--primary);
+        opacity: 1;
+    }
+
+    52% {
+        text-shadow: 0 0 3px var(--primary);
+        opacity: 0.85;
+    }
+
+    54% {
+        text-shadow: 0 0 8px var(--primary), 0 0 18px var(--primary), 0 0 35px var(--primary);
+        opacity: 1;
+    }
 }

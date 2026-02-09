@@ -13,6 +13,7 @@ export const SamuelSkills = () => {
           <ItemSkillToolSamuel 
             name={skill.name}
             icon={skill.url}
+            animate={true}
             key={skill.id}/>
           ))
         }

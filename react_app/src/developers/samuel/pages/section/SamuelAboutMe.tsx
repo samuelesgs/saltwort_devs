@@ -1,5 +1,6 @@
 import { Briefcase, CodeXml, Rocket, User } from "lucide-react"
-import type { ReactNode} from "react";
+import type { ReactNode } from "react";
+import { SectionTitleSamuel } from "../../components/SectionTitleSamuel";
 
 interface ActionsSalient {
     icon: ReactNode;
@@ -37,11 +38,10 @@ export const SamuelAboutMe = () => {
 
     return (
         <div className="mt-10 box-content border-btn rounded-xl p-8 text-white">
-            <h1 className="flex flex-row items-center gap-2 text-sm font-bold">
-                <User
-                    className="w-5 h-5" />
-                SOBRE MI
-            </h1>
+            <SectionTitleSamuel
+                title="SOBRE MI"
+                icon={<User />}
+            />
             <div
                 className="grid gap-4 md:grid-cols-4">
                 <div
@@ -76,15 +76,15 @@ export const SamuelAboutMe = () => {
                                 className="flex flex-row px-4 py-3 gap-4 items-center border-btn box-salient rounded-2xl">
                                 <div
                                     className="bg-item p-2 rounded-xl w-10 h-10 purple-light-color">
-                                        { action.icon }
+                                    {action.icon}
                                 </div>
                                 <div className="flex flex-col">
                                     <h1 className="purple-light-color text-3xl">
-                                        { action.title }
+                                        {action.title}
                                     </h1>
                                     <span
                                         className="text-sm text-secondary">
-                                        { action.detail }
+                                        {action.detail}
                                     </span>
                                 </div>
                             </div>

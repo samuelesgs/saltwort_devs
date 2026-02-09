@@ -1,6 +1,7 @@
 import { CircleCheck, Globe, Smartphone } from "lucide-react";
 import type { Project } from "../interfaces/project.interface"
 import { ItemSkillToolSamuel } from "./ItemSkillToolSamuel";
+import { CarrouselSamuel } from "./CarrouselProjectSamuel";
 
 interface Props {
     project: Project;
@@ -48,9 +49,16 @@ export const ItemProjectSamuel = ({ project }: Props) => {
                             name={tool.name}
                             icon={tool.icon}
                             isSmall={true}
+                            animate={false}
                             key={Math.random()}/>
                     ))
                 }
+            </div>
+            <div
+                className="flex justify-center mt-5 overflow-visible">
+                <CarrouselSamuel
+                    images={project.images}
+                    type={project.type}/>
             </div>
             <div
                 className="mt-5">
@@ -64,7 +72,12 @@ export const ItemProjectSamuel = ({ project }: Props) => {
                     {
                         project.contributions.map(item => (
                             <div
-                                className="flex flex-row gap-3 border-btn btn-switch w-full p-4 rounded-xl"
+                                className="
+                                    flex flex-row gap-3 border-btn
+                                    btn-switch w-full p-4 rounded-xl
+                                    transition-all duration-300 hover:scale-102
+                                    item-contribution
+                                "
                                 key={Math.random()}>
                                 <CircleCheck
                                     className="w-7 h-7 purple-light-color" />

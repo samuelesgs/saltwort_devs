@@ -5,7 +5,7 @@ interface Props {
     job: JobExperience;
 }
 
-export const ItemJobExperience = ({ job }: Props) => {
+export const ItemJobExperienceSamuel = ({ job }: Props) => {
     return (
         <div
             className="grid grid-cols-9 box-content border-btn p-5 rounded-xl">
@@ -63,6 +63,7 @@ export const ItemJobExperience = ({ job }: Props) => {
                     {
                         job.pointsActivities.map((point, index) => (
                             <div
+                                key={index}
                                 className="flex flex-row items-center">
                                 <div
                                     className="bg-purple-light h-2 w-2 rounded-full mr-2" />

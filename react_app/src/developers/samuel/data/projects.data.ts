@@ -23,9 +23,18 @@ export const PROJECTS_SAMUEL: Project[] = [
                 name: "Kotlin",
                 icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
             },
-            
+
         ],
-        images: [],
+        images: [
+            './aksel/daily-expenses-4/mobile/daily-expenses-img-1.png',
+            './aksel/daily-expenses-4/mobile/daily-expenses-img-2.png',
+            './aksel/daily-expenses-4/mobile/daily-expenses-img-3.png',
+            './aksel/daily-expenses-4/mobile/daily-expenses-img-4.png',
+            './aksel/daily-expenses-4/mobile/daily-expenses-img-5.png',
+            './aksel/daily-expenses-4/mobile/daily-expenses-img-6.png',
+            './aksel/daily-expenses-4/mobile/daily-expenses-img-7.png',
+            './aksel/daily-expenses-4/mobile/daily-expenses-img-8.png',
+        ],
         contributions: [
             {
                 title: "Modelo de sincronización v1, v2 y v3",
@@ -70,7 +79,16 @@ export const PROJECTS_SAMUEL: Project[] = [
         name: "Zeus",
         detail: "",
         tools: [],
-        images: [],
+        images: [
+            './aksel/daily-expenses-4/web/daily-expenses-web-img-1.png',
+            './aksel/daily-expenses-4/web/daily-expenses-web-img-2.png',
+            './aksel/daily-expenses-4/web/daily-expenses-web-img-3.png',
+            './aksel/daily-expenses-4/web/daily-expenses-web-img-4.png',
+            './aksel/daily-expenses-4/web/daily-expenses-web-img-5.png',
+            './aksel/daily-expenses-4/web/daily-expenses-web-img-6.png',
+            './aksel/daily-expenses-4/web/daily-expenses-web-img-7.png',
+            './aksel/daily-expenses-4/web/daily-expenses-web-img-8.png',
+        ],
         contributions: [],
         type: "Web",
         development_time: 0
