@@ -8,7 +8,7 @@ interface Props {
 
 export const SectionTitleSamuel = ({ title, icon }: Props) => {
     return (
-        <div className="relative inline-flex items-center gap-3 mb-8">
+        <div className="relative inline-flex items-center gap-3 mb-8 ms-8">
             {/* Efecto de relámpago de fondo */}
             <div className="absolute -inset-2 bg-primary/5 rounded-lg blur-md animate-pulse-glow opacity-50" />
 

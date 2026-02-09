@@ -6,7 +6,7 @@ export const TitleHeaderSamuel = () => {
   return (
     <div
       className="grid grid-cols-1 md:grid-cols-12 gap-5 md:items-center">
-      <div className="flex justify-center col-span-1 md:col-span-2">
+      <div className="flex justify-center col-span-2 md:col-span-2">
         <img
           src="./icons/swift.png"
           alt=""
@@ -14,7 +14,7 @@ export const TitleHeaderSamuel = () => {
         />
       </div>
       <div
-        className="md:col-span-7 text-center md:text-left">
+        className="col-span-2 md:col-span-7 text-center md:text-left">
         <h1
           className="text-white text-xl md:text-3xl font-bold">
           Edgar Samuel Guerrero Sandoval
@@ -32,18 +32,18 @@ export const TitleHeaderSamuel = () => {
       <div
         className="col-span-2 md:col-span-3 flex flex-row gap-5 justify-center md:justify-end">
         <button
-          className="bg-purple rounded-full p-1.5 transition-all ease-in-out duration-300 btn-email hover:scale-110 hover:rotate-6">
+          className="bg-purple-light rounded-full p-1.5 transition-all ease-in-out duration-300 btn-email hover:scale-110 hover:rotate-6">
           <Mail
             className="text-white w-6 h-6"
           />
         </button>
         <button
-          className="bg-purple rounded-full p-1.5 transition-all ease-in-out duration-300 btn-linkedin hover:scale-110 hover:rotate-6">
+          className="bg-purple-light rounded-full p-1.5 transition-all ease-in-out duration-300 btn-linkedin hover:scale-110 hover:rotate-6">
           <LinkedIn
             className="text-white w-6 h-6" />
         </button>
         <button
-          className="bg-purple rounded-full p-1.5  transition-all ease-in-out duration-300 btn-github hover:scale-110 hover:rotate-6">
+          className="bg-purple-light rounded-full p-1.5  transition-all ease-in-out duration-300 btn-github hover:scale-110 hover:rotate-6">
           <GitHub
             className="text-white w-6 h-6" />
         </button>

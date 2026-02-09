@@ -15,6 +15,10 @@
     --GitHubColor: #e4e2f0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 button {
     cursor: pointer;
 }
@@ -41,8 +45,17 @@ button {
 }
 
 .bg-purple-light {
-    background-color: var(--PurpleLight) !important;
+    background-color: var(--PurpleLight);
 }
+
+.border-purple-point-line {
+    border: 2.5px dotted var(--Purple);
+}
+
+.purple-color {
+    color: var(--Purple);
+}
+
 
 .purple-light-color {
     color: var(--PurpleLight);

@@ -90,8 +90,9 @@ export const ItemProjectSamuel = ({ project }: Props) => {
                                         </div>
                                         <button
                                             className={`
-                                            text-xs
-                                            ${item.priority === 'Muy Alta' ? 'purple-light-color box-salient px-2 py-0.5 rounded-xl' : 'text-secondary'}
+                                                text-xs
+                                                box-salient
+                                                purple-light-color  px-2 py-0.5 rounded-xl
                                             `}>
                                             {item.priority}
                                         </button>

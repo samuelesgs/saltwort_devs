@@ -38,14 +38,41 @@ export const SamuelAboutMe = () => {
 
     return (
         <div className="mt-10 box-content border-btn rounded-xl p-8 text-white">
-            <SectionTitleSamuel
-                title="SOBRE MI"
-                icon={<User />}
-            />
             <div
-                className="grid gap-4 md:grid-cols-4">
+                className="flex flex-col md:flex-row items-center mb-5">
+                <SectionTitleSamuel
+                    title="SOBRE MI"
+                    icon={<User />}
+                />
                 <div
-                    className="flex flex-col gap-5 col-span-3 text-secondary">
+                    className="flex flex-col md:flex-row gap-3 md:ml-15">
+                    {
+                        actionSalients.map(action => (
+                            <div
+                                key={Math.random()}
+                                className="flex flex-row px-4 py-2 gap-2 items-center border-btn box-salient rounded-2xl">
+                                <div
+                                    className="bg-item p-2 rounded-xl w-10 h-10 purple-light-color">
+                                    {action.icon}
+                                </div>
+                                <div className="flex flex-col">
+                                    <h1 className="purple-light-color text-3xl">
+                                        {action.title}
+                                    </h1>
+                                    <span
+                                        className="text-sm text-secondary">
+                                        {action.detail}
+                                    </span>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+            <div
+                className="grid gap-4">
+                <div
+                    className="flex flex-col gap-5 text-secondary">
                     <p>
                         Desarrollador con más de <span className="font-bold text-white">5 años de experiencia</span> en desarrollo web y backend, y experto en Android Studio con Java y Kotlin. En el desarrollo móvil, he utilizado Android Studio para crear aplicaciones robustas, optimizando el rendimiento y la experiencia del usuario.
                     </p>
@@ -66,30 +93,6 @@ export const SamuelAboutMe = () => {
                             ))
                         }
                     </div>
-                </div>
-                <div
-                    className="flex flex-col md:col-span-1 gap-3">
-                    {
-                        actionSalients.map(action => (
-                            <div
-                                key={Math.random()}
-                                className="flex flex-row px-4 py-3 gap-4 items-center border-btn box-salient rounded-2xl">
-                                <div
-                                    className="bg-item p-2 rounded-xl w-10 h-10 purple-light-color">
-                                    {action.icon}
-                                </div>
-                                <div className="flex flex-col">
-                                    <h1 className="purple-light-color text-3xl">
-                                        {action.title}
-                                    </h1>
-                                    <span
-                                        className="text-sm text-secondary">
-                                        {action.detail}
-                                    </span>
-                                </div>
-                            </div>
-                        ))
-                    }
                 </div>
             </div>
         </div>

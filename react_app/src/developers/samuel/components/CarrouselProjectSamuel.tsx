@@ -67,7 +67,7 @@ export const CarrouselSamuel = ({ images, type }: Props) => {
                 alt=""
                 className={`
                   rounded-2xl object-fill p-0
-                  ${type === 'Mobile' ? 'w-full h-80' : 'h-full w-full'}
+                  ${type === 'Mobile' ? 'w-full h-80' : 'w-full h-auto'}
                   ${index === (current - 1) && 'opacity-90'}
                   ${index === (current + 1) && 'opacity-90'}
                   ${index !== current && 'opacity-70'}

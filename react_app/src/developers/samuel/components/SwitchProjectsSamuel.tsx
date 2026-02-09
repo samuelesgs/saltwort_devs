@@ -17,13 +17,16 @@ export const SwitchProjectsSamuel = ({ projects, current, onSelectProject }: Pro
           <button
             key={project.id}
             onClick={ () => onSelectProject(project) }
+            style={{
+              backgroundColor: current?.name === project.name ? 'var(--PurpleLight)'  : ''
+            }}
             className={`
+              ${current?.name === project.name && 'text-white font-bold'}
               transition-all duration-300 ease-in-out
               whitespace-nowrap
               flex flex-row btn-switch
               items-center gap-2 border-btn
               p-2 md:px-5 md:py-3 rounded-xl text-sm
-              ${current?.name === project.name && 'bg-purple-light text-white font-bold'}
             `}>
             {
               project.type === 'Mobile'
