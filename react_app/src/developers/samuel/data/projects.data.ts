@@ -72,7 +72,7 @@ export const PROJECTS_SAMUEL: Project[] = [
                 priority: "Muy Alta"
             },
         ],
-        type: "Mobile",
+        types: ["Mobile", "Web"],
         development_time: 2
     },
     {
@@ -90,7 +90,7 @@ export const PROJECTS_SAMUEL: Project[] = [
             './aksel/daily-expenses-4/web/daily-expenses-web-img-8.png',
         ],
         contributions: [],
-        type: "Web",
+        types: ["Web"],
         development_time: 0
     },
     {
@@ -99,7 +99,7 @@ export const PROJECTS_SAMUEL: Project[] = [
         tools: [],
         images: [],
         contributions: [],
-        type: "Mobile",
+        types: ["Mobile"],
         development_time: 0
     },
     {
@@ -108,7 +108,7 @@ export const PROJECTS_SAMUEL: Project[] = [
         tools: [],
         images: [],
         contributions: [],
-        type: "Mobile",
+        types: ["Mobile"],
         development_time: 0
     },
     {
@@ -117,7 +117,7 @@ export const PROJECTS_SAMUEL: Project[] = [
         tools: [],
         images: [],
         contributions: [],
-        type: "Web",
+        types: ["Mobile"],
         development_time: 0
     },
     {
@@ -126,7 +126,7 @@ export const PROJECTS_SAMUEL: Project[] = [
         tools: [],
         images: [],
         contributions: [],
-        type: "Web",
+        types: ["Mobile"],
         development_time: 0
     },
 ];
@@ -134,5 +134,5 @@ export const PROJECTS_SAMUEL: Project[] = [
 export const TITLE_PROJECTS: SwitchProjectData[] = PROJECTS_SAMUEL.map(row => ({
     id: Math.random(),
     name: row.name,
-    type: row.type,
+    type: row.types,
 }));

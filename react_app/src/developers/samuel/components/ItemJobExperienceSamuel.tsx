@@ -1,4 +1,4 @@
-import { ChevronLeftCircleIcon, Clock5, MapPin } from "lucide-react"
+import { Clock5, MapPin } from "lucide-react"
 import type { JobExperience } from "../interfaces/job-experiences.interface"
 
 interface Props {
@@ -8,17 +8,17 @@ interface Props {
 export const ItemJobExperienceSamuel = ({ job }: Props) => {
     return (
         <div
-            className="grid grid-cols-9 box-content border-btn p-5 rounded-xl">
+            className="grid md:grid-cols-9 grid-cols-3 box-content border-btn p-5 rounded-xl">
             <div
                 className="flex justify-center col-span-1 mt-0 m-2">
                 <div
-                    className="bg-purple p-2 border-btn rounded-lg">
-                    <ChevronLeftCircleIcon
-                        className="w-full h-full" />
+                    className="bg-purple p-2 border-btn rounded-lg max-h-fit">
+                    <img
+                        src={job.iconCompany}/>
                 </div>
             </div>
             <div
-                className="col-span-6">
+                className="col-span-2 md:col-span-6">
                 <div
                     className="flex flex-col gap-1">
                     <h1
@@ -40,7 +40,7 @@ export const ItemJobExperienceSamuel = ({ job }: Props) => {
                 </div>
             </div>
             <div
-                className="flex justify-end col-span-2">
+                className="flex justify-end md:col-span-2 col-span-8 md:mt-0 mt-2">
                 <div>
                     <p className="flex flex-row gap-2 text-end text-xs purple-light-color bg-purple px-2 py-1 rounded-xl">
                         <Clock5
@@ -53,7 +53,7 @@ export const ItemJobExperienceSamuel = ({ job }: Props) => {
                 </div>
             </div>
             <div
-                className="col-span-9">
+                className="col-span-8 md:col-span-9 ">
                 <p
                     className="text-secondary text-sm mt-4">
                     {job.detail}
@@ -64,14 +64,13 @@ export const ItemJobExperienceSamuel = ({ job }: Props) => {
                         job.pointsActivities.map((point, index) => (
                             <div
                                 key={index}
-                                className="flex flex-row items-center">
+                                className="flex flex-row items-start">
                                 <div
-                                    className="bg-purple-light h-2 w-2 rounded-full mr-2" />
-                                <p
                                     key={index}
-                                    className="text-white text-sm">
+                                    className="flex flex-row text-white text-sm">
+                                    <div className="bg-purple-light md:h-2 md:w-2 rounded-full mr-2 mt-1.5" />
                                     {point}
-                                </p>
+                                </div>
                             </div>
                         ))
                     }

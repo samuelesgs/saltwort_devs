@@ -1,7 +1,9 @@
-import { CircleCheck, Globe, Smartphone } from "lucide-react";
-import type { Project } from "../interfaces/project.interface"
+import { CircleCheck, CodeXml, Globe, Smartphone } from "lucide-react";
+import type { Project, TypeProject } from "../interfaces/project.interface"
 import { ItemSkillToolSamuel } from "./ItemSkillToolSamuel";
 import { CarrouselSamuel } from "./CarrouselProjectSamuel";
+import { SwitchTypeProject } from "./SwitchTypeProject";
+import { useState } from "react";
 
 interface Props {
     project: Project;
@@ -9,7 +11,14 @@ interface Props {
 
 export const ItemProjectSamuel = ({ project }: Props) => {
 
+    const types = project.types;
+    const [currentType, setCurrentType] = useState(types[0]);
 
+    const getIconTypeProject = () => {
+        if (types.length > 1) return <CodeXml className="w-4 h-4" />;
+        if (types.includes('Mobile')) return <Smartphone className="w-4 h-4" />;
+        if (types.includes('Web')) return <Globe className="w-4 h-4" />;
+    }
 
     return (
         <div
@@ -19,15 +28,9 @@ export const ItemProjectSamuel = ({ project }: Props) => {
                 <button
                     className="flex flex-row items-center gap-1 purple-light-color text-xs box-purple py-1 px-2 rounded-xl box-salient">
                     {
-                        project.type === 'Mobile' ? (
-                            <Smartphone
-                                className="w-4 h-4" />
-                        ) : (
-                            <Globe
-                                className="w-4 h-4" />
-                        )
+                        getIconTypeProject()
                     }
-                    {project.type}
+                    {project.types.join(' - ')}
                 </button>
                 <p className="text-xs text-secondary mt-2">
                     {project.development_time} año{project.development_time > 1 && 's'} de desarrollo
@@ -55,15 +58,26 @@ export const ItemProjectSamuel = ({ project }: Props) => {
                             animate={false}
                             key={Math.random()}
                             index={index}
-                            />
+                        />
                     ))
                 }
             </div>
             <div
-                className="flex justify-center mt-5 overflow-visible">
+                className="flex flex-col justify-center gap-5 mt-5 overflow-visible">
+                {types.length > 1 && (
+                    <div className="flex justify-center">
+                        <div
+                            className="max-w-fit">
+                            <SwitchTypeProject
+                                types={project.types}
+                                currentType={currentType}
+                                onSelectTypeProject={(type) => setCurrentType(type as TypeProject)} />
+                        </div>
+                    </div>
+                )}
                 <CarrouselSamuel
                     images={project.images}
-                    type={project.type}/>
+                    type={currentType} />
             </div>
             <div
                 className="mt-5">

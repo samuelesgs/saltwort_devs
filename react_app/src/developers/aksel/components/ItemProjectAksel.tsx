@@ -130,18 +130,21 @@ export const ItemProjectAksel = ({ project, expanded, onSelectProject }: Props) 
             {description}
           </p>
           <div className="flex justify-center mt-2">
-            <SwitchTypeProject
-              types={platforms}
-              currentType={typeProject}
-              onSelectTypeProject={(type) => {
-                if (type === typeProject) return;
 
-                setIsChanging(true);
-                setTimeout(() => {
-                  setTypeProject(type);
-                  setIsChanging(false);
-                }, 200);
-              }} />
+            {platforms.length > 1 && (
+              <SwitchTypeProject
+                types={platforms}
+                currentType={typeProject}
+                onSelectTypeProject={(type) => {
+                  if (type === typeProject) return;
+
+                  setIsChanging(true);
+                  setTimeout(() => {
+                    setTypeProject(type);
+                    setIsChanging(false);
+                  }, 200);
+                }} />
+            )}
           </div>
           <div
             className={`

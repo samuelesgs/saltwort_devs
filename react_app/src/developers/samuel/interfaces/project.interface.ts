@@ -5,7 +5,7 @@ export interface Project {
     tools: StackSkill[];
     development_time: number;
     images: string[];
-    type: TypeProject;
+    types: TypeProject[];
     contributions: Contribution[]
 }
 
@@ -23,7 +23,7 @@ export interface StackSkill {
 export interface SwitchProjectData {
     id: number;
     name: string;
-    type: TypeProject;
+    type: TypeProject[];
 }
 
 export type TypePriority = 'Muy Alta' | 'Alta' | 'Media';

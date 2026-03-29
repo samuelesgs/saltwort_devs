@@ -43,7 +43,7 @@ export const CarrouselSamuel = ({ images, type }: Props) => {
         containScroll: false,
         align: 'center',
       }}>
-      <CarouselContent className="-ml-1 mx-5 pt-20 pb-5">
+      <CarouselContent className="-ml-1 mx-5 pt-30 pb-5">
         {images.map((img, index) => (
           <CarouselItem
             key={index}

@@ -5,7 +5,7 @@ export const TitleHeader = () => {
             <div className="col-span-1 flex justify-center md:block">
                 <div className="img-glow shadow-gradient">
                     <img
-                        src="./aksel/image-profile.jpg"
+                        src="./aksel/image-profile.jpeg"
                         alt="image-profile"
                         className="w-40 h-40 sm:w-52 sm:h-64 md:w-60 md:h-75 object-cover rounded-lg"
                     />
