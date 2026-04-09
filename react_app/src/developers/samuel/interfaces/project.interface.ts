@@ -4,7 +4,7 @@ export interface Project {
     detail: string;
     tools: StackSkill[];
     development_time: number;
-    images: string[];
+    images: ImagesProject;
     types: TypeProject[];
     contributions: Contribution[]
 }
@@ -13,6 +13,11 @@ export interface Contribution {
     title: string;
     detail: string;
     priority: TypePriority;
+}
+
+export interface ImagesProject {
+    web: string[];
+    movil: string[];
 }
 
 export interface StackSkill {

@@ -8,7 +8,7 @@ export const TitleHeaderSamuel = () => {
       className="grid grid-cols-1 md:grid-cols-12 gap-5 md:items-center">
       <div className="flex justify-center col-span-2 md:col-span-2">
         <img
-          src="./icons/swift.png"
+          src="./samuel/profile-samuel.png"
           alt=""
           className="w-40 h-45 border-purple-light rounded-xl shadow-xl shadow-primary/20 animate-pulse-glow"
         />

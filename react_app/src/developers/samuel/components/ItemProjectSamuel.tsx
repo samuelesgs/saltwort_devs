@@ -11,13 +11,23 @@ interface Props {
 
 export const ItemProjectSamuel = ({ project }: Props) => {
 
+    const getImagesProject = (type: TypeProject) => {
+        return type === 'Mobile' ? project.images.movil : project.images.web
+    }
+
     const types = project.types;
+    const [images, useImages] = useState(getImagesProject(project.types[0]));
     const [currentType, setCurrentType] = useState(types[0]);
 
     const getIconTypeProject = () => {
         if (types.length > 1) return <CodeXml className="w-4 h-4" />;
         if (types.includes('Mobile')) return <Smartphone className="w-4 h-4" />;
         if (types.includes('Web')) return <Globe className="w-4 h-4" />;
+    }
+
+    const handleChangeTypeProject = (type: TypeProject) => {
+        useImages(getImagesProject(type));
+        setCurrentType(type);
     }
 
     return (
@@ -71,12 +81,12 @@ export const ItemProjectSamuel = ({ project }: Props) => {
                             <SwitchTypeProject
                                 types={project.types}
                                 currentType={currentType}
-                                onSelectTypeProject={(type) => setCurrentType(type as TypeProject)} />
+                                onSelectTypeProject={(type) => handleChangeTypeProject(type)} />
                         </div>
                     </div>
                 )}
                 <CarrouselSamuel
-                    images={project.images}
+                    images={images}
                     type={currentType} />
             </div>
             <div

@@ -1,9 +1,10 @@
 import { Monitor, Smartphone } from "lucide-react"
+import type { TypeProject } from "../interfaces/project.interface";
 
 interface Props {
     types: string[];
     currentType: string;
-    onSelectTypeProject: (value: string) => void;
+    onSelectTypeProject: (value: TypeProject) => void;
 }
 
 export const SwitchTypeProject = ({ types, currentType, onSelectTypeProject }: Props) => {
@@ -14,7 +15,7 @@ export const SwitchTypeProject = ({ types, currentType, onSelectTypeProject }: P
                 types.map(type => (
                     <button
                         key={type}
-                        onClick={ () => onSelectTypeProject(type) }
+                        onClick={ () => onSelectTypeProject(type as TypeProject) }
                         className={`
                             flex flex-row gap-1
                             items-center px-6 py-1
