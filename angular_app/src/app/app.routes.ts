@@ -7,6 +7,7 @@ import { ProfileDeveloperComponent } from './pages/developmen/profile-developer/
 import { ActivityPlannerInfoComponent } from './pages/aplications/activity-planner-info/activity-planner-info.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 import { AplicationComponent } from './pages/developmen/aplication/aplication.component';
+import { PortfolioReactComponent } from './shared/portfolio-react/portfolio-react.component';
 
 export const routes: Routes = [
     {path : 'Home', component : HomeComponent},
@@ -17,6 +18,7 @@ export const routes: Routes = [
     {path: 'Application/:name/:company/:project', component: AplicationComponent},
     {path: 'ActivityPlanner', component: ActivityPlannerInfoComponent},
     {path: 'PrivacyPolicy', component: PrivacyPolicyComponent},
+    {path: 'portfolio', component: PortfolioReactComponent},
     {path: '**',  redirectTo: 'Home'},
 
 ];
