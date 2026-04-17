@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
 import { AppService } from './app.service';
 import { LocalStorageManager } from './utils/localStorageManager';
+import { filter } from 'rxjs/operators';
 
 @Component({
     selector: 'app-root',
@@ -16,16 +17,26 @@ export class AppComponent {
   title = 'SalwortDevs';
   public showFooter: boolean = true;
   LocalStorageManager = new LocalStorageManager();
+  isPortfolioRoute = false;
 
-  constructor(private service: AppService) {
+  constructor(private router: Router, private service: AppService) {
+    
     if(!this.LocalStorageManager.getItem("lang")) {
       this.LocalStorageManager.setItem('lang', 'es')
     }
+    
   }
 
   ngOnInit(): void {
     this.service.obsevableShowFooter.subscribe(showFooter => {
       this.showFooter = showFooter;
+    });
+
+    this.router.events.pipe(
+      filter(e => e instanceof NavigationEnd)
+    ).subscribe((e: NavigationEnd) => {
+      this.isPortfolioRoute = e.urlAfterRedirects.startsWith('/portfolio');
+      this.showFooter = false;
     });
   }
 }

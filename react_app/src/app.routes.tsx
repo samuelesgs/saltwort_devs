@@ -24,4 +24,6 @@ export const appRoutes = createBrowserRouter([
     path: '*',
     element: <Navigate to='/developer-aksel' />
   }
-]);
+], {
+  basename: '/assets/react/build' // ← AÑADE ESTO
+});

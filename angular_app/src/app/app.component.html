@@ -1,5 +1,7 @@
 <div class="app-container d-flex flex-column min-vh-100">
-  <app-nav-bar></app-nav-bar>
+  @if (!isPortfolioRoute) {
+    <app-nav-bar></app-nav-bar>
+  }
 
   <main class="flex-grow-1">
     <router-outlet></router-outlet>
