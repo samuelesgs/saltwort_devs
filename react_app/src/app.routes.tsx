@@ -3,6 +3,8 @@ import { AkselLayout } from "./developers/aksel/layout/AkselLayout";
 import { SamuelLayout } from "./developers/samuel/layout/SamuelLayout";
 import { ManualPage } from "./manuals/ManualPage";
 
+const isAngularBuild = import.meta.env.BASE_URL !== '/';
+
 export const appRoutes = createBrowserRouter([
   {
     path: '/',
@@ -25,5 +27,5 @@ export const appRoutes = createBrowserRouter([
     element: <Navigate to='/developer-aksel' />
   }
 ], {
-  basename: '/assets/react/build' // ← AÑADE ESTO
+  basename: isAngularBuild ? '/assets/react/build' : '/'
 });

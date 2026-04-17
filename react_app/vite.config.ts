@@ -3,18 +3,22 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import tailwindcss from '@tailwindcss/vite'
 
-export default defineConfig({
-  base: '/assets/react/build/',  // ← cambia esto
-  plugins: [
-    react(),
-    tailwindcss(),
-  ],
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
+export default defineConfig(({ command, mode }) => {
+  const isAngularBuild = mode === 'angular';
+
+  return {
+    base: isAngularBuild ? '/assets/react/build/' : '/',
+    plugins: [
+      react(),
+      tailwindcss(),
+    ],
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, "./src"),
+      },
     },
-  },
-  build: {
-    outDir: 'dist',  // donde se genera el build
+    build: {
+      outDir: 'dist',
+    }
   }
 })
