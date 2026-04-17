@@ -32,7 +32,7 @@ export const CarrouselSamuel = ({ images, type }: Props) => {
     return () => {
       api.off('select', onSelect);
     }
-  }, [api])
+  }, [api]);
 
   return (
     <Carousel
