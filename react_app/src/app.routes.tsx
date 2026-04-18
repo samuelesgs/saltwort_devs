@@ -3,17 +3,7 @@ import { AkselLayout } from "./developers/aksel/layout/AkselLayout";
 import { SamuelLayout } from "./developers/samuel/layout/SamuelLayout";
 import { ManualPage } from "./manuals/ManualPage";
 
-const isAngularBuild = import.meta.env.BASE_URL !== '/';
-
 export const appRoutes = createBrowserRouter([
-  {
-    path: '/',
-    element: <Navigate to='/developer-aksel' />
-  },
-  {
-    path: '/manuals',
-    element: <ManualPage/>
-  },
   {
     path: '/developer-aksel',
     element: <AkselLayout />
@@ -23,9 +13,17 @@ export const appRoutes = createBrowserRouter([
     element: <SamuelLayout />
   },
   {
+    path: '/manuals',
+    element: <ManualPage/>
+  },
+  {
+    path: '/',
+    element: <Navigate to='/developer-aksel' />
+  },
+  {
     path: '*',
     element: <Navigate to='/developer-aksel' />
   }
 ], {
-  basename: isAngularBuild ? '/assets/react/build' : '/'
+  basename: '/assets/react/build'
 });

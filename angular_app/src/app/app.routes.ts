@@ -9,6 +9,7 @@ import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.co
 import { AplicationComponent } from './pages/developmen/aplication/aplication.component';
 import { PortfolioReactComponent } from './shared/portfolio-react/portfolio-react.component';
 
+// app.routes.ts
 export const routes: Routes = [
     {path : 'Home', component : HomeComponent},
     {path : 'Developers', component : DevelopmenComponent},
@@ -19,6 +20,8 @@ export const routes: Routes = [
     {path: 'ActivityPlanner', component: ActivityPlannerInfoComponent},
     {path: 'PrivacyPolicy', component: PrivacyPolicyComponent},
     {path: 'portfolio', component: PortfolioReactComponent},
+    {path: 'portfolio/aksel', component: PortfolioReactComponent},    // ← agrega
+    {path: 'portfolio/samuel', component: PortfolioReactComponent},   // ← agrega
+    {path: 'portfolio/manuals', component: PortfolioReactComponent},
     {path: '**',  redirectTo: 'Home'},
-
 ];
