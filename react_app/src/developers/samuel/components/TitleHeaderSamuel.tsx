@@ -31,22 +31,29 @@ export const TitleHeaderSamuel = () => {
       </div>
       <div
         className="col-span-2 md:col-span-3 flex flex-row gap-5 justify-center md:justify-end">
-        <button
-          className="bg-purple rounded-full p-1.5 hover:text-white transition-all ease-in-out duration-300 btn-email hover:scale-110 hover:rotate-6">
-          <Mail
-            className="purple-light-color w-6 h-6"
-          />
-        </button>
-        <button
-          className="bg-purple rounded-full p-1.5 transition-all ease-in-out duration-300 btn-linkedin hover:scale-110 hover:rotate-6">
-          <LinkedIn
-            className="purple-light-color w-6 h-6" />
-        </button>
-        <button
-          className="bg-purple rounded-full p-1.5  transition-all ease-in-out duration-300 btn-github hover:scale-110 hover:rotate-6">
-          <GitHub
-            className="purple-light-color w-6 h-6" />
-        </button>
+        <a href="mailto:samuelesgs04@gmail.com">
+          <button
+            className="bg-purple rounded-full p-1.5 hover:text-white transition-all ease-in-out duration-300 btn-email hover:scale-110 hover:rotate-6"
+          >
+            <Mail
+              className="purple-light-color w-6 h-6"
+            />
+          </button>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/edgar-samuel-guerrero-5a9471214/">
+          <button
+            className="bg-purple rounded-full p-1.5 transition-all ease-in-out duration-300 btn-linkedin hover:scale-110 hover:rotate-6">
+            <LinkedIn
+              className="purple-light-color w-6 h-6" />
+          </button>
+        </a>
+        <a target="_blank" href="https://github.com/samuelesgs">
+          <button
+            className="bg-purple rounded-full p-1.5  transition-all ease-in-out duration-300 btn-github hover:scale-110 hover:rotate-6">
+            <GitHub
+              className="purple-light-color w-6 h-6" />
+          </button>
+        </a>
       </div>
     </div>
   )

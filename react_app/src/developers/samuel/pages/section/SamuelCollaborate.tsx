@@ -11,9 +11,9 @@ export const SamuelCollaborate = () => {
         className="text-white mt-10 box-content px-4 py-8 btn-border rounded-xl">
         <div
           className="flex flex-col md:flex-row justify-center md:justify-start gap-10">
-            <SectionTitleSamuel
-              title="COLABOREMOS"
-              icon={<Sparkles className="w-6 h-6" />}/>
+          <SectionTitleSamuel
+            title="COLABOREMOS"
+            icon={<Sparkles className="w-6 h-6" />} />
           <p
             className="flex flex-row gap-2 items-center text-sm bg-purple px-2 py-1 rounded-xl purple-light-color">
             <Coffee
@@ -59,22 +59,32 @@ export const SamuelCollaborate = () => {
               </p>
               <div
                 className="md:col-span-2 flex flex-row gap-2 justify-center md:justify-end ml-5">
-                <button
-                  className="bg-purple rounded-full p-1.5">
-                  <Mail
-                    className="purple-light-color w-6 h-6"
-                  />
-                </button>
-                <button
-                  className="bg-purple rounded-full p-1.5">
-                  <LinkedIn
-                    className="purple-light-color w-6 h-6" />
-                </button>
-                <button
-                  className="bg-purple rounded-full p-1.5">
-                  <GitHub
-                    className="purple-light-color w-6 h-6" />
-                </button>
+                <div
+                  className="col-span-2 md:col-span-3 flex flex-row gap-5 justify-center md:justify-end">
+                  <a href="mailto:samuelesgs04@gmail.com">
+                    <button
+                      className="bg-purple rounded-full p-1.5 hover:text-white transition-all ease-in-out duration-300 btn-email hover:scale-110 hover:rotate-6"
+                    >
+                      <Mail
+                        className="purple-light-color w-6 h-6"
+                      />
+                    </button>
+                  </a>
+                  <a target="_blank" href="https://www.linkedin.com/in/edgar-samuel-guerrero-5a9471214/">
+                    <button
+                      className="bg-purple rounded-full p-1.5 transition-all ease-in-out duration-300 btn-linkedin hover:scale-110 hover:rotate-6">
+                      <LinkedIn
+                        className="purple-light-color w-6 h-6" />
+                    </button>
+                  </a>
+                  <a target="_blank" href="https://github.com/samuelesgs">
+                    <button
+                      className="bg-purple rounded-full p-1.5  transition-all ease-in-out duration-300 btn-github hover:scale-110 hover:rotate-6">
+                      <GitHub
+                        className="purple-light-color w-6 h-6" />
+                    </button>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

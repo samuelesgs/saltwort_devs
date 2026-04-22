@@ -7,7 +7,7 @@ export const TitleHeader = () => {
                     <img
                         src="./aksel/image-profile.jpeg"
                         alt="image-profile"
-                        className="w-40 h-40 sm:w-52 sm:h-64 md:w-60 md:h-75 object-cover rounded-lg"
+                        className="w-40 h-40 sm:w-52 sm:h-64 md:w-full md:h-95 object-cover rounded-lg"
                     />
                 </div>
             </div>

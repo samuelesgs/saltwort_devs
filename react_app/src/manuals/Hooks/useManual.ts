@@ -8,10 +8,10 @@ export const useManual = (id: string | null) => {
     
     useEffect(() => {
         if (!id) return;
+        setLoading(true);
 
         const fetchData = async () => {
             try {
-                setLoading(true);
                 const result = await getManualById(id);
                 setData(result);
             } catch (error) {
