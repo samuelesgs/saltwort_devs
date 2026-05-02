@@ -4,7 +4,7 @@ export interface ManualResponse {
     description:   string;
     url:           string;
     app:           App;
-    manualRecords: any[];
+    manualRecords: ManualRecord[];
     manualFiles:   ManualFile[];
 }
 
@@ -19,4 +19,10 @@ export interface ManualFile {
     url:       string;
     type:      string;
     available: number;
+}
+
+export interface ManualRecord {
+    id_record: number;
+    detail: string;
+    name: string;
 }

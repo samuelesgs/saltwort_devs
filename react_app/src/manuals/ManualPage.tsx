@@ -42,11 +42,14 @@ export const ManualPage = () => {
         <div className="flex flex-col w-full overflow-hidden p-3">
             <div className="w-full">
                 <div
-                    className="bg-[#566AD3] text-white rounded-xl p-2 m-4 h-full">
+                    className="bg-[#566AD3] flex flex-col justify-center text-white rounded-xl p-2 m-4 h-full">
+                    <h2 className="text-center text-2xl">
+                        { manualData?.manualRecords[current]?.name || '' }
+                    </h2>
                     <p
                         key={current}
                         className="text-center text-xl">
-                        { manualFiles[current].name }
+                        { manualData?.manualRecords[current]?.detail }
                     </p>
                 </div>
                 <Carousel
@@ -60,12 +63,16 @@ export const ManualPage = () => {
                                     key={index}>
                                     <div
                                         className="flex flex-col gap-2 w-full">
-                                        <img
-                                            key={index}
-                                            src={row.url}
-                                            alt=""
-                                            className="w-full rounded-sm border border-gray-500"
-                                        />
+                                            {
+                                                row.url && (
+                                                    <img
+                                                        key={index}
+                                                        src={row.url}
+                                                        alt=""
+                                                        className="w-full rounded-sm border border-gray-500"
+                                                    />
+                                                )
+                                            }
                                     </div>
                                 </CarouselItem>
                             ))
@@ -73,7 +80,7 @@ export const ManualPage = () => {
                     </CarouselContent>
                     <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-4">
                         <CarouselPrevious
-                            className="static h-10 w-10 -translate-x-35 translate-y-0 bg-[#566AD3] text-white hover:text-white border border-transparent"
+                            className="static h-10 w-10 -translate-x-30 translate-y-0 bg-[#566AD3] text-white hover:text-white border border-transparent"
                         />
                         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex flex-row items-center gap-2 mb-2">
                             {manualFiles.map((_, index) => (
@@ -89,7 +96,7 @@ export const ManualPage = () => {
                             ))}
                         </div>
                         <CarouselNext
-                            className="static h-10 w-10 translate-x-35 translate-y-0 bg-[#566AD3] text-white hover:text-white border border-transparent"
+                            className="static h-10 w-10 translate-x-30 translate-y-0 bg-[#566AD3] text-white hover:text-white border border-transparent"
                         />
                     </div>
                 </Carousel>

@@ -4,7 +4,7 @@ import type { ManualResponse } from "./manual.interface";
 export const getManualById = async (idManual: string): Promise<ManualResponse> => {
     try {
         const response = await api.get(`manuals/${idManual}`);
-        console.log(response.data);
+        console.log({ response });
         
         return response.data;
     } catch (error) {
