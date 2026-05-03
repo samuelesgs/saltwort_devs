@@ -25,6 +25,9 @@
         "description-point-7": "We may update this privacy policy from time to time. We will post any changes on this page and, if the changes are significant, we will notify you by email or by means of a notice on our website."
     },
     "home": {
+        "innovation" : "Innovation",
+        "optimization" : "Optimization",
+        "solutions" : "Solutions",
         "home-description": "At Salwort, we are a young and innovative company. Committed to research, optimization, and streamlining solutions.",
         "title-1": "Main Screen",
         "screen-1": "On this screen, you can register if you already have an account, create one, or log in with Google",

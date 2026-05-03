@@ -6,7 +6,8 @@
     --PrimaryDark: #2D040C;
     --PrimaryLigth: #c4868e;
     --TextColor: #FFFFFF;
-    --PrimaryColor: rgb(68, 0, 13);
+    --PrimaryColor: #38070F;
+    --BorderColor: #7a1020;
     --BackgroundColor: rgba(217, 217, 217, 0.25);
 }
 
@@ -27,8 +28,29 @@
     background-color: var(--PrimaryDark);
 }
 
+.bg-primary {
+    background-color: var(--PrimaryColor);
+}
+
+.bg-primary-ligth {
+    background-color: var(--PrimaryLigth);
+}
+
 .primary-ligth {
     color: var(--PrimaryLigth);
+}
+
+.bg-gradient-primary {
+    background: #30050C;
+background: linear-gradient(155deg, rgba(48, 5, 12, 1) 0%, rgba(81, 10, 21, 1) 100%);
+}
+
+.nav-border {
+    border-bottom: 0.5px solid var(--BorderColor);
+}
+
+.border-primary {
+    border: 1px solid var(--BorderColor);
 }
 
 body {
@@ -106,27 +128,30 @@ h3 {
 .back-arrow {
     background-color: rgba(217, 217, 217, 0.10);
     color: #FFFFFF;
-    width: 50px; 
-    height: 50px; 
-    border-radius: 50%; 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0; 
+    padding: 0;
     border: none;
 }
+
 .back-arrow img {
-    width: 70%; 
-    height: auto; 
+    width: 70%;
+    height: auto;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
 
-.modal-style{
+.modal-style {
     background-color: rgba(217, 217, 217, 0.10);
 }
+
 .modal-text-color {
     color: white;
 }
+
 .modal-button {
     background-color: var(--PrimaryColor);
     color: white;

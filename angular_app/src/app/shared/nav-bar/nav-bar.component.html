@@ -1,5 +1,5 @@
 <div
-    class="grid grid-cols-3 items-center bg-primary-dark px-20 py-2 primary-ligth">
+    class="grid grid-cols-3 items-center bg-primary-dark px-20 py-2 primary-ligth nav-border">
     <div
         class="flex flex-row gap-5 items-center">
         <img
@@ -16,7 +16,8 @@
         class="flex justify-center gap-5">
         <p
             class="font-light hover:underline cursor-pointer"
-            routerLink="Home">
+            routerLink="Home"
+            routerLinkActive="text-white underline">
             {{'page.home' | translate}}
         </p>
         <!-- <p
@@ -26,12 +27,14 @@
         </p> -->
         <p
             class="font-light hover:underline cursor-pointer"
-            routerLink="Developers">
+            routerLink="Developers"
+            routerLinkActive="text-white underline">
             {{'page.devs' | translate}}
         </p>
         <p
             class="font-light hover:underline cursor-pointer"
-            routerLink="About_of">
+            routerLink="About_of"
+            routerLinkActive="text-white underline">
             {{'page.about' | translate}}
         </p>
     </div>

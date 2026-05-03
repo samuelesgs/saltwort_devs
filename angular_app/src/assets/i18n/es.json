@@ -25,6 +25,9 @@
         "description-point-7": "Podemos actualizar esta política de privacidad de vez en cuando. Publicaremos cualquier cambio en esta página y, si los cambios son significativos, le notificaremos por correo electrónico o mediante un aviso en nuestro sitio web."
     },
     "home": {
+        "innovation" : "Innovación",
+        "optimization" : "Optimización",
+        "solutions" : "Soluciones",
         "home-description": "En Salwort somos una empresa joven e innovadora. Comprometidos con la investigación, optimización y sistematizar soluciones.",
         "title-1": "Pantalla Principal",
         "screen-1": " En esta pantalla tu puedes registrarte en caso de tu tener una cuenta ya, crear una o ingresar con Google ",
