@@ -1,50 +1,76 @@
-<nav class="navbar navbar-expand-lg  bg-navbar">
-    <div class="container-fluid">
-        <p class="text-white app-text no-space">
-            <img src="./assets/images/icon-app.png" class="size-img-app" />
-            Salwort Devs
+<div
+    class="grid grid-cols-3 items-center bg-primary-dark px-20 py-2 primary-ligth">
+    <div
+        class="flex flex-row gap-5 items-center">
+        <img
+            src="./assets/images/icon-app.png"
+            alt="app-icon"
+            class="h-14 w-14">
+        <p
+            class="font-light hover:underline cursor-pointer"
+            routerLink="Home">
+            Saltwort Devs
         </p>
-        <button class="navbar-toggler ms-auto bg-button-movil" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    </div>
+    <div
+        class="flex justify-center gap-5">
+        <p
+            class="font-light hover:underline cursor-pointer"
+            routerLink="Home">
+            {{'page.home' | translate}}
+        </p>
+        <!-- <p
+            class="font-light hover:underline cursor-pointer"
+            routerLink="Proyects">
+            Proyectos
+        </p> -->
+        <p
+            class="font-light hover:underline cursor-pointer"
+            routerLink="Developers">
+            {{'page.devs' | translate}}
+        </p>
+        <p
+            class="font-light hover:underline cursor-pointer"
+            routerLink="About_of">
+            {{'page.about' | translate}}
+        </p>
+    </div>
+    <div
+        class="flex justify-end">
+        <div class="relative flex justify-end">
+            <button 
+                (click)="toggleDropdown()"
+                type="button"
+                class="inline-flex items-center gap-x-1.5 rounded-md px-3 py-2 hover:underline cursor-pointer">
+                
+                {{ currentLang.toLocaleUpperCase() }}
+                
+                <svg class="h-5 w-5 transition-transform duration-200"
+                    [class.rotate-180]="isOpen"
+                    viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clip-rule="evenodd" />
+                </svg>
+            </button>
 
-        <div class="d-flex vertical-center">
-            <div class="collapse navbar-collapse mt-1 pe-3" id="navbarNav">
-                <ul class="navbar-nav text-navbar">
-                    <li class="nav-item">
-                        <a class="nav-link text-navbar" routerLink="Home" routerLinkActive="link-active">{{'page.home' |
-                            translate}} |
-                        </a>
+            <!-- Dropdown -->
+            <div *ngIf="isOpen"
+                class="absolute right-0 top-8 mt-2 w-30 rounded-md border border-gray-700 bg-primary-dark primary-ligth shadow-lg ring-1 ring-black/5 z-50">
+                
+                <ul class="py-1 text-sm">
+                    <li 
+                        (click)="selectLang('es')"
+                        class="px-4 py-2 hover:underline cursor-pointer">
+                        Español
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-navbar" routerLink="Developers"
-                            routerLinkActive="link-active">{{'page.devs' | translate}} |
-                        </a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link text-navbar" routerLink="Apps" routerLinkActive="link-active">{{'page.apps' |
-                            translate}} |
-                        </a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link text-navbar" routerLink="About_of"
-                            routerLinkActive="link-active">{{'page.about' | translate}} |
-                        </a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            {{currentLang}}
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li (click)="setLang('es')" class="dropdown-item">Español</li>
-                            <li (click)="setLang('en')" class="dropdown-item">Ingles</li>
-                        </ul>
+                    <li 
+                        (click)="selectLang('en')"
+                        class="px-4 py-2 hover:underline cursor-pointer">
+                        Inglés
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-</nav>
+</div>

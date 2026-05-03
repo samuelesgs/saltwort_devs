@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 :root {
+    --PrimaryDark: #2D040C;
+    --PrimaryLigth: #c4868e;
     --TextColor: #FFFFFF;
     --PrimaryColor: rgb(68, 0, 13);
     --BackgroundColor: rgba(217, 217, 217, 0.25);
@@ -21,6 +23,13 @@
     border-radius: 5px;
 }
 
+.bg-primary-dark {
+    background-color: var(--PrimaryDark);
+}
+
+.primary-ligth {
+    color: var(--PrimaryLigth);
+}
 
 body {
     overflow-x: hidden;
