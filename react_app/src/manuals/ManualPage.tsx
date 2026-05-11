@@ -36,7 +36,7 @@ export const ManualPage = () => {
         }
     }, [api]);
 
-    if(loading) return <ManualLoader />
+    if (loading) return <ManualLoader />
 
     return (
         <div className="flex flex-col w-full overflow-hidden p-3">
@@ -44,12 +44,12 @@ export const ManualPage = () => {
                 <div
                     className="bg-[#566AD3] flex flex-col justify-center text-white rounded-xl p-2 m-4 h-full">
                     <h2 className="text-center text-2xl">
-                        { manualData?.manualRecords[current]?.name || '' }
+                        {manualData?.manualRecords[current]?.name || ''}
                     </h2>
                     <p
                         key={current}
                         className="text-center text-xl">
-                        { manualData?.manualRecords[current]?.detail }
+                        {manualData?.manualRecords[current]?.detail}
                     </p>
                 </div>
                 <Carousel
@@ -63,41 +63,42 @@ export const ManualPage = () => {
                                     key={index}>
                                     <div
                                         className="flex flex-col gap-2 w-full">
-                                            {
-                                                row.url && (
-                                                    <img
-                                                        key={index}
-                                                        src={row.url}
-                                                        alt=""
-                                                        className="w-full rounded-sm border border-gray-500"
-                                                    />
-                                                )
-                                            }
+                                        {
+                                            row.url && (
+                                                <img
+                                                    key={index}
+                                                    src={row.url}
+                                                    alt=""
+                                                    className="w-full rounded-sm border border-gray-500"
+                                                />
+                                            )
+                                        }
                                     </div>
                                 </CarouselItem>
                             ))
                         }
                     </CarouselContent>
-                    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-4">
+                    <div className="absolute inset-y-0 left-0 right-0 items-center justify-between px-4 pointer-events-none">
                         <CarouselPrevious
-                            className="static h-10 w-10 -translate-x-30 translate-y-0 bg-[#566AD3] text-white hover:text-white border border-transparent"
+                            className="pointer-events-auto translate-x-12 h-10 w-10 bg-[#566AD3] text-white hover:text-white border border-transparent"
                         />
-                        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex flex-row items-center gap-2 mb-2">
-                            {manualFiles.map((_, index) => (
-                                <button
-                                    key={index}
-                                    className={`
+
+                        <CarouselNext
+                            className="pointer-events-auto -translate-x-12 h-10 w-10 bg-[#566AD3] text-white hover:text-white border border-transparent"
+                        />
+                    </div>
+                    <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-row items-center gap-2 mb-2">
+                        {manualFiles.map((_, index) => (
+                            <button
+                                key={index}
+                                className={`
                                         h-3 w-3 rounded-full transition-all
                                         duration-500
                                         ${index === current ? "w-8 bg-[#566AD3]"
-                                            : "w-2 bg-gray hover:bg-muted-foreground"
-                                        }`}
-                                />
-                            ))}
-                        </div>
-                        <CarouselNext
-                            className="static h-10 w-10 translate-x-30 translate-y-0 bg-[#566AD3] text-white hover:text-white border border-transparent"
-                        />
+                                        : "w-2 bg-gray hover:bg-muted-foreground"
+                                    }`}
+                            />
+                        ))}
                     </div>
                 </Carousel>
             </div>
