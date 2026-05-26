@@ -3,19 +3,27 @@ import { TitleSectionLuis } from '../../components/TitleSectionLuis';
 import type { Skill } from '../../interfaces/Skills.interface';
 import '../../styles/luis.style.css';
 
+
+
+
 const skillsArray: Skill[] = [
-    { name: 'Angular', image: './icons/angular.png' },
-    { name: 'AWS', image: './icons/aws.png' },
-    { name: 'CSS3', image: './icons/css.png' },
-    { name: 'Figma', image: './icons/figma.webp' },
-    { name: 'GitHub', image: './icons/github.png' },
-    { name: 'HTML5', image: './icons/html.png' },
-    { name: 'NestJS', image: './icons/nestjs.png' },
-    { name: 'Node.js', image: './icons/node.png' },
-    { name: 'PHP', image: './icons/php.png' },
-    { name: 'React', image: './icons/react.png' },
-    { name: 'Swift', image: './icons/swift.png' },
-    { name: 'TypeScript', image: './icons/typescript.png' },
+    { name: 'Android studio', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg' },
+    { name: 'Java', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg' },
+    { name: 'Kotlin', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg' },
+    { name: 'PHP', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg' },
+    { name: 'Figma', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg' },
+    { name: 'MariaDB', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original.svg' },
+    { name: 'C#', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg' },
+    { name: 'SQL management', image: './luis/icons/management-icon.png' },
+    { name: '.NET', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg' },
+    { name: 'Html5', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg' },
+    { name: 'CSS', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg' },
+    { name: 'Jira', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg' },
+    { name: 'Bitbucket', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bitbucket/bitbucket-original.svg' },
+    { name: 'MVC', image: './luis/icons/mvc-icon.webp' },
+    { name: 'MVVM', image: './luis/icons/mvvm-icon.png' },
+    { name: 'Visual studio Code', image: './luis/icons/visual-studio-icon.png' },
+    { name: 'Postman', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg' }
 ]
 
 export const LuisSkills = () => {

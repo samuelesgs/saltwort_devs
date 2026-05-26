@@ -9,15 +9,10 @@ interface JobExperienceInterface {
 
 const jobExperience: JobExperienceInterface[] = [
     {
-        company: 'Encodemx',
-        position: 'iOS Developer / Full Stack Developer',
-        dates: '2024 - 2025'
-    },
-    {
-        company: 'EPAM Neoris',
-        position: 'iOS Developer',
-        dates: '2026 - Actualidad'
-    },
+        company: 'CSInformatica ',
+        position: 'Android developer / Desktop developer',
+        dates: '2023 - Actualidad'
+    }
 ]
 
 export const LuisJobExperience = () => {
