@@ -18,7 +18,7 @@ export const CarrouselWebLuis = ({ images }: Props) => {
           {
             images.map((img, index) => (
               <CarouselItem key={index}>
-                <div className="p-1">
+                <div className="p-1 flex justify-center">
                   <img
                     src={img}
                     alt=""

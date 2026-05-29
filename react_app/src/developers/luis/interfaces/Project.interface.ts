@@ -1,8 +1,8 @@
 
-export interface Project {
+export interface ProjectLuis {
     title: string;
     description: string;
-    type: TypeProject;
+    type: TypeProject | any;
     devTools: DevTool[];
     contributions: ContributionProjects[];
     images: ImagesProject;
@@ -25,4 +25,4 @@ export interface ContributionProjects {
 }
 
 export type TypeProject = 'iOS' | 'Web' | 'iOS + Web';
-export type ImportValue = 'Alto' | 'Medio';
+export type ImportValue = 'Alto' | 'Medio' | 'Muy Alto';

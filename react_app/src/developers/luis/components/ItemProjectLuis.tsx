@@ -1,6 +1,6 @@
 import { ChevronDown, ChevronsLeftRight, Globe, Smartphone } from "lucide-react"
 import { ItemDevToolLuis } from "./ItemDevToolLuis";
-import type { Project } from "../interfaces/Project.interface";
+import type { ProjectLuis } from "../interfaces/Project.interface";
 import { SwitchTypeProject } from "./SwitchTypeProject";
 import { ContributionProjectLuis } from "./ContributionProjectLuis";
 import { CarrouselMobileLuis } from "./CarrouselMobileLuis";
@@ -9,11 +9,11 @@ import { CarrouselWebLuis } from "./CarrouselWebLuis";
 import '../styles/luis.style.css';
 
 interface Props {
-  project: Project;
+  project: ProjectLuis;
   expanded: boolean;
 
   //METHODS
-  onSelectProject: (project: Project | null) => void;
+  onSelectProject: (project: ProjectLuis | null) => void;
 }
 
 const getDataByProject = (typeProject: string) => {
@@ -23,10 +23,10 @@ const getDataByProject = (typeProject: string) => {
         color: 'bg-purple-500/10',
         platforms: ['Web']
       }
-    case 'iOS + Web':
+    case 'Móvil -  escritorio':
       return {
         color: 'bg-cyan-950',
-        platforms: ['Móvil', 'Web']
+        platforms: ['Móvil', 'Escritorio']
       }
     case 'iOS':
       return {
@@ -53,21 +53,21 @@ export const ItemProjectLuis = ({ project, expanded, onSelectProject }: Props) =
       <div className="flex flex-row col-span-7 gap-3">
         <div className={`flex flex-row w-13 h-13 items-center justify-center rounded-lg ${bgColor}`}>
           {
-            type === 'iOS + Web' && (
+            type === 'Móvil -  escritorio' && (
               <ChevronsLeftRight
                 size={38}
                 className="text-cyan" />
             )
           }
           {
-            type === 'Web' && (
+            type === 'escritorio' && (
               <Globe
                 size={38}
                 className="text-purple-400" />
             )
           }
           {
-            type === 'iOS' && (
+            type === 'Móvil' && (
               <Smartphone
                 size={38}
                 className="text-cyan" />

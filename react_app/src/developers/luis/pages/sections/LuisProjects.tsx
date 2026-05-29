@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { ItemProjectLuis } from "../../components/ItemProjectLuis"
 import { TitleSectionLuis } from "../../components/TitleSectionLuis"
-import type { Project } from "../../interfaces/Project.interface"
+import type { ProjectLuis } from "../../interfaces/Project.interface"
 import { PROJECTS_DATA_LUIS } from "../../data/projects.luis.data"
 
 
@@ -9,9 +9,9 @@ import { PROJECTS_DATA_LUIS } from "../../data/projects.luis.data"
 export const LuisProjects = () => {
 
   const projects = PROJECTS_DATA_LUIS;
-  const [selectProject, setSelectProject] = useState<Project | null>(null);
+  const [selectProject, setSelectProject] = useState<ProjectLuis | null>(null);
 
-  const handleSelectProject = (project: Project | null) => {    
+  const handleSelectProject = (project: ProjectLuis | null) => {    
     setSelectProject(project);
   }
 

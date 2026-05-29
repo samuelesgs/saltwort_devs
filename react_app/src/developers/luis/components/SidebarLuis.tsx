@@ -20,7 +20,7 @@ export const SidebarLuis = () => {
       <div className='hidden md:block'>
         <div className='w-12 h-12 bg-blue-gradient flex items-center justify-center rounded-lg'>
           <p className='text-white text-1xl font-bold'>
-            AH
+            LC
           </p>
         </div>
       </div>

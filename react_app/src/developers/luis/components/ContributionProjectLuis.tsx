@@ -28,7 +28,7 @@ export const ContributionProjectLuis = ({ contributions }: Props) => {
                             <RateStarsLuis
                                 rateValue={item.rate}/>
                             <div className="flex items-center">
-                                <p className="text-xs text-cyan bg-box-blue px-3 py-2 rounded-2xl">
+                                <p className="text-xs text-cyan bg-box-blue px-3 py-2 rounded-2xl whitespace-nowrap shrink-0">
                                     { item.importValue }
                                 </p>
                             </div>

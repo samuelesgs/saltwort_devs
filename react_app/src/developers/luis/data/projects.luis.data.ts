@@ -1,352 +1,133 @@
 
-import type { Project } from "../interfaces/Project.interface";
+import type { ProjectLuis } from "../interfaces/Project.interface";
 
-export const PROJECTS_DATA_LUIS: Project[] = [
+export const PROJECTS_DATA_LUIS: ProjectLuis[] = [
     //MARK: SHOPPING EXPENSES 
     {
-        title: 'Gastos de compra',
-        description: 'Gastos de Compras es una aplicación diseñada para registrar, organizar y controlar los gastos de distintos proyectos. Permite administrar ingresos, visualizar resúmenes por categoría, proteger la información con contraseña y generar respaldos.',
-        type: 'iOS + Web',
+        title: 'Venta plus',
+        description: 'Venta Plus es una aplicación de punto de venta diseñada para facilitar la administración y operación de negocios, permitiendo registrar ventas de manera rápida y eficiente. El sistema ofrece herramientas para el control de métodos de pago, generación de reportes, creación de cotizaciones, facturación y remisiones para clientes, ayudando a mejorar la organización y productividad del negocio. \nAdemás, Venta Plus permite gestionar información comercial de manera centralizada, optimizando procesos administrativos y brindando mayor control sobre las operaciones diarias. La plataforma está enfocada en ofrecer una experiencia práctica, intuitiva y adaptable a las necesidades de distintos tipos de negocios, contribuyendo a una mejor gestión de ventas, clientes y flujo de trabajo',
+        type: 'Móvil -  escritorio',
         devTools: [
-            { name: 'Swift', image: './icons/swift.png' },
-            { name: 'Node.js', image: './icons/node.png' },
-            { name: 'Angular', image: './icons/angular.png' },
-            { name: 'NestJS', image: './icons/nestjs.png' },
+            { name: 'Kotlin', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg' },
+            { name: 'C#', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg' },
+            { name: 'SQL management', image: './luis/icons/management-icon.png' },
+            { name: '.NET', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg' },
+            { name: 'ASP', image: './luis/icons/asp-icon.png' },
         ],
         contributions: [
             {
-                details: 'Migración de servicios hacia un nuevo backend, optimizando el manejo de datos y mejorando el rendimiento de la aplicación.',
+                details: 'Diseño de las entidades y mapeo ',
                 rate: 4,
-                importValue: 'Alto'
-            },
-            {
-                details: 'Mantenimiento correctivo de la aplicación para resolver errores de datos reportados por usuarios, incrementando la estabilidad y confiabilidad del sistema.',
-                rate: 5,
-                importValue: 'Alto'
-            },
-            {
-                details: 'Migración de dependencias de CocoaPods a Swift Package Manager, modernizando la gestión de librerías y facilitando el mantenimiento del proyecto.',
-                rate: 3,
                 importValue: 'Medio'
             },
             {
-                details: 'Implementación de un sistema de respaldos en formato JSON, permitiendo el almacenamiento local de la información para reforzar la seguridad de los datos.',
+                details: 'Diseño de todas las vistas  ',
                 rate: 4,
-                importValue: 'Alto'
+                importValue: 'Medio'
             },
             {
-                details: 'Optimización de procesos y tareas complejas, mejorando la eficiencia del sistema y reduciendo los tiempos de respuesta para los usuarios.',
+                details: 'Integración de retrofit y consumo de API ',
                 rate: 5,
-                importValue: 'Alto'
+                importValue: 'Muy Alto'
             },
             {
-                details: 'Implementación de procesos de sincronización entre datos locales y el servidor, asegurando el respaldo en la nube y permitiendo el uso de la aplicación sin conexión.',
+                details: 'Programación De las funcionalidades de venta, cotización e historiales ',
                 rate: 5,
-                importValue: 'Alto'
+                importValue: 'Muy Alto'
+            },
+            {
+                details: 'Impresión de ticket  mediante impresora Bluetooth (móvil) ',
+                rate: 4,
+                importValue: 'Medio'
+            },
+            {
+                details: 'Creación de reportes de vendedores ',
+                rate: 5,
+                importValue: 'Muy Alto'
+            },
+            {
+                details: 'Creación del módulo de devoluciones  ',
+                rate: 5,
+                importValue: 'Muy Alto'
+            },
+            {
+                details: 'Creación del módulo de sucursales ',
+                rate: 5,
+                importValue: 'Muy Alto'
+            },
+            {
+                details: 'Modificación de ticket de corte de caja, ticket de venta, de corte Z, apertura ',
+                rate: 4,
+                importValue: 'Medio'
+            },
+            {
+                details: 'Optimización de funciones y modulo ya existentes para que fueran mas eficaces ',
+                rate: 5,
+                importValue: 'Muy Alto'
+            },
+            {
+                details: 'Implementacion de programas de lealtad en el sistema ',
+                rate: 5,
+                importValue: 'Muy Alto'
+            },
+            {
+                details: 'Modulo de servicios y comisiones asi como la implementacion en el modulo de Venta ',
+                rate: 5,
+                importValue: 'Muy Alto'
+            },
+            {
+                details: 'Modulo de recargas en el sistema ',
+                rate: 5,
+                importValue: 'Muy Alto'
+            },
+            {
+                details: 'Creacion del catalogo de documentos ',
+                rate: 5,
+                importValue: 'Muy Alto'
+            },
+            {
+                details: 'Obtención de cada uno de los catalogos por fecha de actualizacion por separado ',
+                rate: 4,
+                importValue: 'Medio'
+            },
+            {
+                details: 'Insertar o actualizar catalogos ',
+                rate: 4,
+                importValue: 'Medio'
+            },
+            {
+                details: 'Obtencion de saldo de clientes mediante signalR ',
+                rate: 4,
+                importValue: 'Medio'
             },
         ],
         images: {
             mobile: [
-                './aksel/shopping-expenses/mobile/shopping-expenses-img-1.webp',
-                './aksel/shopping-expenses/mobile/shopping-expenses-img-2.webp',
-                './aksel/shopping-expenses/mobile/shopping-expenses-img-3.webp',
-                './aksel/shopping-expenses/mobile/shopping-expenses-img-4.webp',
-                './aksel/shopping-expenses/mobile/shopping-expenses-img-5.webp',
+                './luis/projects/venta-plus/venta-plus-movil-1.png',
+                './luis/projects/venta-plus/venta-plus-movil-2.png',
+                './luis/projects/venta-plus/venta-plus-movil-3.png',
+                './luis/projects/venta-plus/venta-plus-movil-1.png',
+                './luis/projects/venta-plus/venta-plus-movil-2.png',
+                './luis/projects/venta-plus/venta-plus-movil-3.png',
             ],
             web: [
-                './aksel/shopping-expenses/web/shopping-expenses-img-1.png',
-                './aksel/shopping-expenses/web/shopping-expenses-img-2.png',
-                './aksel/shopping-expenses/web/shopping-expenses-img-3.png',
-                './aksel/shopping-expenses/web/shopping-expenses-img-4.png',
-                './aksel/shopping-expenses/web/shopping-expenses-img-5.png',
-                './aksel/shopping-expenses/web/shopping-expenses-img-6.png',
-                './aksel/shopping-expenses/web/shopping-expenses-img-7.png',
-                './aksel/shopping-expenses/web/shopping-expenses-img-8.png',
+                './luis/projects/venta-plus/venta-plus-1.png',
+                './luis/projects/venta-plus/venta-plus-2.png',
+                './luis/projects/venta-plus/venta-plus-3.png',
+                './luis/projects/venta-plus/venta-plus-4.png',
+                './luis/projects/venta-plus/venta-plus-5.png',
+                './luis/projects/venta-plus/venta-plus-6.png',
+                './luis/projects/venta-plus/venta-plus-7.png',
+                './luis/projects/venta-plus/venta-plus-8.png',
+                './luis/projects/venta-plus/venta-plus-9.png',
+                './luis/projects/venta-plus/venta-plus-10.png',
+                './luis/projects/venta-plus/venta-plus-11.png',
+                './luis/projects/venta-plus/venta-plus-12.png',
+                './luis/projects/venta-plus/venta-plus-13.png',
+                './luis/projects/venta-plus/venta-plus-14.png',
+                './luis/projects/venta-plus/venta-plus-15.png',
+                './luis/projects/venta-plus/venta-plus-16.png'
             ]
         }
     },
-    //MARK: MY TOURNAMENTS
-    {
-        title: 'Mis Torneos',
-        description: 'Sistema para la gestión de torneos deportivos que permite administrar competencias y compartir resultados y estadísticas con los usuarios.',
-        type: 'iOS',
-        devTools: [
-            { name: 'Swift', image: './icons/swift.png' },
-            { name: 'php', image: './icons/php.png' },
-        ],
-        contributions: [
-            {
-                details: 'Integración de peticiones con el servidor para mantener la información sincronizada en la nube y facilitar su visualización entre usuarios.',
-                rate: 5,
-                importValue: 'Alto'
-            },
-            {
-                details: 'Gestión de dependencias mediante CocoaPods para la integración y administración de librerías de terceros.',
-                rate: 3,
-                importValue: 'Medio'
-            },
-            {
-                details: 'Desarrollo de interfaces utilizando UIKit, asegurando una experiencia de usuario clara y funcional.',
-                rate: 4,
-                importValue: 'Alto'
-            },
-            {
-                details: 'Implementación de persistencia de datos con Core Data, garantizando el acceso continuo a la información.',
-                rate: 4,
-                importValue: 'Alto'
-            },
-            {
-                details: 'Implementación de gestión de roles (usuarios y administradores) para reforzar la seguridad y el control de acceso a los datos.',
-                rate: 5,
-                importValue: 'Alto'
-            },
-        ],
-        images: {
-            mobile: [
-                './aksel/my-tournaments/my-tournaments-1.png',
-                './aksel/my-tournaments/my-tournaments-2.png',
-                './aksel/my-tournaments/my-tournaments-3.png',
-                './aksel/my-tournaments/my-tournaments-4.png',
-                './aksel/my-tournaments/my-tournaments-5.png',
-                './aksel/my-tournaments/my-tournaments-6.png',
-            ]
-        }
-    },
-    //MARK: ENCODEMX WEB
-    {
-        title: 'Encodemx Web',
-        description: 'Desarrollo de un sitio web corporativo orientado a centralizar manuales de usuario, documentación clave, políticas de privacidad e información relevante de la empresa.',
-        type: 'Web',
-        devTools: [
-            { name: 'Angular', image: './icons/angular.png' }
-        ],
-        contributions: [
-            {
-                details: 'Implementación de diseño responsivo, garantizando una correcta visualización y accesibilidad en todo tipo de dispositivos.',
-                rate: 5,
-                importValue: 'Alto'
-            },
-            {
-                details: 'Diseño de interfaces y arquitectura de navegación, optimizando la organización y consulta de la información del sitio.',
-                rate: 5,
-                importValue: 'Alto'
-            },
-            {
-                details: 'Implementación de soporte multilenguaje (español, portugués e inglés) para ampliar el alcance y mejorar la experiencia de los usuarios.',
-                rate: 4,
-                importValue: 'Alto'
-            },
-            {
-                details: 'Optimización de tiempos de carga mediante la conversión de imágenes a formatos adecuados para la web.',
-                rate: 3,
-                importValue: 'Medio'
-            },
-            {
-                details: 'Despliegue del sitio en AWS, asegurando la disponibilidad y confiabilidad de la plataforma.',
-                rate: 4,
-                importValue: 'Alto'
-            },
-        ],
-        images: {
-            web: [
-                './aksel/encodemx-web/encode1.png',
-                './aksel/encodemx-web/encode2.png',
-                './aksel/encodemx-web/encode3.png',
-                './aksel/encodemx-web/encode4.png',
-                './aksel/encodemx-web/encode5.png',
-            ]
-        }
-    },
-    //MARK: CONSOLO ENCODEMX
-    {
-        title: 'Consola Encodemx',
-        description: 'Sistema de administración de cuentas e información de usuarios, diseñado para brindar soporte eficiente y mantener un control adecuado ante incidencias o uso indebido de la plataforma.',
-        type: 'Web',
-        devTools: [
-            { name: 'Angular', image: './icons/angular.png' },
-            { name: 'Node.js', image: './icons/node.png' },
-            { name: 'NestJS', image: './icons/nestjs.png' },
-            { name: 'TypeScript', image: './icons/typescript.png' },
-        ],
-        contributions: [
-            {
-                details: 'Desarrollo de un nuevo backend con Node.js y NestJS, modernizando la arquitectura y mejorando la mantenibilidad del sistema.',
-                rate: 5,
-                importValue: 'Alto'
-            },
-            {
-                details: 'Implementación de tareas programadas para la validación de compras, facilitando la gestión de reembolsos y la actualización de información conforme a las tiendas de aplicaciones.',
-                rate: 5,
-                importValue: 'Alto'
-            },
-            {
-                details: 'Generación de reportes con visualizaciones gráficas sobre las compras realizadas, apoyando la toma de decisiones administrativas.',
-                rate: 3,
-                importValue: 'Medio'
-            },
-            {
-                details: 'Gestión de despliegues continuos en AWS, asegurando la disponibilidad del sistema y la entrega constante de nuevas versiones.',
-                rate: 4,
-                importValue: 'Alto'
-            },
-            {
-                details: 'Migración de peticiones hacia el nuevo servicio, fortaleciendo la escalabilidad y el rendimiento de la plataforma.',
-                rate: 3,
-                importValue: 'Medio'
-            },
-        ],
-        images: {
-            web: [
-                './aksel/console-encodemx/console-encode-img-1.png',
-                './aksel/console-encodemx/console-encode-img-2.png',
-                './aksel/console-encodemx/console-encode-img-3.png',
-                './aksel/console-encodemx/console-encode-img-4.png',
-                './aksel/console-encodemx/console-encode-img-5.png',
-            ]
-        }
-    },
-    //MARK: PRODUCTIVITY
-    {
-        title: 'Productivity',
-        description: 'Sistema de registro de actividades laborales orientado a medir la productividad diaria mediante la categorización de tareas y el seguimiento del tiempo, con generación de reportes gráficos y respaldos en formato CSV.',
-        type: 'Web',
-        devTools: [
-            { name: 'Angular', image: './icons/angular.png' },
-            { name: 'Node.js', image: './icons/node.png' },
-            { name: 'NestJS', image: './icons/nestjs.png' },
-            { name: 'TypeScript', image: './icons/typescript.png' },
-            { name: 'Figma', image: './icons/figma.webp' },
-        ],
-        contributions: [
-            {
-                details: 'Análisis de requerimientos y diseño de la base de datos, asegurando una estructura alineada con las necesidades funcionales del sistema.',
-                rate: 5,
-                importValue: 'Alto'
-            },
-            {
-                details: 'Análisis de requerimientos y diseño de la base de datos, asegurando una estructura alineada con las necesidades funcionales del sistema.',
-                rate: 5,
-                importValue: 'Alto'
-            },
-            {
-                details: 'Análisis de requerimientos y diseño de la base de datos, asegurando una estructura alineada con las necesidades funcionales del sistema.',
-                rate: 5,
-                importValue: 'Alto'
-            },
-            {
-                details: 'Diseño de la interfaz del sitio, enfocado en la usabilidad y el cumplimiento de los objetivos operativos de la plataforma.',
-                rate: 4,
-                importValue: 'Alto'
-            },
-            {
-                details: 'Implementación de un sistema de importación y exportación en formato CSV, facilitando la gestión de grandes volúmenes de datos.',
-                rate: 3,
-                importValue: 'Medio'
-            },
-            {
-                details: 'Implementación de un sistema de ordenamiento de actividades mediante drag and drop, permitiendo a los usuarios personalizar la organización de sus tareas.',
-                rate: 3,
-                importValue: 'Medio'
-            },
-            {
-                details: 'Generación de reportes con visualizaciones gráficas, mejorando la interpretación y el análisis de la información.',
-                rate: 4,
-                importValue: 'Alto'
-            },
-        ],
-        images: {
-            web: [
-                './aksel/productivity/productivity-img-1.png',
-                './aksel/productivity/productivity-img-2.png',
-                './aksel/productivity/productivity-img-3.png',
-                './aksel/productivity/productivity-img-4.png',
-                './aksel/productivity/productivity-img-5.png',
-                './aksel/productivity/productivity-img-6.png',
-                './aksel/productivity/productivity-img-7.png',
-                './aksel/productivity/productivity-img-8.png',
-            ]
-        }
-    },
-    //MARK: DAILY EXPENSES 4
-    {
-        title: 'Gastos Diarios 4',
-        description: 'Aplicación de gestión financiera personal que permite organizar ingresos y gastos, visualizar reportes detallados y personalizar la experiencia según las necesidades del usuario. Cuenta con sincronización en la nube, acceso multiplataforma y herramientas para el control de presupuestos, deudas y metas financieras.',
-        type: 'iOS + Web',
-        devTools: [
-            { name: 'Swift', image: './icons/swift.png' },
-            { name: 'Angular', image: './icons/angular.png' },
-            { name: 'NestJS', image: './icons/nestjs.png' },
-            { name: 'PHP', image: './icons/php.png' },
-        ],
-        contributions: [
-            {
-                details: 'Implementación de múltiples visualizaciones gráficas, mejorando la interpretación de datos en los distintos reportes.',
-                rate: 3,
-                importValue: 'Medio'
-            },
-            {
-                details: 'Implementación de múltiples visualizaciones gráficas, mejorando la interpretación de datos en los distintos reportes.',
-                rate: 3,
-                importValue: 'Medio'
-            },
-            {
-                details: 'Desarrollo de componentes reutilizables, promoviendo la consistencia visual y facilitando el mantenimiento de la aplicación.',
-                rate: 4,
-                importValue: 'Alto'
-            },
-            {
-                details: 'Gestión de despliegues continuos, asegurando la entrega constante de mejoras y actualizaciones.',
-                rate: 4,
-                importValue: 'Alto'
-            },
-            {
-                details: 'Implementación de un sistema multimoneda, permitiendo a los usuarios administrar cuentas en diferentes divisas.',
-                rate: 5,
-                importValue: 'Alto'
-            },
-            {
-                details: 'Mantenimiento correctivo y resolución de incidencias, incrementando la estabilidad del sistema.',
-                rate: 3,
-                importValue: 'Medio'
-            },
-            {
-                details: 'Migración y optimización del código, fortaleciendo la escalabilidad y simplificando futuras tareas de mantenimiento.',
-                rate: 5,
-                importValue: 'Alto'
-            },
-            {
-                details: 'Migración de peticiones hacia un nuevo backend, optimizando los procesos de carga y manteniendo la plataforma actualizada.',
-                rate: 4,
-                importValue: 'Alto'
-            },
-        ],
-        images: {
-            mobile: [
-                './aksel/daily-expenses-4/mobile/daily-expenses-img-1.png',
-                './aksel/daily-expenses-4/mobile/daily-expenses-img-2.png',
-                './aksel/daily-expenses-4/mobile/daily-expenses-img-3.png',
-                './aksel/daily-expenses-4/mobile/daily-expenses-img-4.png',
-                './aksel/daily-expenses-4/mobile/daily-expenses-img-5.png',
-                './aksel/daily-expenses-4/mobile/daily-expenses-img-6.png',
-                './aksel/daily-expenses-4/mobile/daily-expenses-img-7.png',
-                './aksel/daily-expenses-4/mobile/daily-expenses-img-8.png',
-            ],
-            web: [
-                './aksel/daily-expenses-4/web/daily-expenses-web-img-1.png',
-                './aksel/daily-expenses-4/web/daily-expenses-web-img-2.png',
-                './aksel/daily-expenses-4/web/daily-expenses-web-img-3.png',
-                './aksel/daily-expenses-4/web/daily-expenses-web-img-4.png',
-                './aksel/daily-expenses-4/web/daily-expenses-web-img-5.png',
-                './aksel/daily-expenses-4/web/daily-expenses-web-img-6.png',
-                './aksel/daily-expenses-4/web/daily-expenses-web-img-7.png',
-                './aksel/daily-expenses-4/web/daily-expenses-web-img-8.png',
-                './aksel/daily-expenses-4/web/daily-expenses-web-img-9.png',
-                './aksel/daily-expenses-4/web/daily-expenses-web-img-10.png',
-                './aksel/daily-expenses-4/web/daily-expenses-web-img-11.png',
-                './aksel/daily-expenses-4/web/daily-expenses-web-img-12.png',
-                './aksel/daily-expenses-4/web/daily-expenses-web-img-13.png',
-                './aksel/daily-expenses-4/web/daily-expenses-web-img-14.png',
-            ]
-        }
-    }
 ]
