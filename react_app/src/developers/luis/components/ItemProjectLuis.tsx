@@ -1,4 +1,4 @@
-import { ChevronDown, ChevronsLeftRight, Globe, Smartphone } from "lucide-react"
+import { ChevronDown, ChevronsLeftRight, Monitor, Smartphone } from "lucide-react"
 import { ItemDevToolLuis } from "./ItemDevToolLuis";
 import type { ProjectLuis } from "../interfaces/Project.interface";
 import { SwitchTypeProject } from "./SwitchTypeProject";
@@ -18,17 +18,17 @@ interface Props {
 
 const getDataByProject = (typeProject: string) => {
   switch (typeProject) {
-    case 'Web':
+    case 'Escritorio':
       return {
         color: 'bg-purple-500/10',
         platforms: ['Web']
       }
-    case 'Móvil -  escritorio':
+    case 'Móvil + Escritorio':
       return {
         color: 'bg-cyan-950',
         platforms: ['Móvil', 'Escritorio']
       }
-    case 'iOS':
+    case 'Móvil':
       return {
         color: 'bg-cyan-950',
         platforms: ['Móvil']
@@ -36,7 +36,7 @@ const getDataByProject = (typeProject: string) => {
     default:
       return {
         color: 'bg-purple-500/10',
-        platforms: ['Web']
+        platforms: ['Escritorio']
       }
   }
 }
@@ -47,21 +47,21 @@ export const ItemProjectLuis = ({ project, expanded, onSelectProject }: Props) =
   const { platforms, color: bgColor } = getDataByProject(project.type);
   const [typeProject, setTypeProject] = useState(platforms[0]);
   const [isChanging, setIsChanging] = useState(false);
-
+  
   return (
     <div className="grid grid-cols-8 w-full p-5 bg-box box-cyan rounded-lg">
       <div className="flex flex-row col-span-7 gap-3">
         <div className={`flex flex-row w-13 h-13 items-center justify-center rounded-lg ${bgColor}`}>
           {
-            type === 'Móvil -  escritorio' && (
+            type === 'Móvil + Escritorio' && (
               <ChevronsLeftRight
                 size={38}
                 className="text-cyan" />
             )
           }
           {
-            type === 'escritorio' && (
-              <Globe
+            type === 'Escritorio' && (
+              <Monitor
                 size={38}
                 className="text-purple-400" />
             )

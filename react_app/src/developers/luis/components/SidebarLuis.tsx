@@ -34,13 +34,13 @@ export const SidebarLuis = () => {
             className='jum-hover cyan-hover text-title-gray w-7 h-7' />
         </a>
         <a
-          href="https://www.linkedin.com/in/aksel-akemi-herrera-gonzalez-08054a213"
+          href="www.linkedin.com/in/luis-paulo-calderón-nava-2003bb257"
           target='_blank'>
           <LinkedIn
             className='jum-hover cyan-hover text-title-gray w-7 h-7' />
         </a>
         <a
-          href="mailto:akselherrera18@gmail.com">
+          href="mailto:pavicalderon49@gmail.com">
           <Mail
             className='jum-hover cyan-hover text-title-gray w-7 h-7' />
         </a>
@@ -49,9 +49,9 @@ export const SidebarLuis = () => {
       {/* ITEMS BOTTOM */}
       <div className='hidden md:block column-text secondary-text text-sm'>
         <Link
-          to='mailto:akselherrera18@gmail.com'
+          to='mailto:pavicalderon49@gmail.com'
           className=''>
-          akselherrera18@gmail.com
+          pavicalderon49@gmail.com
         </Link>
       </div>
     </div>

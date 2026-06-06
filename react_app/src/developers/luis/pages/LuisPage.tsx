@@ -8,7 +8,7 @@ import { LuisWorkTogether } from "./sections/LuisWorkTogether"
 export const LuisPage = () => {
 
   useEffect(() => {
-    document.title = 'Portafolio | Aksel Herrera'
+    document.title = 'Portafolio | Luis Paulo'
     return
   }, [])
   

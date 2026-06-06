@@ -11,7 +11,7 @@ export const LuisWorkTogether = () => {
           Estoy abierto a nuevas oportunidades y proyectos interesantes.
         </p>
         <div className="flex justify-center">
-          <a href="mailto:akselherrera18@gmail.com">
+          <a href="mailto:pavicalderon49@gmail.com">
             <button
               className="flex flex-row gap-3 cursor-pointer items-center bg-blue-gradient rounded-4xl px-5 py-3">
               <Mail
