@@ -1,70 +1,116 @@
-<div class="col-12 text-center mt-5">
-  <h2 class="text-white">{{ "my-earrings.title" | translate }}</h2>
-  <div class="col-12 center">
-    <div class="col-8 bg-white-transparent p-3 box-border">
-      <p class="text-style text-white">{{ "my-earrings.description" | translate}}</p>
+<!-- SECCIÓN PRINCIPAL MY EARRINGS -->
+<section class="earrings-header">
+  <span class="section-badge">Aplicación Destacada</span>
+  <h2 class="earrings-title">My Earrings</h2>
+  <p class="earrings-subtitle">Tu lista inteligente de pendientes</p>
+</section>
+
+<!-- SLIDE 1: imagen izq, texto der -->
+<section class="feature-section">
+  <div class="feature-phones left-phones">
+    <div class="phone phone-back">
+      <img [src]="data[0].img" alt="My Earrings pantalla" class="phone-img">
+    </div>
+    <div class="phone phone-front">
+      <img [src]="data[3].img" alt="My Earrings pantalla" class="phone-img">
     </div>
   </div>
-
-  <!-- CARROUSEL -->
-  <div id="myCarousel" class="carousel slide mt-4" data-bs-ride="carousel" data-bs-interval="5000">
-    <div class="carousel-indicators">
-      @for (item of data; track item; let i = $index) {
-        <button
-          type="button"
-          data-bs-target="#myCarousel"
-          [attr.data-bs-slide-to]="i"
-          [ngClass]="{ 'active': i === 0 }"
-          aria-current="true">
-        </button>
-      }
-    </div>
-
-    <!-- Slides -->
-    <div class="carousel-inner">
-      @for (item of data; track item; let i = $index) {
-        <div class="carousel-item" [ngClass]="{ 'active': i === 0 }">
-          <div class="row col-12">
-            @if (i % 2 === 0) {
-              <div class="col center">
-                <img [src]="item.img" class="d-block w-50" alt="...">
-              </div>
-              <div class="col center me-5 pe-5">
-                <div class="row me-3">
-                  <h2 class="text-white mb-3">{{ item.subtitle | translate}}</h2>
-                  <h4
-                    class="bg-white-transparent box-border p-4 text-white">
-                    {{ item.text | translate}}
-                  </h4>
-                </div>
-              </div>
-            } @else {
-              <div class="col center ms-5 ps-5">
-                <div class="row ms-3">
-                  <h2 class="mb-3 text-white">{{ item.subtitle | translate }}</h2>
-                  <h4
-                    class="bg-white-transparent box-border p-4 text-white ms-4">
-                    {{ item.text | translate}}
-                  </h4>
-                </div>
-              </div>
-              <div class="col center">
-                <img [src]="item.img" class="d-block w-50" alt="...">
-              </div>
-            }
-          </div>
+  <div class="feature-content">
+    <h3 class="feature-title">Organiza tu vida de manera<br>práctica e inteligente</h3>
+    <p class="feature-desc">{{ "my-earrings.description" | translate }}</p>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <span class="feature-icon">☰</span>
+        <div>
+          <p class="feature-item-title">Listas personalizadas</p>
+          <p class="feature-item-desc">Organiza tus tareas como quieras</p>
         </div>
-      }
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">🔔</span>
+        <div>
+          <p class="feature-item-title">Recordatorios inteligentes</p>
+          <p class="feature-item-desc">Nunca olvides lo importante</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">⏱</span>
+        <div>
+          <p class="feature-item-title">Control de presupuestos</p>
+          <p class="feature-item-desc">Gestiona precios y totales</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">⊙</span>
+        <div>
+          <p class="feature-item-title">Prioridades flexibles</p>
+          <p class="feature-item-desc">Organiza por importancia</p>
+        </div>
+      </div>
     </div>
-
-    <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+    <div class="feature-buttons">
+      <a href="#" class="btn-download">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/>
+          <path d="M12 8v8"/><path d="m8 12 4 4 4-4"/>
+        </svg>
+        Descargar App
+      </a>
+      <a routerLink="/ActivityPlanner" class="btn-details">
+        Ver más detalles
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
   </div>
-</div>
+</section>
+
+<!-- SLIDE 2: texto izq, imagen der -->
+<section class="feature-section reverse-section">
+  <div class="feature-content">
+    <span class="section-badge">Gestión Inteligente</span>
+    <h3 class="feature-title">Tus pendientes,<br>siempre organizados</h3>
+    <p class="feature-desc">
+      Crea listas personalizadas para diferentes aspectos de tu vida.
+      Añade presupuestos, controla precios y totales fácilmente.
+      Organiza tus tareas por prioridad o estado de completado
+      para mantener el enfoque en lo que realmente importa.
+    </p>
+    <ul class="check-list">
+      <li>
+        <span class="check-icon">⊙</span>
+        Múltiples listas con colores personalizados
+      </li>
+      <li>
+        <span class="check-icon">⊙</span>
+        Control total de presupuestos y gastos
+      </li>
+      <li>
+        <span class="check-icon">⊙</span>
+        Filtros por prioridad y estado
+      </li>
+    </ul>
+  </div>
+  <div class="feature-phones right-phones">
+    <div class="phone phone-solo">
+      <img [src]="data[2].img" alt="My Earrings listas" class="phone-img">
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 3: imagen izq, texto der -->
+<section class="feature-section">
+  <div class="feature-phones left-phones">
+    <div class="phone phone-solo">
+      <img [src]="data[1].img" alt="My Earrings recordatorios" class="phone-img">
+    </div>
+  </div>
+  <div class="feature-content">
+    <span class="section-badge">Recordatorios Activos</span>
+    <h3 class="feature-title">Recuerda actividades<br>importantes</h3>
+    <p class="feature-desc">{{ "my-earrings.carrousel-text-4" | translate }}</p>
+  </div>
+</section>

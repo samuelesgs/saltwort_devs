@@ -4,41 +4,37 @@
 
 :root {
     --TextColor: #FFFFFF;
-    --PrimaryColor: rgb(68, 0, 13);
+    --PrimaryColor: #c0392b;
+    --PrimaryLight: #e74c3c;
     --BackgroundColor: rgba(217, 217, 217, 0.25);
+    --BgBase: #1d1c1c;
+    --BgCard: #585858;
+    --TextMuted: #9ca3af;
 }
 
-::-webkit-scrollbar {
-    width: 6px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--BackgroundColor);
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--PrimaryColor);
-    border-radius: 5px;
-}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--BackgroundColor); }
+::-webkit-scrollbar-thumb { background: var(--PrimaryColor); border-radius: 5px; }
 
 body {
     overflow-x: hidden;
     min-height: 100vh;
+    background-color: var(--BgBase);  /* #0d0d0d */
+    color: var(--TextColor);
 }
 
-h1, h2, h3 {
-    overflow: hidden !important;
-}
+h1, h2, h3 { overflow: hidden !important; }
 
 .title { color: var(--TextColor); }
 .text-body { color: var(--TextColor) !important; }
 
+/* YA NO se usa bg-container en el body, queda disponible para secciones puntuales */
 .bg-container {
     background: linear-gradient(180deg, rgba(68,0,13,1) 0%, rgba(144,45,64,1) 100%);
 }
 
 .bg-white-transparent { background-color: rgba(217, 217, 217, 0.10); }
-.bg-navbar { background-color: #252525; }
+.bg-navbar { background-color: #111111; }
 .no-padding { padding: 0px; }
 .no-margin { margin: 0px; }
 .no-space { margin: 0px !important; padding: 0px !important; }
@@ -79,7 +75,5 @@ h1, h2, h3 {
 
 /* Fix navbar con Tailwind */
 @media (min-width: 992px) {
-    .nav-menu {
-        display: flex !important;
-    }
+    .nav-menu { display: flex !important; }
 }

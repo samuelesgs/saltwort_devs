@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CarouselActivityPlannerComponent } from './carousel-activity-planner/carousel-activity-planner.component';
+import { RouterModule } from '@angular/router';
 import { AppService } from '../../app.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { LocalStorageManager } from '../../utils/localStorageManager';
@@ -8,6 +8,7 @@ import { MyEarringsAppComponent } from "./my-earrings-app/my-earrings-app.compon
 @Component({
     selector: 'app-home',
     imports: [
+        RouterModule,
         TranslateModule,
         MyEarringsAppComponent
     ],
@@ -17,11 +18,11 @@ import { MyEarringsAppComponent } from "./my-earrings-app/my-earrings-app.compon
 export class HomeComponent {
   private LocalStorageManger = new LocalStorageManager();
   constructor(
-    private service: AppService, 
-    private translateService : TranslateService) {
-      translateService.use(this.LocalStorageManger.getItem('lang'));//Copiar en todas las paginas
-      this.service.getChangeLang().subscribe(result => {//Copiar en todas las paginas
-        this.translateService.use(result);//Copiar en todas las paginas
+    private service: AppService,
+    private translateService: TranslateService) {
+      translateService.use(this.LocalStorageManger.getItem('lang'));
+      this.service.getChangeLang().subscribe(result => {
+        this.translateService.use(result);
       });
     this.service.setRoute(true);
   }
