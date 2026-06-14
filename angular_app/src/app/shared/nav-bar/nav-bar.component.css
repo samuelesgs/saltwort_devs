@@ -1,6 +1,30 @@
+.navbar {
+    padding: 8px 0;
+}
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-menu {
+    display: flex;
+    margin-left: auto;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 .text-navbar {
     font-size: 24px;
-    color: #757575 !important;
+    color: #757575;
 }
 
 .app-text {
@@ -17,13 +41,75 @@
     color: white !important;
 }
 
-
-.bg-button-movil{
-    /* color: #757575 !important; */
-    color: white;
-    border: white;
+.navbar-toggler-btn {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    display: block;
+    width: 24px;
+    height: 20px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: #252525;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 4px;
+    list-style: none;
+    padding: 4px 0;
+    min-width: 120px;
+    display: none;
+    z-index: 1000;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-item {
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+    .nav-menu {
+        display: none;
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        position: static;
+        border: none;
+        padding: 0;
+    }
 }

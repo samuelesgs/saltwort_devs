@@ -3,11 +3,8 @@
 @tailwind utilities;
 
 :root {
-    --PrimaryDark: #2D040C;
-    --PrimaryLigth: #c4868e;
     --TextColor: #FFFFFF;
-    --PrimaryColor: #38070F;
-    --BorderColor: #7a1020;
+    --PrimaryColor: rgb(68, 0, 13);
     --BackgroundColor: rgba(217, 217, 217, 0.25);
 }
 
@@ -24,106 +21,34 @@
     border-radius: 5px;
 }
 
-.bg-primary-dark {
-    background-color: var(--PrimaryDark);
-}
-
-.bg-primary {
-    background-color: var(--PrimaryColor);
-}
-
-.bg-primary-ligth {
-    background-color: var(--PrimaryLigth);
-}
-
-.primary-ligth {
-    color: var(--PrimaryLigth);
-}
-
-.bg-gradient-primary {
-    background: #30050C;
-background: linear-gradient(155deg, rgba(48, 5, 12, 1) 0%, rgba(81, 10, 21, 1) 100%);
-}
-
-.nav-border {
-    border-bottom: 0.5px solid var(--BorderColor);
-}
-
-.border-primary {
-    border: 1px solid var(--BorderColor);
-}
-
 body {
     overflow-x: hidden;
     min-height: 100vh;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     overflow: hidden !important;
 }
 
-.title {
-    color: var(--TextColor);
-}
-
-.text-body {
-    color: var(--TextColor) !important;
-}
+.title { color: var(--TextColor); }
+.text-body { color: var(--TextColor) !important; }
 
 .bg-container {
-    background: rgb(68, 0, 13);
-    background: linear-gradient(180deg, rgba(68, 0, 13, 1) 0%, rgba(144, 45, 64, 1) 100%);
+    background: linear-gradient(180deg, rgba(68,0,13,1) 0%, rgba(144,45,64,1) 100%);
 }
 
-.bg-white-transparent {
-    background-color: rgba(217, 217, 217, 0.10);
-}
+.bg-white-transparent { background-color: rgba(217, 217, 217, 0.10); }
+.bg-navbar { background-color: #252525; }
+.no-padding { padding: 0px; }
+.no-margin { margin: 0px; }
+.no-space { margin: 0px !important; padding: 0px !important; }
 
-.bg-navbar {
-    background-color: #252525;
-}
+.vertical-center { display: flex; justify-content: center; }
+.horizontal-center { display: flex !important; align-items: center !important; }
+.center { display: flex !important; justify-content: center !important; align-items: center !important; }
+.end { display: flex !important; justify-content: end !important; align-items: center !important; }
 
-.no-padding {
-    padding: 0px;
-}
-
-.no-margin {
-    margin: 0px;
-}
-
-.no-space {
-    margin: 0px !important;
-    padding: 0px !important;
-}
-
-.vertical-center {
-    display: flex;
-    justify-content: center;
-}
-
-.horizontal-center {
-    display: flex !important;
-    align-items: center !important;
-}
-
-
-.center {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-}
-
-.end {
-    display: flex !important;
-    justify-content: end !important;
-    align-items: center !important;
-}
-
-.pointer {
-    cursor: pointer;
-}
+.pointer { cursor: pointer; }
 
 .back-arrow {
     background-color: rgba(217, 217, 217, 0.10);
@@ -137,27 +62,24 @@ h3 {
     padding: 0;
     border: none;
 }
-
 .back-arrow img {
     width: 70%;
     height: auto;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
 
-.modal-style {
-    background-color: rgba(217, 217, 217, 0.10);
-}
-
-.modal-text-color {
-    color: white;
-}
-
-.modal-button {
-    background-color: var(--PrimaryColor);
-    color: white;
-}
+.modal-style { background-color: rgba(217, 217, 217, 0.10); }
+.modal-text-color { color: white; }
+.modal-button { background-color: var(--PrimaryColor); color: white; }
 
 @font-face {
     font-family: 'Roboto';
     src: url('assets/images/Roboto-Italic.ttf');
+}
+
+/* Fix navbar con Tailwind */
+@media (min-width: 992px) {
+    .nav-menu {
+        display: flex !important;
+    }
 }
